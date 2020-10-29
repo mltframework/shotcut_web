@@ -8,7 +8,7 @@ category: notes
   - Qt Creator from the [Qt project](https://www.qt.io/download-open-source/) or your distribution packages.
   - [Our special build of the Qt 5.9.7 SDK that includes QtWebKit](https://s3.amazonaws.com/misc.meltymedia/shotcut-build/qt-5.9.7-ubuntu16.04-x86_64.txz)    
     Extract it to $HOME/Qt
-  - [Shotcut SDK (733 MiB! current version 20.09.13)](https://s3.amazonaws.com/builds.us.meltytech/shotcut/shotcut-linux-x86_64-sdk-200913.txz)    
+  - [Shotcut SDK (739 MiB! current version 20.09.27)](https://s3.amazonaws.com/builds.us.meltytech/shotcut/shotcut-linux-x86_64-sdk-200927.txz)
     Extract it to $HOME/Projects
 
 2. Start Qt Creator and choose **Tools &gt; Options &gt; Build &amp; Run**  
@@ -28,7 +28,7 @@ Configure all of your settings in the Build & Run section.
    - Under **Deployment** click **Add Deploy Step &gt; Make**, and in **Make arguments** add "install".  
    - Under **Run &gt; Run configuration** click **Add &gt; Custom Executable &gt; Executable** add   `$HOME/Projects/Shotcut/Shotcut.app/bin/shotcut`
    - Under **Run Environment &gt; Details** add the following environment variables:
-     - Set `LD_LIBRARY_PATH` to `${HOME}/Projects/Shotcut/Shotcut.app/lib:${QTDIR}/lib:${HOME}/Projects/Shotcut/Shotcut.app/src/build-shotcut-Desktop_Qt_5_6_1_GCC_64bit-Debug/CuteLogger`
+     - Set `LD_LIBRARY_PATH` to `${HOME}/Projects/Shotcut/Shotcut.app/lib:${QTDIR}/lib:${HOME}/Projects/Shotcut/Shotcut.app/src/build-shotcut-Desktop_QT-Debug/CuteLogger`
      - Set `MLT_DATA` to `${HOME}/Projects/Shotcut/Shotcut.app/share/mlt`
      - Set `MLT_PRESETS_PATH` to `${HOME}/Projects/Shotcut/Shotcut.app/share/mlt/presets`
      - Set `MLT_PROFILES_PATH` to `${HOME}/Projects/Shotcut/Shotcut.app/share/mlt/profiles`
