@@ -110,6 +110,8 @@ category: help
 | Ripple trim clip out  | Shift+O                              | shift+O
 | Add/Edit Marker       | M                                    | M
 | Delete Marker         | Ctrl+Shift+M                         | shift+control+M
+| Seek to previous marker | <                                  | <
+| Seek to next marker   | >                                    | >
 | Select Track Below    | Down                                 | down
 | Select Track Above    | Up                                   | up
 | Zoom In               | =                                    | =
@@ -135,6 +137,8 @@ category: help
 | Toggle Ripple mode    | Ctrl+R                               | command+R
 | Toggle Ripple All Tracks | Ctrl+Alt+R                        | option+command+R
 | Toggle Ripple mode and all tracks | Ctrl+Shift+R             | shift+command+R
+| Toggle Ripple markers | Alt+R                                | option+R
+| Toggle Ripple markers, mode, and all tracks | Alt+Shift+R    | shift+option+R
 | Insert Track          | Ctrl+Alt+I                           | option+command+I
 | Remove Track          | Ctrl+Alt+U                           | option+command+U
 | Copy Timeline to Source    | Ctrl+Alt+C                      | option+command+C
