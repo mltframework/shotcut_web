@@ -109,7 +109,8 @@ category: help
 | Ripple trim clip in   | Shift+I                              | shift+I
 | Trim clip out         | O                                    | O
 | Ripple trim clip out  | Shift+O                              | shift+O
-| Add/Edit Marker       | M                                    | M
+| Add/Edit marker at cursor        | M                         | M
+| Add/Edit marker at selected clip | Alt+M                     | option+M
 | Delete Marker         | Ctrl+Shift+M                         | shift+control+M
 | Seek to previous marker | <                                  | <
 | Seek to next marker   | >                                    | >
@@ -145,6 +146,8 @@ category: help
 | Copy Timeline to Source    | Ctrl+Alt+C                      | option+command+C
 | Center the Playhead        | Ctrl+Shift+P                    | shift+command+P
 | Scroll to Playhead on Zoom | Ctrl+Alt+P                      | option+command+P
+| Move Track Up         | Alt+Shift+Up                         | shift+option+up
+| Move Track Down       | Alt+Shift+Down                       | shift+option+down
 {:.withborders}
 
 ## Playlist
