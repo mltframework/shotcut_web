@@ -110,7 +110,7 @@ category: help
 | Trim clip out         | O                                    | O
 | Ripple trim clip out  | Shift+O                              | shift+O
 | Add/Edit marker at cursor        | M                         | M
-| Add/Edit marker at selected clip | Alt+M                     | option+M
+| Add/Edit marker around selected clips | Alt+M                | option+M
 | Delete Marker         | Ctrl+Shift+M                         | shift+control+M
 | Seek to previous marker | <                                  | <
 | Seek to next marker   | >                                    | >
