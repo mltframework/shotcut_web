@@ -17,6 +17,36 @@ These are brief notes about known problems and feature additions. See
 log](https://github.com/mltframework/shotcut/commits/master) for more
 information.
 
+##### Release 24.04.28
+
+- Fixed crash if the **Keyframes** panel is in a tab group along with **Filters**.
+- Fixed **Elastic Scale** video filter can distort with preview scaling.
+- Fixed dropping incompatible video file may not prompt conversion.
+- Fixed color in **Properties > Convert > Best** if input video is BT.709 without signaling.
+- Some fixes for **Settings > Audio Channels > 4 (quad)**.
+- Fixed changes in **Filters** cannot after moving the clip on the **Timeline**.
+- Fixed **Zoom Timeline to Fit** sometimes incorrect.
+- Fixed batch analysis for **Stabilize** video filter on export with project folder.
+- Upgraded MLT to version 7.24.0.
+- Added **Ambisonic Encoder** audio filter.
+- Added **View > Scopes > Audio Vector**.
+- Added **View > Scopes > Audio Surround**.
+- Added **Settings > Time Format** to affect everywhere that timecode is displayed or editable.
+- Added a indication to the on-video control for the **Ambisonic Decoder** audio filter.
+- Added **Edit > Undo** and **Redo** support for adding, removing, and changing **Keyframes** (work in progress) for the following filters:
+  - Fade In Audio
+  - Fade Out Audio
+  - Gain / Volume
+  - Brightness
+  - Color Grading
+  - Contrast
+  - Fade In Video
+  - Fade Out Video
+  - Text: Rich
+  - Size, Position & Rotate
+  - White Balance
+- Added **Apply Copied Filters** to **Timeline > menu > Edit** and context menu that works with multiple selected clips.
+
 ##### Release 24.02.29
 
 - Fixed distortion caused by **Mixdown** audio filter.

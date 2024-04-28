@@ -9,7 +9,7 @@ We pledge that our downloads are always free of
 malware, spyware, and adware. However, we can only provide that guarantee if you come to this website
 to download.
 
-#### Current Version: 24.02.29
+#### Current Version: 24.04.28
 
 <div class="OSTEST">
   <p>
@@ -39,7 +39,7 @@ To avoid ads and get automatic updates:<br>
 
 {:.win}
 |-----------------------|-------------------
-| [Windows installer](https://sourceforge.net/projects/shotcut/files/v24.02.29/shotcut-win64-240229.exe/download) | [Windows portable zip](https://sourceforge.net/projects/shotcut/files/v24.02.29/shotcut-win64-240229.zip/download)
+| [Windows installer](https://sourceforge.net/projects/shotcut/files/v24.04.28/shotcut-win64-240428.exe/download) | [Windows portable zip](https://sourceforge.net/projects/shotcut/files/v24.04.28/shotcut-win64-240428.zip/download)
 {:.withborders}
 
 {:.win}
@@ -65,7 +65,7 @@ To avoid ads and get automatic updates:<br>
 
 {:.mac}
 |-----------------------
-| [macOS universal](https://sourceforge.net/projects/shotcut/files/v24.02.29/shotcut-macos-240229.dmg/download)
+| [macOS universal](https://sourceforge.net/projects/shotcut/files/v24.04.28/shotcut-macos-240428.dmg/download)
 {:.withborders}
 
 {:.mac}
@@ -85,7 +85,7 @@ To avoid ads and get automatic updates:<br>
 **Important**: If you have a Mac that is over 10 years old you might experience a video preview color problem due to our migration to [Apple Metal](https://developer.apple.com/metal/). In that case, use [version 22.12.21](https://sourceforge.net/projects/shotcut/files/v22.12.21/shotcut-macos-221221.dmg/download).
 
 {:.mac}
-An [unsigned app bundle is available](https://sourceforge.net/projects/shotcut/files/v24.02.29/shotcut-macos-unsigned-240229.dmg/download) so that you
+An [unsigned app bundle is available](https://sourceforge.net/projects/shotcut/files/v24.04.28/shotcut-macos-unsigned-240428.dmg/download) so that you
 can modify the build per the Free Software license agreement.
 
 ---
@@ -109,7 +109,7 @@ src='https://raw.githubusercontent.com/snapcore/snap-store-badges/master/EN/%5BE
 
 {:.linux}
 |-----------------------|-------------------
-| [Linux portable tar](https://sourceforge.net/projects/shotcut/files/v24.02.29/shotcut-linux-x86_64-240229.txz/download) | [Linux AppImage](https://sourceforge.net/projects/shotcut/files/v24.02.29/shotcut-linux-x86_64-240229.AppImage/download)
+| [Linux portable tar](https://sourceforge.net/projects/shotcut/files/v24.04.28/shotcut-linux-x86_64-240428.txz/download) | [Linux AppImage](https://sourceforge.net/projects/shotcut/files/v24.04.28/shotcut-linux-x86_64-240428.AppImage/download)
 {:.withborders}
 
 {:.linux}
@@ -135,11 +135,11 @@ the portable tar.
 ##### Other
 
 File checksums for downloads are available in
-[md5sum](https://github.com/mltframework/shotcut/releases/download/v24.02.29/md5sums.txt)
-or [sha256sum](https://github.com/mltframework/shotcut/releases/download/v24.02.29/sha256sums.txt) format.
+[md5sum](https://github.com/mltframework/shotcut/releases/download/v24.04.28/md5sums.txt)
+or [sha256sum](https://github.com/mltframework/shotcut/releases/download/v24.04.28/sha256sums.txt) format.
 
 [Source code
-archive](https://github.com/mltframework/shotcut/releases/download/v24.02.29/shotcut-src-240229.txz)
+archive](https://github.com/mltframework/shotcut/releases/download/v24.04.28/shotcut-src-240428.txz)
 / [GitHub repository](https://github.com/mltframework/shotcut)
 
 [Older versions](https://github.com/mltframework/shotcut/releases/) are

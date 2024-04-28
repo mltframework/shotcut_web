@@ -78,6 +78,7 @@ Windows registry, a bool is stored as a string: true or false.
 | exportRangeMarkers | bool      | File > Export > Markers as Chapters > Include ranges
 | warnLowMemory      | bool      | whether to check for low CPU RAM memory and show a warning dialog (default true)
 | backupPeriod     | integer     | how frequently to backup the project file in minutes (default 1440 daily)
+| timeFormat       | integer     | Settings > Time Format, one of: 0 (Frames), 1 (Clock), 2 (Timecode Drop-Frame, default), 3 (Timecode Non-Drop Frame)
 | ***markers***
 | color            | string      | the color to use for a new marker (default green)
 | columns/color    | bool        | whether to show the Color column (default true)

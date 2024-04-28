@@ -15,8 +15,6 @@ category: other
 In no particular order or estimated delivery time:
 
 - playlist folders
-- configurable time format with a non-timecode default
-- undo/redo support for keyframes
 - quick effects VUI
 - integration for external editor (e.g. Audacity, GIMP, etc. via configurable launcher and file watcher)
 - open HEIC images (already works on macOS)
