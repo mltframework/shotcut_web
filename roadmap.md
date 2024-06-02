@@ -74,7 +74,6 @@ In no particular order or estimated delivery time:
 - 2.7K and 8K Video Modes
 - reorganize Video Modes UI
 - outline for Text: Rich
-- shadow for Text: Simple and Text: Rich (or general purpose)
 - face detection
 - curves UI for color
 - convert icons to SVG
