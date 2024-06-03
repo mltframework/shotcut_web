@@ -7,7 +7,7 @@ category: notes
 1. Download and install the following:
 
   - [Qt Creator](https://www.qt.io/download-open-source/)
-  - Qt SDK version 6.5 MinGW  
+  - Qt SDK version 6.7 MinGW  
     If your Qt installer no longer includes this you can [get it from our S3 bucket](https://s3.amazonaws.com/misc.meltymedia/shotcut-build/qt-6.5.3-x64-mingw.txz), and
     extract this alongside your other Qt versions, for example `C:\Qt`.  
     (You can get `tar` and `xz` needed to extract this from `msys2`.)
