@@ -8,10 +8,10 @@ category: notes
 
   - [Qt Creator](https://www.qt.io/download-open-source/)
   - Qt SDK version 6.7 MinGW  
-    If your Qt installer no longer includes this you can [get it from our S3 bucket](https://s3.amazonaws.com/misc.meltymedia/shotcut-build/qt-6.5.3-x64-mingw.txz), and
+    If your Qt installer no longer includes this you can [get it from our S3 bucket](https://s3.amazonaws.com/misc.meltymedia/shotcut-build/qt-6.7.1-x64-mingw.txz), and
     extract this alongside your other Qt versions, for example `C:\Qt`.  
     (You can get `tar` and `xz` needed to extract this from `msys2`.)
-  - [Shotcut SDK (972 MB current version 24.06.02)](https://s3.amazonaws.com/builds.us.meltytech/shotcut/shotcut-win64-sdk-240602.txz)  
+  - [Shotcut SDK (956 MB current version 24.06.27)](https://s3.amazonaws.com/builds.us.meltytech/shotcut/shotcut-win64-sdk-240627.txz)  
     Extract it to `C:\Projects`
 
 1. Extract the Shotcut SDK .zip file to a new folder in `C:\` named "Projects" (`C:\Projects`).

@@ -18,7 +18,6 @@ In no particular order or estimated delivery time:
 - quick effects VUI
 - integration for external editor (e.g. Audacity, GIMP, etc. via configurable launcher and file watcher)
 - open HEIC images (already works on macOS)
-- open AVIF images
 - ITU-R BT.2020 wide color gamut
 - HDR: SMPTE 2084 (PQ) and ITU-R BT.2100 (HLG)
 - fullscreen playback on current/single screen with on-screen controls

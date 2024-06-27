@@ -98,6 +98,12 @@ Windows registry, a bool is stored as a string: true or false.
 | thumbnails       | string      | how to show the thumbnails in the Playlist panel, one of: hidden, wide, tall, small, large
 | autoplay         | bool        | whether to automatically start playing after opening a clip from the playlist
 | previewScale     | integer     | the vertical resolution to use for preview scaling, default 0 means none/inactive
+| columns/clip     | bool        | whether to show the Clip name column in the details view (default true)
+| columns/date     | bool        | whether to show the Date column in the details view (default true)
+| colunms/duration | bool        | whether to show the Duration column in the details view (default true)
+| columns/in       | bool        | whether to show the In point column in the details view (default true)
+| columns/start    | bool        | whether to show the Start time column in the details view (default true)
+| columns/thumbnails| bool       | whether to show the Thumbnails column in the details view (default true)
 | ***encode***
 | path             | string      | the file system path for Export > Export File
 | freeSpaceCheck   | bool        | whether to continue checking if a storage volume has sufficient space for storing Video
@@ -123,6 +129,8 @@ Windows registry, a bool is stored as a string: true or false.
 | videoDelayMs     | real number | for Settings > Synchronization... (default 0)
 | volume           | integer     | the player volume level as a percentage
 | zoom             | real number | the player's current zoom level as a factor from 0 to 2 where 0 means "Fit"
+| ***keyframes***
+| dragScrub        | bool        | Keyframes > Scrub while dragging (default false)
 | ***timeline***
 | dragScrub        | bool        | Timeline > Scrub while dragging (default false)
 | thumbnails       | bool        | Timeline > menu > Show Video Thumbnails
