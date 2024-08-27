@@ -17,7 +17,7 @@ In no particular order or estimated delivery time:
 - playlist folders
 - quick effects VUI
 - integration for external editor (e.g. Audacity, GIMP, etc. via configurable launcher and file watcher)
-- open HEIC images (already works on macOS)
+- open HEIC images (already works on macOS, work-in-progress in FFmpeg)
 - ITU-R BT.2020 wide color gamut
 - HDR: SMPTE 2084 (PQ) and ITU-R BT.2100 (HLG)
 - fullscreen playback on current/single screen with on-screen controls
@@ -34,8 +34,9 @@ In no particular order or estimated delivery time:
 - convert producer UIs to QML
 - add partik0l producer
 - circle VUI control for Vignette and Crop: Circle
-- multi-track transition feature
-- generic filter (MLT service name and table of parameters)
+- generic filter UI (MLT service name and table of parameters)
+- OpenFX and VST2 plugins using generic filter UI
+- multi-track transition
 - generic transition
 - add CMX EDL import
 - add Kdenlive XML export
