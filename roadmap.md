@@ -29,7 +29,6 @@ In no particular order or estimated delivery time:
 - audio mixer console (one strip per track plus output)
 - surround panning
 - raw video processing - e.g. CinemaDNG
-- subtitles
 - multi-camera editing features
 - convert producer UIs to QML
 - add partik0l producer

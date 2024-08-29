@@ -11,7 +11,7 @@ title: How To Articles
 <div data-aaad='true' data-aa-adunit='/22815767462/shotcutapp_Desktop_728_1'></div>
 <div data-aaad='true' data-aa-adunit='/22815767462/shotcutapp_Mobile_300_1'></div>
 
-- #### [User Manual](https://forum.shotcut.org/t/table-of-contents/43285)
+- #### [User Guide](https://forum.shotcut.org/t/table-of-contents/43285)
 - #### [Tutorials in the Forum](https://forum.shotcut.org/c/tutorial/5)
 
 {% for page in sorted_pages %}

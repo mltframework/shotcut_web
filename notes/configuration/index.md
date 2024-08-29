@@ -175,4 +175,10 @@ Windows registry, a bool is stored as a string: true or false.
 | transitionDuration| real number| Transition duration in seconds, default 2
 | transitionStyle  | integer     | Transition type, default 2 (dissolve)
 | transitionSoftness| real number| Transition softness in %, default 20 
+| ***subtitles***
+| columns/start    | bool        | whether to show the Start column (default true)
+| columns/end      | bool        | whether to show the End column (default true)
+| columns/duration | bool        | whether to show the Duration column (default true)
+| trackTimeline    | bool        | Subtitles > menu > Track Timeline Cursor (default true)
+| showPrevNext     | bool        | Subtitles > menu > Show Previous/Next (default true)
 {:.withborders}

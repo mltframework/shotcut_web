@@ -17,6 +17,37 @@ These are brief notes about known problems and feature additions. See
 log](https://github.com/mltframework/shotcut/commits/master) for more
 information.
 
+##### Release 24.08.29
+
+- Fixed the Linux portable, AppImage, and Snap fail to launch on some systems (e.g. Ubuntu 24.04) with Qt 6 and Wayland.
+- Fixed 59.94 fps in Matroska falsely identified as variable frame rate (broke in v24.06).
+- Fixed mono audio assets not playing through both stereo channels (broken in v24.06).
+- Fixed **Open Other > Audio/Video Device > Video Input** on macOS (broke in v24.06).
+- Fixed spinboxes on **Settings > Theme > System** on Windows takes too much space from the numeric field (broke in v24.06).
+- Fixed many audio filters missing for Windows on Arm computers (broke in v24.06).
+- Fixed setting the audio language in **Export > Other** using `alang=`.
+- Fixed right <kbd>Alt</kbd> key (AltGr) for text input in some languages instead keyboard shortcuts/actions in Windows.
+- Fixed the **Convert** dialog when dropping hangs Windows Explorer until the dialog is closed.
+- Fixed **Add Keyframe at Playhead** for some filters, for example **Color Grading**.
+- Fixed enabling keyframes in **Color Grading** adds 2 keyframes.
+- Fixed the modal font dialog on Linux can be behind main window making Shotcut not responsive.
+- Fixed occasional audio pop/click with some media files especially with uncompressed audio.
+- Fixed lag in **Filters > search**.
+- Fixed a disabled **Crop: Circle** or **Crop: Rectangle** video filter becomes enabled when reselected.
+- Fixed the `hevc_toolbox` hardware video encoder fails detection on some Intel Macs.
+- Fixed file dialogs open slowly in the Linux AppImage.
+- Fixed overriding **Properties > Rotation** on a proxy video whose default is not 0 exports with wrong rotation.
+  This bug affected the creation of the proxy and thus requires making a new proxy, which is easier said than done on Windows due to file locking. **Properties > Proxy > Disable Proxy** on the affected clips is a workaround if you do not turn off proxy completely.
+- Fixed **Properties > Proxy > Make Proxy** does not override a DJI- or GoPro-provided proxy video.
+- Now <kbd>Enter</kbd> or <kbd>Return</kbd> in **Filters > search** changes focus to the search results.
+- Now <kbd>Up</kbd> or <kbd>Down</kbd> in **Help > Actions and Shortcuts > search** changes focus to the search results.
+- Changed the **Softness** to 0 in the **Obscure With Blur** and **Obscure With Mosaic** filter sets.
+- Added a **Power (W)** ( `#gps_power#`) field to the **GPS Text** video filter.
+- Added **View > Subtitles**.
+- Added **Subtitle Burn In** video filter (only works on **Output** track).
+- Added **Export > Other > Disable subtitles** checkbox.
+
+
 ##### Release 24.06.26
 
 - Improved handling for some variable frame rate videos. Now, it tries to show the file's target frame rate and extends the variable detection logic to include strange average frame rate values (what previous versions showed).

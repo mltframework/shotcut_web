@@ -230,6 +230,18 @@ category: help
 | Select                       | Shift                         | shift
 {:.withborders}
 
+## Subtitles
+
+| Action                       | Windows/Linux                 | macOS
+|------------------------------|-------------------------------|----------------------
+| Create/Edit Subtitle         | Shift+Q                       | shift+Q
+| Add Subtitle Item            | Shift+W                       | shift+W
+| Remove Subtitle Item         | Shift+E                       | shift+E
+| Set Subtitle Start           | Shift+R                       | shift+R
+| Set Subtitle End             | Shift+T                       | shift+T
+| Move Subtitles               | Shift+Y                       | shift+Y
+{:.withborders}
+
 <div data-aaad='true' data-aa-adunit='/22815767462/shotcutorg_Desktop_728_2'></div>
 <div data-aaad='true' data-aa-adunit='/22815767462/shotcutorg_Mobile_300_2'></div>
 <div data-aaad='true' data-aa-adunit='/22815767462/shotcutcom_Desktop_728_2'></div>
