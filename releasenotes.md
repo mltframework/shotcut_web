@@ -17,6 +17,23 @@ These are brief notes about known problems and feature additions. See
 log](https://github.com/mltframework/shotcut/commits/master) for more
 information.
 
+##### Release 24.09.13
+
+- Fixed seeking and frozen video with some files or scenarios.
+- Fixed **Reverb** audio filter missing on Windows.
+- Fixed wrong frame rate for Android Camera videos.
+- Fixed some issues with **Timeline > Clip > Apply Copied Filters**.
+- Fixed keyframes are added when not intended in **Color Grading** video filter.
+- Fixed color in **Export > Presets > stills > JPEG** preset.
+- Fixed audio-only WMA file with DTS audio not playing.
+- Added **Increase Text Size** and **Decrease Text Size** to the context menu for **Notes**.
+  You can also use <kbd>Ctrl</kbd> with the mouse wheel.
+- Added a **Reframe** video filter (**Output** only) and **Export > Video > Reframe** button.
+- Added **Export > Video > Resample** with warning dialog to enable the oft-misused export video resolution, aspect ratio, and frame rate fields.
+- Added a warning dialog when changing **Settings > Video Mode** or **Timeline >  Output > Edit** with a project open.
+- Upgraded MLT to version 7.28.0.
+
+
 ##### Release 24.08.29
 
 - Fixed the Linux portable, AppImage, and Snap fail to launch on some systems (e.g. Ubuntu 24.04) with Qt 6 and Wayland.

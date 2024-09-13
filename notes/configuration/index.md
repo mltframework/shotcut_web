@@ -181,4 +181,6 @@ Windows registry, a bool is stored as a string: true or false.
 | columns/duration | bool        | whether to show the Duration column (default true)
 | trackTimeline    | bool        | Subtitles > menu > Track Timeline Cursor (default true)
 | showPrevNext     | bool        | Subtitles > menu > Show Previous/Next (default true)
+| **notes**
+| zoom             | real number | Notes > context menu > Decrease/Increase Text Size
 {:.withborders}

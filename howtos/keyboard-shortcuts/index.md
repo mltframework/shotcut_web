@@ -242,6 +242,14 @@ category: help
 | Move Subtitles               | Shift+Y                       | shift+Y
 {:.withborders}
 
+## Notes
+
+| Action                       | Windows/Linux                 | macOS
+|------------------------------|-------------------------------|----------------------
+| Decrease Text Size           | Ctrl+Alt+-                    | option+command+-
+| Increase Text Size           | Ctrl+Alt+=                    | option+command+=
+{:.withborders}
+
 <div data-aaad='true' data-aa-adunit='/22815767462/shotcutorg_Desktop_728_2'></div>
 <div data-aaad='true' data-aa-adunit='/22815767462/shotcutorg_Mobile_300_2'></div>
 <div data-aaad='true' data-aa-adunit='/22815767462/shotcutcom_Desktop_728_2'></div>
@@ -302,6 +310,10 @@ while clicking the clips.
 - <kbd>control</kbd>+<kbd>option</kbd>
 - <kbd>control</kbd>+<kbd>command</kbd>
 - <kbd>option</kbd>+<kbd>command</kbd>
+
+#### Notes
+
+Use <kbd>Ctrl</kbd> (<kbd>command</kbd> on macOS) to zoom (change text size).
 
 #### Numeric Fields
 
