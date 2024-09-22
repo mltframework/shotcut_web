@@ -501,3 +501,11 @@ Use the QT_SCALE_FACTOR
 On Windows, you can also create a shortcut to shotcut.exe. Then, edit the
 shortcut and modify the target field in the shortcut to include the
 QT_SCALE_FACTOR. E.g. `C:\Program Files\Shotcut\shotcut.exe --QT_SCALE_FACTOR 2`
+
+* * *
+
+## Does Shotcut support High Dyanmic Range (HDR) video?
+
+Shotcut does not properly display or output HDR video. However, it can convert
+HDR video with tone-mapping into a Rec. 709 SDR video. In the UI use either
+**Properties > Convert** or **View > Resources...** in the menu.
