@@ -22,6 +22,7 @@ information.
 - Fixed seeking and frozen video with some files or scenarios.
 - Fixed **Reverb** audio filter missing on Windows.
 - Fixed wrong frame rate for Android Camera videos.
+- Fixed may fail to launch on macOS 11 (build v24.09.19, broke in v24.06).
 - Fixed some issues with **Timeline > Clip > Apply Copied Filters**.
 - Fixed keyframes are added when not intended in **Color Grading** video filter.
 - Fixed color in **Export > Presets > stills > JPEG** preset.
