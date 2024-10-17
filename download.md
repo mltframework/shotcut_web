@@ -93,7 +93,7 @@ To avoid ads and get automatic updates:<br>
 {:.withborders}
 
 {:.mac}
-**Important**: If you have a Mac that is over 10 years old you might experience a video preview color problem due to our migration to [Apple Metal](https://developer.apple.com/metal/). In that case, use [version 22.12.21](https://sourceforge.net/projects/shotcut/files/v22.12.21/shotcut-macos-221221.dmg/download).
+**Important**: If you have a Mac that is from 2013 or earlier you might experience a video preview color problem due to our migration to [Apple Metal](https://developer.apple.com/metal/). In that case, use [version 22.12.21](https://sourceforge.net/projects/shotcut/files/v22.12.21/shotcut-macos-221221.dmg/download).
 
 {:.mac}
 An [unsigned app bundle is available](https://sourceforge.net/projects/shotcut/files/v24.09.13/shotcut-macos-unsigned-240913.dmg/download) so that you
