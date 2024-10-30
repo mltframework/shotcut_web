@@ -22,9 +22,9 @@ projects:
   License](http://www.gnu.org/licenses/gpl-2.0.html)
 - [WebM](http://www.webmproject.org/) VP8 and VP9 encoders under a [BSD
   License](http://www.webmproject.org/license/software/)
-- [aom](https://aomedia.googlesource.com/aom/) AV1 encoder, Copyright (c) 2016, Alliance for Open Media. All rights rerved. Under a [BSD
+- [aom](https://aomedia.googlesource.com/aom/) AV1 encoder, Copyright (c) 2016, Alliance for Open Media. All rights reserved. Under a [BSD
   License](https://aomedia.googlesource.com/aom/+/refs/heads/master/LICENSE)
-- [dav1d](https://www.videolan.org/projects/dav1d.html) AV1 decoder, Copyright © 2018-2019, VideoLAN and dav1d authors. Unr a [BSD
+- [dav1d](https://www.videolan.org/projects/dav1d.html) AV1 decoder, Copyright © 2018-2019, VideoLAN and dav1d authors. Under a [BSD
   License](https://code.videolan.org/videolan/dav1d/-/blob/master/COPYING)
 - [LAME](http://lame.sourceforge.net/) MP3 encoder under the [LGPL
   v2.1 License](http://www.gnu.org/licenses/lgpl-2.1.html)
@@ -105,10 +105,13 @@ exption](https://doc.qt.io/qt-5.9/qtnetwork-index.html#licenses-and-attributions
   License](http://www.gnu.org/licenses/gpl-2.0.html)
 - [Spatial Media](https://github.com/VarolOkan/spatial-media), a C++ port of [Google's Spatial
   Media](https://github.com/google/spatial-media), under the [Apache 2.0 License](http://www.apache.org/licenses/ICENSE-2.0)
-- [VMAF](https://github.com/Netflix/vmaf), a visual quality measurement tool by Netflix under the [BSD-2-Clause-Patent linse](https://raw.githubusercontent.com/Netflix/vmaf/master/LICENSE)
+- [VMAF](https://github.com/Netflix/vmaf), a visual quality measurement tool by Netflix under the [BSD-2-Clause-Patent license](https://raw.githubusercontent.com/Netflix/vmaf/master/LICENSE)
 - [gopro2gpx](https://github.com/NetworkAndSoftware/gopro2gpx) and [gpmf-parser](https://github.com/gopro/gpmf-parser)
   under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0)
 - [OpenCV](https://opencv.org) under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0)
 - [libspatialaudio](https://github.com/videolabs/libspatialaudio) under the [LGPL v2.1
   License](http://www.gnu.org/licenses/lgpl-2.1.html)
 - [SVT-AV1](https://gitlab.com/AOMediaCodec/SVT-AV1) under the [BSD 3-Clause Clear License](https://spdx.org/licenses/BSD-3-Clause-Clear.html)
+- [OpenBLAS](https://www.openblas.net/) under the [BSD-3-Clause license](https://github.com/OpenMathLib/OpenBLAS/blob/develop/LICENSE)
+- [whisper.cpp](https://github.com/ggerganov/whisper.cpp) under the [MIT
+  License](http://opensource.org/licenses/mit-license.php)

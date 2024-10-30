@@ -50,6 +50,7 @@ Windows registry, a bool is stored as a string: true or false.
 | savePath         | string      | the file system path for the file-save dialog
 | recent           | string list | list of recent media and XML files with full path: comma-separated in Linux or Windows INI, multi-string in Windows registry, and array of strings in macOS plist (View > Recent)
 |                  |             | This is no longer saved here as of version 23.05.07 and moved to a separate `recent.ini` text file.
+| projects         | string list | list of XML project files with full path: comma-separated `recent.ini` text file
 | clearRecent      | bool        | Setting > Clear Recent on Exit
 | theme            | string      | UI theme, one of: dark, light, or system (Settings > Theme)
 | titleBars        | bool        | whether to show the title bar for UI panels (View > Show Title Bars)
@@ -181,6 +182,8 @@ Windows registry, a bool is stored as a string: true or false.
 | columns/duration | bool        | whether to show the Duration column (default true)
 | trackTimeline    | bool        | Subtitles > menu > Track Timeline Cursor (default true)
 | showPrevNext     | bool        | Subtitles > menu > Show Previous/Next (default true)
+| whisperExe       | string      | override full path to whisper.cpp main example executable
+| whisperModel     | string      | override full path the whisper model in ggml format
 | **notes**
 | zoom             | real number | Notes > context menu > Decrease/Increase Text Size
 {:.withborders}

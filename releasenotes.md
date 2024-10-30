@@ -17,6 +17,42 @@ These are brief notes about known problems and feature additions. See
 log](https://github.com/mltframework/shotcut/commits/master) for more
 information.
 
+##### Release 24.10.29
+
+- Removed the **Export > Video > Resample** button. Now, there are simply ignorable inline warnings when making certain changes.
+- Added **Subtitles > menu > Speech to Text**:
+  - This uses AI, but we did not make it. It uses a C++ port of [OpenAI Whisper](https://openai.com/index/whisper/) called [whisper.cpp](https://github.com/ggerganov/whisper.cpp).
+  - Expect there to be occasional errors. Like humans and non-ideal conditions; it is not perfect. We will not take action on bug reports about some piece of audio not converting to the expected text.
+  - Our builds include a basic model that has decent speed and accuracy but not a big size. (You can think of the model as the brain.)
+  - You can download a bigger and better better brain (model) in `ggml` format and configure it in the **Speech to Text** dialog, but it will be slower.
+  - The dialog creates two jobs that appear in the **Jobs** panel: one to export audio and another to convert to text.
+  - The results are added to the **Subtitles** panel as a new top-level Subtitle Track.
+  - Currently, the only GPU our build supports is Apple Silicon. Otherwise, it is heavily multi-threaded on the CPU.
+  - Known quirk: subtitle items sometimes start earlier than expected.
+- **Transition** improvements:
+  - **Ripple Delete** a transition restores the entirety of the clips included in the transition.
+  - **Lift** (non-ripple delete) a transition no longer leaves a gap; the gap is filled with the adjacent clips.
+  - Moving an adjacent clip can now adjust the transition duration.
+  - Known bug: Using **Undo** after any of the above disconnects the transition from its adjacent clips and returns future operations around the transition to the old behavior.
+  - The only way to get the old behavior is to first drag the transition to an empty area of another track. Ripple mode should be on if you want ripple delete. Or, simply accept the new behavior and adjust things as needed.
+- Added **File > Show Project in Folder** to menu.
+- Added a `decimals <number>` option to numeric keywords in the **GPS Text** video filter.
+- Changed **Recent Projects** to **Projects**: items in this view no longer disappear as **Recent** reaches its maximum length and old items are removed.
+- Added a **Remove** action to the context menu in **Projects**.
+- Fixed crash opening a project containing a subtitle track with no items.
+- Fixed a crash doing when doing more than one **Playlist > menu > Add Selected to Slideshow**. In theory, this could fix other random crashes in **Timeline**.
+- Fixed odd value for computed width in **Reframe** output video filter causes export to fail.
+- Fixed **Reframe** visual control can create odd-valued dimensions.
+- Fixed making a proxy video for a iPhone 16 Pro video containing spatial audio.
+- Fixed AVCHD video frame rate is double (could fix other formats).
+- Fixed GPU filters paste below non-GPU filters.
+- Fixed **Slideshow Generator** dialog is too tall with vertical video mode.
+- Fixed **GPS Offset** would reset in **GPS Text** video filter.
+- Fixed the maximum allowed **Time** in the **Time Remap** filter to prevent white frames.
+- Hide the **Reframe** video filter and button if **GPU Effects** is on.
+- Upgraded FFmpeg to version 7.1.
+
+
 ##### Release 24.09.13
 
 - Fixed seeking and frozen video with some files or scenarios.
