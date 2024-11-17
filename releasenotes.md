@@ -17,6 +17,23 @@ These are brief notes about known problems and feature additions. See
 log](https://github.com/mltframework/shotcut/commits/master) for more
 information.
 
+##### Release 24.11.17
+
+- Fixed **Convert** stopped converting variable frame rate to constant (broke in v24.10).
+- Fixed filter in and out points when you resize transition by moving a clip (broke in v24.10).
+- Fixed **Reframe** loses its keyframes in **Export** (broke in v24.10).
+- Fixed moving a clip immediately after a transition beyond another clip stopped working (broke in v24.10).
+- Fixed **Settings > Time Format > Timecode (Non-Drop Frame)** for other non-integer frame rates such as 23.98 fps.
+- Fixed using **Export > From > Marker** with subtitles creates a bad output (broke in v24.08).
+- Fixed a video transition between sources with alpha channel is more translucent than expected.
+- Fixed a crash adding **MLT XML As a Clip** to a **Timeline** with a higher frame rate.
+- Fixed **View > Resources > Convert** negatively affects color if input is not HDR.
+- Fixed **Export > Video > Aspect ratio** immediately after you toggle **Use hardware encoder**.
+- Fixed possible crash on **File > New** or **File > Close**.
+- Fixed possible crash dragging a MLT XML file to **Playlist** of a new project/session.
+- Fixed changing **Properties > Audio > Track > All** to something else not working.
+
+
 ##### Release 24.10.29
 
 - Removed the **Export > Video > Resample** button. Now, there are simply ignorable inline warnings when making certain changes.
