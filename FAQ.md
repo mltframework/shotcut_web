@@ -6,12 +6,12 @@ category: help
 ---
 {::options auto_ids="true" /}
 
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutorg_Desktop_728_1'></div>
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutorg_Mobile_300_1'></div>
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutcom_Desktop_728_1'></div>
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutcom_Mobile_300_1'></div>
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutapp_Desktop_728_1'></div>
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutapp_Mobile_300_1'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutorg_Desktop_728_1'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutorg_Mobile_300_1'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutcom_Desktop_728_1'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutcom_Mobile_300_1'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutapp_Desktop_728_1'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutapp_Mobile_300_1'></div>
 
 * Will be replaced with the ToC
 {:toc}
@@ -46,12 +46,12 @@ the Help menu do link out to this web site. If you have files on a fast
 your operating system.
 
 * * *
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutorg_Desktop_728_2'></div>
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutorg_Mobile_300_2'></div>
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutcom_Desktop_728_2'></div>
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutcom_Mobile_300_2'></div>
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutapp_Desktop_728_2'></div>
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutapp_Mobile_300_2'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutorg_Desktop_728_2'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutorg_Mobile_300_2'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutcom_Desktop_728_2'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutcom_Mobile_300_2'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutapp_Desktop_728_2'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutapp_Mobile_300_2'></div>
 
 ## Why does it crash on Windows upon launch?
 
@@ -176,12 +176,12 @@ remove your fingers from the JKL: while holding down K, tap J to step
 left or tap L to step right.
 
 * * *
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutorg_Desktop_728_2'></div>
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutorg_Mobile_300_2'></div>
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutcom_Desktop_728_2'></div>
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutcom_Mobile_300_2'></div>
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutapp_Desktop_728_2'></div>
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutapp_Mobile_300_2'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutorg_Desktop_728_2'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutorg_Mobile_300_2'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutcom_Desktop_728_2'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutcom_Mobile_300_2'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutapp_Desktop_728_2'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutapp_Mobile_300_2'></div>
 
 ## The keyboard shortcuts do not seem to be working.
 
@@ -333,12 +333,12 @@ plist](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptua
 file.
 
 * * *
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutorg_Desktop_728_2'></div>
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutorg_Mobile_300_2'></div>
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutcom_Desktop_728_2'></div>
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutcom_Mobile_300_2'></div>
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutapp_Desktop_728_2'></div>
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutapp_Mobile_300_2'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutorg_Desktop_728_2'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutorg_Mobile_300_2'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutcom_Desktop_728_2'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutcom_Mobile_300_2'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutapp_Desktop_728_2'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutapp_Mobile_300_2'></div>
 
 ## What is the history of Shotcut?
 

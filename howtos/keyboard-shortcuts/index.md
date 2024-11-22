@@ -4,12 +4,12 @@ title: Keyboard Shortcut Reference
 category: help
 ---
 
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutorg_Desktop_728_1'></div>
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutorg_Mobile_300_1'></div>
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutcom_Desktop_728_1'></div>
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutcom_Mobile_300_1'></div>
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutapp_Desktop_728_1'></div>
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutapp_Mobile_300_1'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutorg_Desktop_728_1'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutorg_Mobile_300_1'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutcom_Desktop_728_1'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutcom_Mobile_300_1'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutapp_Desktop_728_1'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutapp_Mobile_300_1'></div>
 
 ## Main Menu
 
@@ -250,12 +250,12 @@ category: help
 | Increase Text Size           | Ctrl+Alt+=                    | option+command+=
 {:.withborders}
 
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutorg_Desktop_728_2'></div>
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutorg_Mobile_300_2'></div>
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutcom_Desktop_728_2'></div>
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutcom_Mobile_300_2'></div>
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutapp_Desktop_728_2'></div>
-<div data-aaad='true' data-aa-adunit='/22815767462/shotcutapp_Mobile_300_2'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutorg_Desktop_728_2'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutorg_Mobile_300_2'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutcom_Desktop_728_2'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutcom_Mobile_300_2'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutapp_Desktop_728_2'></div>
+<div data-aaad='true' data-aa-adunit='/22247219933/shotcutapp_Mobile_300_2'></div>
 
 ## Other Notes
 
