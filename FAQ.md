@@ -95,14 +95,14 @@ the export using the **From** control at the top of the **Export** panel.
 It all depends; that is why there are so many of them! But here are some
 suggestions:
 
--   Upload to a video-sharing web site: H.264 Main Profile
--   Extract the audio: Ogg Vorbis or MP3
--   Save to an intermediate file to use with another tool: DNxHD or
-    lossless/ProRes - really depends on what the other tool accepts
--   Put onto my own web site: WebM and/or H.264 Main Profile
--   Screen recording (Linux only): lossless/MJPEG
--   Capture from SDI/HDMI: lossless/ProRes if your system can handle it,
-    otherwise lossless/MPEG-2
+-   Upload to a video-sharing web site: `H.264 High Profile` or `YouTube`
+-   Extract the audio: `Ogg Vorbis`, `FLAC` (lossless with compression), or good old `MP3`
+-   Save to an intermediate file to use with another tool: `DNxHR HQ` or
+    `ProRes 422` - really depends on what the other tool accepts
+-   Put onto my own web site: `WebM` and/or `Default` (moderate quality H.264)
+-   Screen recording (Linux only): `intermediate/MJPEG`
+-   Capture from SDI/HDMI: `intermediate/ProRes 422` if your system can handle it,
+    otherwise `intermediate/MPEG-2`
 
 * * *
 
