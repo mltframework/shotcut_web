@@ -75,7 +75,7 @@ you can save your project as a MLT XML file by clicking **Save** on the
 toolbar at the top of the window. If you want to upload the video to a
 web site or somehow share the result with someone as separate video
 file, then click **Export** on the toolbar, which opens or raises the
-Export panel. In the Export panel, there are 3 basic steps:
+Export panel. In the Export panel:
 
 1. choose and click a **Preset**
 2. click **Export File** at the bottom of the panel.
