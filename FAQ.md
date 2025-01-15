@@ -77,10 +77,8 @@ web site or somehow share the result with someone as separate video
 file, then click **Export** on the toolbar, which opens or raises the
 Export panel. In the Export panel, there are 3 basic steps:
 
-1. choose and click a **Preset**,
-2. click **Reload** to load the current
-video settings, and
-3. click **Export File** at the bottom of the panel.
+1. choose and click a **Preset**
+2. click **Export File** at the bottom of the panel.
 
 By default, if you have made a playlist **Export** uses the **Playlist** unless you
 have put something into the **Timeline**, in which case, it uses the
