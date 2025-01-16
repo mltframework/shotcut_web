@@ -16,9 +16,7 @@ environment on Windows]({{ "/notes/windowsdev/" | prepend: site.baseurl | prepen
 to hack Shotcut. As part of that, we created a Windows SDK that bundles together
 most of Shotcut's dependencies as well as special build of Qt 5 that still
 includes QtWebKit. These requirements still make development on Linux
-troublesome for new or casual contributors. So, we have added a [Linux SDK
-]({{ "/notes/linuxdev/" | prepend: site.baseurl | prepend: site.url }})
-as well with setup instructions for Qt Creator.
+troublesome for new or casual contributors.
 
 Lastly, I want to remind readers of the [video instruction course by James Woo
 ](https://gumroad.com/a/864284499/tixrdc).
