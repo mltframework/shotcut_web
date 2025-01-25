@@ -14,7 +14,6 @@ category: other
 
 In no particular order or estimated delivery time:
 
-- playlist folders
 - quick effects VUI
 - integration for external editor (e.g. Audacity, GIMP, etc. via configurable launcher and file watcher)
 - open HEIC images (already works on macOS, work-in-progress in FFmpeg)
@@ -36,11 +35,10 @@ In no particular order or estimated delivery time:
 - generic filter UI (MLT service name and table of parameters)
 - OpenFX and VST2 plugins using generic filter UI
 - multi-track transition
-- generic transition
+- generic transition (MLT service name and table of parameters)
 - add CMX EDL import
 - add Kdenlive XML export
 - add OpenTimelineIO import/export
-- add search media type queries to Playlists
 - add presets to Filters search
 - add option to view timeline waveform per channel
 - add transitions to Playlist
@@ -52,13 +50,13 @@ In no particular order or estimated delivery time:
 - hardware accelerated decoding
 - background removal
 - universal search
-- file browser and media library
+- media library (extend Files with metadata and recursive folder)
 - read Kyno XML for name, comments, tags
 - simple screen capture through libobs or ffmpeg
 - move generators from Open Other elsewhere, leave network and devices in Open Other
 - add a base VUI that adds indicators for in and out points and a toolbar to invoke filters:
   Text, Size/Position/Rotate, Crop, Color, Chroma Key: Simple, White Balance
-- improved support for nested projects
+- improved UI for nested projects (MLT XML clips)
 - multi-select support for Properties
 - multi-select support for Filters
 - option to include intermediate thumbnails in timeline
@@ -66,7 +64,7 @@ In no particular order or estimated delivery time:
 - add Recent and Most Used tabs to Filters chooser
 - typewriter effect for Text: Simple and Text: Rich
 - more columns and sorting in Playlist
-- clip markers or flags
+- clip markers
 - turn off all effects switch
 - aspect ratio lock for VUI rectangle control - e.g. when used with Crop: Rectangle
 - motion blur for motion-animated things like Text and Size/Position/Rotate

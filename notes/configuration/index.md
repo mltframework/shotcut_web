@@ -130,6 +130,7 @@ Windows registry, a bool is stored as a string: true or false.
 | videoDelayMs     | real number | for Settings > Synchronization... (default 0)
 | volume           | integer     | the player volume level as a percentage
 | zoom             | real number | the player's current zoom level as a factor from 0 to 2 where 0 means "Fit"
+| pauseAfterSeek   | bool        | Settings > Player > Pause After Seek (default true)
 | ***keyframes***
 | dragScrub        | bool        | Keyframes > Scrub while dragging (default false)
 | ***timeline***
@@ -155,6 +156,8 @@ Windows registry, a bool is stored as a string: true or false.
 | audioOutDuration | real number | the default Fade Audio Out duration in seconds
 | videoInDuration  | real number | the default Fade Video In duration in seconds
 | videoOutDuration | real number | the default Fade Video Out duration in seconds
+| audioInCurve     | integer     | the default Fade Audio In > Type, one of: 1 (Natural, default), 16 (S-Curve), 15 (Fast-Slow), 14 (Slow-Fast)
+| audioOutCurve    | integer     | the default Fade Audio Out > Type, one of: 1 (Natural, default), 16 (S-Curve), 15 (Fast-Slow), 14 (Slow-Fast)
 | ***scope***
 | loudness/integrated | bool     | View > Scopes > Audio Loudness > menu > Integrated Loudness
 | loudness/shortterm | bool     | View > Scopes > Audio Loudness > menu > Short Term Loudness
@@ -182,8 +185,15 @@ Windows registry, a bool is stored as a string: true or false.
 | columns/duration | bool        | whether to show the Duration column (default true)
 | trackTimeline    | bool        | Subtitles > menu > Track Timeline Cursor (default true)
 | showPrevNext     | bool        | Subtitles > menu > Show Previous/Next (default true)
-| whisperExe       | string      | override full path to whisper.cpp main example executable
+| whisperExe       | string      | override full path to whisper-cli executable
 | whisperModel     | string      | override full path the whisper model in ggml format
 | **notes**
 | zoom             | real number | Notes > context menu > Decrease/Increase Text Size
+| ***files***
+| currentDir       | string      | the current folder in Files (default Home)
+| foldersOpen      | bool        | whether the folders tree is visible in Files (default true)
+| viewMode         | string      | one of: detailed, icons, or tiled
+| locations        | string list | the names of the saved custom Locations
+| location/&lt;custom location name&gt; | string | the full path to the saved Location
+| openOther/&lt;type&gt; | string list | full paths to saved executables for Open With per media types: audio, image, other, video
 {:.withborders}

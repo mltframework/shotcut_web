@@ -177,7 +177,16 @@ category: help
 | Selection None        | Ctrl+Shift+D                         | shift+command+D
 | Open Selected         | Ctrl+Enter or double-click           | command+return or double-click
 | Goto/Seek             | Shift+Enter or Shift+double-click    | shift+return or shift+double-click
+| search                | Ctrl+Alt+F                           | option+command+F
 {:.withborders}
+
+## Files
+| Action                | Windows/Linux                        | macOS
+|-----------------------|--------------------------------------|----------------------
+| Go Up                 | Alt+Backspace                        | option+backspace
+| search                | Ctrl+F                               | command+F
+{:.withborders}
+
 
 ## Filters
 
