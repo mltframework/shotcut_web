@@ -6,12 +6,18 @@ category: help
 ---
 {::options auto_ids="true" /}
 
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutorg_Desktop_728_1'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutorg_Mobile_300_1'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutcom_Desktop_728_1'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutcom_Mobile_300_1'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutapp_Desktop_728_1'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutapp_Mobile_300_1'></div>
+<script>
+    if (location.hostname.endsWith("shotcut.org")) {
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutorg_Desktop_728_1"></div>');
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutorg_Mobile_300_1"></div>');
+    } else if (location.hostname.endsWith("shotcut.com")) {
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutcom_Desktop_728_1"></div>');
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutcom_Mobile_300_1"></div>');
+    } else {
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutapp_Desktop_728_1"></div>');
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutapp_Mobile_300_1"></div>');
+    }
+</script>
 
 * Will be replaced with the ToC
 {:toc}
@@ -46,12 +52,18 @@ the Help menu do link out to this web site. If you have files on a fast
 your operating system.
 
 * * *
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutorg_Desktop_728_2'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutorg_Mobile_300_2'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutcom_Desktop_728_2'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutcom_Mobile_300_2'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutapp_Desktop_728_2'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutapp_Mobile_300_2'></div>
+<script>
+    if (location.hostname.endsWith("shotcut.org")) {
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutorg_Desktop_728_2"></div>');
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutorg_Mobile_300_2"></div>');
+    } else if (location.hostname.endsWith("shotcut.com")) {
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutcom_Desktop_728_2"></div>');
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutcom_Mobile_300_2"></div>');
+    } else {
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutapp_Desktop_728_2"></div>');
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutapp_Mobile_300_2"></div>');
+    }
+</script>
 
 ## Why does it crash on Windows upon launch?
 
@@ -170,12 +182,18 @@ remove your fingers from the JKL: while holding down K, tap J to step
 left or tap L to step right.
 
 * * *
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutorg_Desktop_728_2'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutorg_Mobile_300_2'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutcom_Desktop_728_2'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutcom_Mobile_300_2'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutapp_Desktop_728_2'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutapp_Mobile_300_2'></div>
+<script>
+    if (location.hostname.endsWith("shotcut.org")) {
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutorg_Desktop_728_2"></div>');
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutorg_Mobile_300_2"></div>');
+    } else if (location.hostname.endsWith("shotcut.com")) {
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutcom_Desktop_728_2"></div>');
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutcom_Mobile_300_2"></div>');
+    } else {
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutapp_Desktop_728_2"></div>');
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutapp_Mobile_300_2"></div>');
+    }
+</script>
 
 ## The keyboard shortcuts do not seem to be working.
 
@@ -327,12 +345,18 @@ plist](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptua
 file.
 
 * * *
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutorg_Desktop_728_2'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutorg_Mobile_300_2'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutcom_Desktop_728_2'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutcom_Mobile_300_2'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutapp_Desktop_728_2'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutapp_Mobile_300_2'></div>
+<script>
+    if (location.hostname.endsWith("shotcut.org")) {
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutorg_Desktop_728_2"></div>');
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutorg_Mobile_300_2"></div>');
+    } else if (location.hostname.endsWith("shotcut.com")) {
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutcom_Desktop_728_2"></div>');
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutcom_Mobile_300_2"></div>');
+    } else {
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutapp_Desktop_728_2"></div>');
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutapp_Mobile_300_2"></div>');
+    }
+</script>
 
 ## What is the history of Shotcut?
 

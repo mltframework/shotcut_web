@@ -4,12 +4,18 @@ title: Keyboard Shortcut Reference
 category: help
 ---
 
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutorg_Desktop_728_1'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutorg_Mobile_300_1'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutcom_Desktop_728_1'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutcom_Mobile_300_1'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutapp_Desktop_728_1'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutapp_Mobile_300_1'></div>
+<script>
+    if (location.hostname.endsWith("shotcut.org")) {
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutorg_Desktop_728_1"></div>');
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutorg_Mobile_300_1"></div>');
+    } else if (location.hostname.endsWith("shotcut.com")) {
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutcom_Desktop_728_1"></div>');
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutcom_Mobile_300_1"></div>');
+    } else {
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutapp_Desktop_728_1"></div>');
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutapp_Mobile_300_1"></div>');
+    }
+</script>
 
 ## Main Menu
 
@@ -259,12 +265,18 @@ category: help
 | Increase Text Size           | Ctrl+Alt+=                    | option+command+=
 {:.withborders}
 
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutorg_Desktop_728_2'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutorg_Mobile_300_2'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutcom_Desktop_728_2'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutcom_Mobile_300_2'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutapp_Desktop_728_2'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutapp_Mobile_300_2'></div>
+<script>
+    if (location.hostname.endsWith("shotcut.org")) {
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutorg_Desktop_728_2"></div>');
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutorg_Mobile_300_2"></div>');
+    } else if (location.hostname.endsWith("shotcut.com")) {
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutcom_Desktop_728_2"></div>');
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutcom_Mobile_300_2"></div>');
+    } else {
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutapp_Desktop_728_2"></div>');
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutapp_Mobile_300_2"></div>');
+    }
+</script>
 
 ## Other Notes
 

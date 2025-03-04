@@ -3,12 +3,18 @@ layout: page
 title: Amphibious Zoo Music
 ---
 
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutorg_Desktop_728_1'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutorg_Mobile_300_1'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutcom_Desktop_728_1'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutcom_Mobile_300_1'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutapp_Desktop_728_1'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutapp_Mobile_300_1'></div>
+<script>
+    if (location.hostname.endsWith("shotcut.org")) {
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutorg_Desktop_728_1"></div>');
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutorg_Mobile_300_1"></div>');
+    } else if (location.hostname.endsWith("shotcut.com")) {
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutcom_Desktop_728_1"></div>');
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutcom_Mobile_300_1"></div>');
+    } else {
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutapp_Desktop_728_1"></div>');
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutapp_Mobile_300_1"></div>');
+    }
+</script>
 
 [**Amphibious Zoo**](https://www.amphibiouszoo.com) has graciously donated some
 free royalty-free music to all Shotcut users. These are free to use in commercial
@@ -71,12 +77,18 @@ Since the AIFF format is much larger, it takes longer to download and uses more 
 - AZ082_05_Olimar_WM \[[MP3](/stockmedia/amphibious_zoo/dance/AZ082_05_Olimar_WM.mp3)
   | [AIFF](/stockmedia/amphibious_zoo/dance/AZ082_05_Olimar_WM.aif)\]
 
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutorg_Desktop_728_2'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutorg_Mobile_300_2'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutcom_Desktop_728_2'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutcom_Mobile_300_2'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutapp_Desktop_728_2'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutapp_Mobile_300_2'></div>
+<script>
+    if (location.hostname.endsWith("shotcut.org")) {
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutorg_Desktop_728_2"></div>');
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutorg_Mobile_300_2"></div>');
+    } else if (location.hostname.endsWith("shotcut.com")) {
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutcom_Desktop_728_2"></div>');
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutcom_Mobile_300_2"></div>');
+    } else {
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutapp_Desktop_728_2"></div>');
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutapp_Mobile_300_2"></div>');
+    }
+</script>
 
 ### Funky
 
@@ -125,12 +137,18 @@ Since the AIFF format is much larger, it takes longer to download and uses more 
 - AZ0102_02_Like No One Is Watching_WM \[[MP3](/stockmedia/amphibious_zoo/folk/AZ0102_02_Like%20No%20One%20Is%20Watching_WM.mp3)
   | [AIFF](/stockmedia/amphibious_zoo/folk/AZ0102_02_Like%20No%20One%20Is%20Watching_WM.aif)\]
 
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutorg_Desktop_728_2'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutorg_Mobile_300_2'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutcom_Desktop_728_2'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutcom_Mobile_300_2'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutapp_Desktop_728_2'></div>
-<div data-aaad='true' data-aa-adunit='/22247219933/shotcutapp_Mobile_300_2'></div>
+<script>
+    if (location.hostname.endsWith("shotcut.org")) {
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutorg_Desktop_728_2"></div>');
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutorg_Mobile_300_2"></div>');
+    } else if (location.hostname.endsWith("shotcut.com")) {
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutcom_Desktop_728_2"></div>');
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutcom_Mobile_300_2"></div>');
+    } else {
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutapp_Desktop_728_2"></div>');
+        document.write('<div data-aaad="true" data-aa-adunit="/22247219933/shotcutapp_Mobile_300_2"></div>');
+    }
+</script>
 
 ### Indie Rock
 
