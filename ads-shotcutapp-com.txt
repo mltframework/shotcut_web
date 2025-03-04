@@ -1,14 +1,14 @@
 google.com, pub-1305424236533187, DIRECT, f08c47fec0942fa0
 
-#Updated on 03/04/2025, 23:25:52
+#Updated on 03/04/2025, 23:26:00
 
-OWNERDOMAIN=shotcut.org
+OWNERDOMAIN=shotcutapp.com
 MANAGERDOMAIN=pubmax.com
 
-pubmax.com, 23104, DIRECT
+pubmax.com, 23106, DIRECT
 pubmax.com, 138, DIRECT
-adapex.io, s2989, DIRECT
-truvid.com, 1010215, DIRECT
+adapex.io, s3000, DIRECT
+truvid.com, 1010216, DIRECT
 
 #MediaFuse
 mediafuse.com, 744, DIRECT
