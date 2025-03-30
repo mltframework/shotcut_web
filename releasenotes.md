@@ -45,7 +45,7 @@ information.
 - Fixed key repeat for the previous/next shortcuts in **Player** menu.
 - Added a **Not In a Bin** smart bin to **Playlist**.
 - Added using the **Ctrl** (**command** on macOS) to constrain moving position to vertical
-  or horizontonal axis in all filters that use the rectangle visual control.
+  or horizontal axis in all filters that use the rectangle visual control.
 - Added `#rgba`, `#yuv`, `#gpu`, and `#10bit` tags to keywords in **Filters** for search.
 - Added an icon to **Timeline** clips to indicate when it has filters.
 - Fixed **Export > Reframe** causes **Video > Scan mode** to be interlaced even when it shows progressive.
