@@ -282,8 +282,16 @@ category: help
 
 ### Player
 
-Press and hold <kbd>Shift</kbd>+<kbd>Alt</kbd> to **skim** - scrub/seek using the horizontal
+- Press and hold <kbd>Shift</kbd>+<kbd>Alt</kbd> to **skim** - scrub/seek using the horizontal
 position of the mouse cursor without clicking and dragging.
+- When a filter has a rectangular visual control:
+  - Hold <kbd>Shift</kbd> to move it (change **Position**).  
+    IMPORTANT: You must first click somewhere inside the rectangle to give it focus.
+  - Hold <kbd>Ctrl</kbd> (<kbd>command</kbd> on macOS) to constrain movement to be strictly
+    horizontal or vertical.
+  - Hold <kbd>Alt</kbd> (<kbd>option</kbd> on macOS) to suspend snapping when the grid/guides
+    are turned on.
+  - All of the above keys can be combined.
 
 ### Timeline
 
@@ -314,6 +322,14 @@ while clicking the clips.
 
 ### Mouse Wheel
 
+#### Player
+
+- Press and hold the wheel and drag to pan the view when zoomed in.
+- When a filter has a rectangular visual control:
+  - The wheel zooms in/out.
+  - Hold <kbd>Ctrl</kbd> (<kbd>command</kbd>) to rotate.
+  - Hold <kbd>Alt</kbd> (<kbd>option</kbd> on macOS) to suspend snapping to 0, 90, 180, 270, or 360 degrees.
+
 #### Playlist
 
 - scroll vertically
@@ -323,8 +339,9 @@ while clicking the clips.
 
 - scroll horizontally*
 - use <kbd>Alt</kbd> to scroll vertically
+- press and hold the wheel to drag (scroll) the view
 - use <kbd>Shift</kbd> to change track height
-- use <kbd>Ctrl</kbd> (<kbd>command</kbd> on macOS) to zoom in/out (change time scale)
+- use <kbd>Ctrl</kbd> (<kbd>command</kbd> on macOS) to zoom in/out
 
 \* NOTE: On macOS, in order to scroll Timeline or Keyframes horizontally with a mouse wheel (not Magic Mouse or track pad), you must also use *one* of the following:
 - <kbd>control</kbd> (not <kbd>command</kbd>)
@@ -332,9 +349,9 @@ while clicking the clips.
 - <kbd>control</kbd>+<kbd>command</kbd>
 - <kbd>option</kbd>+<kbd>command</kbd>
 
-#### Notes
+#### Player
 
-Use <kbd>Ctrl</kbd> (<kbd>command</kbd> on macOS) to zoom (change text size).
+- 
 
 #### Numeric Fields
 

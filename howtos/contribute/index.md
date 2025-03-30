@@ -15,6 +15,10 @@ collaboration web site to translate the Shotcut user interface.
 Additional languages are already started but have not yet reached the
 60% minimum level to be included in a Shotcut release.
 
+Please do not open a pull request to update a translation. Your request
+will be rejected unless it is for the English language to add a plural form
+or disambiguation comment.
+
 Support Other Users
 -------------------
 
@@ -75,7 +79,14 @@ some SDKs with setup instructions. Of course, you are free to try to work on
 the Shotcut code another way, but there is no help provided for that as it gets
 very complicated quickly.
 
+Your code format must be consistent with ours and will be checked automatically
+using clang-format version 14. You can get that and run something like `ninja clang-format`
+and/or `ninja clang-format-check`.
+
 [How To Use the Windows SDK]({{ "/notes/windowsdev/" | prepend: site.baseurl }})  
 
 All code contributions should assign copyright to Meltytech, LLC; however,
 exceptions may be considered for a major contribution.
+
+See our [User Interface Conventions]({{ "/notes/ui-conventions/" | prepend: site.baseurl }}) for
+info about usage of case, alignment, and spacing.

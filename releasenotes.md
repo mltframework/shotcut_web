@@ -23,7 +23,43 @@ These are brief notes about known problems and feature additions. See
 log](https://github.com/mltframework/shotcut/commits/master) for more
 information.
 
-##### Release 25.01.xx
+##### Release 25.03.29
+
+- Fixed opening a project can be slow or make app unresponsive if **Settings > Playlist > View mode** is **Icons** (broke in v25.01).
+- Fixed automatic pause--such as when adding a filter--does not update the player's play button state (broke in v25.01).
+- Fixed a crash on multiple **Timeline** undo and redo operations.
+- Added **Text style preset** to **Subtitles > Generate Text on Timeline**.
+- Added **Copy Current** and **Copy All** to **Filters**.
+- Reduced the range of **Gamma** and **Gain** in the **Color Grading** filter.
+- Added the project **Video Mode** to the window title.
+- Added **Vertical** and **Horizontal** parameters to the **No Sync** video filter.
+- Fixed the **Size, Position & Rotate** filter's visual control with non-square pixels.
+- Fixed trimming twice ruins zoom keyframes in **Size, Position & Rotate** filter.
+- Block adding a new job that writes to the same file as a pending or running job.
+- Added **Toggle Filter Overlay** to the **Player** menu.
+- Fixed double-clicking a **Playlist** item that is in a **Bin** may open wrong clip.
+- Fixed **Paste filters** is not adding an **Undo** item to **History**.
+- Fixed the **Amount** keyframes button always disabled in the **360: Equirectangular to Stereogaphic** video filter.
+- Fixed a crash bug after **Undo** and **Redo** after moving clips in **Timeline**.
+- Added **360: Cap Top & Bottom** and **360: Equirectangular Wrap** video filters.
+- Fixed key repeat for the previous/next shortcuts in **Player** menu.
+- Added a **Not In a Bin** smart bin to **Playlist**.
+- Added using the **Ctrl** (**command** on macOS) to constrain moving position to vertical
+  or horizontonal axis in all filters that use the rectangle visual control.
+- Added `#rgba`, `#yuv`, `#gpu`, and `#10bit` tags to keywords in **Filters** for search.
+- Added an icon to **Timeline** clips to indicate when it has filters.
+- Fixed **Export > Reframe** causes **Video > Scan mode** to be interlaced even when it shows progressive.
+- Fixed trim handles on **Timeline** clip when it is very short.
+- Fixed **Timeline > Split** followed by multiple undo and redo may affect attached filters.
+- Fixed playhead in **Keyframes** incorrect after switching filters.
+- Added "ITU-R BT.2020" to **Video Mode > Custom > Add** and **Output > Properties**.
+- Fixed handling for Windows shortcuts and macOS aliases in **Files**.
+- Glaxnimate no longer launches automatically after **Open Other > Animation > Add to Timeline**. Now, you need to click **Properties > Edit**. This addresses the video background in Glaxnimate.
+- Upgraded whisper.cpp to version 1.7.4
+- Upgraded bigsh0t (360 video filters) to version 2.7
+
+
+##### Release 25.01.25
 
 - Added **Bins** and media type & text search to **Playlist**.
 - Added **View > Files** panel.
