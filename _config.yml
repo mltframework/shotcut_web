@@ -38,6 +38,8 @@ social:
     url: https://www.facebook.com/shotcutapp/
   - title: x-twitter
     url: https://x.com/shotcutapp
+  - title: youtube
+    url: https://www.youtube.com/@ShotcutApp
     
 # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
 address:
