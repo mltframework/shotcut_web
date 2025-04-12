@@ -70,8 +70,8 @@ To avoid ads and get automatic updates:<br>
 {:.win}
 
 {:.mac}
-##### macOS 11 - 14
-<small>(64-bit macOS 11+)</small>  
+##### macOS 12 - 15
+<small>(64-bit macOS 12+)</small>  
 {:.mac}
 
 {:.mac}
@@ -81,6 +81,16 @@ To avoid ads and get automatic updates:<br>
 
 {:.mac}
 &nbsp;
+
+{:.mac}
+##### macOS 11
+<small>(The last version to support macOS 11 is 24.11.17)</small>
+{:.mac}
+
+{:.mac}
+|-----------------------
+| [macOS universal](https://sourceforge.net/projects/shotcut/files/v24.11.17/shotcut-macos-241117.dmg/download)
+{:.withborders}
 
 {:.mac}
 ##### macOS 10.14 & 10.15
