@@ -31,6 +31,8 @@ to download.
 
 {:.win}
 ##### Windows 10/11 on Intel or AMD CPU
+<small>(minimum Windows 10 version is build 1809 "October 2018 Update")</small>
+{:.win}
 
 <div class="win" style='float: right; text-align: center'>
 To avoid ads and get automatic updates:<br>
