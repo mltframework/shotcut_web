@@ -21,21 +21,22 @@ category: other
 In no particular order or estimated delivery time:
 
 - quick effects VUI
+- make it easy to add 0.5 or 1 second transition on timeline
 - integration for external editor (e.g. Audacity, GIMP, etc. via configurable launcher and file watcher)
 - open HEIC images (already works on macOS, work-in-progress in FFmpeg)
-- ITU-R BT.2020 wide color gamut
 - HDR: SMPTE 2084 (PQ) and ITU-R BT.2100 (HLG)
 - fullscreen playback on current/single screen with on-screen controls
 - audio noise reduction
 - project media management (automatically copy or move to project folder, automatically convert)
-- set metadata (artist, title, etc.) in encode
+- set metadata (artist, title, etc.) in export
+- embed markers as chapters in export
 - archive project
 - additional editing modes/operations (slip, slide, roll)
-- audio mixer console (one strip per track plus output)
 - surround panning
 - raw video processing - e.g. CinemaDNG
 - multi-camera editing features
 - convert producer UIs to QML
+- add keyframes for generators
 - add partik0l producer
 - circle VUI control for Vignette and Crop: Circle
 - generic filter UI (MLT service name and table of parameters)
@@ -48,7 +49,6 @@ In no particular order or estimated delivery time:
 - add presets to Filters search
 - add option to view timeline waveform per channel
 - add transitions to Playlist
-- make it easy to add 0.5 or 1 second transition on timeline
 - add VUI toggle
 - add speed param to Export > Codec
 - add option to reduce number of encode threads for Convert, Reverse, and Proxy jobs
