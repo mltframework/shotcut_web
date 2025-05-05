@@ -24,7 +24,7 @@ In no particular order or estimated delivery time:
 - make it easy to add 0.5 or 1 second transition on timeline
 - integration for external editor (e.g. Audacity, GIMP, etc. via configurable launcher and file watcher)
 - open HEIC images (already works on macOS, work-in-progress in FFmpeg)
-- HDR: SMPTE 2084 (PQ) and ITU-R BT.2100 (HLG)
+- SMPTE 2084 PQ HDR
 - fullscreen playback on current/single screen with on-screen controls
 - audio noise reduction
 - project media management (automatically copy or move to project folder, automatically convert)
@@ -35,9 +35,9 @@ In no particular order or estimated delivery time:
 - surround panning
 - raw video processing - e.g. CinemaDNG
 - multi-camera editing features
-- convert producer UIs to QML
+- convert generator UIs to QML
 - add keyframes for generators
-- add partik0l producer
+- add partik0l generator
 - circle VUI control for Vignette and Crop: Circle
 - generic filter UI (MLT service name and table of parameters)
 - OpenFX and VST2 plugins using generic filter UI
@@ -49,17 +49,14 @@ In no particular order or estimated delivery time:
 - add presets to Filters search
 - add option to view timeline waveform per channel
 - add transitions to Playlist
-- add VUI toggle
 - add speed param to Export > Codec
 - add option to reduce number of encode threads for Convert, Reverse, and Proxy jobs
 - improve the appearance of video-with-alpha clips by showing with checkered background in source player
-- hardware accelerated decoding
+- hardware accelerated decoding for GPU Effects
 - background removal
 - universal search
-- media library (extend Files with metadata and recursive folder)
 - read Kyno XML for name, comments, tags
 - simple screen capture through libobs or ffmpeg
-- move generators from Open Other elsewhere, leave network and devices in Open Other
 - add a base VUI that adds indicators for in and out points and a toolbar to invoke filters:
   Text, Size/Position/Rotate, Crop, Color, Chroma Key: Simple, White Balance
 - improved UI for nested projects (MLT XML clips)
@@ -70,7 +67,7 @@ In no particular order or estimated delivery time:
 - add Recent and Most Used tabs to Filters chooser
 - typewriter effect for Text: Simple and Text: Rich
 - more columns and sorting in Playlist
-- clip markers
+- clip markers or flags
 - turn off all effects switch
 - aspect ratio lock for VUI rectangle control - e.g. when used with Crop: Rectangle
 - motion blur for motion-animated things like Text and Size/Position/Rotate
