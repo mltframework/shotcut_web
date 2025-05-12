@@ -11,7 +11,7 @@ category: notes
     If your Qt installer no longer includes this you can [get it from our S3 bucket](https://s3.amazonaws.com/misc.meltymedia/shotcut-build/qt-6.8.1-x64-mingw.txz), and
     extract this alongside your other Qt versions, for example `C:\Qt`.  
     (You can get `tar` and `xz` needed to extract this from `msys2`.)
-  - [Shotcut SDK (1.1 GB current version 25.03.29)](https://s3.amazonaws.com/builds.us.meltytech/shotcut/shotcut-win64-sdk-250329.txz)  
+  - [Shotcut SDK (1.1 GB current version 25.05.11)](https://s3.amazonaws.com/builds.us.meltytech/shotcut/shotcut-win64-sdk-250511.txz)  
     Extract it to `C:\Projects`
 
 1. Extract the Shotcut SDK .zip file to a new folder in `C:\` named "Projects" (`C:\Projects`).

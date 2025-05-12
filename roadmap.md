@@ -20,6 +20,7 @@ category: other
 
 In no particular order or estimated delivery time:
 
+- duck audio
 - quick effects VUI
 - make it easy to add 0.5 or 1 second transition on timeline
 - integration for external editor (e.g. Audacity, GIMP, etc. via configurable launcher and file watcher)

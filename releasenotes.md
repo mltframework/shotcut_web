@@ -23,6 +23,36 @@ These are brief notes about known problems and feature additions. See
 log](https://github.com/mltframework/shotcut/commits/master) for more
 information.
 
+##### Release 25.05.11
+
+- Fixed **Filters > Copy Current/All** ignores disabled filters.
+- Fixed ability to select or drag short **Timeline** clips (broke in v25.03).
+- Added adjustable track headers width to **Timeline**.
+- Added **Alpha Strobe** video filter.
+- Added **Freeze Frame** to **Timeline**.
+- Fixed possible crash when selecting a track head.
+- Added **File > Rereun Filter Analysis**.
+- Fixed **Text: Rich** scroll presets (broke in v25.03).
+- Added an item count to **Playlist**.
+- Fixed may crash in **Files** dock on startup (broke in v25.01).
+- Added **File > New** submenu with items for **Project** and generators.
+- Added **Add Generator** to **Timeline** toolbar.
+- Fixed **Speed** time filters reset when they are reloaded in the UI.
+- Changed the **Convert to Edit-friendly** dialog to make it obvious that "better" and "best" options create very large files.
+- Fixed generating proxy for videos with BT.2020 color space.
+- Added **Settings > Preview Scaling > 1080p**.
+- Fixed **Fade Out Audio** in a filter set.
+- Fixed **Timeline > Record Audio** is distorted on macOS.
+- Fixed SDI/HDMI capture/monitor not working with recent Blackmagic Design drivers.
+- Added **Settings > Player > External Monitor > DeckLink Gamma** with SDR and HLG HDR options.
+- Added HLG color transfer/gamma to **GPU Effects**.
+- Fixed swapped C/LF channels in 5.1 sound output in DeckLink SDI/HDMI external monitor.
+- Improved compositing in **Obscure With Blur**, **Obscure With Mosaic**, and **Mask: Apply**. Now, they are better at concealing details.
+- Moved the **Files > Go Up** button to top left to be more like OS file browsers.
+- Fixed adding media with unknown or very long duration (for example, more than 7 days). Now, it prompts for the duration.
+- Upgraded Qt, MLT, Rubberband, and SVT-AV1.
+
+
 ##### Release 25.03.29
 
 - Fixed opening a project can be slow or make app unresponsive if **Settings > Playlist > View mode** is **Icons** (broke in v25.01).
