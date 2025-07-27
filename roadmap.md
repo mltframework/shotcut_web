@@ -32,8 +32,7 @@ In no particular order or estimated delivery time:
 - set metadata (artist, title, etc.) in export
 - embed markers as chapters in export
 - archive project
-- additional editing modes/operations (slip, slide, roll)
-- surround panning
+- additional editing modes/operations (slip, slide)
 - raw video processing - e.g. CinemaDNG
 - multi-camera editing features
 - convert generator UIs to QML

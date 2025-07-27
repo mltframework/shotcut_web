@@ -303,6 +303,8 @@ position of the mouse cursor without clicking and dragging.
 - Double-click a fade in/out control (circle) to toggle it between one second and none.
 - Hold <kbd>Ctrl</kbd> (<kbd>command</kbd> on macOS) while dragging one side of a marker to
   change its duration.
+- Hold <kbd>Ctrl</kbd> (<kbd>command</kbd> on macOS) while trimming a clip to also trim the neighbor clip (so-called "roll edit").
+- Hold <kbd>Shift</kbd> to ripple-trim when **Ripple** is turned off.
 
 ### Multiple Selection in Playlist and Timeline
 

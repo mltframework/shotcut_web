@@ -23,6 +23,54 @@ These are brief notes about known problems and feature additions. See
 log](https://github.com/mltframework/shotcut/commits/master) for more
 information.
 
+##### Release 25.07
+
+- Fixed exporting projects containing only Generator clips on Windows (broke in v25.05).
+- Added **Outline** video filter that uses the input alpha channel, useful with rich text or assets with a transparent background. (This means that it will not work as expected when used after a text filter on a video clip; rather, you must use a text clip on an upper track.)
+- Fixed dropdown menus using **Settings > Theme > System** on Windows.
+- Improved the **System** theme to follow the operating system palette.
+- Added **Settings > Theme > System Fusion** that combines the operating *system* palette with the monochrome, symbolic icons of the *Fusion* themes.
+- Added a **Soft Focus** filter set.
+- Fixed converting 10-bit full to limited range (broke in v25.01).
+- Fixed **Mask: Apply** with multiple **Mask: Simple Shape** (broke in v25.05)
+- Fixed **Balance** and **Pan** audio muted channels if audio channels > 2.
+- Fixed **Export > Use hardware encoder** fails with H.264 on macOS 15.
+- Fixed **Properties > Convert** or **Reverse** for iPhone 16 Pro videos with Ambisonic audio.
+- Fixed a single frame fade out filter would either mute or make black.
+- Fixed repairing a project (e.g. broken file links) with proxy turned on.
+- Fixed doing **Freeze Frame** on the first frame of a clip.
+- Added the ability to add/use multiple **Mask: Apply** filters.
+- Added a Whisper.cpp (GGML) model downloader to the **Speech to Text** dialog.
+  A model is no longer included in the download and installation reducing their sizes.
+- Added support for 4 channels in the **Copy Channel** audio filter.
+- Added fader and surround balance to the **Balance** audio filter if channels > 2.
+- Added the ability to drag the waveform peak line to adjust gain.
+- Added **Settings > Timeline > Adjust Clip Gain/Volume**.
+- Added **Audio/Video duration** to the **Slideshow Generator** dialog, defaults to 4 hours.
+- Added (target) **Channels** toggle buttons to many audio filters, especially useful for surround work:
+  * Band Pass
+  * Compressor
+  * Delay
+  * Downmix
+  * Equalizer: 3-Band
+  * Equalizer: 15-Band
+  * Equalizer: Parametric
+  * Expander
+  * Gain/Volume
+  * High Pass
+  * Low Pass
+  * Limiter
+  * Mute
+  * Noise Gate
+  * Notch
+- Added support for **Scrub While Dragging** to Timeline trimming.
+- Added rolling an edit/trim to **Timeline**.
+  Hold <kbd>Ctrl</kbd> (<kbd>command</kbd> on macOS) while trimming to also trim the neighbor clip.
+- Added hold <kbd>Shift</kbd> to ripple-trim when **Ripple** is turned off.
+- Added **French (Canadian)** and **Lithuanian** translations.
+- Changed the default **Export > Audio > Rate control** to **Average Bitrate** for AAC, Opus, and MP3.
+
+
 ##### Release 25.05.11
 
 - Fixed **Filters > Copy Current/All** ignores disabled filters.
