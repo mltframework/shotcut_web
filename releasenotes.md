@@ -39,6 +39,7 @@ information.
 - Fixed a single frame fade out filter would either mute or make black.
 - Fixed repairing a project (e.g. broken file links) with proxy turned on.
 - Fixed doing **Freeze Frame** on the first frame of a clip.
+- Fixed **Load Keyframes from Motion Tracker** empty after opening something into the **Source** player.
 - Added the ability to add/use multiple **Mask: Apply** filters.
 - Added a Whisper.cpp (GGML) model downloader to the **Speech to Text** dialog.
   A model is no longer included in the download and installation reducing their sizes.
