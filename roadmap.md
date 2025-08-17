@@ -30,7 +30,6 @@ In no particular order or estimated delivery time:
 - audio noise reduction
 - project media management (automatically copy or move to project folder, automatically convert)
 - set metadata (artist, title, etc.) in export
-- embed markers as chapters in export
 - archive project
 - additional editing modes/operations (slip, slide)
 - raw video processing - e.g. CinemaDNG
