@@ -23,7 +23,17 @@ These are brief notes about known problems and feature additions. See
 log](https://github.com/mltframework/shotcut/commits/master) for more
 information.
 
-##### Release 25.07
+##### Release 25.08.16
+
+- Fixed **Gain/Volume** filter from a previous version project does not show its UI or keyframes (broke in v25.07).
+- Fixed artifacts in **Gain/Volume**, **Fade In Audio**, and **Fade Out Audio** filters (broke in v25.07).
+- Fixed frequent crashing in Fedora Linux RPM package (broke in v25.05).
+- Fixed converting BT.709 color space to BT.2020.
+- Added BT.2020 color space support to the preview. 
+- Added **Embed Markers as Chapters** to export job context menu.
+
+
+##### Release 25.07.26
 
 - Fixed exporting projects containing only Generator clips on Windows (broke in v25.05).
 - Added **Outline** video filter that uses the input alpha channel, useful with rich text or assets with a transparent background. (This means that it will not work as expected when used after a text filter on a video clip; rather, you must use a text clip on an upper track.)
