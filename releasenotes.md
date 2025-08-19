@@ -30,7 +30,6 @@ information.
 - Fixed frequent crashing in Fedora Linux RPM package (broke in v25.05).
 - Fixed converting BT.709 color space to BT.2020.
 - Added BT.2020 color space support to the preview. 
-- Fixed **Export File** with `&` in the path or name saves wrong name.
 - Added **Embed Markers as Chapters** to export job context menu.
 
 
