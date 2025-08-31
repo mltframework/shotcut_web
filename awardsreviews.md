@@ -42,6 +42,9 @@ GameTechSuperSham
 <iframe width="640" height="360" src="//www.youtube.com/embed/zbeuUvkn_Gcwww.youtube-nocookie.com/embed/-ZiAgwIzBGc?list=PLy7k-GJ461uvIDBD0qpEy4E5ixfSfryJW" frameborder="0" allowfullscreen="1">
 </iframe>
 
+- [eBool](https://www.ebool.com/reviews/shotcut)
+- [novaFUTURE](https://novafuture.org/open-source/shotcut-the-free-and-open-source-video-editor-that-leaves-paid-solutions-in-the-dust/)
+- [XDA](www.xda-developers.com/regret-not-switching-open-source-video-editor-sooner/)
 - [techradar pro](https://www.techradar.com/reviews/shotcut)
 
 
