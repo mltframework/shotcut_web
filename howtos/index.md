@@ -18,7 +18,7 @@ title: How To Articles
 </script>
 
 - #### [Online Shotcut User Guide](https://forum.shotcut.org/t/table-of-contents/43285)
-- #### [PDF Shotcut User Guide (English)](Shotcut%20User%20Guide.pdf)
+- #### [PDF Shotcut User Guide (English)](/stockmedia/Shotcut%20User%20Guide.pdf)
 - #### [Tutorials in the Forum](https://forum.shotcut.org/c/tutorial/5)
 
 {% for page in sorted_pages %}
