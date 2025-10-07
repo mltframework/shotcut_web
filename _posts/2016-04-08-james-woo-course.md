@@ -5,7 +5,7 @@ author: Dan Dennedy
 category: blog
 ---
 Shotcut power user, James Woo, has created a wonderful
-[course on how to use Shotcut](https://gumroad.com/a/864284499/tixrdc).
+[course on how to use Shotcut](https://jamesw.gumroad.com/l/kivyb).
 
 Currently, it contains 24 videos and costs $25, but it only costs $20 using the
 coupon code in the link on this blog post! As the

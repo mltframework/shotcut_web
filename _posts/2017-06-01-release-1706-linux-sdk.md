@@ -19,7 +19,7 @@ includes QtWebKit. These requirements still make development on Linux
 troublesome for new or casual contributors.
 
 Lastly, I want to remind readers of the [video instruction course by James Woo
-](https://gumroad.com/a/864284499/tixrdc).
+](https://jamesw.gumroad.com/l/kivyb).
 Yeah, there are quite a few YouTube videos now including our own, but they are
 so-so. James' series is clear, concise, comprehensive, and a good value. There
 are now over 40 tutorials for only $29!
