@@ -9,7 +9,7 @@ We pledge that our downloads are always free of
 malware, spyware, and adware. However, we can only provide that guarantee if you come to this website
 to download.
 
-#### Current Version: 25.08.16
+#### Current Version: 25.10.31
 
 <div class="OSTEST">
   <p>
@@ -41,7 +41,7 @@ To avoid ads and get automatic updates:<br>
 
 {:.win}
 |-----------------------|-------------------
-| [Windows installer](https://sourceforge.net/projects/shotcut/files/v25.08.16/shotcut-win64-250816.exe/download) | [Windows portable zip](https://sourceforge.net/projects/shotcut/files/v25.08.16/shotcut-win64-250816.zip/download)
+| [Windows installer](https://sourceforge.net/projects/shotcut/files/v25.10.31/shotcut-win64-25.10.31.exe/download) | [Windows portable zip](https://sourceforge.net/projects/shotcut/files/v25.10.31/shotcut-win64-25.10.31.zip/download)
 {:.withborders}
 
 {:.win}
@@ -52,7 +52,7 @@ To avoid ads and get automatic updates:<br>
 
 {:.win}
 |-----------------------|-------------------
-| [Windows installer](https://sourceforge.net/projects/shotcut/files/v25.08.16/shotcut-win_ARM-250816.exe/download) | [Windows portable zip](https://sourceforge.net/projects/shotcut/files/v25.08.16/shotcut-win_ARM-250816.zip/download)
+| [Windows installer](https://sourceforge.net/projects/shotcut/files/v25.10.31/shotcut-win_ARM-25.10.31.exe/download) | [Windows portable zip](https://sourceforge.net/projects/shotcut/files/v25.10.31/shotcut-win_ARM-25.10.31.zip/download)
 {:.withborders}
 
 {:.win}
@@ -78,7 +78,7 @@ To avoid ads and get automatic updates:<br>
 
 {:.mac}
 |-----------------------
-| [macOS universal](https://sourceforge.net/projects/shotcut/files/v25.08.16/shotcut-macos-250816.dmg/download)
+| [macOS universal](https://sourceforge.net/projects/shotcut/files/v25.10.31/shotcut-macos-25.10.31.dmg/download)
 {:.withborders}
 
 {:.mac}
@@ -108,7 +108,7 @@ To avoid ads and get automatic updates:<br>
 **Important**: If you have a Mac that is from 2013 or earlier you might experience a video preview color problem due to our migration to [Apple Metal](https://developer.apple.com/metal/). In that case, use [version 22.12.21](https://sourceforge.net/projects/shotcut/files/v22.12.21/shotcut-macos-221221.dmg/download).
 
 {:.mac}
-An [unsigned app bundle is available](https://sourceforge.net/projects/shotcut/files/v25.08.16/shotcut-macos-unsigned-250816.dmg/download) so that you
+An [unsigned app bundle is available](https://github.com/mltframework/shotcut/releases/download/v25.10.31/shotcut-macos-unsigned-25.10.31.dmg) so that you
 can modify the build per the Free Software license agreement.
 
 ---
@@ -128,11 +128,11 @@ alt='Download on Snap Store'
 src='https://raw.githubusercontent.com/snapcore/snap-store-badges/master/EN/%5BEN%5D-snap-store-black.png'></a>
 </div>
 
-<small class="linux">(64-bit Mint 20+, Ubuntu/Pop!_OS 20.04+, Debian 11+, Fedora 32+, Manjaro 20.2+, MX Linux 21+, elementary OS 6+)</small>
+<small class="linux">(64-bit Mint 21+, Ubuntu/Pop!_OS 22.04+, Debian 12+, Fedora 36+, Manjaro 21.3+, MX Linux 23+, elementary OS 7+)</small>
 
 {:.linux}
 |-----------------------|-------------------
-| [Linux portable tar](https://sourceforge.net/projects/shotcut/files/v25.08.16/shotcut-linux-x86_64-250816.txz/download) | [Linux AppImage](https://sourceforge.net/projects/shotcut/files/v25.08.16/shotcut-linux-x86_64-250816.AppImage/download)
+| [Linux portable tar](https://sourceforge.net/projects/shotcut/files/v25.10.31/shotcut-linux-x86_64-25.10.31.txz/download) | [Linux AppImage](https://sourceforge.net/projects/shotcut/files/v25.10.31/shotcut-linux-x86_64-25.10.31.AppImage/download)
 {:.withborders}
 
 {:.linux}
@@ -158,11 +158,11 @@ the portable tar.
 ##### Other
 
 File checksums for downloads are available in
-[md5sum](https://github.com/mltframework/shotcut/releases/download/v25.08.16/md5sums.txt)
-or [sha256sum](https://github.com/mltframework/shotcut/releases/download/v25.08.16/sha256sums.txt) format.
+[md5sum](https://github.com/mltframework/shotcut/releases/download/v25.10.31/md5sums.txt)
+or [sha256sum](https://github.com/mltframework/shotcut/releases/download/v25.10.31/sha256sums.txt) format.
 
 [Source code
-archive](https://github.com/mltframework/shotcut/releases/download/v25.08.16/shotcut-src-250816.txz)
+archive](https://github.com/mltframework/shotcut/releases/download/v25.10.31/shotcut-src-25.10.31.txz)
 / [GitHub repository](https://github.com/mltframework/shotcut)
 
 [Older versions](https://github.com/mltframework/shotcut/releases/) are

@@ -23,6 +23,48 @@ These are brief notes about known problems and feature additions. See
 log](https://github.com/mltframework/shotcut/commits/master) for more
 information.
 
+##### Release 25.10.31
+
+- Fixed export with '&' in the file path or name.
+- Fixed alpha channel decoding Ut Video with alpha channel.
+- Fixed starting the Linux AppImage if AppImageLauncher is installed.
+- Fixed **Rejoin with Next Clip** duplicates filters.
+- Fixed advanced keyframes for **Text: Rich**.
+- Some under-the-hood changes in preparation for further end-to-end 10-bit processing on the CPU,
+  but the user visible effect in this version is a different set of blending modes in track properties
+  and the **Blend Mode** video filter.
+- Changed **Export > Search** to include file name extension.
+- Changed **Export > Export File** to **Export Video/Audio**.
+- Changed **Settings > Time Format** to default to **Clock**.
+- Changed **Settings > Timeline > Adjust Clip Gain/Volume** to default OFF.
+- Changed **Settings > Timeline > Automatically Add Tracks** to default ON.
+- Added a **Text: Typewriter** video filter.
+- Added **Open With** and **Reload** to **Properties**.
+  - You can think of this as "Edit With" especially useful for images and audio files.
+  - There is a file watcher upon opening with another tool as long as selection (Properties) does not change. If it does, you can use **Reload**. This does not yet reload--whether manual or automatic--every clip object based on this file.
+- Added **Text to Speech** to **Notes** and **Subtitles**.
+  - This uses Docker as like a plugin framework. The engine for this is Kokorodoki, and the model is Kokoro--both of which are not made by us. Do not ask us for more languages or voices.
+  - There are Docker installers for Windows and macOS from docker.com. For Linux, it is usually preferable to get it from your distribution but ensure you get the real docker and not podman or the desktop icon dock bar. On Debian-based systems, it is the `docker.io` package.
+  - The quality with subtitles is heavily dependent upon the timing and duration of each item. If it sounds choppy or cut-off, you either need to increase the speech speed and/or the item durations. Also, multi-line subtitle items are discouraged because that introduces a pause as it thinks it is like a new paragraph.
+- Added **New > Screen Snapshot** and **Screen Recording**.
+  - Not yet available for Flatpak on Linux. 
+  - These simply invoke `screenshot` on macOS and *Snipping Tool* on Windows. On Linux, it uses bundled ffmpeg on X11; on Wayland, it uses GNOME Shell, KDE Spectacle, or `obs` if neither of those.  
+  - On macOS and Linux, Screen Recording starts a Shotcut job in **View > Jobs**. To stop recording right-click the job and choose **Stop This Job**.
+  - On Windows, Screen Recording does not create a job or automatically open the capture file. You need to either configure Snipping Tool to save to a file or click the notification that appears to view it from which you can save it. Then, you need to manually locate it and open it in Shotcut using either **File > Open**, the **Files** panel, or drag-n-drop from Explorer.
+- Added **New > Image/Video from HTML**.
+  - This requires Google Chrome or Chromium.
+  - I could not get Microsoft Edge to work even though it is based on Chromium; they changed the headless command line launch behavior enough such that is not clear how to get it working.
+  - Please see the stock **Presets** for testing and examples.
+  - The stock presets also demonstrate a template facility for up to 3 lines of text. Technically, you can substitute any piece of HTML, CSS, or JavaScript with this except it will not be obvious to a user that a line, for example, corresponds to a color or size and its special format.
+  - It is designed to make it easy to copy from codepen.io, but Shotcut does not include pre-preprocessors for things like SCSS or TypeScript. Therefore, in codepen.io click the <kbd>V</kbd> button in the top right corner of the edit block to choose **View Compiled** before copying.
+  - This does not support WebGL, and it might not support video either.
+  - **Generate Video** is limited to 15 frame-per-second for performance reasons. A somewhat modern or fast computer and SSD hard drive are recommended.
+  - Generate automatically opens the result in the **Source** viewer so you can preview it with its HTML input still in place. Once you add it to **Playlist** or **Timeline**, **Properties** now reflects the image or video and no longer shows the HTML inputs.
+- The minimum Linux glibc version increased for this release to 2.35 (Ubuntu 22.04).
+- Upgraded to FFmpeg 8.
+- Upgraded librarues: SVT-AV1, libaom, dav1d, libvpx, libwebp, and whisper.cpp.
+
+
 ##### Release 25.08.16
 
 - Fixed **Gain/Volume** filter from a previous version project does not show its UI or keyframes (broke in v25.07).

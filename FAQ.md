@@ -30,7 +30,7 @@ category: help
 ## What are the minimum system requirements?
 
 Operating system: 64-bit Windows 10 (build 1809) - 11, Apple macOS 12 - 15, or
-64-bit Linux with at least glibc 2.31.
+64-bit Linux with at least glibc 2.35.
 
 CPU: x86-64 Intel or AMD, or 64-bit ARM e.g. Apple Silicon or Qualcomm Snapdragon X; at least one 2 GHz core for SD, 4 cores for
 HD, and 8 cores for 4K.

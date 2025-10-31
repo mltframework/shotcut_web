@@ -8,14 +8,15 @@ category: notes
 
   - [Qt Creator](https://www.qt.io/download-open-source/)
   - Qt SDK version 6.8 MinGW  
-    If your Qt installer no longer includes this you can [get it from our S3 bucket](https://s3.amazonaws.com/misc.meltymedia/shotcut-build/qt-6.9.1-x64-mingw.txz), and
+    If your Qt installer no longer includes this you can [get it from our S3 bucket](https://s3.amazonaws.com/misc.meltymedia/shotcut-build/qt-6.8.3-x64-mingw.txz), and
     extract this alongside your other Qt versions, for example `C:\Qt`.  
     (You can get `tar` and `xz` needed to extract this from `msys2`.)
-  - [Shotcut SDK (1.0 GB current version 25.08.16)](https://s3.amazonaws.com/builds.us.meltytech/shotcut/shotcut-win64-sdk-250816.txz)  
+  - [Shotcut SDK (1.0 GB current version 25.10.31)](https://s3.amazonaws.com/builds.us.meltytech/shotcut/shotcut-win64-sdk-25.10.31.txz)  
     Extract it to `C:\Projects`
 
 1. Extract the Shotcut SDK .zip file to a new folder in `C:\` named "Projects" (`C:\Projects`).
 2. In Qt Creator open `C:\Projects\Shotcut\src\shotcut\CMakeLists.txt`.
+> NOTE: The following screen shots are outdated.
 3. In the **Configure Project** screen, select your previously configured Kit
    and click **Configure Project**:
    ![Configure Project](configure_project.png)

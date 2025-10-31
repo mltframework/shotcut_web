@@ -22,9 +22,6 @@ In no particular order or estimated delivery time:
 
 - end-to-end 10-bit video processing on the CPU (subset of filters)
 - color management on the CPU
-- text-to-speech
-- remote HTML generator (Chrome DevTools Protocol)
-- integration for external editor (e.g. Audacity, GIMP, etc. via configurable launcher and file watcher)
 - duck audio
 - make it easy to add 0.5 or 1 second transition on timeline
 - audio noise reduction
@@ -32,7 +29,7 @@ In no particular order or estimated delivery time:
 - hardware accelerated decoding for GPU Effects
 - read Kyno XML for name, comments, tags
 - SMPTE 2084 PQ HDR
-- HDR preview
+- HDR preview (in-app, not external)
 - additional editing modes/operations (slip, slide)
 - fullscreen playback on current/single screen with on-screen controls
 - project media management (automatically copy or move to project folder, automatically convert)
@@ -59,7 +56,6 @@ In no particular order or estimated delivery time:
 - improve the appearance of video-with-alpha clips by showing with checkered background in source player
 - background removal
 - universal search
-- simple screen capture through libobs or ffmpeg
 - add a base VUI that adds indicators for in and out points and a toolbar to invoke filters:
   Text, Size/Position/Rotate, Crop, Color, Chroma Key, White Balance
 - improved UI for nested projects (MLT XML clips)
@@ -68,7 +64,6 @@ In no particular order or estimated delivery time:
 - option to include intermediate thumbnails in timeline
 - ability to set the poster frame for a clip
 - add Recent and Most Used tabs to Filters chooser
-- typewriter effect for Text: Simple and Text: Rich
 - more columns and sorting in Playlist
 - clip markers or flags
 - turn off all effects switch
@@ -76,7 +71,6 @@ In no particular order or estimated delivery time:
 - motion blur for motion-animated things like Text and Size/Position/Rotate
 - 8K Video Modes
 - reorganize Video Modes UI
-- outline for Text: Rich
 - face detection
 - curves UI for color
 - convert icons to SVG
