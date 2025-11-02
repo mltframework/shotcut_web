@@ -132,7 +132,7 @@ src='https://raw.githubusercontent.com/snapcore/snap-store-badges/master/EN/%5BE
 
 {:.linux}
 |-----------------------|-------------------
-| [Linux portable tar](https://sourceforge.net/projects/shotcut/files/v25.10.31/shotcut-linux-x86_64-25.10.31.txz/download) | [Linux AppImage](https://sourceforge.net/projects/shotcut/files/v25.10.31/shotcut-linux-x86_64-25.10.31.AppImage/download)
+| [Linux portable tar](https://sourceforge.net/projects/shotcut/files/v25.10.31/shotcut-linux-x86_64-25.11.2.txz/download) | [Linux AppImage](https://sourceforge.net/projects/shotcut/files/v25.10.31/shotcut-linux-x86_64-25.11.2.AppImage/download)
 {:.withborders}
 
 {:.linux}
