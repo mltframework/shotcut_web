@@ -72,7 +72,7 @@ To avoid ads and get automatic updates:<br>
 {:.win}
 
 {:.mac}
-##### macOS 12 - 15
+##### macOS 12 - 26
 <small>(64-bit macOS 12+)</small>  
 {:.mac}
 
