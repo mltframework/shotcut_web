@@ -72,6 +72,7 @@ Windows registry, a bool is stored as a string: true or false.
 | openPath         | string      | the file system path for the file-open dialog
 | opengl           | integer     | Settings > Display Method, in decimal: 0 (Automatic), 15 (OpenGL), 16 (DirectX, Windows only), or 17 (Software)
 |                  |             | This is no longer used on Windows and macOS as of version 23.05.07.
+| processingMode   | integer     | Settings > Processing Mode, one of: 0 (native 8-bit CPU, default), 2 (native 10-bit CPU), 3 (linear 10-bit CPU), 4 (linear 10-bit GPU/CPU)
 | projects         | string list | list of XML project files with full path: comma-separated `recent.ini` text file
 | projectsFolder   | string      | the file system path in which project folders are created
 | recent           | string list | list of recent media and XML files with full path: comma-separated in Linux or Windows INI, multi-string in Windows registry, and array of strings in macOS plist (View > Recent)

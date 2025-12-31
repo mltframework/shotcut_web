@@ -20,13 +20,11 @@ category: other
 
 In no particular order or estimated delivery time:
 
-- end-to-end 10-bit video processing on the CPU (subset of filters)
-- color management on the CPU
 - duck audio
 - make it easy to add 0.5 or 1 second transition on timeline
 - audio noise reduction
 - open HEIC images (already works on macOS, work-in-progress in FFmpeg)
-- hardware accelerated decoding for GPU Effects
+- hardware accelerated decoding
 - read Kyno XML for name, comments, tags
 - SMPTE 2084 PQ HDR
 - HDR preview (in-app, not external)

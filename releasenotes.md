@@ -23,6 +23,60 @@ These are brief notes about known problems and feature additions. See
 log](https://github.com/mltframework/shotcut/commits/master) for more
 information.
 
+##### Release 25.12.30
+
+- Added **Settings > Processing Mode** for video processing. This affects both preview and export.
+  - **Native 8-bit CPU** (same as previous versions without GPU Effects; fast)
+  - **Linear 8-bit CPU** (better color accuracy for interpolated/blended pixels)
+  - **Native 10-bit CPU** (better image quality with 10-bit input or output)
+  - **Linear 10-bit CPU** (double plus good)
+  - **Linear 10-bit GPU/CPU (Experimental)** (GPU Effects enhanced with linear 10-bit CPU filters)
+- Added a visual preset browser for **New > Image/Video from HTML** generator.
+  To add a thumbnail for your custom preset add a file named `<preset-name>.webp` in the preset folder.
+- Added **Chrome** and **Neon Flux** HTML presets.
+- Changed the preset folder for the HTML generator to `presets/HTML`.
+- Fixed dissolve transition damages color (broke in v25.10).
+- Fixed export on Windows not working with some special characters in a filename (broke in v25.10).
+- Fixed **Settings > Player > External Monitor > DeckLink Gamma > HLG HDR** (broke in v25.10).
+- Fixed **Stereo Enhancer** and **Declick Audio** filters (broke in v25.10).
+- Fixed alpha channel is lost from a nested XML clip (broke in v25.10).
+- Fixed 10-bit with amf (AMD) and mf (Windows on Arm) hardware encoders.
+- Fixed **Text: Typewriter** cannot reduce blink rate to 0.
+- Fixed the defaults when using **New > Text > Typewriter**.
+- Added support for mov_text and SSA in **Properties > Extract Subtitles**.
+- Added **Minimize Shotcut** and **Record Audio** to **Screen Snapshot** and **Screen Recording**.
+- Fixed window not properly restored to maximized for **Screen Snapshot**.
+- Fixed the selection rectangle was showing when using **Screen Snapshot** on Linux/X11.
+- Added support for nvenc to **Screen Recording** on Linux/X11.
+- Fixed the UI for the **Downmix** audio filter (broke in v25.05).
+- Added a drop-down to the **Filters** menu's **Video** button: GPU, 10-bit, Color, RGBA, YUV.
+- Fixed custom colors in color dialogs are not saved in Qt 6.9 and up.
+- Fixed clips are still replaced after stopping a **Reverse** or **Convert** job.
+- Fixed **Freeze Frame** is not properly adjusting the start and end of existing filters.
+- Fixed **Toggle Keyframe at Playhead** for **Corner Pin** video filter.
+- Fixed **Chroma Key: Simple** overwrites the alpha channel including padding for a mismatched aspect ratio.
+- Changed the **Filters** menu to default to **Color** filters in the **Color** layout/workspace and **Audio** filters in the **Audio** layout.
+- Changed the VP8/9 WebM presets to offer greater control over quality and bitrate.
+- Changed **New > Animation (Glaxnimate)** to **Drawing/Animation** to clarify not only for animation.
+- Changed **New Project > Project name** to not permit `?` to fix unloadable project.
+- Changed the **Opacity** video filter to increase maximum to 200% in order to decrease translucency.
+- Changed the default for **Settings > Timeline > Automatically Add Tracks** to OFF (changed in v25.10). 
+- Fixed crash on MLT XML with extremely large (>8K) resolution (CVE-2025-65834).
+- Fixed audio crackle artifacts with pcm_s24le in mkv.
+- Fixed duration of markers are off by 1 frame in different ways and places.
+- Fixed the appearance of toolbars under KDE/Linux when its **Settings > Colors & Themes > Application Style > Configure Icons and Toolbars > Main toolbar label** is **Beside icons **.
+- Fixed a memory leak generate audio waveform data on media with an invalid duration that is extremely long.
+- Fixed dragging media with a very long duration (> 1 day) to **Timeline** uses a lot of memory and unresponsive.
+- Fixed crash when clicking **Cancel** in the **Set Duration** dialog (also related to very long or invalid duration).
+- Fixed a memory leak in **Filters** panel.
+- Fixed a crash in the player's scrub bar.
+- Fixed the shadow-clip vertical position when dragging a clip to **Timeline** with a subtitles track.
+- Improved VA-API compatibility on our Linux AppImage, Portable, and Snap builds.
+- Changed **Screen Snapshot** on macOS to show a toolbar to choose rectangle or fullscreen and whether to minimize.
+- Removed **Screen Recording** on Windows 10--Snipping Tool does not support it.
+- Upgrade zimg (used to convert HDR to SDR and to and from linear color) to  version 3.0.6.
+
+
 ##### Release 25.10.31
 
 - Fixed export with '&' in the file path or name.
