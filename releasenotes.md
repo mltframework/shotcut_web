@@ -23,6 +23,15 @@ These are brief notes about known problems and feature additions. See
 log](https://github.com/mltframework/shotcut/commits/master) for more
 information.
 
+##### Release 25.12.31
+
+This version hot-fixes problems found in 25.12.30:
+
+- Fixed nesting MLT XML stopped working.
+- Fixed **Screen Recording** missing on Linux and macOS.
+- Fixed **Stabilize** video filter on macOS.
+
+
 ##### Release 25.12.30
 
 - Added **Settings > Processing Mode** for video processing. This affects both preview and export.
