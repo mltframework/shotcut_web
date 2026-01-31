@@ -94,6 +94,7 @@ Windows registry, a bool is stored as a string: true or false.
 | advanced         | bool        | whether to always show the Advanced mode for Export (default false)
 | freeSpaceCheck   | bool        | whether to continue checking if a storage volume has sufficient space for storing Video
 | hardware         | string list | list of hardware encoders available on this system: comma-separated in Linux or Windows INI, multi-string in Windows registry, and array of strings in macOS plist (View > Recent)
+| hardwareDecoder  | bool        | whether to use the hardware video decoder (default false)
 | path             | string      | the file system path for Export > Export File
 | useHardware      | bool        | whether to use hardware encoding if available (default false)
 | ***files***
@@ -140,6 +141,7 @@ Windows registry, a bool is stored as a string: true or false.
 | keyer            | integer     | for Settings > External Monitor > Decklink Keyer, one of: 0 (Off), 1 (Internal), 2 (External)
 | muted            | bool        | whether the player volume is muted
 | pauseAfterSeek   | bool        | Settings > Player > Pause After Seek (default true)
+| previewHardwareDecoder | bool  | Settings > Preview Scaling > Use Hardware Decoder (default true except NVIDIA onj Linux) |
 | profile          | string      | for Settings > View Mode, see file names in share/mlt/profiles for a list of values or blank for Automatic
 | progressive      | bool        | whether Settings > Progressive is on
 | realtime         | bool        | whether Settings > Realtime is on

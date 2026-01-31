@@ -224,7 +224,7 @@ First, use **Properties** to see if the **Video** tab is disabled. If it
 is disabled, then Shotcut is not compatible with this format or codec.
 If the video tab is enabled, more than likely OpenGL (or also Direct3D on
 Windows) is not working on your system, or it is too old. First, make
-sure **GPU Effect** is disabled in **Settings**. GPU effects
+sure **Settings > Processing Mode** is NOT set to **10-bit Linear GPU/CPU**. GPU processing
 requires OpenGL version 3.2. When it is disabled, you only need OpenGL
 version 2.0 on Linux, Direct3D on Windows, or Metal on macOS.
 
@@ -424,65 +424,54 @@ source, cross-platform tool [Audacity](http://audacityteam.org/).
 
 * * *
 
-## How does Shotcut use the GPU (or not)?
+## How does Shotcut use the GPU?
 
-Shotcut uses the GPU in three ways:
+Shotcut uses the GPU in four ways:
 
-1. For drawing parts of the user interface and showing video: Direct3D on Windows, Metal on macOS, and OpenGL on Linux.
-2. hardware encoding (where available and enabled)
-3. OpenGL for GPU Effects (filters and transitions) mode
+1. For drawing parts of the user interface and showing video:
+   Direct3D on Windows, Metal on macOS, and OpenGL on Linux
+2. hardware decoding (if enabled) for 1080p or less or with preview scaling
+3. hardware encoding (if enabled)
+4. OpenGL for GPU effects (filters, transitions, and video track blending)
+   if **Settings > Processing Mode** is set to **10-bit Linear GPU/CPU**
 
-Shotcut does NOT use the GPU or hardware acceleration for the following:
+By default (CPU processing modes), Shotcut does NOT use the GPU for the following:
 
-1. decoding and pixel format conversion
-2. automatic (as-needed) filters to deinterlace, scale, and pad video and to
+1. automatic (as-needed) filters to deinterlace, scale, and pad video and to
    resample or downmix audio
-3. filters that you add
-4. transitions
-5. compositing/blending video tracks
-6. mixing audio tracks
+2. filters that you add
+3. transitions
+4. compositing/blending video tracks
+5. mixing audio tracks
 
-Thus, you cannot expect Shotcut to use close to 0% CPU and much % of GPU
+Thus, you cannot expect Shotcut to use close to 0% CPU and much of the GPU
 when exporting using the hardware encoder because the reading of files and
 decoding alone becomes a bottleneck to feed the hardware encoder. Also, if you
 have any decent amount of image processing, you should expect a significant
-amount of CPU usage especially if parallel processing is enabled (it is by
-default). Software from other companies may limit itself to one GPU vendor API
+amount of CPU usage especially if parallel processing is enabled.
+Software from other companies may limit itself to one GPU vendor API
 such as CUDA in order to provide almost entirely GPU-based pipeline. Shotcut
 has not chosen to go that route because it is a cross-platform solution.
 
 * * *
 
-## Why does Shotcut not use hardware accelerated video decoding?
+## Why does Shotcut not use hardware video decoding over 1080p?
 
 The video stream always originates in system (CPU) RAM, and CPU-based video
 decoding is highly optimized and fast. Meanwhile, transferring full,
-uncompressed video from the GPU RAM to system RAM is a relatively slow. Thus, in
-the context of a video editor (not simply a player or transcoder),
-hardware-accelerated decoding should only be done when all video processing can
+uncompressed video from the GPU RAM to system RAM is relatively slow. Thus, in
+the context of a video editor (not simply a player or transcoder), high
+resolution/framerate hardware decoding should only be done when all video processing can
 also be done on the GPU. That alone is non-trivial. Shotcut does have an
-OpenGL-based effects system that is disabled and hidden currently due to
-instability. Even when enabled it is a small subset of all effects and does not
-include a deinterlacer. Next, assuming you do not need to deinterlace and agree
-to limit oneself to the GPU effects, there is a major technical hurdle to
+experimental OpenGL-based effects system that you can try out.
+When enabled, it is a small subset of all filters.
+Next, assuming you limit yourself to the GPU filters, there is a major technical hurdle to
 transfer the decoded video in GPU RAM to OpenGL textures due to [multiple
 APIs](https://trac.ffmpeg.org/wiki/HWAccelIntro) for multiple operating systems.
-Likewise, the complexity to convert OpenGL textures to hardware encoder frames
+Plus another complexity to convert OpenGL textures to hardware encoder frames
 for the various hardware encoding APIs. Any tool that claims to do all of these
 but does not ensure the video stays in GPU RAM is going to have limited
 performance gain if any.
-
-Even if made available (integrated) there are major hurdles to handle resource
-limitations (number of simultaneous decodes) in a robust fashion and to handle
-incompatible video streams with many permutations of encoding
-profiles/parameters, APIs, and devices. That would result in a huge source of
-unreliability and support issues.
-
-If you want to help with this, please feel free to 
-[contribute]( {{ "/howtos/contribute/" | prepend: site.baseurl }} ).
-We have not made much progress here due to higher priorities: fixing bugs,
-rework on some features, adding basic expected UI features, upgrading
-dependencies, providing support, making documentation, and stabilizing GPU Effects.
 
 * * *
 
@@ -505,7 +494,7 @@ background CPU cores/threads for:
 1. generating video thumbnails
 2. generating audio levels for waveform display in the timeline
 3. the engine itself (see above)
-4. sending video to OpenGL for display
+4. sending video to the GPU for display
 5. exporting
 
 * * *
@@ -527,3 +516,7 @@ QT_SCALE_FACTOR. E.g. `C:\Program Files\Shotcut\shotcut.exe --QT_SCALE_FACTOR 2`
 Shotcut does not properly display or output HDR video. However, it can convert
 HDR video with tone-mapping into a Rec. 709 SDR video. In the UI use either
 **Properties > Convert** or **View > Resources...** in the menu.
+
+There is one exception, however: HLG HDR when using external monitoring with
+a Blackagic Design HDMI or SDI peripheral. This works good for HLG or Log source
+video, but SMPTE 2048 PQ HDR sources are not properly supported in that mode.

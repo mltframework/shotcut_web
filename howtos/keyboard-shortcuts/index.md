@@ -351,10 +351,6 @@ while clicking the clips.
 - <kbd>control</kbd>+<kbd>command</kbd>
 - <kbd>option</kbd>+<kbd>command</kbd>
 
-#### Player
-
-- 
-
 #### Numeric Fields
 
 Numeric fields can be incremented and decremented using the mouse wheel as long as the mouse pointer is over it. On some versions holding <kbd>Ctrl</kbd> (<kbd>command</kbd> on macOS) incremenents and decrements more (10x the normal, depends on decimal digits).

@@ -23,6 +23,48 @@ These are brief notes about known problems and feature additions. See
 log](https://github.com/mltframework/shotcut/commits/master) for more
 information.
 
+##### Release 26.1.30
+
+- Fixed **Brightness** filter with a reduced level is different when there was clip with transparency above it (broke in v25.12).
+- Fixed **Timeline > Record Audio** would always reset the selected audio device and require re-selection (broke in v25.12).
+- Fixed the **Mask: Apply** video filter in 10-bit processing modes (incomplete in v25.12).
+- Fixed a crash in the scrub-bar on a very long playlist.
+- Fixed app not responding while enqueuing very many proxy jobs.
+- Fixed **Previous/Next** in **Subtitles** may be unreadable on some themes and OS.
+- Fixed reading the alpha channel in 12-bit ProRes with alpha.
+- Fixed the **Halftone** video filter was not copying input alpha channel.
+- Fixed it was possible to use **Split** on a locked track in **Timeline**.
+- Fixed glitchy export job progress and estimated remaining time.
+- Changed bulk proxy generation (when you switch **Settings > Proxy > Use Proxy** ON) to update clips.
+  (Previously, you had to turn proxy mode off and back on again to start using the proxies. That requires reloading the project each time, which was a real drag.)
+- Changed **Timeline > Add Generator** and **New Generator > Add To Timeline** to not seek.
+  This leaves the playhead over the clip it just added to facilitate preview and reduce steps.
+- Changed simple keyframe defaults in **Mask: From File** filter to be more convenient for multi-track transitions.
+- Added converting a project between GPU &amp; CPU.
+- Improved the appearance of outline in the text filters: **Text: Simple**, **Typewriter**, **GPS Text**, **Subtitle Burn In** and **Timer**.
+- Increased the maximum resolution in **Video Mode** and **Export** to 8640 for 8K VR180 video.
+- Improved the reliability of opening URLs (**Help** menu), **Show In Folder**, **Open With** in the Linux AppImage/portable/Snap.
+- Added the **Blend Mode** filter and track option for the **Linear 10-bit GPU/CPU** processing mode.
+- Added **Settings > Preview Scaling > Use Hardware Decoder**.
+  - It defaults ON except with NVIDIA on Linux.
+  - It requires VA-API on Linux, uses Media Foundation on Windows, and uses Video Toolbox on macOS.
+  - Obviously, it only supports codecs that your hardware supports, but it automatically falls back to software decoding.
+  - Do not expect to be blown away by speediness unless perhaps you are using **Linear 10-bit CPU** processing mode or have a weak CPU.
+  - It does not seem to help much with seeking and scrubbing; proxies are still key for that.
+  - It does reduce CPU usage, which is important to reduce battery usage or keep the system cooler, for example, if it is on your lap.
+  - It is not integrated with the GPU processing mode by using so-called 0-copy.
+  - There is still considerable overhead to transfer uncompressed video between CPU &amp; GPU RAM, which is why this feature is coupled with preview scaling or 1080p-60fps or less video sources. Things higher than that are actually slower to transfer than software decode for most systems.  
+- Added **Export > Codec > Use hardware decoder**.
+  - It defaults OFF because it often increases the export time.
+  - Like preview, it too can reduce CPU usage, and that may be a benefit.
+    (9 out of 10 engineers recommend that you do not export your video on your lap!)
+  - Feel free to test it and make your own conclusion about what works best for you on your system.
+  - The option is sticky, meaning it is remembered between sessions and projects.
+- Added **Help > What's This?** to the menu and toolbar for contextual help.
+- Added **Settings > Language > Chinese (Simplified)**.
+- Upgraded Qt to version 6.10.1 on Windows.
+
+
 ##### Release 25.12.31
 
 This version hot-fixes problems found in 25.12.30:
