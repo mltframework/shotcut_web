@@ -53,7 +53,8 @@ information.
   - It does not seem to help much with seeking and scrubbing; proxies are still key for that.
   - It does reduce CPU usage, which is important to reduce battery usage or keep the system cooler, for example, if it is on your lap.
   - It is not integrated with the GPU processing mode by using so-called 0-copy.
-  - There is still considerable overhead to transfer uncompressed video between CPU &amp; GPU RAM, which is why this feature is coupled with preview scaling or 1080p-60fps or less video sources. Things higher than that are actually slower to transfer than software decode for most systems.  
+  - There is still considerable overhead to transfer uncompressed video between CPU &amp; GPU RAM, which is why this feature is coupled with preview scaling or 1080p-60fps or less video sources. Things higher than that are actually slower to transfer than software decode for most systems.
+  - Advanced users can remove the 1080p60 limiter by setting environment variable `MLT_AVFORMAT_HWACCEL_PPS=0`.
 - Added **Export > Codec > Use hardware decoder**.
   - It defaults OFF because it often increases the export time.
   - Like preview, it too can reduce CPU usage, and that may be a benefit.
