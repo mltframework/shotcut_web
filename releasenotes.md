@@ -28,6 +28,7 @@ information.
 - Fixed **Brightness** filter with a reduced level is different when there was clip with transparency above it (broke in v25.12).
 - Fixed **Timeline > Record Audio** would always reset the selected audio device and require re-selection (broke in v25.12).
 - Fixed the **Mask: Apply** video filter in 10-bit processing modes (incomplete in v25.12).
+- Fixed macOS app signing.
 - Fixed a crash in the scrub-bar on a very long playlist.
 - Fixed app not responding while enqueuing very many proxy jobs.
 - Fixed **Previous/Next** in **Subtitles** may be unreadable on some themes and OS.
