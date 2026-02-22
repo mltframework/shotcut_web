@@ -57,14 +57,14 @@ frei0r only supports 8-bit RGB(A).
 Frontend
 ========
 The frontend is implemented using
-[Qt 5 QML/Quick](http://doc.qt.io/qt-5/qtquick-index.html).
+[Qt 6 QML/Quick](https://doc.qt.io/qt-6/qtquick-index.html).
 You can also use Quick Controls, and Shotcut offers some custom controls as well.
 
 First, you must create a folder to contain your QML. Your folder must be copied
-to the share/shotcut/qml/filters to install it.
+to `share/shotcut/qml/filters` to install it.
 
-Next, you need to create a filter metadata QML file that must begin with "meta"
-and end with ".qml". This QML must include QtQuick and org.shotcut.qml and 
+Next, you need to create a filter metadata QML file that must begin with `meta`
+and end with `.qml`. This QML must include QtQuick and org.shotcut.qml and 
 create a Metadata object at the top level. Here is an example:
 
     import QtQuick 2.0
