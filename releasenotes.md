@@ -23,6 +23,37 @@ These are brief notes about known problems and feature additions. See
 log](https://github.com/mltframework/shotcut/commits/master) for more
 information.
 
+##### Release 26.2.26
+
+- Fixed black or green bottom bar on Windows with HEVC video source and **Settings > Preview Scaling > Use Hardware Decoder** plus preview scaling (broke in v26.1).
+- Fixed crash when adding very long video to **Timeline** with Qt 6.10.1 (broke in v26.1).
+- Fixed crash in the **RGB Shift** video filter (broke in v25.12).
+- Fixed FLAC export has a bad duration disabling scrub bars in players (broke in v25.12).
+- Restored **Generate** to the main toolbar with **View > Show Text Under Icons** (changed in v26.1).
+- Fixed crash on various enabled **Playlist** actions with nothing selected:
+  - GoTo
+  - Move Up
+  - Move Down
+  - Add Selected to Timeline
+  - Add Selected to Slideshow
+  - Sort By Name
+  - Sort By Date
+- Fixed **Show In Files** for a reverse job.
+- Fixed choosing **Export > Codec > h264_videotool** on macOS not reliably setting B frames to 0.
+- Fixed keyframes for **Text: Typewriter > Position &amp; Size** not working.
+- Added support for the underline and strikethrough options in the font dialog for the text filters.
+- Added a search field to **Subtitles**.
+- Added hold <kbd>Alt</kbd> while clicking Mute and Hide on the **Timeline** track to toggle all of the other tracks.
+- Added hold <kbd>Shift</kbd> with the mouse wheel to zoom in and out on the player.
+- Added **Playlist > Log Event** (<kbd>Shift</kbd>+<kbd>E</kbd>) to append a 6 second clip (±3 secs) at the current **Source** player time.
+- Improved the performance of **Timeline** and **Keyframes** waveforms rendering.
+- Changed mouse wheel behavior for the **Video Zoom** video scope:
+  - The wheel alone (no modifier key) now scrolls vertically.
+  - Hold <kbd>Ctrl</kbd> to zoom.
+  - Hold <kbd>Alt</kbd> to scroll horizontally.
+- Removed **Settings > Player > Deinterlacer > Linear Blend** (obsolete, removed in FFmpeg).
+
+
 ##### Release 26.1.30
 
 - Fixed **Brightness** filter with a reduced level is different when there was clip with transparency above it (broke in v25.12).

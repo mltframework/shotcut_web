@@ -170,6 +170,7 @@ category: help
 | Action                | Windows/Linux                        | macOS
 |-----------------------|--------------------------------------|----------------------
 | Append                | Shift+A                              | shift+A
+| Log Event             | Shift+E                              | shift+E
 | Copy                  | Shift+C                              | shift+C
 | Delete                | Shift+X                              | shift+X
 | Insert                | Shift+V                              | shift+V
@@ -305,6 +306,8 @@ position of the mouse cursor without clicking and dragging.
   change its duration.
 - Hold <kbd>Ctrl</kbd> (<kbd>command</kbd> on macOS) while trimming a clip to also trim the neighbor clip (so-called "roll edit").
 - Hold <kbd>Shift</kbd> to ripple-trim when **Ripple** is turned off.
+- Hold <kbd>Alt</kbd> (<kbd>option</kbd> on macOS) when you click **Mute** or **Hide** on a track
+  header to toggle the state of all of the other tracks. 
 
 ### Multiple Selection in Playlist and Timeline
 
@@ -326,6 +329,7 @@ while clicking the clips.
 
 #### Player
 
+- Hold <kbd>Shift</kbd> to zoom the player with the wheel.
 - Press and hold the wheel and drag to pan the view when zoomed in.
 - When a filter has a rectangular visual control:
   - The wheel zooms in/out.
