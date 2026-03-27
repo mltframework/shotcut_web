@@ -188,12 +188,12 @@ category: help
 {:.withborders}
 
 ## Files
+
 | Action                | Windows/Linux                        | macOS
 |-----------------------|--------------------------------------|----------------------
 | Go Up                 | Alt+Backspace                        | option+backspace
 | search                | Ctrl+F                               | command+F
 {:.withborders}
-
 
 ## Filters
 
