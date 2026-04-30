@@ -23,7 +23,70 @@ These are brief notes about known problems and feature additions. See
 log](https://github.com/mltframework/shotcut/commits/master) for more
 information.
 
-##### Release 26.2.26
+
+##### Release 26.4.30
+
+- Fixed intermittent audio waveform sync/blank (broke in v26.2)
+- Stopped bundling [**Glaxnimate**](https://glaxnimate.org), which recently released version 0.6.0 (except the Linux Flatpak)
+- Added launching **Glaxnimate** from the Microsoft Store (free) on Windows if available
+- Fixed incorrect last frame in (Glaxnimate) animations
+- Fixed **Font style** other than weight and italics/oblique in the font dialog
+- Fixed `Ctrl`+`Down` can make the wrong track current
+- Changed **Timeline > Set Current Track Above** and **Set Current Track Below** to use the bare `Up` and `Down` keys
+- Fixed accepting file names with special characters in **Playlist > Add Files**
+- Fixed markers may disappear after undo moving clip(s)
+- Fixed hourly backup not working when saving frequently
+- Fixed opening a project starts the player at the second frame
+- Fixed seeking with keyboard in **Timeline** sometimes not working
+- Fixed **Settings > Time Format** did not immediately update the **Timeline** and **Keyframes** rulers
+- Fixed the **Swap Channels** audio filter to work with **Settings > Audio Channels > 4**
+- Fixed **Timeline > Copy**, **Cut**, **Paste**, and **Overwrite** breaks grouped clips
+- Fixed timeline rectangle selection to include all members of a group
+- Fixed keyframes after undo a trim in
+- Fixed changing **Properties > Duration** drops time filters
+- Fixed **Edit Marker** duration and **Ripple Markers** off by one frame
+- Fixed the **Nervous** video filter did a 2 frame fade-in from black
+- Fixed the height of some of the filter UIs
+- Fixed undo history for lock, mute & hide track
+- Fixed using OpenMP in Motion Tracking on macOS
+- Fixed menus on buttons do not open reliably on Wayland on Linux
+- Fixed may crash during voice preview in **Text to Speech** dialog
+- Improved **Timeline** and **Keyframes** zoom to be less erratic and more focused
+- Reduced memory for timeline waveforms
+- Reduced the thickness of the panel splitters and made them brighter
+- Reorganized the **Video Mode** menu with new categories:
+  - Social Media
+  - Other
+  - Legacy
+- Changed audio transition to a constant power crossfade
+- Changed multi-select for **Subtitles** to use the `Shift` key
+- Changed **Properties** timeline duration to be editable
+- Changed opening an image to not start playback
+- Changed **Export** to default to 10-bit HEVC export in the 10-bit processing modes
+- Changed **Timeline > Record Audio** to use FLAC (instead of Opus) for improved quality and tool compatibility
+- Added **10-bit VP9 MP4 (E-AC-3)** and **10-bit VP9 WebM (Opus)** export presets
+- Added Vulkan GPU to **Speech to Text** on Windows and Linux (previously only Metal on Apple Silicon)
+- Added **Use GPU** checkbox to **Speech to Text** dialog
+- Added aspect ratio grid options to the player grid button:
+  - 1:1 Frame
+  - 16:9 Frame
+  - 4:3 Frame
+  - 9:16 Frame
+- Added symmetric resize (change duration by adjusting both clips) of a timeline **transition** using its trim handles
+- Added **Export > Metadata** including **Cover art**
+- Added a **Typewriter** group of options to the **Burn In Subtitle** filter, defaults to word-by-word with no cursor
+- Added job progress and status on Windows taskbar icon and macOS and Linux (where supported) dock icon
+- Added **Properties > LUT file** for video clips
+  This is primarily for the **Linear 10-bit** processing mode to apply a camera LUT before converting to linear
+- Added drag-n-drop from **Recent** to **Timeline**
+- Upgraded FFmpeg to version 8.1
+- Upgraded x265 to version 4.1
+- Upgraded whisper.cpp to version 1.8.3
+- Upgraded MLT to version 7.38.0
+- Upgraded Qt to verstion 6.10.3 on Linux
+
+
+##### Release 26.4.30
 
 - Fixed black or green bottom bar on Windows with HEVC video source and **Settings > Preview Scaling > Use Hardware Decoder** plus preview scaling (broke in v26.1).
 - Fixed crash when adding very long video to **Timeline** with Qt 6.10.1 (broke in v26.1).
