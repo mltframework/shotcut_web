@@ -125,8 +125,8 @@ category: help
 | Delete Marker         | Ctrl+Shift+M                         | shift+control+M
 | Seek to previous marker | <                                  | <
 | Seek to next marker   | >                                    | >
-| Set Current Track Below | Ctrl+Alt+Down                      | option+command+down
-| Set Current Track Above | Ctrl+Alt+Up                        | option+command+up
+| Set Current Track Below | Down                               | down
+| Set Current Track Above | Up                                 | up
 | Zoom In               | =                                    | =
 | Zoom Out              | -                                    | -
 | Zoom Fit              | 0                                    | 0
