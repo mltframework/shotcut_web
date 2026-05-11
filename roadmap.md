@@ -24,33 +24,31 @@ In no particular order or estimated delivery time:
 - make it easy to add 0.5 or 1 second transition on timeline
 - audio noise reduction
 - open HEIC images (already works on macOS, work-in-progress in FFmpeg)
-- hardware accelerated decoding
 - read Kyno XML for name, comments, tags
 - SMPTE 2084 PQ HDR
 - HDR preview (in-app, not external)
 - additional editing modes/operations (slip, slide)
 - fullscreen playback on current/single screen with on-screen controls
 - project media management (automatically copy or move to project folder, automatically convert)
-- set metadata (artist, title, etc.) in export
 - archive project
 - raw video processing - e.g. CinemaDNG
 - multi-camera editing features
 - convert generator UIs to QML
-- add keyframes for generators
-- add partik0l generator
+- keyframes for generators
+- partik0l generator
 - circle VUI control for Vignette and Crop: Circle
 - generic filter UI (MLT service name and table of parameters)
 - OpenFX and VST2 plugins using generic filter UI
 - multi-track transition
 - generic transition (MLT service name and table of parameters)
-- add CMX EDL import
-- add Kdenlive XML export
-- add OpenTimelineIO import/export
+- CMX EDL import
+- Kdenlive XML export
+- OpenTimelineIO import/export
 - add presets to Filters search
-- add option to view timeline waveform per channel
-- add transitions to Playlist
+- option to view timeline waveform per channel
+- add transitions in Playlist
 - add speed param to Export > Codec
-- add option to reduce number of encode threads for Convert, Reverse, and Proxy jobs
+- option to reduce number of encode threads for Convert, Reverse, and Proxy jobs
 - improve the appearance of video-with-alpha clips by showing with checkered background in source player
 - background removal
 - universal search
@@ -68,11 +66,9 @@ In no particular order or estimated delivery time:
 - aspect ratio lock for VUI rectangle control - e.g. when used with Crop: Rectangle
 - motion blur for motion-animated things like Text and Size/Position/Rotate
 - 8K Video Modes
-- reorganize Video Modes UI
 - face detection
 - curves UI for color
 - convert icons to SVG
-- context-sensitive online help
 - automatic silence detection/removal
 
 See also the [Suggestion category in the Forum](https://forum.shotcut.org/c/suggestion/7).
