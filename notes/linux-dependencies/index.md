@@ -7,17 +7,19 @@ category: notes
 Ubuntu, Debian, and Mint
 ------------------------
 
-required: libjack0 or libjack-jackd2
+required: libopengl0
+optional: libjack0 or libjack-jackd2
 
 Fedora
 ------
 
-required: jack-audio-connection-kit, libXScrnSaver
+required: libXScrnSaver
+optional: jack-audio-connection-kit
 
 Generic Directly Dependent Libraries
 ------------------------------------
 
-basic "platform" libs: glibc 2.31+, libpthread, libm, libdl, librt, libz, libstdc++,
+basic "platform" libs: glibc 2.35+, libpthread, libm, libdl, librt, libz, libstdc++,
 libGL, libX*, libasound (ALSA), libgthread, libglib-2.0, libgobject-2.0,
 libselinux, libwayland-egl, libwayland-client, libwayland-cursor
 
