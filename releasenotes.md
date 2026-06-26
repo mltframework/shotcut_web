@@ -24,6 +24,95 @@ log](https://github.com/mltframework/shotcut/commits/master) for more
 information.
 
 
+##### Release 26.6.25
+
+- Fixed **Player > External Monitor > DeckLink** (and related such as UltraStudio) HDMI/SDI may deadlock.
+- Fixed export with `libopus` audio codec warns about `frame_duration`.
+- Fixed the **Font style** from the font dialog is overwritten on filter UI reload on Windows (broke in v26.4).
+- Fixed hardware scaler on Windows when using **Settings > Preview Scaling > Use Hardware Decoder** (broke in v26.4).
+- Fixed mouse wheel and keyboard not incrementing/decrementing numeric fields in filter UIs (broke in version 26.4).
+- Fixed moving clips may create a very long gap.
+- Fixed incorrect *current* track after moving clip to another track.
+- Fixed undo after changing **Video Mode** corrupts the timeline.
+- Fixed double-clicking a project file in Finder with Shotcut already running on macOS.
+- Fixed zooming in the player with non-square pixels.
+- Fixed a possible crash when **Text: Rich** filter is first in the list and playhead is not over selected clip.
+- Fixed **File > Export EDL** adds 1-frame clip before transitions.
+- Fixed full-width spaces replaced by half-width spaces in **Import Subtitles From File**.
+- Fixed **Text: Typewriter** not animating correctly after changing rate parameters.
+- Fixed reordering **Filters** breaking selecting another filter.
+- Fixed some actions disabled after deleting, moving, or updating an item in **Subtitles**.
+- Fixed repeated prompts to convert a project to GPU processing mode if project was started before version 25.12.
+- Fixed **skim** not working over **Timeline** clips.
+- Fixed mouse wheel not scrolling a filter's UI within **Filters**.
+- Fixed 10-bit H.264 encoder fails with hardware encoding on.  
+  No H.264 hardware encoders support 10-bit; this change simply makes it use software encoding with x264.
+- Fixed **Export > Ogg Vorbis** with Cover Art fails (no longer fails but our Ogg integration does not support cover art).
+- Fixed **Export > From > Marker** using the **Reframe** output video filter with keyframes.
+- Fixed some toolbar icons' tooltips not showing keyboard shortcut.
+- Fixed **Zoom Timeline to Fit** may not scroll to start.
+- Fixed a crash using some **Markers** actions with nothing open.
+- Fixed using Windows UNC paths with filters, e.g. GPS Graphic.
+- Fixed extended/special characters in metadata of custom **Export** preset.
+- Fixed **Rebuild Audio Waveform** was not saving on Windows.
+- Fixed tab focus did not allow editing numeric fields in filters.
+- Fixed **Export > Video > Aspect ratio** can be incorrect if very close to a common ratio: 4:3, 16:9, or 9:16.
+- Fixed changing many things in **Properties** enabled **Filters** that were disabled.
+- Fixed crash in **Text: Rich** filter on some Linux/Wayland versions.
+- Fixed toggling visibility of *other* tracks in **Timeline** could make an audio clip with an image appear on top.
+- Changed Linux Snap to use a desktop environment file dialog if possible.
+- Changed the new **Log Event** shortcut to `Shift`+`D` because one conflicted with **Remove Subtitle Item**.
+- Moved **Declick Audio** from the Time category to Audio in the filter menu.
+- Moved menu item **External Monitor** from the **Settings** menu to the **Player** menu.
+- Added initial basic support for **OpenFX** plugins (filters) with a UI for **NTSC-rs**.
+  - Limited compatibility: not available, seems to do nothing, or makes the video black. 
+  - No support for plugins that operate temporally or require multiple image/video inputs.
+  - No support for generators, transitions, or retimers.
+  - No support for UI embedded in the plugin.
+  - No support for GPU technologies but multi-threaded CPU works.
+  - Very limited testing.
+  - Looks for plugins in the standard folder for the OS.
+  - None are included with Shotcut.
+- Added initial basic support for **VST2** and **LV2** audio plugins (filters) with a UI for **Valhalla Supermassive**.
+  - No support for the UI embedded in the plugin.
+  - No support for instruments.
+  - Very limited testing.
+  - Looks for plugins in the standard folder for the OS.
+  - None are included with Shotcut.
+- Added menu item **Settings > Leave Safe Mode**.  
+  This appears if Shotcut crashes within 30 seconds upon startup, which restarts in a safe mode without external (OpenFX, VST2) plugins.
+- Added `--experimental` command line option to try out the filter UI generator.
+- Added **Reduce Noise: Audio (RNNoise)** filter.
+- Added support for system displays in **Player > External Monitor**,  
+  incompatible with newly added **Settings > Player > Use Old Video Output**.
+- Added **Player > External Monitor > Preview Window (HDR)** that can be made fullscreen.
+  - Incompatible with **Use Old Video Output**.
+  - It also works for SDR.
+  - HDR requires a display properly configured with HDR, **Native 10-bit CPU** or **Linear 10-bit GPU/CPU** processing modes, and HDR video sources.
+  - For HDR, only use filters tagged with `#gpu` or `#10bit`.
+  - HDR is not working on Linux and Windows/ARM.
+  - Switching between HDR10 (PQ) and HLG HDR requires restarting the app.
+  - You can move the window by clicking anywhere inside except the controls bar and dragging.
+  - The `F` key toggles fullscreen and `Esc` also leaves fullscreen.
+- Added **Dynamic range** to custom **Video Mode** and **Timeline Properties**.  
+  This offers **SDR**, which follows the colorspace, **HLG HDR**, and **PQ HDR**.
+- Added support for PQ HDR to **External Monitor > DeckLink**.
+- Added support for HDR to Export (automatic per Video Mode and 10-bit processing mode).
+- Added PQ HDR metadata dialogs for **External Monitor > DeckLink** and **Export > Codec**.  
+  Export only embeds PQ HDR metadata for the `libx265` and `libsvtav1` video codecs and no hardware encoders.
+- Added **Settings > Display Method > Vulkan** on Linux.
+- Added **Settings > Timeline > Create Transitions on Overlap**.
+- Added support for the `.lot` filename extension for Lottie animation handled by Glaxnimate.
+- Documented a scripting interface that has existed since the introduction of the Timeline.
+- Added support to load custom filter UIs installed to **App Data Directory** > `extensions` > `filters`.
+  This can also be a place to add custom general purpose scripts by making a dummy filter.
+  Use `mlt_service: 'shape'` as a dummy/no-op backend filter. Soon we will add a proper scripts panel.
+- Upgraded MLT to version 7.40.0
+- Upgraded FFmpeg to version 8.1.2
+- Upgraded libspatialaudio to 0.4.0
+- Upgraded frei0r to version 3.2.2
+
+
 ##### Release 26.4.30
 
 - Fixed intermittent audio waveform sync/blank (broke in v26.2)
@@ -86,7 +175,7 @@ information.
 - Upgraded Qt to verstion 6.10.3 on Linux
 
 
-##### Release 26.4.30
+##### Release 26.2.26
 
 - Fixed black or green bottom bar on Windows with HEVC video source and **Settings > Preview Scaling > Use Hardware Decoder** plus preview scaling (broke in v26.1).
 - Fixed crash when adding very long video to **Timeline** with Qt 6.10.1 (broke in v26.1).

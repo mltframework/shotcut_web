@@ -22,13 +22,9 @@ In no particular order or estimated delivery time:
 
 - duck audio
 - make it easy to add 0.5 or 1 second transition on timeline
-- audio noise reduction
 - open HEIC images (already works on macOS, work-in-progress in FFmpeg)
 - read Kyno XML for name, comments, tags
-- SMPTE 2084 PQ HDR
-- HDR preview (in-app, not external)
 - additional editing modes/operations (slip, slide)
-- fullscreen playback on current/single screen with on-screen controls
 - project media management (automatically copy or move to project folder, automatically convert)
 - archive project
 - raw video processing - e.g. CinemaDNG
@@ -37,8 +33,6 @@ In no particular order or estimated delivery time:
 - keyframes for generators
 - partik0l generator
 - circle VUI control for Vignette and Crop: Circle
-- generic filter UI (MLT service name and table of parameters)
-- OpenFX and VST2 plugins using generic filter UI
 - multi-track transition
 - generic transition (MLT service name and table of parameters)
 - CMX EDL import

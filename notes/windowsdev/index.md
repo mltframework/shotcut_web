@@ -6,29 +6,31 @@ category: notes
 
 1. Download and install the following:
 
-  - [Qt Creator](https://www.qt.io/download-open-source/)
-  - Qt SDK version 6.10 MinGW  
-    If your Qt installer no longer includes this you can [get it from our S3 bucket](https://s3.amazonaws.com/misc.meltymedia/shotcut-build/qt-6.8.3-x64-mingw.txz), and
-    extract this alongside your other Qt versions, for example `C:\Qt`.  
-    (You can get `tar` and `xz` needed to extract this from `msys2`.)
-  - [Shotcut SDK (1.5 GB current version 26.4.30)](https://s3.amazonaws.com/builds.us.meltytech/shotcut/shotcut-win64-sdk-26.4.30.txz)  
+  - Qt Creator (`qt-creator`) from msys2.org: `mingw64` for x64, `clangarm64` for arm64.  
+    This pulls in most of the Qt 6 dependencies, some more are needed (use `clang-aarch64` for `clangarm64`):
+    - `mingw-w64-x86_64-qt6-charts`
+    - `mingw-w64-x86_64-qt6-imageformats`
+    - `mingw-w64-x86_64-qt6-multimedia`
+    - `mingw-w64-x86_64-qt6-multimedia-wmf`
+    - `mingw-w64-x86_64-qt6-websockets`
+  - [Shotcut SDK (1.6 GB current version 26.6.25)](https://s3.amazonaws.com/builds.us.meltytech/shotcut/shotcut-win64-sdk-26.6.25.txz)  
     Extract it to `C:\Projects`
 
-1. Extract the Shotcut SDK .zip file to a new folder in `C:\` named "Projects" (`C:\Projects`).
-2. In Qt Creator open `C:\Projects\Shotcut\src\shotcut\CMakeLists.txt`.
+2. Extract the Shotcut SDK .zip file to a new folder in `C:\` named "Projects" (`C:\Projects`).
+3. In Qt Creator open `C:\Projects\Shotcut\src\shotcut\CMakeLists.txt`.
 > NOTE: The following screen shots are outdated.
-3. In the **Configure Project** screen, select your previously configured Kit
+1. In the **Configure Project** screen, select your previously configured Kit
    and click **Configure Project**:
    ![Configure Project](configure_project.png)
 
-4. Click **Projects** in the navigation bar on the left side of the Qt Creator window.  
+2. Click **Projects** in the navigation bar on the left side of the Qt Creator window.  
   - In the left column of the Shotcut project configuration click **Build**
     to show the **Build Settings**:
   - In **Build Environment** add environment variable `PKG_CONFIG_PATH` and set it to `C:\Projects\Shotcut\lib\pkgconfig`.
   - Prepend msys2 binary folders to environment variable `Path`: `C:\msys64\usr\local\bin;C:\msys64\mingw64\bin;`
   - In **CMake &gt; Current Configuration** find `CMAKE INSTALL_PREFIX` and change its value to `C:\Projects\Shotcut` and click **Run CMake**.
 
-5. In the left column of the Shotcut project configuration click **Run**
+3. In the left column of the Shotcut project configuration click **Run**
    to show the **Run Settings**:
     ![Run Settings](run_settings.png)
 

@@ -170,7 +170,7 @@ category: help
 | Action                | Windows/Linux                        | macOS
 |-----------------------|--------------------------------------|----------------------
 | Append                | Shift+A                              | shift+A
-| Log Event             | Shift+E                              | shift+E
+| Log Event             | Shift+D                              | shift+D
 | Copy                  | Shift+C                              | shift+C
 | Delete                | Shift+X                              | shift+X
 | Insert                | Shift+V                              | shift+V
@@ -264,6 +264,17 @@ category: help
 |------------------------------|-------------------------------|----------------------
 | Decrease Text Size           | Ctrl+Alt+-                    | option+command+-
 | Increase Text Size           | Ctrl+Alt+=                    | option+command+=
+{:.withborders}
+
+## Preview Window (HDR)
+
+Most shortcuts above are available when the window has focus except <kbd>F</kbd>.
+
+| Action                       | Windows/Linux                 | macOS
+|------------------------------|-------------------------------|----------------------
+| Open/Raise                   | Ctrl+`` ` ``                  | control+`` ` ``
+| Toggle Fullscreen            | F                             | F
+| Exit Fullscreen and Restore  | Esc                           | Esc
 {:.withborders}
 
 <script>

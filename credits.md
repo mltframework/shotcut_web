@@ -115,3 +115,4 @@ exption](https://doc.qt.io/qt-5.9/qtnetwork-index.html#licenses-and-attributions
 - [OpenBLAS](https://www.openblas.net/) under the [BSD-3-Clause license](https://github.com/OpenMathLib/OpenBLAS/blob/develop/LICENSE)
 - [whisper.cpp](https://github.com/ggerganov/whisper.cpp) under the [MIT
   License](http://opensource.org/licenses/mit-license.php)
+- [RNNoise](https://github.com/xiph/rnnoise) under the [BSD-3-Clause license](https://github.com/xiph/rnnoise/blob/main/COPYING)
