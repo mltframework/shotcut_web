@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- qmlmetadata.cpp -->
+  <meta name="description" content="Describes a single keyframeable parameter within a filter's keyframes metadata.">
+  <title>Parameter QML Type | Shotcut QML Scripting API 26</title>
+    <link rel="stylesheet" type="text/css" href="style/shotcut.css">
+</head>
+<body>
+<li><a href="index.html">Shotcut QML Scripting API</a></li>
+<li><a href="org-shotcut-qml-qmlmodule.html" translate="no">org.shotcut.qml</a></li>
+<li>Parameter</li>
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">Parameter QML Type</h1>
+<!-- $$$Parameter-brief -->
+<p>Describes a single keyframeable parameter within a filter's keyframes metadata. <a href="#details">More...</a></p>
+<!-- @@@Parameter -->
+<div class="table"><table class="alignedsummary requisites" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> <code translate="no">import org.shotcut.qml</code></td></tr>
+</table></div>
+<ul>
+<li><a href="qml-org-shotcut-qml-parameter-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-parameter.html#gangedProperties-prop" translate="no">gangedProperties</a></b> : list&lt;string&gt;</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-parameter.html#gangedRectProperties-prop" translate="no">gangedRectProperties</a></b> : list&lt;string&gt;</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-parameter.html#isColor-prop" translate="no">isColor</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-parameter.html#isCurve-prop" translate="no">isCurve</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-parameter.html#isRectangle-prop" translate="no">isRectangle</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-parameter.html#maximum-prop" translate="no">maximum</a></b> : real</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-parameter.html#minimum-prop" translate="no">minimum</a></b> : real</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-parameter.html#name-prop" translate="no">name</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-parameter.html#property-prop" translate="no">property</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-parameter.html#rangeType-prop" translate="no">rangeType</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-parameter.html#units-prop" translate="no">units</a></b> : string</li>
+</ul>
+<!-- $$$Parameter-description -->
+<h2 id="details">Detailed Description</h2>
+<p>Accessed from <a href="qml-org-shotcut-qml-keyframesmetadata.html#parameters-prop" translate="no">KeyframesMetadata::parameters</a>.</p>
+<!-- @@@Parameter -->
+<h2>Property Documentation</h2>
+<!-- $$$gangedProperties -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="gangedProperties-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">gangedProperties</span> : <span class="type">list</span>&lt;<span class="type">string</span>&gt;</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Additional MLT property names that must be adjusted together with <a href="qml-org-shotcut-qml-parameter.html#property-prop" translate="no">property</a> (e.g. linked x/y coordinates).</p>
+</div></div><!-- @@@gangedProperties -->
+<br/>
+<!-- $$$gangedRectProperties -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="gangedRectProperties-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">gangedRectProperties</span> : <span class="type">list</span>&lt;<span class="type">string</span>&gt;</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Additional rect-type MLT property names that must be adjusted together with <a href="qml-org-shotcut-qml-parameter.html#property-prop" translate="no">property</a>.</p>
+</div></div><!-- @@@gangedRectProperties -->
+<br/>
+<!-- $$$isColor -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="isColor-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">isColor</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether this parameter represents a color (uses <a href="qml-org-shotcut-qml-filter.html#getColor-method" translate="no">Filter::getColor</a>() / <a href="qml-org-shotcut-qml-filter.html#set-method" translate="no">Filter::set</a>()).</p>
+</div></div><!-- @@@isColor -->
+<br/>
+<!-- $$$isCurve -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="isCurve-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">isCurve</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether this parameter can display a curve editor in the <b>Keyframes</b> panel.</p>
+</div></div><!-- @@@isCurve -->
+<br/>
+<!-- $$$isRectangle -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="isRectangle-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">isRectangle</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether this parameter represents a rectangle (uses <a href="qml-org-shotcut-qml-filter.html#getRect-method" translate="no">Filter::getRect</a>() / <a href="qml-org-shotcut-qml-filter.html#set-method" translate="no">Filter::set</a>()).</p>
+</div></div><!-- @@@isRectangle -->
+<br/>
+<!-- $$$maximum -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="maximum-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">maximum</span> : <span class="type">real</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The maximum allowed value when <a href="qml-org-shotcut-qml-parameter.html#rangeType-prop" translate="no">rangeType</a> is <code translate="no">MinMax</code>.</p>
+</div></div><!-- @@@maximum -->
+<br/>
+<!-- $$$minimum -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="minimum-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">minimum</span> : <span class="type">real</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The minimum allowed value when <a href="qml-org-shotcut-qml-parameter.html#rangeType-prop" translate="no">rangeType</a> is <code translate="no">MinMax</code>.</p>
+</div></div><!-- @@@minimum -->
+<br/>
+<!-- $$$name -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="name-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">name</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The human-readable display name of the parameter.</p>
+</div></div><!-- @@@name -->
+<br/>
+<!-- $$$property -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="property-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">property</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The MLT property name this parameter maps to (used with <a href="qml-org-shotcut-qml-filter.html#get-method" translate="no">Filter::get</a>() and <a href="qml-org-shotcut-qml-filter.html#set-method" translate="no">Filter::set</a>()).</p>
+</div></div><!-- @@@property -->
+<br/>
+<!-- $$$rangeType -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="rangeType-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">rangeType</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The range constraint type. <code translate="no">0</code> = MinMax (clamped to <a href="qml-org-shotcut-qml-parameter.html#minimum-prop" translate="no">minimum</a> / <a href="qml-org-shotcut-qml-parameter.html#maximum-prop" translate="no">maximum</a>), <code translate="no">1</code> = ClipLength (range is 0 to clip duration in frames).</p>
+</div></div><!-- @@@rangeType -->
+<br/>
+<!-- $$$units -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="units-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">units</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The display units string shown next to the parameter value (e.g. <code translate="no">&quot;px&quot;</code>, <code translate="no">&quot;%&quot;</code>).</p>
+</div></div><!-- @@@units -->
+<br/>
+</body>
+</html>

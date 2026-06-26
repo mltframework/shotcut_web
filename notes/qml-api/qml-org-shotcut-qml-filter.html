@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- qmlfilter.cpp -->
+  <meta name="description" content="Provides access to the current filter's properties, keyframes, and presets.">
+  <title>Filter QML Type | Shotcut QML Scripting API 26</title>
+    <link rel="stylesheet" type="text/css" href="style/shotcut.css">
+</head>
+<body>
+<li><a href="index.html">Shotcut QML Scripting API</a></li>
+<li><a href="org-shotcut-qml-qmlmodule.html" translate="no">org.shotcut.qml</a></li>
+<li>Filter</li>
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">Filter QML Type</h1>
+<!-- $$$Filter-brief -->
+<p>Provides access to the current filter's properties, keyframes, and presets. <a href="#details">More...</a></p>
+<!-- @@@Filter -->
+<div class="table"><table class="alignedsummary requisites" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> <code translate="no">import org.shotcut.qml</code></td></tr>
+</table></div>
+<ul>
+<li><a href="qml-org-shotcut-qml-filter-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#animateIn-prop" translate="no">animateIn</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#animateOut-prop" translate="no">animateOut</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#blockSignals-prop" translate="no">blockSignals</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#duration-prop" translate="no">duration</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#in-prop" translate="no">in</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#isNew-prop" translate="no">isNew</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#out-prop" translate="no">out</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#path-prop" translate="no">path</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#presets-prop" translate="no">presets</a></b> : list&lt;string&gt;</li>
+</ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#analyzeFinished-signal" translate="no">analyzeFinished</a></b>(bool <i>isSuccess</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#animateInChanged-signal" translate="no">animateInChanged</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#animateInOutChanged-signal" translate="no">animateInOutChanged</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#animateOutChanged-signal" translate="no">animateOutChanged</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#changed-signal" translate="no">changed</a></b>(string <i>name</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#durationChanged-signal" translate="no">durationChanged</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#inChanged-signal" translate="no">inChanged</a></b>(int <i>delta</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#outChanged-signal" translate="no">outChanged</a></b>(int <i>delta</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#presetsChanged-signal" translate="no">presetsChanged</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#propertyChanged-signal" translate="no">propertyChanged</a></b>(string <i>name</i>)</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#analyze-method" translate="no">analyze</a></b>(bool <i>isAudio</i>, bool <i>deferJob</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#clearSimpleAnimation-method" translate="no">clearSimpleAnimation</a></b>(string <i>name</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#copyParameters-method" translate="no">copyParameters</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#crop-method" translate="no">crop</a></b>(rect <i>r</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#deletePreset-method" translate="no">deletePreset</a></b>(string <i>name</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#deselect-method" translate="no">deselect</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#endUndoCommand-method" translate="no">endUndoCommand</a></b>()</li>
+<li class="fn" translate="no">int <b><a href="qml-org-shotcut-qml-filter.html#framesFromTime-method" translate="no">framesFromTime</a></b>(string <i>time</i>)</li>
+<li class="fn" translate="no">string <b><a href="qml-org-shotcut-qml-filter.html#get-method" translate="no">get</a></b>(string <i>name</i>, int <i>position</i>)</li>
+<li class="fn" translate="no">color <b><a href="qml-org-shotcut-qml-filter.html#getColor-method" translate="no">getColor</a></b>(string <i>name</i>, int <i>position</i>)</li>
+<li class="fn" translate="no">real <b><a href="qml-org-shotcut-qml-filter.html#getDouble-method" translate="no">getDouble</a></b>(string <i>name</i>, int <i>position</i>)</li>
+<li class="fn" translate="no">list&lt;string&gt; <b><a href="qml-org-shotcut-qml-filter.html#getGradient-method" translate="no">getGradient</a></b>(string <i>name</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#getHash-method" translate="no">getHash</a></b>()</li>
+<li class="fn" translate="no">int <b><a href="qml-org-shotcut-qml-filter.html#getKeyFrameType-method" translate="no">getKeyFrameType</a></b>(string <i>name</i>, int <i>keyIndex</i>)</li>
+<li class="fn" translate="no">int <b><a href="qml-org-shotcut-qml-filter.html#getNextKeyframePosition-method" translate="no">getNextKeyframePosition</a></b>(string <i>name</i>, int <i>position</i>)</li>
+<li class="fn" translate="no">int <b><a href="qml-org-shotcut-qml-filter.html#getPrevKeyframePosition-method" translate="no">getPrevKeyframePosition</a></b>(string <i>name</i>, int <i>position</i>)</li>
+<li class="fn" translate="no">rect <b><a href="qml-org-shotcut-qml-filter.html#getRect-method" translate="no">getRect</a></b>(string <i>name</i>, int <i>position</i>)</li>
+<li class="fn" translate="no">bool <b><a href="qml-org-shotcut-qml-filter.html#isAtLeastVersion-method" translate="no">isAtLeastVersion</a></b>(string <i>version</i>)</li>
+<li class="fn" translate="no">int <b><a href="qml-org-shotcut-qml-filter.html#keyframeCount-method" translate="no">keyframeCount</a></b>(string <i>name</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#loadPresets-method" translate="no">loadPresets</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#pasteParameters-method" translate="no">pasteParameters</a></b>(list&lt;string&gt; <i>propertyNames</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#removeRectPercents-method" translate="no">removeRectPercents</a></b>(string <i>name</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#resetProperty-method" translate="no">resetProperty</a></b>(string <i>name</i>)</li>
+<li class="fn" translate="no">int <b><a href="qml-org-shotcut-qml-filter.html#savePreset-method" translate="no">savePreset</a></b>(list&lt;string&gt; <i>propertyNames</i>, string <i>name</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#set-method" translate="no">set</a></b>(string <i>name</i>, string <i>value</i>, int <i>position</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#set-method-1" translate="no">set</a></b>(string <i>name</i>, bool <i>value</i>, int <i>position</i>, int <i>keyframeType</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#set-method-2" translate="no">set</a></b>(string <i>name</i>, color <i>value</i>, int <i>position</i>, int <i>keyframeType</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#set-method-3" translate="no">set</a></b>(string <i>name</i>, int <i>value</i>, int <i>position</i>, int <i>keyframeType</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#set-method-4" translate="no">set</a></b>(string <i>name</i>, real <i>value</i>, int <i>position</i>, int <i>keyframeType</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#set-method-5" translate="no">set</a></b>(string <i>name</i>, rect <i>value</i>, int <i>position</i>, int <i>keyframeType</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#set-method-6" translate="no">set</a></b>(string <i>name</i>, real <i>x</i>, real <i>y</i>, real <i>width</i>, real <i>height</i>, real <i>opacity</i>, int <i>position</i>, int <i>keyframeType</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#setGradient-method" translate="no">setGradient</a></b>(string <i>name</i>, list&lt;string&gt; <i>colors</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#setKeyFrameType-method" translate="no">setKeyFrameType</a></b>(string <i>name</i>, int <i>keyIndex</i>, int <i>type</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-filter.html#startUndoParameterCommand-method" translate="no">startUndoParameterCommand</a></b>(string <i>description</i>)</li>
+</ul>
+<!-- $$$Filter-description -->
+<h2 id="details">Detailed Description</h2>
+<p><code translate="no">Filter</code> is the primary scripting interface for filter UI panels and VUI overlays. Each filter's QML file receives a <code translate="no">filter</code> context property of this type. Use it to read and write MLT service properties, manage keyframes, load/save presets, and trigger analysis jobs.</p>
+<pre class="cpp" translate="no"><span class="comment">// Inside a filter's QML panel:</span>
+filter<span class="operator">.</span>set(<span class="string">&quot;level&quot;</span><span class="operator">,</span> slider<span class="operator">.</span>value)
+var current <span class="operator">=</span> filter<span class="operator">.</span>getDouble(<span class="string">&quot;level&quot;</span>)
+filter<span class="operator">.</span>startUndoParameterCommand(<span class="string">&quot;Change Level&quot;</span>)
+filter<span class="operator">.</span>set(<span class="string">&quot;level&quot;</span><span class="operator">,</span> newValue)
+filter<span class="operator">.</span>endUndoCommand()</pre>
+<!-- @@@Filter -->
+<h2>Property Documentation</h2>
+<!-- $$$animateIn -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="animateIn-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">animateIn</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Number of frames over which the &quot;animate in&quot; simple keyframe ramp runs. Set to 0 to disable. Writing this triggers the <a href="qml-org-shotcut-qml-filter.html#animateInChanged-signal" translate="no">animateInChanged</a> signal.</p>
+</div></div><!-- @@@animateIn -->
+<br/>
+<!-- $$$animateOut -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="animateOut-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">animateOut</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Number of frames over which the &quot;animate out&quot; simple keyframe ramp runs. Set to 0 to disable. Writing this triggers the <a href="qml-org-shotcut-qml-filter.html#animateOutChanged-signal" translate="no">animateOutChanged</a> signal.</p>
+</div></div><!-- @@@animateOut -->
+<br/>
+<!-- $$$blockSignals -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="blockSignals-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">blockSignals</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>When <code translate="no">true</code>, suppresses all QML signals from this object. Set while performing bulk property updates to avoid redundant UI refreshes.</p>
+</div></div><!-- @@@blockSignals -->
+<br/>
+<!-- $$$duration -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="duration-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">duration</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Total duration of the filter in frames (<code translate="no">out</code> - <code translate="no">in</code> + 1).</p>
+</div></div><!-- @@@duration -->
+<br/>
+<!-- $$$in -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="in-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">in</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The filter's in-point in frames, relative to the clip start.</p>
+</div></div><!-- @@@in -->
+<br/>
+<!-- $$$isNew -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="isNew-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">isNew</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether this filter was just added or its UI is simply being reloaded. Use this to set sensible initial property values on first load.</p>
+</div></div><!-- @@@isNew -->
+<br/>
+<!-- $$$out -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="out-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">out</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The filter's out-point in frames, relative to the clip start.</p>
+</div></div><!-- @@@out -->
+<br/>
+<!-- $$$path -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="path-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">path</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Absolute path to the directory containing this filter's QML files. Use to load auxiliary QML files relative to the filter.</p>
+</div></div><!-- @@@path -->
+<br/>
+<!-- $$$presets -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="presets-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">presets</span> : <span class="type">list</span>&lt;<span class="type">string</span>&gt;</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The list of saved preset names for this filter. Notifies <a href="qml-org-shotcut-qml-filter.html#presetsChanged-signal" translate="no">presetsChanged</a> when the list changes.</p>
+</div></div><!-- @@@presets -->
+<br/>
+<h2>Signal Documentation</h2>
+<!-- $$$analyzeFinished[overload1]$$$analyzeFinishedbool -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="analyzeFinished-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">analyzeFinished</span>(<span class="type">bool</span> <i>isSuccess</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when an analysis job completes. <i translate="no">isSuccess</i> is <code translate="no">true</code> on success.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onAnalyzeFinished</code>.</p>
+</div></div></div><!-- @@@analyzeFinished -->
+<br/>
+<!-- $$$animateInChanged[overload1]$$$animateInChanged -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="animateInChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">animateInChanged</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when <a href="qml-org-shotcut-qml-filter.html#animateIn-prop" translate="no">animateIn</a> changes.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onAnimateInChanged</code>.</p>
+</div></div></div><!-- @@@animateInChanged -->
+<br/>
+<!-- $$$animateInOutChanged[overload1]$$$animateInOutChanged -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="animateInOutChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">animateInOutChanged</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when either <a href="qml-org-shotcut-qml-filter.html#animateIn-prop" translate="no">animateIn</a> or <a href="qml-org-shotcut-qml-filter.html#animateOut-prop" translate="no">animateOut</a> changes.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onAnimateInOutChanged</code>.</p>
+</div></div></div><!-- @@@animateInOutChanged -->
+<br/>
+<!-- $$$animateOutChanged[overload1]$$$animateOutChanged -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="animateOutChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">animateOutChanged</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when <a href="qml-org-shotcut-qml-filter.html#animateOut-prop" translate="no">animateOut</a> changes.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onAnimateOutChanged</code>.</p>
+</div></div></div><!-- @@@animateOutChanged -->
+<br/>
+<!-- $$$changed[overload1]$$$changedstring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="changed-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">changed</span>(<span class="type">string</span> <i>name</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when any filter property changes. <i translate="no">name</i> is the property name, or empty if multiple properties changed.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onChanged</code>.</p>
+</div></div></div><!-- @@@changed -->
+<br/>
+<!-- $$$durationChanged[overload1]$$$durationChanged -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="durationChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">durationChanged</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when the filter's <a href="qml-org-shotcut-qml-filter.html#duration-prop" translate="no">duration</a> changes.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onDurationChanged</code>.</p>
+</div></div></div><!-- @@@durationChanged -->
+<br/>
+<!-- $$$inChanged[overload1]$$$inChangedint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="inChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">inChanged</span>(<span class="type">int</span> <i>delta</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when the filter's in-point changes. <i translate="no">delta</i> is the frame offset.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onInChanged</code>.</p>
+</div></div></div><!-- @@@inChanged -->
+<br/>
+<!-- $$$outChanged[overload1]$$$outChangedint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="outChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">outChanged</span>(<span class="type">int</span> <i>delta</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when the filter's out-point changes. <i translate="no">delta</i> is the frame offset.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onOutChanged</code>.</p>
+</div></div></div><!-- @@@outChanged -->
+<br/>
+<!-- $$$presetsChanged[overload1]$$$presetsChanged -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="presetsChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">presetsChanged</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when the list of saved presets changes.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onPresetsChanged</code>.</p>
+</div></div></div><!-- @@@presetsChanged -->
+<br/>
+<!-- $$$propertyChanged[overload1]$$$propertyChangedstring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="propertyChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">propertyChanged</span>(<span class="type">string</span> <i>name</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when a specific named property <i translate="no">name</i> changes. Use in bindings that need to react to individual property updates.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onPropertyChanged</code>.</p>
+</div></div></div><!-- @@@propertyChanged -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$analyze[overload1]$$$analyzeboolbool -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="analyze-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">analyze</span>(<span class="type">bool</span> <i>isAudio</i> = false, <span class="type">bool</span> <i>deferJob</i> = true)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Starts an analysis job for this filter. Set <i translate="no">isAudio</i> to <code translate="no">true</code> for audio filters. When <i translate="no">deferJob</i> is <code translate="no">true</code> the job is queued rather than run immediately. Emits <a href="qml-org-shotcut-qml-filter.html#analyzeFinished-signal" translate="no">analyzeFinished</a> when done.</p>
+</div></div><!-- @@@analyze -->
+<br/>
+<!-- $$$clearSimpleAnimation[overload1]$$$clearSimpleAnimationstring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="clearSimpleAnimation-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">clearSimpleAnimation</span>(<span class="type">string</span> <i>name</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Clears the &quot;animate in/out&quot; simple keyframe mode for property <i translate="no">name</i>, leaving only the static value at the current time position.</p>
+</div></div><!-- @@@clearSimpleAnimation -->
+<br/>
+<!-- $$$copyParameters[overload1]$$$copyParameters -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="copyParameters-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">copyParameters</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Copies this filter's current parameters to the clipboard.</p>
+</div></div><!-- @@@copyParameters -->
+<br/>
+<!-- $$$crop[overload1]$$$croprect -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="crop-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">crop</span>(<span class="type">rect</span> <i>r</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Applies a crop rectangle <i translate="no">r</i> to the filter's producer source.</p>
+</div></div><!-- @@@crop -->
+<br/>
+<!-- $$$deletePreset[overload1]$$$deletePresetstring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="deletePreset-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">deletePreset</span>(<span class="type">string</span> <i>name</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Deletes the saved preset named <i translate="no">name</i>.</p>
+</div></div><!-- @@@deletePreset -->
+<br/>
+<!-- $$$deselect[overload1]$$$deselect -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="deselect-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">deselect</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Deselects the current filter in the Filters panel.</p>
+</div></div><!-- @@@deselect -->
+<br/>
+<!-- $$$endUndoCommand[overload1]$$$endUndoCommand -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="endUndoCommand-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">endUndoCommand</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Ends the undo/redo command group started by <a href="qml-org-shotcut-qml-filter.html#startUndoParameterCommand-method" translate="no">startUndoParameterCommand</a>().</p>
+</div></div><!-- @@@endUndoCommand -->
+<br/>
+<!-- $$$framesFromTime[overload1]$$$framesFromTimestring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="framesFromTime-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">int</span> <span class="name">framesFromTime</span>(<span class="type">string</span> <i>time</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Converts a timecode <i translate="no">time</i> string (HH:MM:SS.ms or MLT time format) to a frame number.</p>
+</div></div><!-- @@@framesFromTime -->
+<br/>
+<!-- $$$get[overload1]$$$getstringint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="get-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">string</span> <span class="name">get</span>(<span class="type">string</span> <i>name</i>, <span class="type">int</span> <i>position</i> = -1)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns the value of MLT property <i translate="no">name</i> as a string. If time <i translate="no">position</i> is <code translate="no">-1</code> (default), returns the current value; otherwise returns the interpolated value at that frame position. To get an integer value, convert the result using <code translate="no">parseInt()</code>, e.g. <code translate="no">parseInt(filter.get(&quot;someProperty&quot;))</code>.</p>
+</div></div><!-- @@@get -->
+<br/>
+<!-- $$$getColor[overload1]$$$getColorstringint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="getColor-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">color</span> <span class="name">getColor</span>(<span class="type">string</span> <i>name</i>, <span class="type">int</span> <i>position</i> = -1)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns the value of MLT property <i translate="no">name</i> as a <code translate="no">color</code>. <i translate="no">position</i> defaults to <code translate="no">-1</code> (current value).</p>
+</div></div><!-- @@@getColor -->
+<br/>
+<!-- $$$getDouble[overload1]$$$getDoublestringint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="getDouble-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">real</span> <span class="name">getDouble</span>(<span class="type">string</span> <i>name</i>, <span class="type">int</span> <i>position</i> = -1)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns the value of MLT property <i translate="no">name</i> as a floating-point number. <i translate="no">position</i> defaults to <code translate="no">-1</code> (current value).</p>
+</div></div><!-- @@@getDouble -->
+<br/>
+<!-- $$$getGradient[overload1]$$$getGradientstring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="getGradient-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">list</span>&lt;<span class="type">string</span>&gt; <span class="name">getGradient</span>(<span class="type">string</span> <i>name</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns the gradient stop colors for property <i translate="no">name</i> as a list of color strings.</p>
+</div></div><!-- @@@getGradient -->
+<br/>
+<!-- $$$getHash[overload1]$$$getHash -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="getHash-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">getHash</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Computes a hash of the filter's input producer and stores it as the <code translate="no">shotcut:hash</code> property. Used internally by analysis jobs.</p>
+</div></div><!-- @@@getHash -->
+<br/>
+<!-- $$$getKeyFrameType[overload1]$$$getKeyFrameTypestringint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="getKeyFrameType-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">int</span> <span class="name">getKeyFrameType</span>(<span class="type">string</span> <i>name</i>, <span class="type">int</span> <i>keyIndex</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns the interpolation type (<code translate="no">mlt_keyframe_type</code>) of keyframe <i translate="no">keyIndex</i> for property <i translate="no">name</i>.</p>
+</div></div><!-- @@@getKeyFrameType -->
+<br/>
+<!-- $$$getNextKeyframePosition[overload1]$$$getNextKeyframePositionstringint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="getNextKeyframePosition-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">int</span> <span class="name">getNextKeyframePosition</span>(<span class="type">string</span> <i>name</i>, <span class="type">int</span> <i>position</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns the position of the next keyframe for property <i translate="no">name</i> after time <i translate="no">position</i>, or <code translate="no">-1</code> if none.</p>
+</div></div><!-- @@@getNextKeyframePosition -->
+<br/>
+<!-- $$$getPrevKeyframePosition[overload1]$$$getPrevKeyframePositionstringint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="getPrevKeyframePosition-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">int</span> <span class="name">getPrevKeyframePosition</span>(<span class="type">string</span> <i>name</i>, <span class="type">int</span> <i>position</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns the position of the previous keyframe for property <i translate="no">name</i> before time <i translate="no">position</i>, or <code translate="no">-1</code> if none.</p>
+</div></div><!-- @@@getPrevKeyframePosition -->
+<br/>
+<!-- $$$getRect[overload1]$$$getRectstringint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="getRect-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">rect</span> <span class="name">getRect</span>(<span class="type">string</span> <i>name</i>, <span class="type">int</span> <i>position</i> = -1)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns the value of MLT property <i translate="no">name</i> as a <code translate="no">rect</code>. The rectangle values are in the project coordinate space. <i translate="no">position</i> defaults to <code translate="no">-1</code> (current value).</p>
+</div></div><!-- @@@getRect -->
+<br/>
+<!-- $$$isAtLeastVersion[overload1]$$$isAtLeastVersionstring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="isAtLeastVersion-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">bool</span> <span class="name">isAtLeastVersion</span>(<span class="type">string</span> <i>version</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns <code translate="no">true</code> if Shotcut's version is greater than or equal to <i translate="no">version</i>. Use to guard features introduced in specific releases.</p>
+</div></div><!-- @@@isAtLeastVersion -->
+<br/>
+<!-- $$$keyframeCount[overload1]$$$keyframeCountstring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="keyframeCount-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">int</span> <span class="name">keyframeCount</span>(<span class="type">string</span> <i>name</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns the number of keyframes set on property <i translate="no">name</i>.</p>
+</div></div><!-- @@@keyframeCount -->
+<br/>
+<!-- $$$loadPresets[overload1]$$$loadPresets -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="loadPresets-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">loadPresets</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Reloads the list of saved presets from disk and emits <a href="qml-org-shotcut-qml-filter.html#presetsChanged-signal" translate="no">presetsChanged</a>.</p>
+</div></div><!-- @@@loadPresets -->
+<br/>
+<!-- $$$pasteParameters[overload1]$$$pasteParameterslist<string> -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="pasteParameters-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">pasteParameters</span>(<span class="type">list</span>&lt;<span class="type">string</span>&gt; <i>propertyNames</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Pastes parameters from the clipboard into this filter, restricted to the properties listed in <i translate="no">propertyNames</i>.</p>
+</div></div><!-- @@@pasteParameters -->
+<br/>
+<!-- $$$removeRectPercents[overload1]$$$removeRectPercentsstring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="removeRectPercents-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">removeRectPercents</span>(<span class="type">string</span> <i>name</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Converts a rect property stored as percentages to absolute pixel values. <i translate="no">name</i> is the MLT property to convert in-place.</p>
+</div></div><!-- @@@removeRectPercents -->
+<br/>
+<!-- $$$resetProperty[overload1]$$$resetPropertystring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="resetProperty-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">resetProperty</span>(<span class="type">string</span> <i>name</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Removes all keyframes for property <i translate="no">name</i> and resets it to its default value.</p>
+</div></div><!-- @@@resetProperty -->
+<br/>
+<!-- $$$savePreset[overload1]$$$savePresetlist<string>string -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="savePreset-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">int</span> <span class="name">savePreset</span>(<span class="type">list</span>&lt;<span class="type">string</span>&gt; <i>propertyNames</i>, <span class="type">string</span> <i>name</i> = &quot;&quot;)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Saves the current values of <i translate="no">propertyNames</i> as a preset named <i translate="no">name</i>. Returns the index of the new preset in <a href="qml-org-shotcut-qml-filter.html#presets-prop" translate="no">presets</a>.</p>
+</div></div><!-- @@@savePreset -->
+<br/>
+<!-- $$$set[overload1]$$$setstringstringint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="set-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">set</span>(<span class="type">string</span> <i>name</i>, <span class="type">string</span> <i>value</i>, <span class="type">int</span> <i>position</i> = -1)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Sets MLT property <i translate="no">name</i> to the string <i translate="no">value</i>. If time <i translate="no">position</i> is given, sets a keyframe at that position.</p>
+</div></div><!-- @@@set -->
+<br/>
+<!-- $$$set$$$setstringboolintint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="set-method-1">
+<td class="tblQmlFuncNode"><p>
+<span class="name">set</span>(<span class="type">string</span> <i>name</i>, <span class="type">bool</span> <i>value</i>, <span class="type">int</span> <i>position</i> = -1, <span class="type">int</span> <i>keyframeType</i> = -1)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Sets MLT property <i translate="no">name</i> to the boolean <i translate="no">value</i>, optionally at time <i translate="no">position</i>.</p>
+</div></div><!-- @@@set -->
+<br/>
+<!-- $$$set$$$setstringcolorintint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="set-method-2">
+<td class="tblQmlFuncNode"><p>
+<span class="name">set</span>(<span class="type">string</span> <i>name</i>, <span class="type">color</span> <i>value</i>, <span class="type">int</span> <i>position</i> = -1, <span class="type">int</span> <i>keyframeType</i> = -1)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Sets MLT property <i translate="no">name</i> to the color <i translate="no">value</i>, optionally at time <i translate="no">position</i>. <i translate="no">keyframeType</i> is one of the <code translate="no">mlt_keyframe_type</code> enum values; use <code translate="no">-1</code> for the default.</p>
+</div></div><!-- @@@set -->
+<br/>
+<!-- $$$set$$$setstringintintint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="set-method-3">
+<td class="tblQmlFuncNode"><p>
+<span class="name">set</span>(<span class="type">string</span> <i>name</i>, <span class="type">int</span> <i>value</i>, <span class="type">int</span> <i>position</i> = -1, <span class="type">int</span> <i>keyframeType</i> = -1)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Sets MLT property <i translate="no">name</i> to the integer <i translate="no">value</i>, optionally at time <i translate="no">position</i>.</p>
+</div></div><!-- @@@set -->
+<br/>
+<!-- $$$set$$$setstringrealintint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="set-method-4">
+<td class="tblQmlFuncNode"><p>
+<span class="name">set</span>(<span class="type">string</span> <i>name</i>, <span class="type">real</span> <i>value</i>, <span class="type">int</span> <i>position</i> = -1, <span class="type">int</span> <i>keyframeType</i> = -1)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Sets MLT property <i translate="no">name</i> to the floating-point <i translate="no">value</i>, optionally at time <i translate="no">position</i>.</p>
+</div></div><!-- @@@set -->
+<br/>
+<!-- $$$set$$$setstringrectintint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="set-method-5">
+<td class="tblQmlFuncNode"><p>
+<span class="name">set</span>(<span class="type">string</span> <i>name</i>, <span class="type">rect</span> <i>value</i>, <span class="type">int</span> <i>position</i> = -1, <span class="type">int</span> <i>keyframeType</i> = -1)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Sets MLT property <i translate="no">name</i> to the <i translate="no">value</i> rect, optionally at time <i translate="no">position</i>.</p>
+</div></div><!-- @@@set -->
+<br/>
+<!-- $$$set$$$setstringrealrealrealrealrealintint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="set-method-6">
+<td class="tblQmlFuncNode"><p>
+<span class="name">set</span>(<span class="type">string</span> <i>name</i>, <span class="type">real</span> <i>x</i>, <span class="type">real</span> <i>y</i>, <span class="type">real</span> <i>width</i>, <span class="type">real</span> <i>height</i>, <span class="type">real</span> <i>opacity</i> = 1.0, <span class="type">int</span> <i>position</i> = -1, <span class="type">int</span> <i>keyframeType</i> = -1)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Sets MLT property <i translate="no">name</i> to a rect specified by components, optionally at time <i translate="no">position</i>. <i translate="no">opacity</i> is clamped to [0.0, 1.0].</p>
+</div></div><!-- @@@set -->
+<br/>
+<!-- $$$setGradient[overload1]$$$setGradientstringlist<string> -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="setGradient-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">setGradient</span>(<span class="type">string</span> <i>name</i>, <span class="type">list</span>&lt;<span class="type">string</span>&gt; <i>colors</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Sets the gradient stops for property <i translate="no">name</i> from a list of <i translate="no">colors</i> strings.</p>
+</div></div><!-- @@@setGradient -->
+<br/>
+<!-- $$$setKeyFrameType[overload1]$$$setKeyFrameTypestringintint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="setKeyFrameType-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">setKeyFrameType</span>(<span class="type">string</span> <i>name</i>, <span class="type">int</span> <i>keyIndex</i>, <span class="type">int</span> <i>type</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Sets the interpolation <i translate="no">type</i> of keyframe <i translate="no">keyIndex</i> for property <i translate="no">name</i>.</p>
+</div></div><!-- @@@setKeyFrameType -->
+<br/>
+<!-- $$$startUndoParameterCommand[overload1]$$$startUndoParameterCommandstring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="startUndoParameterCommand-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">startUndoParameterCommand</span>(<span class="type">string</span> <i>description</i> = &quot;&quot;)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Begins an undo/redo command group for parameter changes. All <a href="qml-org-shotcut-qml-filter.html#set-method" translate="no">set</a>() calls until <a href="qml-org-shotcut-qml-filter.html#endUndoCommand-method" translate="no">endUndoCommand</a>() are grouped as one undoable step. <i translate="no">description</i> appears in the Edit &gt; Undo menu.</p>
+</div></div><!-- @@@startUndoParameterCommand -->
+<br/>
+</body>
+</html>

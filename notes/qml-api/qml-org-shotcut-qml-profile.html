@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- qmlprofile.cpp -->
+  <meta name="description" content="Describes the current project's Video Mode, accessed via the profile context property.">
+  <title>Profile QML Type | Shotcut QML Scripting API 26</title>
+    <link rel="stylesheet" type="text/css" href="style/shotcut.css">
+</head>
+<body>
+<li><a href="index.html">Shotcut QML Scripting API</a></li>
+<li><a href="org-shotcut-qml-qmlmodule.html" translate="no">org.shotcut.qml</a></li>
+<li>Profile</li>
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">Profile QML Type</h1>
+<!-- $$$Profile-brief -->
+<p>Describes the current project's <b>Video</b> <b>Mode</b>, accessed via the <code translate="no">profile</code> context property. <a href="#details">More...</a></p>
+<!-- @@@Profile -->
+<div class="table"><table class="alignedsummary requisites" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> <code translate="no">import org.shotcut.qml</code></td></tr>
+</table></div>
+<ul>
+<li><a href="qml-org-shotcut-qml-profile-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-profile.html#aspectRatio-prop" translate="no">aspectRatio</a></b> : real</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-profile.html#fps-prop" translate="no">fps</a></b> : real</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-profile.html#height-prop" translate="no">height</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-profile.html#sar-prop" translate="no">sar</a></b> : real</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-profile.html#width-prop" translate="no">width</a></b> : int</li>
+</ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-profile.html#profileChanged-signal" translate="no">profileChanged</a></b>()</li>
+</ul>
+<!-- $$$Profile-description -->
+<h2 id="details">Detailed Description</h2>
+<p>All properties reflect the active project profile. A <a href="qml-org-shotcut-qml-profile.html#profileChanged-signal" translate="no">profileChanged</a> signal is emitted when the profile switches (e.g. when a new project is opened or the profile is explicitly changed). After receiving <a href="qml-org-shotcut-qml-profile.html#profileChanged-signal" translate="no">profileChanged</a>, re-read all properties since they may have new values.</p>
+<pre class="cpp" translate="no">var w <span class="operator">=</span> profile<span class="operator">.</span>width
+var h <span class="operator">=</span> profile<span class="operator">.</span>height
+var scale <span class="operator">=</span> profile<span class="operator">.</span>width <span class="operator">/</span> profile<span class="operator">.</span>height <span class="operator">*</span> profile<span class="operator">.</span>sar</pre>
+<!-- @@@Profile -->
+<h2>Property Documentation</h2>
+<!-- $$$aspectRatio -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="aspectRatio-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">aspectRatio</span> : <span class="type">real</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The display aspect ratio (DAR = width / height × SAR) of the current video profile.</p>
+</div></div><!-- @@@aspectRatio -->
+<br/>
+<!-- $$$fps -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="fps-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">fps</span> : <span class="type">real</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The frames per second of the current video profile.</p>
+</div></div><!-- @@@fps -->
+<br/>
+<!-- $$$height -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="height-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">height</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The frame height of the current video profile in pixels.</p>
+</div></div><!-- @@@height -->
+<br/>
+<!-- $$$sar -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="sar-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">sar</span> : <span class="type">real</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The sample (pixel) aspect ratio of the current video profile. A value of 1.0 means square pixels.</p>
+</div></div><!-- @@@sar -->
+<br/>
+<!-- $$$width -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="width-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">width</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The frame width of the current video profile in pixels.</p>
+</div></div><!-- @@@width -->
+<br/>
+<h2>Signal Documentation</h2>
+<!-- $$$profileChanged[overload1]$$$profileChanged -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="profileChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">profileChanged</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when the project profile changes. Re-read all properties after receiving this signal.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onProfileChanged</code>.</p>
+</div></div></div><!-- @@@profileChanged -->
+<br/>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- index.qdoc -->
+  <meta name="description" content="Reference for all QML types and context properties available when writing filter panels, VUIs, and timeline extensions for Shotcut.">
+  <title>Shotcut QML Scripting API 26</title>
+    <link rel="stylesheet" type="text/css" href="style/shotcut.css">
+</head>
+<body>
+<h2 id="overview">Overview</h2>
+<div class="admonition warning">
+<p><b>Warning: </b>This API is subject to change and may not be stable across Shotcut versions.</p>
+</div>
+<p>Shotcut exposes its internal state to QML views through two mechanisms:</p>
+<ul>
+<li><b>Registered types</b> &mdash; classes you can instantiate directly in QML using their type name (e.g. <code translate="no">Filter</code>, <code translate="no">File</code>, <code translate="no">Metadata</code>).</li>
+<li><b>Context properties</b> &mdash; singleton objects injected into every view's root context and accessed by a fixed name (e.g. <code translate="no">application</code>, <code translate="no">profile</code>, <code translate="no">settings</code>).</li>
+</ul>
+<h2 id="modules">Modules</h2>
+<div class="table"><table class="annotated">
+<tr class="odd topAlign"><td class="tblName" translate="no"><p><a href="shotcut-controls-qmlmodule.html">Shotcut.Controls QML Module</a></p></td><td class="tblDescr"><p>C++-backed UI controls and dialogs for Shotcut QML views.</p></td></tr>
+<tr class="even topAlign"><td class="tblName" translate="no"><p><a href="org-shotcut-qml-qmlmodule.html">org.shotcut.qml QML Module</a></p></td><td class="tblDescr"><p>Types for filter scripting, metadata, and file access in Shotcut.</p></td></tr>
+</table></div>
+<h2 id="context-properties-singletons">Context Properties (Singletons)</h2>
+<p>These objects are available in every Shotcut QML view without import statements:</p>
+<div class="table"><table class="generic">
+ <thead><tr class="qt-style"><th >Name</th><th >Type</th><th >Description</th></tr></thead>
+<tr valign="top" class="odd"><td ><code translate="no">application</code></td><td ><a href="qml-org-shotcut-qml-application.html" translate="no">Application</a></td><td >Application-wide utilities (copy/paste filters, status messages, etc.)</td></tr>
+<tr valign="top" class="even"><td ><code translate="no">profile</code></td><td ><a href="qml-org-shotcut-qml-profile.html" translate="no">Profile</a></td><td >Current project video profile (width, height, fps, aspect ratio)</td></tr>
+<tr valign="top" class="odd"><td ><code translate="no">settings</code></td><td ><a href="qml-org-shotcut-qml-settings.html" translate="no">Settings</a></td><td >Persistent user settings (timeline options, fade durations, etc.)</td></tr>
+</table></div>
+<h2 id="per-view-context-properties">Per-View Context Properties</h2>
+<p>Additional context properties are injected by specific dock/view classes:</p>
+<div class="table"><table class="generic">
+ <thead><tr class="qt-style"><th >View</th><th >Name</th><th >Type</th></tr></thead>
+<tr valign="top" class="odd"><td >Filter panels</td><td ><code translate="no">filter</code></td><td ><a href="qml-org-shotcut-qml-filter.html" translate="no">Filter</a></td></tr>
+<tr valign="top" class="even"><td >Filter panels</td><td ><code translate="no">producer</code></td><td ><a href="qml-org-shotcut-qml-producer.html" translate="no">Producer</a></td></tr>
+<tr valign="top" class="odd"><td >Filter panels</td><td ><code translate="no">metadata</code></td><td ><a href="qml-org-shotcut-qml-metadata.html" translate="no">Metadata</a></td></tr>
+<tr valign="top" class="even"><td >Filter panels</td><td ><code translate="no">motionTrackerModel</code></td><td ><a href="qml-org-shotcut-qml-motiontrackermodel.html" translate="no">MotionTrackerModel</a></td></tr>
+<tr valign="top" class="odd"><td >Video player</td><td ><code translate="no">video</code></td><td >VideoWidget</td></tr>
+<tr valign="top" class="even"><td >HDR preview</td><td ><code translate="no">hdrWindow</code></td><td >HdrPreviewWindow</td></tr>
+<tr valign="top" class="odd"><td >Keyframes dock</td><td ><code translate="no">keyframes</code></td><td ><a href="qml-org-shotcut-qml-keyframesdock.html" translate="no">KeyframesDock</a></td></tr>
+<tr valign="top" class="even"><td >Keyframes dock</td><td ><code translate="no">parameters</code></td><td ><a href="qml-org-shotcut-qml-keyframesmodel.html" translate="no">KeyframesModel</a></td></tr>
+<tr valign="top" class="odd"><td >Timeline dock</td><td ><code translate="no">timeline</code></td><td ><a href="qml-org-shotcut-qml-timelinedock.html" translate="no">TimelineDock</a></td></tr>
+<tr valign="top" class="even"><td >Timeline dock</td><td ><code translate="no">multitrack</code></td><td ><a href="qml-org-shotcut-qml-multitrackmodel.html" translate="no">MultitrackModel</a></td></tr>
+<tr valign="top" class="odd"><td >Timeline dock</td><td ><code translate="no">markers</code></td><td ><a href="qml-org-shotcut-qml-markersmodel.html" translate="no">MarkersModel</a></td></tr>
+<tr valign="top" class="even"><td >Timeline dock</td><td ><code translate="no">subtitlesModel</code></td><td ><a href="qml-org-shotcut-qml-subtitlesmodel.html" translate="no">SubtitlesModel</a></td></tr>
+<tr valign="top" class="odd"><td >Timeline dock</td><td ><code translate="no">subtitlesSelectionModel</code></td><td ><a href="qml-org-shotcut-qml-subtitlesselectionmodel.html" translate="no">SubtitlesSelectionModel</a></td></tr>
+<tr valign="top" class="even"><td >Filters dock</td><td ><code translate="no">attachedfiltersmodel</code></td><td ><a href="qml-org-shotcut-qml-attachedfiltersmodel.html" translate="no">AttachedFiltersModel</a></td></tr>
+<tr valign="top" class="odd"><td >All docks</td><td ><code translate="no">view</code></td><td ><a href="qml-org-shotcut-qml-qmlview.html" translate="no">QmlView</a></td></tr>
+</table></div>
+</div>
+<!-- @@@index.html -->
+</body>
+</html>

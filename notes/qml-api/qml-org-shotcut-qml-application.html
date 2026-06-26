@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- qmlapplication.cpp -->
+  <meta name="description" content="Application-wide utilities, accessed via the application context property.">
+  <title>Application QML Type | Shotcut QML Scripting API 26</title>
+    <link rel="stylesheet" type="text/css" href="style/shotcut.css">
+</head>
+<body>
+<li><a href="index.html">Shotcut QML Scripting API</a></li>
+<li><a href="org-shotcut-qml-qmlmodule.html" translate="no">org.shotcut.qml</a></li>
+<li>Application</li>
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">Application QML Type</h1>
+<!-- $$$Application-brief -->
+<p>Application-wide utilities, accessed via the <code translate="no">application</code> context property. <a href="#details">More...</a></p>
+<!-- @@@Application -->
+<div class="table"><table class="alignedsummary requisites" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> <code translate="no">import org.shotcut.qml</code></td></tr>
+</table></div>
+<ul>
+<li><a href="qml-org-shotcut-qml-application-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-application.html#OS-prop" translate="no">OS</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-application.html#devicePixelRatio-prop" translate="no">devicePixelRatio</a></b> : real</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-application.html#dialogModality-prop" translate="no">dialogModality</a></b> : Qt::WindowModality</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-application.html#hasFiltersOnClipboard-prop" translate="no">hasFiltersOnClipboard</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-application.html#mainWinRect-prop" translate="no">mainWinRect</a></b> : rect</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-application.html#maxTextureSize-prop" translate="no">maxTextureSize</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-application.html#mousePos-prop" translate="no">mousePos</a></b> : point</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-application.html#toolTipBaseColor-prop" translate="no">toolTipBaseColor</a></b> : color</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-application.html#toolTipTextColor-prop" translate="no">toolTipTextColor</a></b> : color</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-application.html#wipes-prop" translate="no">wipes</a></b> : list&lt;string&gt;</li>
+</ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-application.html#filtersCopied-signal" translate="no">filtersCopied</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-application.html#filtersPasted-signal" translate="no">filtersPasted</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-application.html#paletteChanged-signal" translate="no">paletteChanged</a></b>()</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no">string <b><a href="qml-org-shotcut-qml-application.html#actionFirstShortcut-method" translate="no">actionFirstShortcut</a></b>(string <i>actionName</i>)</li>
+<li class="fn" translate="no">bool <b><a href="qml-org-shotcut-qml-application.html#addWipe-method" translate="no">addWipe</a></b>(string <i>filePath</i>)</li>
+<li class="fn" translate="no">int <b><a href="qml-org-shotcut-qml-application.html#audioChannels-method" translate="no">audioChannels</a></b>()</li>
+<li class="fn" translate="no">string <b><a href="qml-org-shotcut-qml-application.html#clockFromFrames-method" translate="no">clockFromFrames</a></b>(int <i>frames</i>)</li>
+<li class="fn" translate="no">bool <b><a href="qml-org-shotcut-qml-application.html#confirmOutputFilter-method" translate="no">confirmOutputFilter</a></b>()</li>
+<li class="fn" translate="no">color <b><a href="qml-org-shotcut-qml-application.html#contrastingColor-method" translate="no">contrastingColor</a></b>(string <i>color</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-application.html#copyAllFilters-method" translate="no">copyAllFilters</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-application.html#copyCurrentFilter-method" translate="no">copyCurrentFilter</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-application.html#copyEnabledFilters-method" translate="no">copyEnabledFilters</a></b>()</li>
+<li class="fn" translate="no">string <b><a href="qml-org-shotcut-qml-application.html#getNextProjectFile-method" translate="no">getNextProjectFile</a></b>(string <i>filename</i>)</li>
+<li class="fn" translate="no">bool <b><a href="qml-org-shotcut-qml-application.html#intersects-method" translate="no">intersects</a></b>(rect <i>a</i>, rect <i>b</i>)</li>
+<li class="fn" translate="no">bool <b><a href="qml-org-shotcut-qml-application.html#isProjectFolder-method" translate="no">isProjectFolder</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-application.html#showAddOnFiltersDialog-method" translate="no">showAddOnFiltersDialog</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-application.html#showStatusMessage-method" translate="no">showStatusMessage</a></b>(string <i>message</i>, int <i>timeoutSeconds</i>)</li>
+<li class="fn" translate="no">string <b><a href="qml-org-shotcut-qml-application.html#timeFromFrames-method" translate="no">timeFromFrames</a></b>(int <i>frames</i>)</li>
+</ul>
+<!-- $$$Application-description -->
+<h2 id="details">Detailed Description</h2>
+<p><code translate="no">application</code> is set as a context property on every Shotcut QML view. It cannot be instantiated from QML &mdash; use the global <code translate="no">application</code> identifier directly:</p>
+<pre class="cpp" translate="no">application<span class="operator">.</span>showStatusMessage(<span class="string">&quot;Ready&quot;</span>)
+var t <span class="operator">=</span> application<span class="operator">.</span>clockFromFrames(<span class="number">150</span>)
+var c <span class="operator">=</span> application<span class="operator">.</span>contrastingColor(<span class="string">&quot;red&quot;</span>)</pre>
+<!-- @@@Application -->
+<h2>Property Documentation</h2>
+<!-- $$$OS -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="OS-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">OS</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The operating system name: <code translate="no">&quot;Windows&quot;</code>, <code translate="no">&quot;Linux&quot;</code>, or <code translate="no">&quot;macOS&quot;</code>.</p>
+</div></div><!-- @@@OS -->
+<br/>
+<!-- $$$devicePixelRatio -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="devicePixelRatio-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">devicePixelRatio</span> : <span class="type">real</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The display device pixel ratio (e.g. 2.0 on HiDPI screens).</p>
+</div></div><!-- @@@devicePixelRatio -->
+<br/>
+<!-- $$$dialogModality -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="dialogModality-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">dialogModality</span> : <span class="type">Qt::WindowModality</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The modality to use for dialogs launched from QML.</p>
+</div></div><!-- @@@dialogModality -->
+<br/>
+<!-- $$$hasFiltersOnClipboard -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="hasFiltersOnClipboard-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">hasFiltersOnClipboard</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether the clipboard currently contains copied filters. Notifies <a href="qml-org-shotcut-qml-application.html#filtersCopied-signal" translate="no">filtersCopied</a>.</p>
+</div></div><!-- @@@hasFiltersOnClipboard -->
+<br/>
+<!-- $$$mainWinRect -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="mainWinRect-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">mainWinRect</span> : <span class="type">rect</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The geometry of the main application window.</p>
+</div></div><!-- @@@mainWinRect -->
+<br/>
+<!-- $$$maxTextureSize -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="maxTextureSize-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">maxTextureSize</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The maximum supported GPU texture dimension in pixels.</p>
+</div></div><!-- @@@maxTextureSize -->
+<br/>
+<!-- $$$mousePos -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="mousePos-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">mousePos</span> : <span class="type">point</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The current global cursor screen coordinates.</p>
+</div></div><!-- @@@mousePos -->
+<br/>
+<!-- $$$toolTipBaseColor -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="toolTipBaseColor-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">toolTipBaseColor</span> : <span class="type">color</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The background color of tooltips, derived from the current palette. Notifies <a href="qml-org-shotcut-qml-application.html#paletteChanged-signal" translate="no">paletteChanged</a>.</p>
+</div></div><!-- @@@toolTipBaseColor -->
+<br/>
+<!-- $$$toolTipTextColor -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="toolTipTextColor-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">toolTipTextColor</span> : <span class="type">color</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The text color of tooltips, derived from the current palette. Notifies <a href="qml-org-shotcut-qml-application.html#paletteChanged-signal" translate="no">paletteChanged</a>.</p>
+</div></div><!-- @@@toolTipTextColor -->
+<br/>
+<!-- $$$wipes -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="wipes-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">wipes</span> : <span class="type">list</span>&lt;<span class="type">string</span>&gt;</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The list of available wipe transition file names.</p>
+</div></div><!-- @@@wipes -->
+<br/>
+<h2>Signal Documentation</h2>
+<!-- $$$filtersCopied[overload1]$$$filtersCopied -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="filtersCopied-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">filtersCopied</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when filters are copied to the clipboard.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onFiltersCopied</code>.</p>
+</div></div></div><!-- @@@filtersCopied -->
+<br/>
+<!-- $$$filtersPasted[overload1]$$$filtersPasted -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="filtersPasted-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">filtersPasted</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when filters are pasted from the clipboard.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onFiltersPasted</code>.</p>
+</div></div></div><!-- @@@filtersPasted -->
+<br/>
+<!-- $$$paletteChanged[overload1]$$$paletteChanged -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="paletteChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">paletteChanged</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when the application color palette changes (e.g. dark/light mode switch).</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onPaletteChanged</code>.</p>
+</div></div></div><!-- @@@paletteChanged -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$actionFirstShortcut[overload1]$$$actionFirstShortcutstring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="actionFirstShortcut-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">string</span> <span class="name">actionFirstShortcut</span>(<span class="type">string</span> <i>actionName</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns the first keyboard shortcut string for the action identified by <i translate="no">actionName</i>, or an empty string if none is assigned.</p>
+</div></div><!-- @@@actionFirstShortcut -->
+<br/>
+<!-- $$$addWipe[overload1]$$$addWipestring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="addWipe-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">bool</span> <span class="name">addWipe</span>(<span class="type">string</span> <i>filePath</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Adds a custom wipe transition image at <i translate="no">filePath</i> to the wipes list. Returns <code translate="no">true</code> on success.</p>
+</div></div><!-- @@@addWipe -->
+<br/>
+<!-- $$$audioChannels[overload1]$$$audioChannels -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="audioChannels-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">int</span> <span class="name">audioChannels</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns the number of audio channels in the current project.</p>
+</div></div><!-- @@@audioChannels -->
+<br/>
+<!-- $$$clockFromFrames[overload1]$$$clockFromFramesint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="clockFromFrames-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">string</span> <span class="name">clockFromFrames</span>(<span class="type">int</span> <i>frames</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Converts a frame number <i translate="no">frames</i> to a clock string (<code translate="no">HH:MM:SS.mmm</code> or <code translate="no">HH:MM:SS:FF</code>) at the current profile fps.</p>
+</div></div><!-- @@@clockFromFrames -->
+<br/>
+<!-- $$$confirmOutputFilter[overload1]$$$confirmOutputFilter -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="confirmOutputFilter-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">bool</span> <span class="name">confirmOutputFilter</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Prompts the user to confirm applying a filter to the timeline output. Returns <code translate="no">true</code> if the user confirms.</p>
+</div></div><!-- @@@confirmOutputFilter -->
+<br/>
+<!-- $$$contrastingColor[overload1]$$$contrastingColorstring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="contrastingColor-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">color</span> <span class="name">contrastingColor</span>(<span class="type">string</span> <i>color</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns black or white, whichever contrasts better against <i translate="no">color</i>.</p>
+</div></div><!-- @@@contrastingColor -->
+<br/>
+<!-- $$$copyAllFilters[overload1]$$$copyAllFilters -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="copyAllFilters-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">copyAllFilters</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Copies all filters on the currently selected clip to the clipboard.</p>
+</div></div><!-- @@@copyAllFilters -->
+<br/>
+<!-- $$$copyCurrentFilter[overload1]$$$copyCurrentFilter -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="copyCurrentFilter-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">copyCurrentFilter</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Copies the currently selected filter to the clipboard.</p>
+</div></div><!-- @@@copyCurrentFilter -->
+<br/>
+<!-- $$$copyEnabledFilters[overload1]$$$copyEnabledFilters -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="copyEnabledFilters-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">copyEnabledFilters</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Copies only the checked (enabled) filters to the clipboard.</p>
+</div></div><!-- @@@copyEnabledFilters -->
+<br/>
+<!-- $$$getNextProjectFile[overload1]$$$getNextProjectFilestring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="getNextProjectFile-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">string</span> <span class="name">getNextProjectFile</span>(<span class="type">string</span> <i>filename</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns a versioned file path for saving a new project-related file named <i translate="no">filename</i> (e.g. <code translate="no">project-001.txt</code>) next to the current project file.</p>
+</div></div><!-- @@@getNextProjectFile -->
+<br/>
+<!-- $$$intersects[overload1]$$$intersectsrectrect -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="intersects-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">bool</span> <span class="name">intersects</span>(<span class="type">rect</span> <i>a</i>, <span class="type">rect</span> <i>b</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns <code translate="no">true</code> if rectangle <i translate="no">a</i> intersects rectangle <i translate="no">b</i>.</p>
+</div></div><!-- @@@intersects -->
+<br/>
+<!-- $$$isProjectFolder[overload1]$$$isProjectFolder -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="isProjectFolder-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">bool</span> <span class="name">isProjectFolder</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns <code translate="no">true</code> if the current project is saved inside a project folder.</p>
+</div></div><!-- @@@isProjectFolder -->
+<br/>
+<!-- $$$showAddOnFiltersDialog[overload1]$$$showAddOnFiltersDialog -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="showAddOnFiltersDialog-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">showAddOnFiltersDialog</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Opens the Add-On Filters catalog dialog.</p>
+</div></div><!-- @@@showAddOnFiltersDialog -->
+<br/>
+<!-- $$$showStatusMessage[overload1]$$$showStatusMessagestringint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="showStatusMessage-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">showStatusMessage</span>(<span class="type">string</span> <i>message</i>, <span class="type">int</span> <i>timeoutSeconds</i> = 15)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Displays <i translate="no">message</i> in the main window status bar for <i translate="no">timeoutSeconds</i> seconds.</p>
+</div></div><!-- @@@showStatusMessage -->
+<br/>
+<!-- $$$timeFromFrames[overload1]$$$timeFromFramesint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="timeFromFrames-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">string</span> <span class="name">timeFromFrames</span>(<span class="type">int</span> <i>frames</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Converts a frame number <i translate="no">frames</i> to an MLT timecode string.</p>
+</div></div><!-- @@@timeFromFrames -->
+<br/>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- qmlextension.cpp -->
+  <meta name="description" content="Represents a loadable Shotcut extension (e.g. the Whisper speech-to-text package).">
+  <title>QmlExtension QML Type | Shotcut QML Scripting API 26</title>
+    <link rel="stylesheet" type="text/css" href="style/shotcut.css">
+</head>
+<body>
+<li><a href="index.html">Shotcut QML Scripting API</a></li>
+<li><a href="org-shotcut-qml-qmlmodule.html" translate="no">org.shotcut.qml</a></li>
+<li>QmlExtension</li>
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">QmlExtension QML Type</h1>
+<!-- $$$QmlExtension-brief -->
+<p>Represents a loadable Shotcut extension (e.g. the Whisper speech-to-text package). <a href="#details">More...</a></p>
+<!-- @@@QmlExtension -->
+<div class="table"><table class="alignedsummary requisites" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> <code translate="no">import org.shotcut.qml</code></td></tr>
+</table></div>
+<ul>
+<li><a href="qml-org-shotcut-qml-qmlextension-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-qmlextension.html#files-prop" translate="no">files</a></b> : list&lt;QmlExtensionFile&gt;</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-qmlextension.html#id-prop" translate="no">id</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-qmlextension.html#name-prop" translate="no">name</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-qmlextension.html#version-prop" translate="no">version</a></b> : string</li>
+</ul>
+<!-- $$$QmlExtension-description -->
+<h2 id="details">Detailed Description</h2>
+<p>Extensions are installed or downloaded as a bundle of files described by <a href="qml-org-shotcut-qml-qmlextensionfile.html" translate="no">QmlExtensionFile</a> entries. Access the current extension object through the <code translate="no">extension</code> context property in extension-related QML views.</p>
+<pre class="cpp" translate="no"><span class="type">Text</span> { <span class="name">text</span>: <span class="name">extension</span>.<span class="name">name</span> <span class="operator">+</span> <span class="string">&quot; v&quot;</span> <span class="operator">+</span> <span class="name">extension</span>.<span class="name">version</span> }</pre>
+<!-- @@@QmlExtension -->
+<h2>Property Documentation</h2>
+<!-- $$$files -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="files-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">files</span> : <span class="type">list</span>&lt;<span class="type"><a href="qml-org-shotcut-qml-qmlextensionfile.html" translate="no">QmlExtensionFile</a></span>&gt;</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The list of files that make up this extension.</p>
+<p><b>See also </b><a href="qml-org-shotcut-qml-qmlextensionfile.html" translate="no">QmlExtensionFile</a>.</p>
+</div></div><!-- @@@files -->
+<br/>
+<!-- $$$id -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="id-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">id</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The unique identifier for the extension (e.g. <code translate="no">&quot;whisper&quot;</code>).</p>
+</div></div><!-- @@@id -->
+<br/>
+<!-- $$$name -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="name-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">name</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The human-readable display name of the extension.</p>
+</div></div><!-- @@@name -->
+<br/>
+<!-- $$$version -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="version-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">version</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The installed version string of the extension.</p>
+</div></div><!-- @@@version -->
+<br/>
+</body>
+</html>

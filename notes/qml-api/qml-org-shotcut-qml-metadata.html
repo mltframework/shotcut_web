@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- qmlmetadata.cpp -->
+  <meta name="description" content="Describes a filter's identity, capabilities, and keyframe configuration.">
+  <title>Metadata QML Type | Shotcut QML Scripting API 26</title>
+    <link rel="stylesheet" type="text/css" href="style/shotcut.css">
+</head>
+<body>
+<li><a href="index.html">Shotcut QML Scripting API</a></li>
+<li><a href="org-shotcut-qml-qmlmodule.html" translate="no">org.shotcut.qml</a></li>
+<li>Metadata</li>
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">Metadata QML Type</h1>
+<!-- $$$Metadata-brief -->
+<p>Describes a filter's identity, capabilities, and keyframe configuration. <a href="#details">More...</a></p>
+<!-- @@@Metadata -->
+<div class="table"><table class="alignedsummary requisites" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> <code translate="no">import org.shotcut.qml</code></td></tr>
+</table></div>
+<ul>
+<li><a href="qml-org-shotcut-qml-metadata-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-metadata.html#allowMultiple-prop" translate="no">allowMultiple</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-metadata.html#help-prop" translate="no">help</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-metadata.html#isAudio-prop" translate="no">isAudio</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-metadata.html#isClipOnly-prop" translate="no">isClipOnly</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-metadata.html#isDeprecated-prop" translate="no">isDeprecated</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-metadata.html#isFavorite-prop" translate="no">isFavorite</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-metadata.html#isHidden-prop" translate="no">isHidden</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-metadata.html#isOutputOnly-prop" translate="no">isOutputOnly</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-metadata.html#isTrackOnly-prop" translate="no">isTrackOnly</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-metadata.html#keyframes-prop" translate="no">keyframes</a></b> : KeyframesMetadata</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-metadata.html#keywords-prop" translate="no">keywords</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-metadata.html#minimumVersion-prop" translate="no">minimumVersion</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-metadata.html#mlt_service-prop" translate="no">mlt_service</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-metadata.html#name-prop" translate="no">name</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-metadata.html#needsGPU-prop" translate="no">needsGPU</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-metadata.html#qml-prop" translate="no">qml</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-metadata.html#qmlFilePath-prop" translate="no">qmlFilePath</a></b> : url</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-metadata.html#seekReverse-prop" translate="no">seekReverse</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-metadata.html#type-prop" translate="no">type</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-metadata.html#vui-prop" translate="no">vui</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-metadata.html#vuiFilePath-prop" translate="no">vuiFilePath</a></b> : url</li>
+</ul>
+<!-- $$$Metadata-description -->
+<h2 id="details">Detailed Description</h2>
+<p><code translate="no">Metadata</code> is the read-only descriptor for a filter service. It is available in <b>Filters</b> panels as the <code translate="no">metadata</code> context property. Use it to inspect the filter type, supported capabilities, and keyframe parameters.</p>
+<!-- @@@Metadata -->
+<h2>Property Documentation</h2>
+<!-- $$$allowMultiple -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="allowMultiple-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">allowMultiple</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether multiple instances of this filter can be applied to the same clip.</p>
+</div></div><!-- @@@allowMultiple -->
+<br/>
+<!-- $$$help -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="help-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">help</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>A link to the documentation page for this filter.</p>
+</div></div><!-- @@@help -->
+<br/>
+<!-- $$$isAudio -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="isAudio-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">isAudio</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether this filter operates on audio rather than video.</p>
+</div></div><!-- @@@isAudio -->
+<br/>
+<!-- $$$isClipOnly -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="isClipOnly-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">isClipOnly</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether this filter can only be applied to clips (not tracks or timeline output).</p>
+</div></div><!-- @@@isClipOnly -->
+<br/>
+<!-- $$$isDeprecated -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="isDeprecated-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">isDeprecated</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether this filter has been deprecated and should not be used in new projects.</p>
+</div></div><!-- @@@isDeprecated -->
+<br/>
+<!-- $$$isFavorite -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="isFavorite-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">isFavorite</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether the user has marked this filter as a favorite.</p>
+</div></div><!-- @@@isFavorite -->
+<br/>
+<!-- $$$isHidden -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="isHidden-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">isHidden</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether this filter is hidden from the filter list UI.</p>
+</div></div><!-- @@@isHidden -->
+<br/>
+<!-- $$$isOutputOnly -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="isOutputOnly-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">isOutputOnly</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether this filter can only be applied to the timeline output.</p>
+</div></div><!-- @@@isOutputOnly -->
+<br/>
+<!-- $$$isTrackOnly -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="isTrackOnly-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">isTrackOnly</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether this filter can only be applied to tracks.</p>
+</div></div><!-- @@@isTrackOnly -->
+<br/>
+<!-- $$$keyframes -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="keyframes-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">keyframes</span> : <span class="type"><a href="qml-org-shotcut-qml-keyframesmetadata.html" translate="no">KeyframesMetadata</a></span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The keyframes configuration object for this filter.</p>
+<p><b>See also </b><a href="qml-org-shotcut-qml-keyframesmetadata.html" translate="no">KeyframesMetadata</a>.</p>
+</div></div><!-- @@@keyframes -->
+<br/>
+<!-- $$$keywords -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="keywords-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">keywords</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Space-separated keywords for searching this filter in the filter list.</p>
+</div></div><!-- @@@keywords -->
+<br/>
+<!-- $$$minimumVersion -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="minimumVersion-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">minimumVersion</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The minimum MLT metadata version required for this filter.</p>
+</div></div><!-- @@@minimumVersion -->
+<br/>
+<!-- $$$mlt_service -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="mlt_service-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">mlt_service</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The MLT service identifier (e.g. <code translate="no">&quot;avfilter.boxblur&quot;</code>).</p>
+</div></div><!-- @@@mlt_service -->
+<br/>
+<!-- $$$name -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="name-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">name</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The human-readable display name of the filter (e.g. <code translate="no">&quot;Blur&quot;</code>).</p>
+</div></div><!-- @@@name -->
+<br/>
+<!-- $$$needsGPU -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="needsGPU-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">needsGPU</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether this filter requires GPU (GLSL) processing.</p>
+</div></div><!-- @@@needsGPU -->
+<br/>
+<!-- $$$qml -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="qml-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">qml</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The file name of the filter's User Interface (UI) parameter panel (relative to the filter directory).</p>
+</div></div><!-- @@@qml -->
+<br/>
+<!-- $$$qmlFilePath -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="qmlFilePath-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">qmlFilePath</span> : <span class="type">url</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The full URL to the filter's QML parameter panel file.</p>
+</div></div><!-- @@@qmlFilePath -->
+<br/>
+<!-- $$$seekReverse -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="seekReverse-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">seekReverse</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether this filter may need to repeatedly perform reverse seeking for certain <b>Time</b> filters.</p>
+</div></div><!-- @@@seekReverse -->
+<br/>
+<!-- $$$type -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="type-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">type</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The plugin type. One of <code translate="no">Filter</code> (0), <code translate="no">Producer</code> (1), <code translate="no">Transition</code> (2), <code translate="no">Link</code> (3), or <code translate="no">FilterSet</code> (4).</p>
+</div></div><!-- @@@type -->
+<br/>
+<!-- $$$vui -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="vui-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">vui</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The file name of the filter's VUI overlay QML file (relative to the filter directory).</p>
+</div></div><!-- @@@vui -->
+<br/>
+<!-- $$$vuiFilePath -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="vuiFilePath-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">vuiFilePath</span> : <span class="type">url</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The full URL to the filter's VUI overlay file.</p>
+</div></div><!-- @@@vuiFilePath -->
+<br/>
+</body>
+</html>

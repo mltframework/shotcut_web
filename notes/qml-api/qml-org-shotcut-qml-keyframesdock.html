@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- keyframesdock.cpp -->
+  <meta name="description" content="The Keyframes panel controller, available as the keyframes context property.">
+  <title>KeyframesDock QML Type | Shotcut QML Scripting API 26</title>
+    <link rel="stylesheet" type="text/css" href="style/shotcut.css">
+</head>
+<body>
+<li><a href="index.html">Shotcut QML Scripting API</a></li>
+<li><a href="org-shotcut-qml-qmlmodule.html" translate="no">org.shotcut.qml</a></li>
+<li>KeyframesDock</li>
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">KeyframesDock QML Type</h1>
+<!-- $$$KeyframesDock-brief -->
+<p>The Keyframes panel controller, available as the <code translate="no">keyframes</code> context property. <a href="#details">More...</a></p>
+<!-- @@@KeyframesDock -->
+<div class="table"><table class="alignedsummary requisites" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> <code translate="no">import org.shotcut.qml</code></td></tr>
+</table></div>
+<ul>
+<li><a href="qml-org-shotcut-qml-keyframesdock-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-keyframesdock.html#timeScale-prop" translate="no">timeScale</a></b> : real</li>
+</ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-keyframesdock.html#changed-signal" translate="no">changed</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-keyframesdock.html#dockClicked-signal" translate="no">dockClicked</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-keyframesdock.html#newFilter-signal" translate="no">newFilter</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-keyframesdock.html#seekNextSimple-signal" translate="no">seekNextSimple</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-keyframesdock.html#seekPreviousSimple-signal" translate="no">seekPreviousSimple</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-keyframesdock.html#timeScaleChanged-signal" translate="no">timeScaleChanged</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-keyframesdock.html#zoomIn-signal" translate="no">zoomIn</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-keyframesdock.html#zoomOut-signal" translate="no">zoomOut</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-keyframesdock.html#zoomToFit-signal" translate="no">zoomToFit</a></b>()</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-keyframesdock.html#load-method" translate="no">load</a></b>(bool <i>force</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-keyframesdock.html#reload-method" translate="no">reload</a></b>()</li>
+<li class="fn" translate="no">int <b><a href="qml-org-shotcut-qml-keyframesdock.html#seekNext-method" translate="no">seekNext</a></b>()</li>
+<li class="fn" translate="no">int <b><a href="qml-org-shotcut-qml-keyframesdock.html#seekPrevious-method" translate="no">seekPrevious</a></b>()</li>
+</ul>
+<!-- $$$KeyframesDock-description -->
+<h2 id="details">Detailed Description</h2>
+<p><code translate="no">keyframes</code> is injected into the Keyframes QML view and exposes navigation methods and the time-scale zoom state.</p>
+<!-- @@@KeyframesDock -->
+<h2>Property Documentation</h2>
+<!-- $$$timeScale -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="timeScale-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">timeScale</span> : <span class="type">real</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The horizontal zoom factor of the Keyframes ruler. Settable.</p>
+</div></div><!-- @@@timeScale -->
+<br/>
+<h2>Signal Documentation</h2>
+<!-- $$$changed[overload1]$$$changed -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="changed-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">changed</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when a filter parameter value changes from within the Keyframes panel.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onChanged</code>.</p>
+</div></div></div><!-- @@@changed -->
+<br/>
+<!-- $$$dockClicked[overload1]$$$dockClicked -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="dockClicked-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">dockClicked</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when the user clicks inside the Keyframes dock area.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onDockClicked</code>.</p>
+</div></div></div><!-- @@@dockClicked -->
+<br/>
+<!-- $$$newFilter[overload1]$$$newFilter -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="newFilter-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">newFilter</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when the filter itself (not just a parameter) has been changed.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onNewFilter</code>.</p>
+</div></div></div><!-- @@@newFilter -->
+<br/>
+<!-- $$$seekNextSimple[overload1]$$$seekNextSimple -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="seekNextSimple-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">seekNextSimple</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted to request seeking to the next simple-keyframe boundary.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onSeekNextSimple</code>.</p>
+</div></div></div><!-- @@@seekNextSimple -->
+<br/>
+<!-- $$$seekPreviousSimple[overload1]$$$seekPreviousSimple -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="seekPreviousSimple-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">seekPreviousSimple</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted to request seeking to the previous simple-keyframe boundary.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onSeekPreviousSimple</code>.</p>
+</div></div></div><!-- @@@seekPreviousSimple -->
+<br/>
+<!-- $$$timeScaleChanged[overload1]$$$timeScaleChanged -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="timeScaleChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">timeScaleChanged</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when <a href="qml-org-shotcut-qml-keyframesdock.html#timeScale-prop" translate="no">timeScale</a> changes.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onTimeScaleChanged</code>.</p>
+</div></div></div><!-- @@@timeScaleChanged -->
+<br/>
+<!-- $$$zoomIn[overload1]$$$zoomIn -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="zoomIn-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">zoomIn</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted to request zooming in on the keyframes ruler.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onZoomIn</code>.</p>
+</div></div></div><!-- @@@zoomIn -->
+<br/>
+<!-- $$$zoomOut[overload1]$$$zoomOut -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="zoomOut-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">zoomOut</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted to request zooming out on the keyframes ruler.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onZoomOut</code>.</p>
+</div></div></div><!-- @@@zoomOut -->
+<br/>
+<!-- $$$zoomToFit[overload1]$$$zoomToFit -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="zoomToFit-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">zoomToFit</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted to request resetting zoom to show all keyframes.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onZoomToFit</code>.</p>
+</div></div></div><!-- @@@zoomToFit -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$load[overload1]$$$loadbool -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="load-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">load</span>(<span class="type">bool</span> <i>force</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Loads (or reloads if <i translate="no">force</i> is <code translate="no">true</code>) the Keyframes panel for the current filter.</p>
+</div></div><!-- @@@load -->
+<br/>
+<!-- $$$reload[overload1]$$$reload -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="reload-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">reload</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Reloads the keyframes model for the current filter without resetting the view.</p>
+</div></div><!-- @@@reload -->
+<br/>
+<!-- $$$seekNext[overload1]$$$seekNext -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="seekNext-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">int</span> <span class="name">seekNext</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Seeks the playhead to the next keyframe position. Returns the new playhead position in frames.</p>
+</div></div><!-- @@@seekNext -->
+<br/>
+<!-- $$$seekPrevious[overload1]$$$seekPrevious -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="seekPrevious-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">int</span> <span class="name">seekPrevious</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Seeks the playhead to the previous keyframe position. Returns the new playhead position in frames.</p>
+</div></div><!-- @@@seekPrevious -->
+<br/>
+</body>
+</html>

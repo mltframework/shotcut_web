@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- motiontrackermodel.cpp -->
+  <meta name="description" content="A list model of motion tracker entries attached to the current producer.">
+  <title>MotionTrackerModel QML Type | Shotcut QML Scripting API 26</title>
+    <link rel="stylesheet" type="text/css" href="style/shotcut.css">
+</head>
+<body>
+<li><a href="index.html">Shotcut QML Scripting API</a></li>
+<li><a href="org-shotcut-qml-qmlmodule.html" translate="no">org.shotcut.qml</a></li>
+<li>MotionTrackerModel</li>
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">MotionTrackerModel QML Type</h1>
+<!-- $$$MotionTrackerModel-brief -->
+<p>A list model of motion tracker entries attached to the current producer. <a href="#details">More...</a></p>
+<!-- @@@MotionTrackerModel -->
+<div class="table"><table class="alignedsummary requisites" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> <code translate="no">import org.shotcut.qml</code></td></tr>
+</table></div>
+<ul>
+<li><a href="qml-org-shotcut-qml-motiontrackermodel-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-motiontrackermodel.html#nameProperty-prop" translate="no">nameProperty</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-motiontrackermodel.html#operationProperty-prop" translate="no">operationProperty</a></b> : string</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no">int <b><a href="qml-org-shotcut-qml-motiontrackermodel.html#keyframeIntervalFrames-method" translate="no">keyframeIntervalFrames</a></b>(int <i>row</i>)</li>
+<li class="fn" translate="no">string <b><a href="qml-org-shotcut-qml-motiontrackermodel.html#nextName-method" translate="no">nextName</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-motiontrackermodel.html#reset-method" translate="no">reset</a></b>(Filter <i>filter</i>, string <i>property</i>, int <i>row</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-motiontrackermodel.html#setName-method" translate="no">setName</a></b>(Filter <i>filter</i>, string <i>name</i>)</li>
+<li class="fn" translate="no">list&lt;rect&gt; <b><a href="qml-org-shotcut-qml-motiontrackermodel.html#trackingData-method" translate="no">trackingData</a></b>(int <i>row</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-motiontrackermodel.html#undo-method" translate="no">undo</a></b>(Filter <i>filter</i>, string <i>propertyName</i>)</li>
+</ul>
+<!-- $$$MotionTrackerModel-description -->
+<h2 id="details">Detailed Description</h2>
+<p><code translate="no">MotionTrackerModel</code> is available as the <code translate="no">motionTrackerModel</code> context property in the Filters panel. Each row represents one stored motion tracker (a named bounding-box trajectory recorded against the clip).</p>
+<!-- @@@MotionTrackerModel -->
+<h2>Property Documentation</h2>
+<!-- $$$nameProperty -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="nameProperty-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">nameProperty</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The MLT property name used to store the tracker's display name on a filter (value: <code translate="no">&quot;shotcut:motionTracker.name&quot;</code>). CONSTANT.</p>
+</div></div><!-- @@@nameProperty -->
+<br/>
+<!-- $$$operationProperty -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="operationProperty-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">operationProperty</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The MLT property name used to store the tracker's link operation on a filter (value: <code translate="no">&quot;shotcut:motionTracker.operation&quot;</code>). CONSTANT.</p>
+</div></div><!-- @@@operationProperty -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$keyframeIntervalFrames[overload1]$$$keyframeIntervalFramesint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="keyframeIntervalFrames-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">int</span> <span class="name">keyframeIntervalFrames</span>(<span class="type">int</span> <i>row</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns the keyframe interval in frames for the tracker at <i translate="no">row</i>.</p>
+</div></div><!-- @@@keyframeIntervalFrames -->
+<br/>
+<!-- $$$nextName[overload1]$$$nextName -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="nextName-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">string</span> <span class="name">nextName</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns an auto-generated unique name for a new tracker (e.g. <code translate="no">&quot;Tracker</code> 2&quot;).</p>
+</div></div><!-- @@@nextName -->
+<br/>
+<!-- $$$reset[overload1]$$$resetFilterstringint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="reset-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">reset</span>(<span class="type"><a href="qml-org-shotcut-qml-filter.html" translate="no">Filter</a></span> <i>filter</i>, <span class="type">string</span> <i>property</i>, <span class="type">int</span> <i>row</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Clears the keyframes for <i translate="no">property</i> on <i translate="no">filter</i> that were written by the tracker at model row <i translate="no">row</i>.</p>
+</div></div><!-- @@@reset -->
+<br/>
+<!-- $$$setName[overload1]$$$setNameFilterstring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="setName-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">setName</span>(<span class="type"><a href="qml-org-shotcut-qml-filter.html" translate="no">Filter</a></span> <i>filter</i>, <span class="type">string</span> <i>name</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Sets the display <i translate="no">name</i> for the tracker linked to <i translate="no">filter</i>.</p>
+</div></div><!-- @@@setName -->
+<br/>
+<!-- $$$trackingData[overload1]$$$trackingDataint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="trackingData-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">list</span>&lt;<span class="type">rect</span>&gt; <span class="name">trackingData</span>(<span class="type">int</span> <i>row</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns the list of bounding-box rectangles recorded by the tracker at <i translate="no">row</i>, one entry per keyframe interval frame.</p>
+</div></div><!-- @@@trackingData -->
+<br/>
+<!-- $$$undo[overload1]$$$undoFilterstring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="undo-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">undo</span>(<span class="type"><a href="qml-org-shotcut-qml-filter.html" translate="no">Filter</a></span> <i>filter</i>, <span class="type">string</span> <i>propertyName</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Static helper that removes motion-tracker&ndash;written keyframes for <i translate="no">propertyName</i> on <i translate="no">filter</i>, typically called before re-applying a tracker.</p>
+</div></div><!-- @@@undo -->
+<br/>
+</body>
+</html>

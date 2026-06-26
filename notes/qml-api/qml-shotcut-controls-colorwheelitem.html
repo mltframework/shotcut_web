@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- shotcut-controls-types.qdoc -->
+  <meta name="description" content="An interactive hue/saturation color wheel with a brightness slider.">
+  <title>ColorWheelItem QML Type | Shotcut QML Scripting API 26</title>
+    <link rel="stylesheet" type="text/css" href="style/shotcut.css">
+</head>
+<body>
+<li><a href="index.html">Shotcut QML Scripting API</a></li>
+<li><a href="shotcut-controls-qmlmodule.html" translate="no">Shotcut.Controls</a></li>
+<li>ColorWheelItem</li>
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">ColorWheelItem QML Type</h1>
+<!-- $$$ColorWheelItem-brief -->
+<p>An interactive hue/saturation color wheel with a brightness slider. <a href="#details">More...</a></p>
+<!-- @@@ColorWheelItem -->
+<div class="table"><table class="alignedsummary requisites" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> <code translate="no">import Shotcut.Controls</code></td></tr>
+</table></div>
+<ul>
+<li><a href="qml-shotcut-controls-colorwheelitem-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-shotcut-controls-colorwheelitem.html#blue-prop" translate="no">blue</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-shotcut-controls-colorwheelitem.html#blueF-prop" translate="no">blueF</a></b> : real</li>
+<li class="fn" translate="no"><b><a href="qml-shotcut-controls-colorwheelitem.html#color-prop" translate="no">color</a></b> : color</li>
+<li class="fn" translate="no"><b><a href="qml-shotcut-controls-colorwheelitem.html#green-prop" translate="no">green</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-shotcut-controls-colorwheelitem.html#greenF-prop" translate="no">greenF</a></b> : real</li>
+<li class="fn" translate="no"><b><a href="qml-shotcut-controls-colorwheelitem.html#red-prop" translate="no">red</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-shotcut-controls-colorwheelitem.html#redF-prop" translate="no">redF</a></b> : real</li>
+<li class="fn" translate="no"><b><a href="qml-shotcut-controls-colorwheelitem.html#step-prop" translate="no">step</a></b> : real</li>
+</ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-shotcut-controls-colorwheelitem.html#colorChanged-signal" translate="no">colorChanged</a></b>(color <i>color</i>)</li>
+</ul>
+<!-- $$$ColorWheelItem-description -->
+<h2 id="details">Detailed Description</h2>
+<p>Renders a circular color wheel (hue + saturation) with an integrated brightness slider. The user can click and drag inside the wheel or slider to change the color interactively.</p>
+<pre class="cpp" translate="no">import Shotcut.Controls as Shotcut
+
+<span class="type">Shotcut</span>.ColorWheelItem {
+    <span class="name">id</span>: <span class="name">wheel</span>
+    <span class="name">color</span>: <span class="name">filter</span>.<span class="name">getColor</span>(<span class="string">&quot;color&quot;</span>)
+    <span class="name">onColorChanged</span>: <span class="name">filter</span>.<span class="name">set</span>(<span class="string">&quot;color&quot;</span>, <span class="name">color</span>)
+}</pre>
+<!-- @@@ColorWheelItem -->
+<h2>Property Documentation</h2>
+<!-- $$$blue -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="blue-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">blue</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The blue channel (0&ndash;255) of the selected color.</p>
+</div></div><!-- @@@blue -->
+<br/>
+<!-- $$$blueF -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="blueF-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">blueF</span> : <span class="type">real</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The blue channel as a normalized floating-point value (0.0&ndash;1.0).</p>
+</div></div><!-- @@@blueF -->
+<br/>
+<!-- $$$color -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="color-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">color</span> : <span class="type">color</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The currently selected color. Settable to programmatically position the wheel marker and slider.</p>
+</div></div><!-- @@@color -->
+<br/>
+<!-- $$$green -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="green-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">green</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The green channel (0&ndash;255) of the selected color.</p>
+</div></div><!-- @@@green -->
+<br/>
+<!-- $$$greenF -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="greenF-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">greenF</span> : <span class="type">real</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The green channel as a normalized floating-point value (0.0&ndash;1.0).</p>
+</div></div><!-- @@@greenF -->
+<br/>
+<!-- $$$red -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="red-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">red</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The red channel (0&ndash;255) of the selected color.</p>
+</div></div><!-- @@@red -->
+<br/>
+<!-- $$$redF -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="redF-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">redF</span> : <span class="type">real</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The red channel as a normalized floating-point value (0.0&ndash;1.0).</p>
+</div></div><!-- @@@redF -->
+<br/>
+<!-- $$$step -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="step-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">step</span> : <span class="type">real</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The increment applied per mouse-wheel tick or arrow-key press when adjusting the brightness slider. Defaults to a small fractional value.</p>
+</div></div><!-- @@@step -->
+<br/>
+<h2>Signal Documentation</h2>
+<!-- $$$colorChanged[overload1]$$$colorChangedcolor -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="colorChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">colorChanged</span>(<span class="type">color</span> <i>color</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted whenever the selected <i translate="no">color</i> changes due to user interaction or a property assignment.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onColorChanged</code>.</p>
+</div></div></div><!-- @@@colorChanged -->
+<br/>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- subtitlesmodel.cpp -->
+  <meta name="description" content="Tracks the selected track and selected subtitle items in the Subtitles dock.">
+  <title>SubtitlesSelectionModel QML Type | Shotcut QML Scripting API 26</title>
+    <link rel="stylesheet" type="text/css" href="style/shotcut.css">
+</head>
+<body>
+<li><a href="index.html">Shotcut QML Scripting API</a></li>
+<li><a href="org-shotcut-qml-qmlmodule.html" translate="no">org.shotcut.qml</a></li>
+<li>SubtitlesSelectionModel</li>
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">SubtitlesSelectionModel QML Type</h1>
+<!-- $$$SubtitlesSelectionModel-brief -->
+<p>Tracks the selected track and selected subtitle items in the Subtitles dock. <a href="#details">More...</a></p>
+<!-- @@@SubtitlesSelectionModel -->
+<div class="table"><table class="alignedsummary requisites" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> <code translate="no">import org.shotcut.qml</code></td></tr>
+</table></div>
+<ul>
+<li><a href="qml-org-shotcut-qml-subtitlesselectionmodel-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-subtitlesselectionmodel.html#selectedItems-prop" translate="no">selectedItems</a></b> : list&lt;var&gt;</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-subtitlesselectionmodel.html#selectedTrackModelIndex-prop" translate="no">selectedTrackModelIndex</a></b> : QModelIndex</li>
+</ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-subtitlesselectionmodel.html#selectedItemsChanged-signal" translate="no">selectedItemsChanged</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-subtitlesselectionmodel.html#selectedTrackModelIndexChanged-signal" translate="no">selectedTrackModelIndexChanged</a></b>(QModelIndex <i>trackModelIndex</i>)</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no">bool <b><a href="qml-org-shotcut-qml-subtitlesselectionmodel.html#isItemSelected-method" translate="no">isItemSelected</a></b>(int <i>itemIndex</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-subtitlesselectionmodel.html#selectItem-method" translate="no">selectItem</a></b>(int <i>itemIndex</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-subtitlesselectionmodel.html#selectRange-method" translate="no">selectRange</a></b>(int <i>itemIndex</i>)</li>
+<li class="fn" translate="no">int <b><a href="qml-org-shotcut-qml-subtitlesselectionmodel.html#selectedTrack-method" translate="no">selectedTrack</a></b>()</li>
+</ul>
+<!-- $$$SubtitlesSelectionModel-description -->
+<h2 id="details">Detailed Description</h2>
+<p><code translate="no">SubtitlesSelectionModel</code> is available as the <code translate="no">subtitlesSelectionModel</code> context property in the Subtitles dock.</p>
+<!-- @@@SubtitlesSelectionModel -->
+<h2>Property Documentation</h2>
+<!-- $$$selectedItems -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="selectedItems-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">selectedItems</span> : <span class="type">list</span>&lt;<span class="type">var</span>&gt;</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The list of currently selected subtitle item indices (read-only).</p>
+</div></div><!-- @@@selectedItems -->
+<br/>
+<!-- $$$selectedTrackModelIndex -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="selectedTrackModelIndex-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">selectedTrackModelIndex</span> : <span class="type">QModelIndex</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The model index of the currently selected track (read-only).</p>
+</div></div><!-- @@@selectedTrackModelIndex -->
+<br/>
+<h2>Signal Documentation</h2>
+<!-- $$$selectedItemsChanged[overload1]$$$selectedItemsChanged -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="selectedItemsChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">selectedItemsChanged</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when the set of selected subtitle items changes.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onSelectedItemsChanged</code>.</p>
+</div></div></div><!-- @@@selectedItemsChanged -->
+<br/>
+<!-- $$$selectedTrackModelIndexChanged[overload1]$$$selectedTrackModelIndexChangedQModelIndex -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="selectedTrackModelIndexChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">selectedTrackModelIndexChanged</span>(<span class="type">QModelIndex</span> <i>trackModelIndex</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when the selected track changes. <i translate="no">trackModelIndex</i> is the new track's model index.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onSelectedTrackModelIndexChanged</code>.</p>
+</div></div></div><!-- @@@selectedTrackModelIndexChanged -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$isItemSelected[overload1]$$$isItemSelectedint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="isItemSelected-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">bool</span> <span class="name">isItemSelected</span>(<span class="type">int</span> <i>itemIndex</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns <code translate="no">true</code> if the subtitle item at <i translate="no">itemIndex</i> is currently selected.</p>
+</div></div><!-- @@@isItemSelected -->
+<br/>
+<!-- $$$selectItem[overload1]$$$selectItemint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="selectItem-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">selectItem</span>(<span class="type">int</span> <i>itemIndex</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Selects only the subtitle item at <i translate="no">itemIndex</i>, clearing any other selection.</p>
+</div></div><!-- @@@selectItem -->
+<br/>
+<!-- $$$selectRange[overload1]$$$selectRangeint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="selectRange-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">selectRange</span>(<span class="type">int</span> <i>itemIndex</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Extends the selection from the last single-selection anchor to <i translate="no">itemIndex</i>.</p>
+</div></div><!-- @@@selectRange -->
+<br/>
+<!-- $$$selectedTrack[overload1]$$$selectedTrack -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="selectedTrack-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">int</span> <span class="name">selectedTrack</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns the zero-based index of the currently selected track, or <code translate="no">-1</code> if none.</p>
+</div></div><!-- @@@selectedTrack -->
+<br/>
+</body>
+</html>

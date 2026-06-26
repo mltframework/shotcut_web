@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- qmlproducer.cpp -->
+  <meta name="description" content="Represents the clip currently loaded in the Filters panel, accessed via the producer context property.">
+  <title>Producer QML Type | Shotcut QML Scripting API 26</title>
+    <link rel="stylesheet" type="text/css" href="style/shotcut.css">
+</head>
+<body>
+<li><a href="index.html">Shotcut QML Scripting API</a></li>
+<li><a href="org-shotcut-qml-qmlmodule.html" translate="no">org.shotcut.qml</a></li>
+<li>Producer</li>
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">Producer QML Type</h1>
+<!-- $$$Producer-brief -->
+<p>Represents the clip currently loaded in the <b>Filters</b> panel, accessed via the <code translate="no">producer</code> context property. <a href="#details">More...</a></p>
+<!-- @@@Producer -->
+<div class="table"><table class="alignedsummary requisites" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> <code translate="no">import org.shotcut.qml</code></td></tr>
+</table></div>
+<ul>
+<li><a href="qml-org-shotcut-qml-producer-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#aspectRatio-prop" translate="no">aspectRatio</a></b> : real</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#displayAspectRatio-prop" translate="no">displayAspectRatio</a></b> : real</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#duration-prop" translate="no">duration</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#fadeIn-prop" translate="no">fadeIn</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#fadeOut-prop" translate="no">fadeOut</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#hash-prop" translate="no">hash</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#in-prop" translate="no">in</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#length-prop" translate="no">length</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#mlt_service-prop" translate="no">mlt_service</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#name-prop" translate="no">name</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#out-prop" translate="no">out</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#position-prop" translate="no">position</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#resource-prop" translate="no">resource</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#speed-prop" translate="no">speed</a></b> : real</li>
+</ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#durationChanged-signal" translate="no">durationChanged</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#inChanged-signal" translate="no">inChanged</a></b>(int <i>delta</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#lengthChanged-signal" translate="no">lengthChanged</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#outChanged-signal" translate="no">outChanged</a></b>(int <i>delta</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#positionChanged-signal" translate="no">positionChanged</a></b>(int <i>position</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#producerChanged-signal" translate="no">producerChanged</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#seeked-signal" translate="no">seeked</a></b>(int <i>position</i>)</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no">string <b><a href="qml-org-shotcut-qml-producer.html#get-method" translate="no">get</a></b>(string <i>name</i>, int <i>position</i>)</li>
+<li class="fn" translate="no">real <b><a href="qml-org-shotcut-qml-producer.html#getDouble-method" translate="no">getDouble</a></b>(string <i>name</i>, int <i>position</i>)</li>
+<li class="fn" translate="no">rect <b><a href="qml-org-shotcut-qml-producer.html#getRect-method" translate="no">getRect</a></b>(string <i>name</i>, int <i>position</i>)</li>
+<li class="fn" translate="no">bool <b><a href="qml-org-shotcut-qml-producer.html#outOfBounds-method" translate="no">outOfBounds</a></b>()</li>
+</ul>
+<!-- $$$Producer-description -->
+<h2 id="details">Detailed Description</h2>
+<p><code translate="no">producer</code> describes the clip that the currently displayed filter is attached to. It is available in the Filters panel as the <code translate="no">producer</code> context property.</p>
+<pre class="cpp" translate="no">var startFrame <span class="operator">=</span> producer<span class="operator">.</span>in
+var endFrame   <span class="operator">=</span> producer<span class="operator">.</span>out
+var fps        <span class="operator">=</span> profile<span class="operator">.</span>fps</pre>
+<!-- @@@Producer -->
+<h2>Property Documentation</h2>
+<!-- $$$aspectRatio -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="aspectRatio-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">aspectRatio</span> : <span class="type">real</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The pixel aspect ratio of the producer's media.</p>
+</div></div><!-- @@@aspectRatio -->
+<br/>
+<!-- $$$displayAspectRatio -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="displayAspectRatio-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">displayAspectRatio</span> : <span class="type">real</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The display aspect ratio (DAR) of the producer's media.</p>
+</div></div><!-- @@@displayAspectRatio -->
+<br/>
+<!-- $$$duration -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="duration-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">duration</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The duration of the clip in frames (<code translate="no">out</code> - <code translate="no">in</code> + 1).</p>
+</div></div><!-- @@@duration -->
+<br/>
+<!-- $$$fadeIn -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="fadeIn-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">fadeIn</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Duration in frames of the clip's fade-in, or 0 if none.</p>
+</div></div><!-- @@@fadeIn -->
+<br/>
+<!-- $$$fadeOut -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="fadeOut-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">fadeOut</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Duration in frames of the clip's fade-out, or 0 if none.</p>
+</div></div><!-- @@@fadeOut -->
+<br/>
+<!-- $$$hash -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="hash-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">hash</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>A content-based hash of the producer's media, used for caching.</p>
+</div></div><!-- @@@hash -->
+<br/>
+<!-- $$$in -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="in-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">in</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The in-point of the clip in frames (absolute timeline position).</p>
+</div></div><!-- @@@in -->
+<br/>
+<!-- $$$length -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="length-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">length</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The total length of the underlying source media in frames.</p>
+</div></div><!-- @@@length -->
+<br/>
+<!-- $$$mlt_service -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="mlt_service-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">mlt_service</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The MLT service name of the producer (e.g. <code translate="no">&quot;avformat&quot;</code>, <code translate="no">&quot;color&quot;</code>).</p>
+</div></div><!-- @@@mlt_service -->
+<br/>
+<!-- $$$name -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="name-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">name</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The display name of the clip as shown in the timeline.</p>
+</div></div><!-- @@@name -->
+<br/>
+<!-- $$$out -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="out-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">out</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The out-point of the clip in frames (absolute timeline position).</p>
+</div></div><!-- @@@out -->
+<br/>
+<!-- $$$position -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="position-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">position</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The current playhead position within the clip, in frames relative to <a href="qml-org-shotcut-qml-producer.html#in-prop" translate="no">in</a>. Setting this seeks the preview to that position.</p>
+</div></div><!-- @@@position -->
+<br/>
+<!-- $$$resource -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="resource-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">resource</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The file path or resource string of the underlying media.</p>
+</div></div><!-- @@@resource -->
+<br/>
+<!-- $$$speed -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="speed-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">speed</span> : <span class="type">real</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The playback speed multiplier of the clip (1.0 = normal speed).</p>
+</div></div><!-- @@@speed -->
+<br/>
+<h2>Signal Documentation</h2>
+<!-- $$$durationChanged[overload1]$$$durationChanged -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="durationChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">durationChanged</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when the clip's duration changes.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onDurationChanged</code>.</p>
+</div></div></div><!-- @@@durationChanged -->
+<br/>
+<!-- $$$inChanged[overload1]$$$inChangedint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="inChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">inChanged</span>(<span class="type">int</span> <i>delta</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when the clip's in-point changes. <i translate="no">delta</i> is the frame offset.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onInChanged</code>.</p>
+</div></div></div><!-- @@@inChanged -->
+<br/>
+<!-- $$$lengthChanged[overload1]$$$lengthChanged -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="lengthChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">lengthChanged</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when the source media length changes.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onLengthChanged</code>.</p>
+</div></div></div><!-- @@@lengthChanged -->
+<br/>
+<!-- $$$outChanged[overload1]$$$outChangedint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="outChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">outChanged</span>(<span class="type">int</span> <i>delta</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when the clip's out-point changes. <i translate="no">delta</i> is the frame offset.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onOutChanged</code>.</p>
+</div></div></div><!-- @@@outChanged -->
+<br/>
+<!-- $$$positionChanged[overload1]$$$positionChangedint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="positionChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">positionChanged</span>(<span class="type">int</span> <i>position</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when the playhead <i translate="no">position</i> within the clip changes.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onPositionChanged</code>.</p>
+</div></div></div><!-- @@@positionChanged -->
+<br/>
+<!-- $$$producerChanged[overload1]$$$producerChanged -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="producerChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">producerChanged</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when the underlying producer or its properties change.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onProducerChanged</code>.</p>
+</div></div></div><!-- @@@producerChanged -->
+<br/>
+<!-- $$$seeked[overload1]$$$seekedint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="seeked-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">seeked</span>(<span class="type">int</span> <i>position</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when the clip is seeked to time <i translate="no">position</i>.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onSeeked</code>.</p>
+</div></div></div><!-- @@@seeked -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$get[overload1]$$$getstringint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="get-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">string</span> <span class="name">get</span>(<span class="type">string</span> <i>name</i>, <span class="type">int</span> <i>position</i> = -1)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns the value of MLT property <i translate="no">name</i> as a string. If time <i translate="no">position</i> is <code translate="no">-1</code>, returns the current value.</p>
+</div></div><!-- @@@get -->
+<br/>
+<!-- $$$getDouble[overload1]$$$getDoublestringint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="getDouble-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">real</span> <span class="name">getDouble</span>(<span class="type">string</span> <i>name</i>, <span class="type">int</span> <i>position</i> = -1)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns the value of MLT property <i translate="no">name</i> as a floating-point number. If time <i translate="no">position</i> is <code translate="no">-1</code>, returns the current value.</p>
+</div></div><!-- @@@getDouble -->
+<br/>
+<!-- $$$getRect[overload1]$$$getRectstringint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="getRect-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">rect</span> <span class="name">getRect</span>(<span class="type">string</span> <i>name</i>, <span class="type">int</span> <i>position</i> = -1)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns the value of MLT property <i translate="no">name</i> as a <code translate="no">rect</code>. If time <i translate="no">position</i> is <code translate="no">-1</code>, returns the current value.</p>
+</div></div><!-- @@@getRect -->
+<br/>
+<!-- $$$outOfBounds[overload1]$$$outOfBounds -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="outOfBounds-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">bool</span> <span class="name">outOfBounds</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns <code translate="no">true</code> if the clip's in/out points fall outside the media's available length.</p>
+</div></div><!-- @@@outOfBounds -->
+<br/>
+</body>
+</html>

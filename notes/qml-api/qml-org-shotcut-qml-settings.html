@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- settings.cpp -->
+  <meta name="description" content="Persistent application settings, accessed via the settings context property.">
+  <title>Settings QML Type | Shotcut QML Scripting API 26</title>
+    <link rel="stylesheet" type="text/css" href="style/shotcut.css">
+</head>
+<body>
+<li><a href="index.html">Shotcut QML Scripting API</a></li>
+<li><a href="org-shotcut-qml-qmlmodule.html" translate="no">org.shotcut.qml</a></li>
+<li>Settings</li>
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">Settings QML Type</h1>
+<!-- $$$Settings-brief -->
+<p>Persistent application settings, accessed via the <code translate="no">settings</code> context property. <a href="#details">More...</a></p>
+<!-- @@@Settings -->
+<div class="table"><table class="alignedsummary requisites" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> <code translate="no">import org.shotcut.qml</code></td></tr>
+</table></div>
+<ul>
+<li><a href="qml-org-shotcut-qml-settings-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-settings.html#appDataLocation-prop" translate="no">appDataLocation</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-settings.html#askOutputFilter-prop" translate="no">askOutputFilter</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-settings.html#audioInCurve-prop" translate="no">audioInCurve</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-settings.html#audioInDuration-prop" translate="no">audioInDuration</a></b> : real</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-settings.html#audioOutCurve-prop" translate="no">audioOutCurve</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-settings.html#audioOutDuration-prop" translate="no">audioOutDuration</a></b> : real</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-settings.html#keyframesDragScrub-prop" translate="no">keyframesDragScrub</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-settings.html#openPath-prop" translate="no">openPath</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-settings.html#playerAudioChannels-prop" translate="no">playerAudioChannels</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-settings.html#playerGPU-prop" translate="no">playerGPU</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-settings.html#playlistThumbnails-prop" translate="no">playlistThumbnails</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-settings.html#savePath-prop" translate="no">savePath</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-settings.html#smallIcons-prop" translate="no">smallIcons</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-settings.html#timelineAdjustGain-prop" translate="no">timelineAdjustGain</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-settings.html#timelineAllowTransitions-prop" translate="no">timelineAllowTransitions</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-settings.html#timelineDragScrub-prop" translate="no">timelineDragScrub</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-settings.html#timelineFramebufferWaveform-prop" translate="no">timelineFramebufferWaveform</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-settings.html#timelineRectangleSelect-prop" translate="no">timelineRectangleSelect</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-settings.html#timelineRipple-prop" translate="no">timelineRipple</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-settings.html#timelineRippleAllTracks-prop" translate="no">timelineRippleAllTracks</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-settings.html#timelineRippleMarkers-prop" translate="no">timelineRippleMarkers</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-settings.html#timelineScrollZoom-prop" translate="no">timelineScrollZoom</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-settings.html#timelineScrolling-prop" translate="no">timelineScrolling</a></b> : Settings::TimelineScrolling</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-settings.html#timelineShowThumbnails-prop" translate="no">timelineShowThumbnails</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-settings.html#timelineShowWaveforms-prop" translate="no">timelineShowWaveforms</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-settings.html#timelineSnap-prop" translate="no">timelineSnap</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-settings.html#videoInDuration-prop" translate="no">videoInDuration</a></b> : real</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-settings.html#videoOutDuration-prop" translate="no">videoOutDuration</a></b> : real</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-settings.html#viewMode-prop" translate="no">viewMode</a></b> : string</li>
+</ul>
+<!-- $$$Settings-description -->
+<h2 id="details">Detailed Description</h2>
+<p><code translate="no">settings</code> is an uncreatable QML type &mdash; use the global <code translate="no">settings</code> identifier available in every Shotcut QML view. Settings are backed by QSettings and persist across sessions.</p>
+<pre class="cpp" translate="no"><span class="keyword">if</span> (settings<span class="operator">.</span>timelineSnap) { <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span> }
+settings<span class="operator">.</span>timelineSnap <span class="operator">=</span> <span class="keyword">true</span></pre>
+<!-- @@@Settings -->
+<h2>Property Documentation</h2>
+<!-- $$$appDataLocation -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="appDataLocation-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">appDataLocation</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The path to the application data directory (read-only).</p>
+</div></div><!-- @@@appDataLocation -->
+<br/>
+<!-- $$$askOutputFilter -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="askOutputFilter-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">askOutputFilter</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether Shotcut should prompt before applying a filter to the output node.</p>
+</div></div><!-- @@@askOutputFilter -->
+<br/>
+<!-- $$$audioInCurve -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="audioInCurve-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">audioInCurve</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The curve type for audio fade-in (0 = linear, higher = more exponential).</p>
+</div></div><!-- @@@audioInCurve -->
+<br/>
+<!-- $$$audioInDuration -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="audioInDuration-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">audioInDuration</span> : <span class="type">real</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The default duration in seconds for audio fade-in transitions.</p>
+</div></div><!-- @@@audioInDuration -->
+<br/>
+<!-- $$$audioOutCurve -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="audioOutCurve-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">audioOutCurve</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The curve type for audio fade-out (0 = linear, higher = more exponential).</p>
+</div></div><!-- @@@audioOutCurve -->
+<br/>
+<!-- $$$audioOutDuration -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="audioOutDuration-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">audioOutDuration</span> : <span class="type">real</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The default duration in seconds for audio fade-out transitions.</p>
+</div></div><!-- @@@audioOutDuration -->
+<br/>
+<!-- $$$keyframesDragScrub -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="keyframesDragScrub-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">keyframesDragScrub</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether scrubbing occurs while dragging keyframes.</p>
+</div></div><!-- @@@keyframesDragScrub -->
+<br/>
+<!-- $$$openPath -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="openPath-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">openPath</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The last directory used for opening files.</p>
+</div></div><!-- @@@openPath -->
+<br/>
+<!-- $$$playerAudioChannels -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="playerAudioChannels-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">playerAudioChannels</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The number of audio channels used by the player (e.g. 2 or 6).</p>
+</div></div><!-- @@@playerAudioChannels -->
+<br/>
+<!-- $$$playerGPU -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="playerGPU-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">playerGPU</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether GPU processing (GLSL) is enabled for the video player.</p>
+</div></div><!-- @@@playerGPU -->
+<br/>
+<!-- $$$playlistThumbnails -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="playlistThumbnails-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">playlistThumbnails</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The thumbnail display mode for the Playlist panel.</p>
+</div></div><!-- @@@playlistThumbnails -->
+<br/>
+<!-- $$$savePath -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="savePath-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">savePath</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The last directory used for saving files.</p>
+</div></div><!-- @@@savePath -->
+<br/>
+<!-- $$$smallIcons -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="smallIcons-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">smallIcons</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether the toolbar uses small icons.</p>
+</div></div><!-- @@@smallIcons -->
+<br/>
+<!-- $$$timelineAdjustGain -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="timelineAdjustGain-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">timelineAdjustGain</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether dragging the gain handle on audio clips adjusts volume inline.</p>
+</div></div><!-- @@@timelineAdjustGain -->
+<br/>
+<!-- $$$timelineAllowTransitions -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="timelineAllowTransitions-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">timelineAllowTransitions</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether overlapping clips on the timeline automatically create transitions.</p>
+</div></div><!-- @@@timelineAllowTransitions -->
+<br/>
+<!-- $$$timelineDragScrub -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="timelineDragScrub-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">timelineDragScrub</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether scrubbing occurs while dragging clips on the timeline.</p>
+</div></div><!-- @@@timelineDragScrub -->
+<br/>
+<!-- $$$timelineFramebufferWaveform -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="timelineFramebufferWaveform-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">timelineFramebufferWaveform</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether waveforms are rendered using a framebuffer (GPU) path.</p>
+</div></div><!-- @@@timelineFramebufferWaveform -->
+<br/>
+<!-- $$$timelineRectangleSelect -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="timelineRectangleSelect-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">timelineRectangleSelect</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether rectangle (rubber-band) selection is enabled on the timeline.</p>
+</div></div><!-- @@@timelineRectangleSelect -->
+<br/>
+<!-- $$$timelineRipple -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="timelineRipple-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">timelineRipple</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether ripple editing is enabled on the timeline.</p>
+</div></div><!-- @@@timelineRipple -->
+<br/>
+<!-- $$$timelineRippleAllTracks -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="timelineRippleAllTracks-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">timelineRippleAllTracks</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether ripple editing affects all tracks simultaneously.</p>
+</div></div><!-- @@@timelineRippleAllTracks -->
+<br/>
+<!-- $$$timelineRippleMarkers -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="timelineRippleMarkers-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">timelineRippleMarkers</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether markers are moved along with ripple edits.</p>
+</div></div><!-- @@@timelineRippleMarkers -->
+<br/>
+<!-- $$$timelineScrollZoom -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="timelineScrollZoom-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">timelineScrollZoom</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether the scroll wheel zooms the timeline (instead of scrolling).</p>
+</div></div><!-- @@@timelineScrollZoom -->
+<br/>
+<!-- $$$timelineScrolling -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="timelineScrolling-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">timelineScrolling</span> : <span class="type">Settings::TimelineScrolling</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The timeline auto-scroll mode. One of <code translate="no">NoScrolling</code>, <code translate="no">CenterPlayhead</code>, <code translate="no">PageScrolling</code>, or <code translate="no">SmoothScrolling</code>.</p>
+</div></div><!-- @@@timelineScrolling -->
+<br/>
+<!-- $$$timelineShowThumbnails -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="timelineShowThumbnails-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">timelineShowThumbnails</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether video thumbnails are shown on timeline clips.</p>
+</div></div><!-- @@@timelineShowThumbnails -->
+<br/>
+<!-- $$$timelineShowWaveforms -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="timelineShowWaveforms-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">timelineShowWaveforms</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether audio waveforms are shown on timeline clips.</p>
+</div></div><!-- @@@timelineShowWaveforms -->
+<br/>
+<!-- $$$timelineSnap -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="timelineSnap-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">timelineSnap</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether clip snapping is enabled on the timeline.</p>
+</div></div><!-- @@@timelineSnap -->
+<br/>
+<!-- $$$videoInDuration -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="videoInDuration-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">videoInDuration</span> : <span class="type">real</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The default duration in seconds for video fade-in transitions.</p>
+</div></div><!-- @@@videoInDuration -->
+<br/>
+<!-- $$$videoOutDuration -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="videoOutDuration-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">videoOutDuration</span> : <span class="type">real</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The default duration in seconds for video fade-out transitions.</p>
+</div></div><!-- @@@videoOutDuration -->
+<br/>
+<!-- $$$viewMode -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="viewMode-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">viewMode</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The current view mode of the Playlist panel (e.g. <code translate="no">&quot;details&quot;</code>, <code translate="no">&quot;icons&quot;</code>).</p>
+</div></div><!-- @@@viewMode -->
+<br/>
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- qmlrichtext.cpp -->
+  <meta name="description" content="Provides rich-text editing helpers for the Text: Rich filter panel.">
+  <title>RichText QML Type | Shotcut QML Scripting API 26</title>
+    <link rel="stylesheet" type="text/css" href="style/shotcut.css">
+</head>
+<body>
+<li><a href="index.html">Shotcut QML Scripting API</a></li>
+<li><a href="org-shotcut-qml-qmlmodule.html" translate="no">org.shotcut.qml</a></li>
+<li>RichText</li>
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">RichText QML Type</h1>
+<!-- $$$RichText-brief -->
+<p>Provides rich-text editing helpers for the Text: Rich filter panel. <a href="#details">More...</a></p>
+<!-- @@@RichText -->
+<div class="table"><table class="alignedsummary requisites" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> <code translate="no">import org.shotcut.qml</code></td></tr>
+</table></div>
+<ul>
+<li><a href="qml-org-shotcut-qml-richtext-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-richtext.html#alignment-prop" translate="no">alignment</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-richtext.html#bold-prop" translate="no">bold</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-richtext.html#cursorPosition-prop" translate="no">cursorPosition</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-richtext.html#fileUrl-prop" translate="no">fileUrl</a></b> : url</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-richtext.html#fontFamily-prop" translate="no">fontFamily</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-richtext.html#fontSize-prop" translate="no">fontSize</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-richtext.html#fontStyleName-prop" translate="no">fontStyleName</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-richtext.html#italic-prop" translate="no">italic</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-richtext.html#selectionEnd-prop" translate="no">selectionEnd</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-richtext.html#selectionStart-prop" translate="no">selectionStart</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-richtext.html#size-prop" translate="no">size</a></b> : size</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-richtext.html#strikeout-prop" translate="no">strikeout</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-richtext.html#target-prop" translate="no">target</a></b> : Item</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-richtext.html#text-prop" translate="no">text</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-richtext.html#textColor-prop" translate="no">textColor</a></b> : color</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-richtext.html#underline-prop" translate="no">underline</a></b> : bool</li>
+</ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-richtext.html#error-signal" translate="no">error</a></b>(string <i>message</i>)</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-richtext.html#indentLess-method" translate="no">indentLess</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-richtext.html#indentMore-method" translate="no">indentMore</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-richtext.html#insertTable-method" translate="no">insertTable</a></b>(int <i>rows</i>, int <i>columns</i>, int <i>border</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-richtext.html#pastePlain-method" translate="no">pastePlain</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-richtext.html#reset-method" translate="no">reset</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-richtext.html#saveAs-method" translate="no">saveAs</a></b>(url <i>fileUrl</i>, string <i>fileType</i>)</li>
+</ul>
+<!-- $$$RichText-description -->
+<h2 id="details">Detailed Description</h2>
+<p><code translate="no">RichText</code> is available as a context property in the Text: Rich filter QML panel. It bridges the QML <code translate="no">TextEdit</code> item to the underlying <code translate="no">QTextDocument</code>, enabling character-level formatting, cursor management, and file persistence.</p>
+<pre class="cpp" translate="no"><span class="type"><a href="qml-org-shotcut-qml-richtext.html" translate="no">RichText</a></span> {
+    <span class="name">id</span>: <span class="name">richText</span>
+    <span class="name">target</span>: <span class="name">textEditItem</span>
+    <span class="name">onTextChanged</span>: <span class="name">filter</span>.<span class="name">set</span>(<span class="string">&quot;argument&quot;</span>, <span class="name">text</span>)
+}</pre>
+<!-- @@@RichText -->
+<h2>Property Documentation</h2>
+<!-- $$$alignment -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="alignment-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">alignment</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The paragraph alignment (<code translate="no">Qt.AlignLeft</code>, <code translate="no">Qt.AlignCenter</code>, etc.) at the cursor.</p>
+</div></div><!-- @@@alignment -->
+<br/>
+<!-- $$$bold -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="bold-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">bold</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether the text at the cursor/selection is bold.</p>
+</div></div><!-- @@@bold -->
+<br/>
+<!-- $$$cursorPosition -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="cursorPosition-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">cursorPosition</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The cursor position within the document.</p>
+</div></div><!-- @@@cursorPosition -->
+<br/>
+<!-- $$$fileUrl -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="fileUrl-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">fileUrl</span> : <span class="type">url</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The URL of the HTML file backing the document. Setting this loads the file.</p>
+</div></div><!-- @@@fileUrl -->
+<br/>
+<!-- $$$fontFamily -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="fontFamily-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">fontFamily</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The font family of the text at the cursor or selection.</p>
+</div></div><!-- @@@fontFamily -->
+<br/>
+<!-- $$$fontSize -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="fontSize-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">fontSize</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The font size in points at the cursor or selection.</p>
+</div></div><!-- @@@fontSize -->
+<br/>
+<!-- $$$fontStyleName -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="fontStyleName-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">fontStyleName</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The font style name (e.g. <code translate="no">&quot;Bold</code> Italic&quot;) at the cursor or selection.</p>
+</div></div><!-- @@@fontStyleName -->
+<br/>
+<!-- $$$italic -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="italic-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">italic</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether the text at the cursor/selection is italic.</p>
+</div></div><!-- @@@italic -->
+<br/>
+<!-- $$$selectionEnd -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="selectionEnd-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">selectionEnd</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The end of the current text selection.</p>
+</div></div><!-- @@@selectionEnd -->
+<br/>
+<!-- $$$selectionStart -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="selectionStart-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">selectionStart</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The start of the current text selection.</p>
+</div></div><!-- @@@selectionStart -->
+<br/>
+<!-- $$$size -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="size-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">size</span> : <span class="type">size</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The natural rendered size of the document (read-only).</p>
+</div></div><!-- @@@size -->
+<br/>
+<!-- $$$strikeout -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="strikeout-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">strikeout</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether the text at the cursor/selection has strikethrough.</p>
+</div></div><!-- @@@strikeout -->
+<br/>
+<!-- $$$target -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="target-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">target</span> : <span class="type">Item</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The QML <code translate="no">TextEdit</code> item whose document this object manages.</p>
+</div></div><!-- @@@target -->
+<br/>
+<!-- $$$text -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="text-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">text</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The full HTML content of the document.</p>
+</div></div><!-- @@@text -->
+<br/>
+<!-- $$$textColor -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="textColor-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">textColor</span> : <span class="type">color</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The foreground color of the text at (or to be applied to) the selection.</p>
+</div></div><!-- @@@textColor -->
+<br/>
+<!-- $$$underline -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="underline-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">underline</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether the text at the cursor/selection is underlined.</p>
+</div></div><!-- @@@underline -->
+<br/>
+<h2>Signal Documentation</h2>
+<!-- $$$error[overload1]$$$errorstring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="error-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">error</span>(<span class="type">string</span> <i>message</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when a file load or save operation fails. <i translate="no">message</i> describes the error.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onError</code>.</p>
+</div></div></div><!-- @@@error -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$indentLess[overload1]$$$indentLess -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="indentLess-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">indentLess</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Decreases the indentation level of the current paragraph.</p>
+</div></div><!-- @@@indentLess -->
+<br/>
+<!-- $$$indentMore[overload1]$$$indentMore -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="indentMore-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">indentMore</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Increases the indentation level of the current paragraph.</p>
+</div></div><!-- @@@indentMore -->
+<br/>
+<!-- $$$insertTable[overload1]$$$insertTableintintint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="insertTable-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">insertTable</span>(<span class="type">int</span> <i>rows</i>, <span class="type">int</span> <i>columns</i>, <span class="type">int</span> <i>border</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Inserts a table at the cursor with <i translate="no">rows</i> rows, <i translate="no">columns</i> columns, and <i translate="no">border</i> width.</p>
+</div></div><!-- @@@insertTable -->
+<br/>
+<!-- $$$pastePlain[overload1]$$$pastePlain -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="pastePlain-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">pastePlain</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Pastes clipboard text as plain text, stripping any formatting.</p>
+</div></div><!-- @@@pastePlain -->
+<br/>
+<!-- $$$reset[overload1]$$$reset -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="reset-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">reset</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Clears the document content.</p>
+</div></div><!-- @@@reset -->
+<br/>
+<!-- $$$saveAs[overload1]$$$saveAsurlstring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="saveAs-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">saveAs</span>(<span class="type">url</span> <i>fileUrl</i>, <span class="type">string</span> <i>fileType</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Saves the document to <i translate="no">fileUrl</i>. <i translate="no">fileType</i> may be <code translate="no">&quot;html&quot;</code> or <code translate="no">&quot;txt&quot;</code>.</p>
+</div></div><!-- @@@saveAs -->
+<br/>
+</body>
+</html>

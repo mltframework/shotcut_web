@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- org-shotcut-qml.qdoc -->
+  <meta name="description" content="Types for filter scripting, metadata, and file access in Shotcut.">
+  <title>org.shotcut.qml QML Module | Shotcut QML Scripting API 26</title>
+    <link rel="stylesheet" type="text/css" href="style/shotcut.css">
+</head>
+<body>
+<li><a href="index.html">Shotcut QML Scripting API</a></li>
+<li>org.shotcut.qml QML Module</li>
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#types">Types</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">org.shotcut.qml QML Module</h1>
+<!-- $$$org.shotcut.qml-description -->
+<div class="descr" id="details">
+<pre class="cpp" translate="no">import org<span class="operator">.</span>shotcut<span class="operator">.</span>qml</pre>
+<p>This module contains the core types used when writing Shotcut filter UI panels and VUI overlays. The most important type is <a href="qml-org-shotcut-qml-filter.html" translate="no">Filter</a>, which gives read/write access to an MLT filter's properties and keyframes.</p>
+<h2 id="types">Types</h2>
+</div>
+<!-- @@@org.shotcut.qml -->
+<div class="table"><table class="annotated">
+<tr class="odd topAlign"><td class="tblName" translate="no"><p><a href="qml-org-shotcut-qml-application.html">Application</a></p></td><td class="tblDescr"><p>Application-wide utilities, accessed via the application context property</p></td></tr>
+<tr class="even topAlign"><td class="tblName" translate="no"><p><a href="qml-org-shotcut-qml-attachedfiltersmodel.html">AttachedFiltersModel</a></p></td><td class="tblDescr"><p>A list model of filters attached to the currently selected clip or track</p></td></tr>
+<tr class="odd topAlign"><td class="tblName" translate="no"><p><a href="qml-org-shotcut-qml-file.html">File</a></p></td><td class="tblDescr"><p>A file URL wrapper with optional filesystem change watching</p></td></tr>
+<tr class="even topAlign"><td class="tblName" translate="no"><p><a href="qml-org-shotcut-qml-filter.html">Filter</a></p></td><td class="tblDescr"><p>Provides access to the current filter's properties, keyframes, and presets</p></td></tr>
+<tr class="odd topAlign"><td class="tblName" translate="no"><p><a href="qml-org-shotcut-qml-keyframesdock.html">KeyframesDock</a></p></td><td class="tblDescr"><p>Keyframes panel controller, available as the keyframes context property</p></td></tr>
+<tr class="even topAlign"><td class="tblName" translate="no"><p><a href="qml-org-shotcut-qml-keyframesmetadata.html">KeyframesMetadata</a></p></td><td class="tblDescr"><p>Describes the keyframe capabilities of a filter</p></td></tr>
+<tr class="odd topAlign"><td class="tblName" translate="no"><p><a href="qml-org-shotcut-qml-keyframesmodel.html">KeyframesModel</a></p></td><td class="tblDescr"><p>A two-level item model describing a filter's keyframeable parameters and their keyframes</p></td></tr>
+<tr class="even topAlign"><td class="tblName" translate="no"><p><a href="qml-org-shotcut-qml-markersmodel.html">MarkersModel</a></p></td><td class="tblDescr"><p>A model of timeline markers (cue points with optional range spans and colors)</p></td></tr>
+<tr class="odd topAlign"><td class="tblName" translate="no"><p><a href="qml-org-shotcut-qml-metadata.html">Metadata</a></p></td><td class="tblDescr"><p>Describes a filter's identity, capabilities, and keyframe configuration</p></td></tr>
+<tr class="even topAlign"><td class="tblName" translate="no"><p><a href="qml-org-shotcut-qml-motiontrackermodel.html">MotionTrackerModel</a></p></td><td class="tblDescr"><p>A list model of motion tracker entries attached to the current producer</p></td></tr>
+<tr class="odd topAlign"><td class="tblName" translate="no"><p><a href="qml-org-shotcut-qml-multitrackmodel.html">MultitrackModel</a></p></td><td class="tblDescr"><p>A two-level item model representing the timeline: tracks at the top level, clips within each track</p></td></tr>
+<tr class="even topAlign"><td class="tblName" translate="no"><p><a href="qml-org-shotcut-qml-parameter.html">Parameter</a></p></td><td class="tblDescr"><p>Describes a single keyframeable parameter within a filter's keyframes metadata</p></td></tr>
+<tr class="odd topAlign"><td class="tblName" translate="no"><p><a href="qml-org-shotcut-qml-producer.html">Producer</a></p></td><td class="tblDescr"><p>Represents the clip currently loaded in the Filters panel, accessed via the producer context property</p></td></tr>
+<tr class="even topAlign"><td class="tblName" translate="no"><p><a href="qml-org-shotcut-qml-profile.html">Profile</a></p></td><td class="tblDescr"><p>Describes the current project's Video Mode, accessed via the profile context property</p></td></tr>
+<tr class="odd topAlign"><td class="tblName" translate="no"><p><a href="qml-org-shotcut-qml-qmlextension.html">QmlExtension</a></p></td><td class="tblDescr"><p>Represents a loadable Shotcut extension (e.g. the Whisper speech-to-text package)</p></td></tr>
+<tr class="even topAlign"><td class="tblName" translate="no"><p><a href="qml-org-shotcut-qml-qmlextensionfile.html">QmlExtensionFile</a></p></td><td class="tblDescr"><p>Describes a single downloadable file within an extension package</p></td></tr>
+<tr class="odd topAlign"><td class="tblName" translate="no"><p><a href="qml-org-shotcut-qml-qmlview.html">QmlView</a></p></td><td class="tblDescr"><p>Provides access to the host widget geometry, available via the view context property</p></td></tr>
+<tr class="even topAlign"><td class="tblName" translate="no"><p><a href="qml-org-shotcut-qml-richtext.html">RichText</a></p></td><td class="tblDescr"><p>Provides rich-text editing helpers for the Text: Rich filter panel</p></td></tr>
+<tr class="odd topAlign"><td class="tblName" translate="no"><p><a href="qml-org-shotcut-qml-settings.html">Settings</a></p></td><td class="tblDescr"><p>Persistent application settings, accessed via the settings context property</p></td></tr>
+<tr class="even topAlign"><td class="tblName" translate="no"><p><a href="qml-org-shotcut-qml-subtitlesmodel.html">SubtitlesModel</a></p></td><td class="tblDescr"><p>A two-level item model for subtitle tracks and subtitle items on the timeline</p></td></tr>
+<tr class="odd topAlign"><td class="tblName" translate="no"><p><a href="qml-org-shotcut-qml-subtitlesselectionmodel.html">SubtitlesSelectionModel</a></p></td><td class="tblDescr"><p>Tracks the selected track and selected subtitle items in the Subtitles dock</p></td></tr>
+<tr class="even topAlign"><td class="tblName" translate="no"><p><a href="qml-org-shotcut-qml-timelinedock.html">TimelineDock</a></p></td><td class="tblDescr"><p>Timeline dock controller, available as the timeline context property</p></td></tr>
+</table></div>
+</body>
+</html>

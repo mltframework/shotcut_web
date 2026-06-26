@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- qmlview.cpp -->
+  <meta name="description" content="Provides access to the host widget geometry, available via the view context property.">
+  <title>QmlView QML Type | Shotcut QML Scripting API 26</title>
+    <link rel="stylesheet" type="text/css" href="style/shotcut.css">
+</head>
+<body>
+<li><a href="index.html">Shotcut QML Scripting API</a></li>
+<li><a href="org-shotcut-qml-qmlmodule.html" translate="no">org.shotcut.qml</a></li>
+<li>QmlView</li>
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">QmlView QML Type</h1>
+<!-- $$$QmlView-brief -->
+<p>Provides access to the host widget geometry, available via the <code translate="no">view</code> context property. <a href="#details">More...</a></p>
+<!-- @@@QmlView -->
+<div class="table"><table class="alignedsummary requisites" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> <code translate="no">import org.shotcut.qml</code></td></tr>
+</table></div>
+<ul>
+<li><a href="qml-org-shotcut-qml-qmlview-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no">point <b><a href="qml-org-shotcut-qml-qmlview.html#pos-method" translate="no">pos</a></b>()</li>
+</ul>
+<!-- $$$QmlView-description -->
+<h2 id="details">Detailed Description</h2>
+<p><code translate="no">view</code> is injected as a context property into every dock's QML view. Use it when you need the screen coordinates of the host widget (e.g. to position pop-up elements absolutely on screen).</p>
+<pre class="cpp" translate="no">var widgetPos <span class="operator">=</span> view<span class="operator">.</span>pos()</pre>
+<!-- @@@QmlView -->
+<h2>Method Documentation</h2>
+<!-- $$$pos[overload1]$$$pos -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="pos-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">point</span> <span class="name">pos</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns the top-left position of the host QWidget in screen coordinates.</p>
+</div></div><!-- @@@pos -->
+<br/>
+</body>
+</html>

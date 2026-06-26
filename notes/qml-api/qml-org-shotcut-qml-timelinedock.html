@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- timelinedock.cpp -->
+  <meta name="description" content="The timeline dock controller, available as the timeline context property.">
+  <title>TimelineDock QML Type | Shotcut QML Scripting API 26</title>
+    <link rel="stylesheet" type="text/css" href="style/shotcut.css">
+</head>
+<body>
+<li><a href="index.html">Shotcut QML Scripting API</a></li>
+<li><a href="org-shotcut-qml-qmlmodule.html" translate="no">org.shotcut.qml</a></li>
+<li>TimelineDock</li>
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">TimelineDock QML Type</h1>
+<!-- $$$TimelineDock-brief -->
+<p>The timeline dock controller, available as the <code translate="no">timeline</code> context property. <a href="#details">More...</a></p>
+<!-- @@@TimelineDock -->
+<div class="table"><table class="alignedsummary requisites" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> <code translate="no">import org.shotcut.qml</code></td></tr>
+</table></div>
+<ul>
+<li><a href="qml-org-shotcut-qml-timelinedock-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-timelinedock.html#currentTrack-prop" translate="no">currentTrack</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-timelinedock.html#isRecording-prop" translate="no">isRecording</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-timelinedock.html#loopEnd-prop" translate="no">loopEnd</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-timelinedock.html#loopStart-prop" translate="no">loopStart</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-timelinedock.html#position-prop" translate="no">position</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-timelinedock.html#selection-prop" translate="no">selection</a></b> : list&lt;var&gt;</li>
+</ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-timelinedock.html#clipOpened-signal" translate="no">clipOpened</a></b>(var <i>producer</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-timelinedock.html#currentTrackChanged-signal" translate="no">currentTrackChanged</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-timelinedock.html#durationChanged-signal" translate="no">durationChanged</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-timelinedock.html#isRecordingChanged-signal" translate="no">isRecordingChanged</a></b>(bool <i>recording</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-timelinedock.html#loopChanged-signal" translate="no">loopChanged</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-timelinedock.html#positionChanged-signal" translate="no">positionChanged</a></b>(int <i>position</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-timelinedock.html#selectionChanged-signal" translate="no">selectionChanged</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-timelinedock.html#showStatusMessage-signal" translate="no">showStatusMessage</a></b>(string <i>message</i>)</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no">int <b><a href="qml-org-shotcut-qml-timelinedock.html#addAudioTrack-method" translate="no">addAudioTrack</a></b>()</li>
+<li class="fn" translate="no">int <b><a href="qml-org-shotcut-qml-timelinedock.html#addVideoTrack-method" translate="no">addVideoTrack</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#alignSelectedClips-method" translate="no">alignSelectedClips</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#append-method" translate="no">append</a></b>(int <i>trackIndex</i>)</li>
+<li class="fn" translate="no">bool <b><a href="qml-org-shotcut-qml-timelinedock.html#changeGain-method" translate="no">changeGain</a></b>(int <i>trackIndex</i>, int <i>clipIndex</i>, double <i>gain</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#copy-method" translate="no">copy</a></b>(int <i>trackIndex</i>, int <i>clipIndex</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#createMarker-method" translate="no">createMarker</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#createOrEditMarker-method" translate="no">createOrEditMarker</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#createOrEditSelectionMarker-method" translate="no">createOrEditSelectionMarker</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#deleteMarker-method" translate="no">deleteMarker</a></b>(int <i>markerIndex</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#detachAudio-method" translate="no">detachAudio</a></b>(int <i>trackIndex</i>, int <i>clipIndex</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#editMarker-method" translate="no">editMarker</a></b>(int <i>markerIndex</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#fadeIn-method" translate="no">fadeIn</a></b>(int <i>trackIndex</i>, int <i>clipIndex</i>, int <i>duration</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#fadeOut-method" translate="no">fadeOut</a></b>(int <i>trackIndex</i>, int <i>clipIndex</i>, int <i>duration</i>)</li>
+<li class="fn" translate="no">list&lt;var&gt; <b><a href="qml-org-shotcut-qml-timelinedock.html#getGroupForClip-method" translate="no">getGroupForClip</a></b>(int <i>trackIndex</i>, int <i>clipIndex</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#incrementCurrentTrack-method" translate="no">incrementCurrentTrack</a></b>(int <i>by</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#insert-method" translate="no">insert</a></b>(int <i>trackIndex</i>, int <i>position</i>, string <i>xml</i>, bool <i>seek</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#insertAudioTrack-method" translate="no">insertAudioTrack</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#insertTrack-method" translate="no">insertTrack</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#insertVideoTrack-method" translate="no">insertVideoTrack</a></b>()</li>
+<li class="fn" translate="no">bool <b><a href="qml-org-shotcut-qml-timelinedock.html#isFloating-method" translate="no">isFloating</a></b>()</li>
+<li class="fn" translate="no">bool <b><a href="qml-org-shotcut-qml-timelinedock.html#isMultitrackSelected-method" translate="no">isMultitrackSelected</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#lift-method" translate="no">lift</a></b>(int <i>trackIndex</i>, int <i>clipIndex</i>, bool <i>ignoreTransition</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#liftSelection-method" translate="no">liftSelection</a></b>()</li>
+<li class="fn" translate="no">bool <b><a href="qml-org-shotcut-qml-timelinedock.html#mergeClipWithNext-method" translate="no">mergeClipWithNext</a></b>(int <i>trackIndex</i>, int <i>clipIndex</i>, bool <i>dryrun</i>)</li>
+<li class="fn" translate="no">bool <b><a href="qml-org-shotcut-qml-timelinedock.html#moveClip-method" translate="no">moveClip</a></b>(int <i>fromTrack</i>, int <i>toTrack</i>, int <i>clipIndex</i>, int <i>position</i>, bool <i>ripple</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#moveTrack-method" translate="no">moveTrack</a></b>(int <i>fromTrackIndex</i>, int <i>toTrackIndex</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#moveTrackDown-method" translate="no">moveTrackDown</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#moveTrackUp-method" translate="no">moveTrackUp</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#openProperties-method" translate="no">openProperties</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#overwrite-method" translate="no">overwrite</a></b>(int <i>trackIndex</i>, int <i>position</i>, string <i>xml</i>, bool <i>seek</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#recordAudio-method" translate="no">recordAudio</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#remove-method" translate="no">remove</a></b>(int <i>trackIndex</i>, int <i>clipIndex</i>, bool <i>ignoreTransition</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#removeSelection-method" translate="no">removeSelection</a></b>(bool <i>withCopy</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#removeTrack-method" translate="no">removeTrack</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#replace-method" translate="no">replace</a></b>(int <i>trackIndex</i>, int <i>clipIndex</i>, string <i>xml</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#restoreSelection-method" translate="no">restoreSelection</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#seekInPoint-method" translate="no">seekInPoint</a></b>(int <i>clipIndex</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#seekNextEdit-method" translate="no">seekNextEdit</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#seekNextMarker-method" translate="no">seekNextMarker</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#seekPrevMarker-method" translate="no">seekPrevMarker</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#seekPreviousEdit-method" translate="no">seekPreviousEdit</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#selectAll-method" translate="no">selectAll</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#selectAllOnCurrentTrack-method" translate="no">selectAllOnCurrentTrack</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#selectMultitrack-method" translate="no">selectMultitrack</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#selectTrackHead-method" translate="no">selectTrackHead</a></b>(int <i>trackIndex</i>)</li>
+<li class="fn" translate="no">int <b><a href="qml-org-shotcut-qml-timelinedock.html#selectedTrack-method" translate="no">selectedTrack</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#setTrackComposite-method" translate="no">setTrackComposite</a></b>(int <i>trackIndex</i>, bool <i>composite</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#setTrackLock-method" translate="no">setTrackLock</a></b>(int <i>trackIndex</i>, bool <i>lock</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#setTrackName-method" translate="no">setTrackName</a></b>(int <i>trackIndex</i>, string <i>value</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#stopRecording-method" translate="no">stopRecording</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#toggleOtherTracksHidden-method" translate="no">toggleOtherTracksHidden</a></b>(int <i>trackIndex</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#toggleOtherTracksMute-method" translate="no">toggleOtherTracksMute</a></b>(int <i>trackIndex</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#toggleTrackHidden-method" translate="no">toggleTrackHidden</a></b>(int <i>trackIndex</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#toggleTrackMute-method" translate="no">toggleTrackMute</a></b>(int <i>trackIndex</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#trimClipIn-method" translate="no">trimClipIn</a></b>(bool <i>ripple</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#trimClipOut-method" translate="no">trimClipOut</a></b>(bool <i>ripple</i>)</li>
+</ul>
+<!-- $$$TimelineDock-description -->
+<h2 id="details">Detailed Description</h2>
+<p><code translate="no">timeline</code> is injected into the Timeline QML view and exposes properties and methods for querying and controlling clip selection, the playhead position, the current track, and audio recording.</p>
+<!-- @@@TimelineDock -->
+<h2>Property Documentation</h2>
+<!-- $$$currentTrack -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="currentTrack-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">currentTrack</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The zero-based index of the currently focused timeline track. Settable.</p>
+</div></div><!-- @@@currentTrack -->
+<br/>
+<!-- $$$isRecording -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="isRecording-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">isRecording</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p><code translate="no">true</code> when audio recording is in progress. Read-only.</p>
+</div></div><!-- @@@isRecording -->
+<br/>
+<!-- $$$loopEnd -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="loopEnd-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">loopEnd</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The end frame of the current loop region, or <code translate="no">-1</code> if no loop is set. Read-only.</p>
+</div></div><!-- @@@loopEnd -->
+<br/>
+<!-- $$$loopStart -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="loopStart-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">loopStart</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The start frame of the current loop region, or <code translate="no">-1</code> if no loop is set. Read-only.</p>
+</div></div><!-- @@@loopStart -->
+<br/>
+<!-- $$$position -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="position-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">position</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The current playhead position in frames. Settable &mdash; setting this seeks the player.</p>
+</div></div><!-- @@@position -->
+<br/>
+<!-- $$$selection -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="selection-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">selection</span> : <span class="type">list</span>&lt;<span class="type">var</span>&gt;</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The current clip selection as a list of <code translate="no">point</code> values where <code translate="no">x</code> is the track index and <code translate="no">y</code> is the clip index. Settable.</p>
+</div></div><!-- @@@selection -->
+<br/>
+<h2>Signal Documentation</h2>
+<!-- $$$clipOpened[overload1]$$$clipOpenedvar -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="clipOpened-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">clipOpened</span>(<span class="type">var</span> <i>producer</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when a clip is opened for source preview. <i translate="no">producer</i> is the opened clip's producer.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onClipOpened</code>.</p>
+</div></div></div><!-- @@@clipOpened -->
+<br/>
+<!-- $$$currentTrackChanged[overload1]$$$currentTrackChanged -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="currentTrackChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">currentTrackChanged</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when <a href="qml-org-shotcut-qml-timelinedock.html#currentTrack-prop" translate="no">currentTrack</a> changes.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onCurrentTrackChanged</code>.</p>
+</div></div></div><!-- @@@currentTrackChanged -->
+<br/>
+<!-- $$$durationChanged[overload1]$$$durationChanged -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="durationChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">durationChanged</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when the total timeline duration changes.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onDurationChanged</code>.</p>
+</div></div></div><!-- @@@durationChanged -->
+<br/>
+<!-- $$$isRecordingChanged[overload1]$$$isRecordingChangedbool -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="isRecordingChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">isRecordingChanged</span>(<span class="type">bool</span> <i>recording</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when recording starts or stops. <i translate="no">recording</i> is <code translate="no">true</code> when recording begins.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onIsRecordingChanged</code>.</p>
+</div></div></div><!-- @@@isRecordingChanged -->
+<br/>
+<!-- $$$loopChanged[overload1]$$$loopChanged -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="loopChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">loopChanged</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when the loop region start or end time changes.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onLoopChanged</code>.</p>
+</div></div></div><!-- @@@loopChanged -->
+<br/>
+<!-- $$$positionChanged[overload1]$$$positionChangedint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="positionChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">positionChanged</span>(<span class="type">int</span> <i>position</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when the playhead time <i translate="no">position</i> changes.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onPositionChanged</code>.</p>
+</div></div></div><!-- @@@positionChanged -->
+<br/>
+<!-- $$$selectionChanged[overload1]$$$selectionChanged -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="selectionChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">selectionChanged</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when the clip <a href="qml-org-shotcut-qml-timelinedock.html#selection-prop" translate="no">selection</a> changes.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onSelectionChanged</code>.</p>
+</div></div></div><!-- @@@selectionChanged -->
+<br/>
+<!-- $$$showStatusMessage[overload1]$$$showStatusMessagestring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="showStatusMessage-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">showStatusMessage</span>(<span class="type">string</span> <i>message</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted to request a <i translate="no">message</i> be shown in the status bar.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onShowStatusMessage</code>.</p>
+</div></div></div><!-- @@@showStatusMessage -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$addAudioTrack[overload1]$$$addAudioTrack -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="addAudioTrack-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">int</span> <span class="name">addAudioTrack</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Appends a new audio track and returns its track index.</p>
+</div></div><!-- @@@addAudioTrack -->
+<br/>
+<!-- $$$addVideoTrack[overload1]$$$addVideoTrack -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="addVideoTrack-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">int</span> <span class="name">addVideoTrack</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Appends a new video track and returns its track index.</p>
+</div></div><!-- @@@addVideoTrack -->
+<br/>
+<!-- $$$alignSelectedClips[overload1]$$$alignSelectedClips -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="alignSelectedClips-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">alignSelectedClips</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Aligns selected clips to a common track using audio analysis.</p>
+</div></div><!-- @@@alignSelectedClips -->
+<br/>
+<!-- $$$append[overload1]$$$appendint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="append-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">append</span>(<span class="type">int</span> <i>trackIndex</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Appends the current source clip to the track at <i translate="no">trackIndex</i>.</p>
+</div></div><!-- @@@append -->
+<br/>
+<!-- $$$changeGain[overload1]$$$changeGainintintdouble -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="changeGain-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">bool</span> <span class="name">changeGain</span>(<span class="type">int</span> <i>trackIndex</i>, <span class="type">int</span> <i>clipIndex</i>, <span class="type">double</span> <i>gain</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Sets the audio <i translate="no">gain</i> of the clip at (<i translate="no">trackIndex</i>, <i translate="no">clipIndex</i>). Returns <code translate="no">true</code> on success.</p>
+</div></div><!-- @@@changeGain -->
+<br/>
+<!-- $$$copy[overload1]$$$copyintint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="copy-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">copy</span>(<span class="type">int</span> <i>trackIndex</i>, <span class="type">int</span> <i>clipIndex</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Copies the clip at (<i translate="no">trackIndex</i>, <i translate="no">clipIndex</i>) to the clipboard.</p>
+</div></div><!-- @@@copy -->
+<br/>
+<!-- $$$createMarker[overload1]$$$createMarker -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="createMarker-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">createMarker</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Creates a new marker at the current playhead position.</p>
+</div></div><!-- @@@createMarker -->
+<br/>
+<!-- $$$createOrEditMarker[overload1]$$$createOrEditMarker -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="createOrEditMarker-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">createOrEditMarker</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Creates a new marker at the playhead, or opens the edit dialog if one already exists there.</p>
+</div></div><!-- @@@createOrEditMarker -->
+<br/>
+<!-- $$$createOrEditSelectionMarker[overload1]$$$createOrEditSelectionMarker -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="createOrEditSelectionMarker-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">createOrEditSelectionMarker</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Creates a range marker spanning the current clip selection, or edits the existing one.</p>
+</div></div><!-- @@@createOrEditSelectionMarker -->
+<br/>
+<!-- $$$deleteMarker[overload1]$$$deleteMarkerint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="deleteMarker-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">deleteMarker</span>(<span class="type">int</span> <i>markerIndex</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Deletes the marker at <i translate="no">markerIndex</i>, or the marker at the playhead if <i translate="no">markerIndex</i> is <code translate="no">-1</code>.</p>
+</div></div><!-- @@@deleteMarker -->
+<br/>
+<!-- $$$detachAudio[overload1]$$$detachAudiointint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="detachAudio-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">detachAudio</span>(<span class="type">int</span> <i>trackIndex</i>, <span class="type">int</span> <i>clipIndex</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Detaches the audio of the clip at (<i translate="no">trackIndex</i>, <i translate="no">clipIndex</i>) to an audio track.</p>
+</div></div><!-- @@@detachAudio -->
+<br/>
+<!-- $$$editMarker[overload1]$$$editMarkerint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="editMarker-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">editMarker</span>(<span class="type">int</span> <i>markerIndex</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Opens the edit dialog for the marker at <i translate="no">markerIndex</i>.</p>
+</div></div><!-- @@@editMarker -->
+<br/>
+<!-- $$$fadeIn[overload1]$$$fadeInintintint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="fadeIn-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">fadeIn</span>(<span class="type">int</span> <i>trackIndex</i>, <span class="type">int</span> <i>clipIndex</i>, <span class="type">int</span> <i>duration</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Sets the fade-in <i translate="no">duration</i> (frames) for the clip at (<i translate="no">trackIndex</i>, <i translate="no">clipIndex</i>). Pass <code translate="no">-1</code> for <i translate="no">clipIndex</i> to use the clip under the playhead.</p>
+</div></div><!-- @@@fadeIn -->
+<br/>
+<!-- $$$fadeOut[overload1]$$$fadeOutintintint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="fadeOut-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">fadeOut</span>(<span class="type">int</span> <i>trackIndex</i>, <span class="type">int</span> <i>clipIndex</i>, <span class="type">int</span> <i>duration</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Sets the fade-out <i translate="no">duration</i> (frames) for the clip at (<i translate="no">trackIndex</i>, <i translate="no">clipIndex</i>). Pass <code translate="no">-1</code> for <i translate="no">clipIndex</i> to use the clip under the playhead.</p>
+</div></div><!-- @@@fadeOut -->
+<br/>
+<!-- $$$getGroupForClip[overload1]$$$getGroupForClipintint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="getGroupForClip-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">list</span>&lt;<span class="type">var</span>&gt; <span class="name">getGroupForClip</span>(<span class="type">int</span> <i>trackIndex</i>, <span class="type">int</span> <i>clipIndex</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns the list of all clip coordinates (<code translate="no">point</code> values) in the same group as the clip at (<i translate="no">trackIndex</i>, <i translate="no">clipIndex</i>).</p>
+</div></div><!-- @@@getGroupForClip -->
+<br/>
+<!-- $$$incrementCurrentTrack[overload1]$$$incrementCurrentTrackint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="incrementCurrentTrack-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">incrementCurrentTrack</span>(<span class="type">int</span> <i>by</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Moves the current track focus up or down by <i translate="no">by</i> tracks.</p>
+</div></div><!-- @@@incrementCurrentTrack -->
+<br/>
+<!-- $$$insert[overload1]$$$insertintintstringbool -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="insert-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">insert</span>(<span class="type">int</span> <i>trackIndex</i>, <span class="type">int</span> <i>position</i>, <span class="type">string</span> <i>xml</i>, <span class="type">bool</span> <i>seek</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Inserts the producer described by <i translate="no">xml</i> at time <i translate="no">position</i> on <i translate="no">trackIndex</i>, rippling downstream clips. Pass <code translate="no">-1</code> for <i translate="no">position</i> to use the playhead. If <i translate="no">seek</i> is <code translate="no">true</code>, moves the playhead to the end of the inserted clip.</p>
+</div></div><!-- @@@insert -->
+<br/>
+<!-- $$$insertAudioTrack[overload1]$$$insertAudioTrack -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="insertAudioTrack-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">insertAudioTrack</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Inserts a new audio track above the current track.</p>
+</div></div><!-- @@@insertAudioTrack -->
+<br/>
+<!-- $$$insertTrack[overload1]$$$insertTrack -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="insertTrack-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">insertTrack</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Inserts a new track of the same type as the current track above it.</p>
+</div></div><!-- @@@insertTrack -->
+<br/>
+<!-- $$$insertVideoTrack[overload1]$$$insertVideoTrack -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="insertVideoTrack-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">insertVideoTrack</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Inserts a new video track above the current track.</p>
+</div></div><!-- @@@insertVideoTrack -->
+<br/>
+<!-- $$$isFloating[overload1]$$$isFloating -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="isFloating-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">bool</span> <span class="name">isFloating</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns <code translate="no">true</code> if the timeline dock is currently floating (undocked).</p>
+</div></div><!-- @@@isFloating -->
+<br/>
+<!-- $$$isMultitrackSelected[overload1]$$$isMultitrackSelected -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="isMultitrackSelected-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">bool</span> <span class="name">isMultitrackSelected</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns <code translate="no">true</code> if the timeline output is currently selected.</p>
+</div></div><!-- @@@isMultitrackSelected -->
+<br/>
+<!-- $$$lift[overload1]$$$liftintintbool -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="lift-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">lift</span>(<span class="type">int</span> <i>trackIndex</i>, <span class="type">int</span> <i>clipIndex</i>, <span class="type">bool</span> <i>ignoreTransition</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Lifts (removes content from) the clip at (<i translate="no">trackIndex</i>, <i translate="no">clipIndex</i>), leaving a blank of the same duration. If <i translate="no">ignoreTransition</i> is <code translate="no">true</code>, adjacent transitions are not affected.</p>
+</div></div><!-- @@@lift -->
+<br/>
+<!-- $$$liftSelection[overload1]$$$liftSelection -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="liftSelection-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">liftSelection</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Removes all selected clips, replacing them with blanks.</p>
+</div></div><!-- @@@liftSelection -->
+<br/>
+<!-- $$$mergeClipWithNext[overload1]$$$mergeClipWithNextintintbool -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="mergeClipWithNext-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">bool</span> <span class="name">mergeClipWithNext</span>(<span class="type">int</span> <i>trackIndex</i>, <span class="type">int</span> <i>clipIndex</i>, <span class="type">bool</span> <i>dryrun</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Merges the clip at <i translate="no">clipIndex</i> with the following clip on <i translate="no">trackIndex</i>. If <i translate="no">dryrun</i> is <code translate="no">true</code> the merge is validated but not applied; returns <code translate="no">true</code> when valid.</p>
+</div></div><!-- @@@mergeClipWithNext -->
+<br/>
+<!-- $$$moveClip[overload1]$$$moveClipintintintintbool -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="moveClip-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">bool</span> <span class="name">moveClip</span>(<span class="type">int</span> <i>fromTrack</i>, <span class="type">int</span> <i>toTrack</i>, <span class="type">int</span> <i>clipIndex</i>, <span class="type">int</span> <i>position</i>, <span class="type">bool</span> <i>ripple</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Moves the clip at (<i translate="no">fromTrack</i>, <i translate="no">clipIndex</i>) to <i translate="no">position</i> on <i translate="no">toTrack</i>. If <i translate="no">ripple</i> is <code translate="no">true</code>, downstream clips shift to fill the gap. Returns <code translate="no">true</code> on success.</p>
+</div></div><!-- @@@moveClip -->
+<br/>
+<!-- $$$moveTrack[overload1]$$$moveTrackintint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="moveTrack-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">moveTrack</span>(<span class="type">int</span> <i>fromTrackIndex</i>, <span class="type">int</span> <i>toTrackIndex</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Moves the track at <i translate="no">fromTrackIndex</i> to <i translate="no">toTrackIndex</i>.</p>
+</div></div><!-- @@@moveTrack -->
+<br/>
+<!-- $$$moveTrackDown[overload1]$$$moveTrackDown -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="moveTrackDown-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">moveTrackDown</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Moves the current track one position downward.</p>
+</div></div><!-- @@@moveTrackDown -->
+<br/>
+<!-- $$$moveTrackUp[overload1]$$$moveTrackUp -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="moveTrackUp-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">moveTrackUp</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Moves the current track one position upward.</p>
+</div></div><!-- @@@moveTrackUp -->
+<br/>
+<!-- $$$openProperties[overload1]$$$openProperties -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="openProperties-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">openProperties</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Opens the Properties panel for the currently selected clip. Static method.</p>
+</div></div><!-- @@@openProperties -->
+<br/>
+<!-- $$$overwrite[overload1]$$$overwriteintintstringbool -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="overwrite-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">overwrite</span>(<span class="type">int</span> <i>trackIndex</i>, <span class="type">int</span> <i>position</i>, <span class="type">string</span> <i>xml</i>, <span class="type">bool</span> <i>seek</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Overwrites at time <i translate="no">position</i> on <i translate="no">trackIndex</i> with the producer described by <i translate="no">xml</i>. Pass <code translate="no">-1</code> for <i translate="no">position</i> to use the playhead. If <i translate="no">seek</i> is <code translate="no">true</code>, moves the playhead to the end of the overwritten region.</p>
+</div></div><!-- @@@overwrite -->
+<br/>
+<!-- $$$recordAudio[overload1]$$$recordAudio -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="recordAudio-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">recordAudio</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Starts audio recording into the current track at the playhead position.</p>
+</div></div><!-- @@@recordAudio -->
+<br/>
+<!-- $$$remove[overload1]$$$removeintintbool -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="remove-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">remove</span>(<span class="type">int</span> <i>trackIndex</i>, <span class="type">int</span> <i>clipIndex</i>, <span class="type">bool</span> <i>ignoreTransition</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Removes the clip at (<i translate="no">trackIndex</i>, <i translate="no">clipIndex</i>), replacing it with a blank. If <i translate="no">ignoreTransition</i> is <code translate="no">true</code>, adjacent transitions are not affected.</p>
+</div></div><!-- @@@remove -->
+<br/>
+<!-- $$$removeSelection[overload1]$$$removeSelectionbool -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="removeSelection-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">removeSelection</span>(<span class="type">bool</span> <i>withCopy</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Removes all selected clips. If <i translate="no">withCopy</i> is <code translate="no">true</code>, the clips are copied to the clipboard before removal (cut).</p>
+</div></div><!-- @@@removeSelection -->
+<br/>
+<!-- $$$removeTrack[overload1]$$$removeTrack -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="removeTrack-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">removeTrack</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Removes the current track (and all its clips) from the timeline.</p>
+</div></div><!-- @@@removeTrack -->
+<br/>
+<!-- $$$replace[overload1]$$$replaceintintstring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="replace-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">replace</span>(<span class="type">int</span> <i>trackIndex</i>, <span class="type">int</span> <i>clipIndex</i>, <span class="type">string</span> <i>xml</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Replaces the clip at (<i translate="no">trackIndex</i>, <i translate="no">clipIndex</i>) with the producer described by <i translate="no">xml</i>. If <i translate="no">xml</i> is empty, uses the current source clip.</p>
+</div></div><!-- @@@replace -->
+<br/>
+<!-- $$$restoreSelection[overload1]$$$restoreSelection -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="restoreSelection-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">restoreSelection</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Restores the previously saved clip selection.</p>
+</div></div><!-- @@@restoreSelection -->
+<br/>
+<!-- $$$seekInPoint[overload1]$$$seekInPointint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="seekInPoint-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">seekInPoint</span>(<span class="type">int</span> <i>clipIndex</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Seeks the playhead to the in-point of the clip at <i translate="no">clipIndex</i> on the current track.</p>
+</div></div><!-- @@@seekInPoint -->
+<br/>
+<!-- $$$seekNextEdit[overload1]$$$seekNextEdit -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="seekNextEdit-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">seekNextEdit</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Seeks the playhead to the nearest edit point (clip boundary) after the current position.</p>
+</div></div><!-- @@@seekNextEdit -->
+<br/>
+<!-- $$$seekNextMarker[overload1]$$$seekNextMarker -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="seekNextMarker-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">seekNextMarker</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Seeks the playhead to the next marker after the current position.</p>
+</div></div><!-- @@@seekNextMarker -->
+<br/>
+<!-- $$$seekPrevMarker[overload1]$$$seekPrevMarker -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="seekPrevMarker-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">seekPrevMarker</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Seeks the playhead to the previous marker before the current position.</p>
+</div></div><!-- @@@seekPrevMarker -->
+<br/>
+<!-- $$$seekPreviousEdit[overload1]$$$seekPreviousEdit -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="seekPreviousEdit-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">seekPreviousEdit</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Seeks the playhead to the nearest edit point (clip boundary) before the current position.</p>
+</div></div><!-- @@@seekPreviousEdit -->
+<br/>
+<!-- $$$selectAll[overload1]$$$selectAll -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="selectAll-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">selectAll</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Selects all clips on all tracks.</p>
+</div></div><!-- @@@selectAll -->
+<br/>
+<!-- $$$selectAllOnCurrentTrack[overload1]$$$selectAllOnCurrentTrack -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="selectAllOnCurrentTrack-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">selectAllOnCurrentTrack</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Selects all clips on the current track.</p>
+</div></div><!-- @@@selectAllOnCurrentTrack -->
+<br/>
+<!-- $$$selectMultitrack[overload1]$$$selectMultitrack -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="selectMultitrack-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">selectMultitrack</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Selects the timeline output, deselecting any clips.</p>
+</div></div><!-- @@@selectMultitrack -->
+<br/>
+<!-- $$$selectTrackHead[overload1]$$$selectTrackHeadint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="selectTrackHead-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">selectTrackHead</span>(<span class="type">int</span> <i>trackIndex</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Selects the track and its header of the track at <i translate="no">trackIndex</i>.</p>
+</div></div><!-- @@@selectTrackHead -->
+<br/>
+<!-- $$$selectedTrack[overload1]$$$selectedTrack -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="selectedTrack-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">int</span> <span class="name">selectedTrack</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns the index of the selected track when a single track is selected, or <code translate="no">-1</code> otherwise.</p>
+</div></div><!-- @@@selectedTrack -->
+<br/>
+<!-- $$$setTrackComposite[overload1]$$$setTrackCompositeintbool -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="setTrackComposite-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">setTrackComposite</span>(<span class="type">int</span> <i>trackIndex</i>, <span class="type">bool</span> <i>composite</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Sets whether the video track at <i translate="no">trackIndex</i> composites (<i translate="no">composite</i>) over lower tracks.</p>
+</div></div><!-- @@@setTrackComposite -->
+<br/>
+<!-- $$$setTrackLock[overload1]$$$setTrackLockintbool -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="setTrackLock-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">setTrackLock</span>(<span class="type">int</span> <i>trackIndex</i>, <span class="type">bool</span> <i>lock</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Locks (<i translate="no">lock</i> = <code translate="no">true</code>) or unlocks the track at <i translate="no">trackIndex</i>.</p>
+</div></div><!-- @@@setTrackLock -->
+<br/>
+<!-- $$$setTrackName[overload1]$$$setTrackNameintstring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="setTrackName-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">setTrackName</span>(<span class="type">int</span> <i>trackIndex</i>, <span class="type">string</span> <i>value</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Renames the track at <i translate="no">trackIndex</i> to <i translate="no">value</i>.</p>
+</div></div><!-- @@@setTrackName -->
+<br/>
+<!-- $$$stopRecording[overload1]$$$stopRecording -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="stopRecording-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">stopRecording</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Stops an in-progress audio recording.</p>
+</div></div><!-- @@@stopRecording -->
+<br/>
+<!-- $$$toggleOtherTracksHidden[overload1]$$$toggleOtherTracksHiddenint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="toggleOtherTracksHidden-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">toggleOtherTracksHidden</span>(<span class="type">int</span> <i>trackIndex</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Hides all video tracks except <i translate="no">trackIndex</i>, or shows all if already in that state.</p>
+</div></div><!-- @@@toggleOtherTracksHidden -->
+<br/>
+<!-- $$$toggleOtherTracksMute[overload1]$$$toggleOtherTracksMuteint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="toggleOtherTracksMute-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">toggleOtherTracksMute</span>(<span class="type">int</span> <i>trackIndex</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Mutes all tracks except <i translate="no">trackIndex</i> (solo), or unmutes all if already soloed.</p>
+</div></div><!-- @@@toggleOtherTracksMute -->
+<br/>
+<!-- $$$toggleTrackHidden[overload1]$$$toggleTrackHiddenint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="toggleTrackHidden-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">toggleTrackHidden</span>(<span class="type">int</span> <i>trackIndex</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Toggles visibility of the video track at <i translate="no">trackIndex</i>.</p>
+</div></div><!-- @@@toggleTrackHidden -->
+<br/>
+<!-- $$$toggleTrackMute[overload1]$$$toggleTrackMuteint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="toggleTrackMute-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">toggleTrackMute</span>(<span class="type">int</span> <i>trackIndex</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Toggles mute on the track at <i translate="no">trackIndex</i>.</p>
+</div></div><!-- @@@toggleTrackMute -->
+<br/>
+<!-- $$$trimClipIn[overload1]$$$trimClipInbool -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="trimClipIn-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">trimClipIn</span>(<span class="type">bool</span> <i>ripple</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Trims the in-point of the clip under the playhead to the current time position. If <i translate="no">ripple</i> is <code translate="no">true</code>, downstream clips shift accordingly.</p>
+</div></div><!-- @@@trimClipIn -->
+<br/>
+<!-- $$$trimClipOut[overload1]$$$trimClipOutbool -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="trimClipOut-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">trimClipOut</span>(<span class="type">bool</span> <i>ripple</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Trims the out-point of the clip under the playhead to the current time position. If <i translate="no">ripple</i> is <code translate="no">true</code>, downstream clips shift accordingly.</p>
+</div></div><!-- @@@trimClipOut -->
+<br/>
+</body>
+</html>

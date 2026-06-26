@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- markersmodel.cpp -->
+  <meta name="description" content="A model of timeline markers (cue points with optional range spans and colors).">
+  <title>MarkersModel QML Type | Shotcut QML Scripting API 26</title>
+    <link rel="stylesheet" type="text/css" href="style/shotcut.css">
+</head>
+<body>
+<li><a href="index.html">Shotcut QML Scripting API</a></li>
+<li><a href="org-shotcut-qml-qmlmodule.html" translate="no">org.shotcut.qml</a></li>
+<li>MarkersModel</li>
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+<li class="level2"><a href="#roles">Roles</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">MarkersModel QML Type</h1>
+<!-- $$$MarkersModel-brief -->
+<p>A model of timeline markers (cue points with optional range spans and colors). <a href="#details">More...</a></p>
+<!-- @@@MarkersModel -->
+<div class="table"><table class="alignedsummary requisites" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> <code translate="no">import org.shotcut.qml</code></td></tr>
+</table></div>
+<ul>
+<li><a href="qml-org-shotcut-qml-markersmodel-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-markersmodel.html#recentColors-prop" translate="no">recentColors</a></b> : list&lt;string&gt;</li>
+</ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-markersmodel.html#modified-signal" translate="no">modified</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-markersmodel.html#rangesChanged-signal" translate="no">rangesChanged</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-markersmodel.html#recentColorsChanged-signal" translate="no">recentColorsChanged</a></b>()</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-markersmodel.html#clear-method" translate="no">clear</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-markersmodel.html#move-method" translate="no">move</a></b>(int <i>markerIndex</i>, int <i>start</i>, int <i>end</i>)</li>
+<li class="fn" translate="no">int <b><a href="qml-org-shotcut-qml-markersmodel.html#nextMarkerPosition-method" translate="no">nextMarkerPosition</a></b>(int <i>position</i>)</li>
+<li class="fn" translate="no">int <b><a href="qml-org-shotcut-qml-markersmodel.html#prevMarkerPosition-method" translate="no">prevMarkerPosition</a></b>(int <i>position</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-markersmodel.html#remove-method" translate="no">remove</a></b>(int <i>markerIndex</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-markersmodel.html#setColor-method" translate="no">setColor</a></b>(int <i>markerIndex</i>, color <i>color</i>)</li>
+</ul>
+<!-- $$$MarkersModel-description -->
+<h2 id="details">Detailed Description</h2>
+<p><code translate="no">MarkersModel</code> is available as the <code translate="no">markers</code> context property in the Timeline dock. Each row represents one marker.</p>
+<h3 id="roles">Roles</h3>
+<div class="table"><table class="generic">
+ <thead><tr class="qt-style"><th >Role name</th><th >Description</th></tr></thead>
+<tr valign="top" class="odd"><td ><code translate="no">text</code></td><td >Marker label text</td></tr>
+<tr valign="top" class="even"><td ><code translate="no">start</code></td><td >Start position in frames</td></tr>
+<tr valign="top" class="odd"><td ><code translate="no">end</code></td><td >End position in frames (<code translate="no">==</code> <code translate="no">start</code> for point markers)</td></tr>
+<tr valign="top" class="even"><td ><code translate="no">color</code></td><td >Marker color (<code translate="no">color</code> type)</td></tr>
+</table></div>
+<!-- @@@MarkersModel -->
+<h2>Property Documentation</h2>
+<!-- $$$recentColors -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="recentColors-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">recentColors</span> : <span class="type">list</span>&lt;<span class="type">string</span>&gt;</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The list of recently used marker color strings, most-recent first.</p>
+</div></div><!-- @@@recentColors -->
+<br/>
+<h2>Signal Documentation</h2>
+<!-- $$$modified[overload1]$$$modified -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="modified-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">modified</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted whenever any marker is added, removed, or edited.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onModified</code>.</p>
+</div></div></div><!-- @@@modified -->
+<br/>
+<!-- $$$rangesChanged[overload1]$$$rangesChanged -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="rangesChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">rangesChanged</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when any marker's start/end range changes.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onRangesChanged</code>.</p>
+</div></div></div><!-- @@@rangesChanged -->
+<br/>
+<!-- $$$recentColorsChanged[overload1]$$$recentColorsChanged -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="recentColorsChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">recentColorsChanged</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when the recent-colors list is updated.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onRecentColorsChanged</code>.</p>
+</div></div></div><!-- @@@recentColorsChanged -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$clear[overload1]$$$clear -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="clear-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">clear</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Removes all markers from the timeline.</p>
+</div></div><!-- @@@clear -->
+<br/>
+<!-- $$$move[overload1]$$$moveintintint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="move-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">move</span>(<span class="type">int</span> <i>markerIndex</i>, <span class="type">int</span> <i>start</i>, <span class="type">int</span> <i>end</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Moves the marker at <i translate="no">markerIndex</i> so it spans <i translate="no">start</i> to <i translate="no">end</i> (in frames). For a point marker set <i translate="no">end</i> equal to <i translate="no">start</i>.</p>
+</div></div><!-- @@@move -->
+<br/>
+<!-- $$$nextMarkerPosition[overload1]$$$nextMarkerPositionint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="nextMarkerPosition-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">int</span> <span class="name">nextMarkerPosition</span>(<span class="type">int</span> <i>position</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns the start frame of the nearest marker after <i translate="no">position</i>, or <code translate="no">-1</code> if no marker exists after that position.</p>
+</div></div><!-- @@@nextMarkerPosition -->
+<br/>
+<!-- $$$prevMarkerPosition[overload1]$$$prevMarkerPositionint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="prevMarkerPosition-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">int</span> <span class="name">prevMarkerPosition</span>(<span class="type">int</span> <i>position</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns the start frame of the nearest marker before time <i translate="no">position</i>, or <code translate="no">-1</code> if no marker exists before that position.</p>
+</div></div><!-- @@@prevMarkerPosition -->
+<br/>
+<!-- $$$remove[overload1]$$$removeint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="remove-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">remove</span>(<span class="type">int</span> <i>markerIndex</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Removes the marker at <i translate="no">markerIndex</i>.</p>
+</div></div><!-- @@@remove -->
+<br/>
+<!-- $$$setColor[overload1]$$$setColorintcolor -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="setColor-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">setColor</span>(<span class="type">int</span> <i>markerIndex</i>, <span class="type">color</span> <i>color</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Sets the display <i translate="no">color</i> of the marker at <i translate="no">markerIndex</i>.</p>
+</div></div><!-- @@@setColor -->
+<br/>
+</body>
+</html>

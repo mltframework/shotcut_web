@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- shotcut-controls-types.qdoc -->
+  <meta name="description" content="A native font-chooser dialog.">
+  <title>FontDialog QML Type | Shotcut QML Scripting API 26</title>
+    <link rel="stylesheet" type="text/css" href="style/shotcut.css">
+</head>
+<body>
+<li><a href="index.html">Shotcut QML Scripting API</a></li>
+<li><a href="shotcut-controls-qmlmodule.html" translate="no">Shotcut.Controls</a></li>
+<li>FontDialog</li>
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">FontDialog QML Type</h1>
+<!-- $$$FontDialog-brief -->
+<p>A native font-chooser dialog. <a href="#details">More...</a></p>
+<!-- @@@FontDialog -->
+<div class="table"><table class="alignedsummary requisites" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> <code translate="no">import Shotcut.Controls</code></td></tr>
+</table></div>
+<ul>
+<li><a href="qml-shotcut-controls-fontdialog-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-shotcut-controls-fontdialog.html#selectedFont-prop" translate="no">selectedFont</a></b> : font</li>
+</ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-shotcut-controls-fontdialog.html#accepted-signal" translate="no">accepted</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-shotcut-controls-fontdialog.html#rejected-signal" translate="no">rejected</a></b>()</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-shotcut-controls-fontdialog.html#open-method" translate="no">open</a></b>()</li>
+</ul>
+<!-- $$$FontDialog-description -->
+<h2 id="details">Detailed Description</h2>
+<pre class="cpp" translate="no">import Shotcut.Controls as Shotcut
+
+<span class="type">Shotcut</span>.FontDialog {
+    <span class="name">id</span>: <span class="name">fontDialog</span>
+    <span class="name">onAccepted</span>: <span class="name">document</span>.<span class="name">setFontFamily</span>(<span class="name">fontDialog</span>.<span class="name">selectedFont</span>.<span class="name">family</span>)
+}</pre>
+<!-- @@@FontDialog -->
+<h2>Property Documentation</h2>
+<!-- $$$selectedFont -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="selectedFont-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">selectedFont</span> : <span class="type">font</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The font currently selected in the dialog. Set before <a href="qml-shotcut-controls-fontdialog.html#open-method" translate="no">open</a>() to pre-populate; read in <a href="qml-shotcut-controls-fontdialog.html#accepted-signal" translate="no">accepted</a> to retrieve the choice.</p>
+</div></div><!-- @@@selectedFont -->
+<br/>
+<h2>Signal Documentation</h2>
+<!-- $$$accepted[overload1]$$$accepted -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="accepted-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">accepted</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when the user confirms the font selection.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onAccepted</code>.</p>
+</div></div></div><!-- @@@accepted -->
+<br/>
+<!-- $$$rejected[overload1]$$$rejected -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="rejected-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">rejected</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when the user dismisses the dialog without selecting a font.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onRejected</code>.</p>
+</div></div></div><!-- @@@rejected -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$open[overload1]$$$open -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="open-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">open</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Opens the native font dialog modally.</p>
+</div></div><!-- @@@open -->
+<br/>
+</body>
+</html>

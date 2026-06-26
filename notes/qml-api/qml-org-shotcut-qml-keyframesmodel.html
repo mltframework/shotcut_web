@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- keyframesmodel.cpp -->
+  <meta name="description" content="A two-level item model describing a filter's keyframeable parameters and their keyframes.">
+  <title>KeyframesModel QML Type | Shotcut QML Scripting API 26</title>
+    <link rel="stylesheet" type="text/css" href="style/shotcut.css">
+</head>
+<body>
+<li><a href="index.html">Shotcut QML Scripting API</a></li>
+<li><a href="org-shotcut-qml-qmlmodule.html" translate="no">org.shotcut.qml</a></li>
+<li>KeyframesModel</li>
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+<li class="level2"><a href="#interpolationtype-enum">InterpolationType enum</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">KeyframesModel QML Type</h1>
+<!-- $$$KeyframesModel-brief -->
+<p>A two-level item model describing a filter's keyframeable parameters and their keyframes. <a href="#details">More...</a></p>
+<!-- @@@KeyframesModel -->
+<div class="table"><table class="alignedsummary requisites" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> <code translate="no">import org.shotcut.qml</code></td></tr>
+</table></div>
+<ul>
+<li><a href="qml-org-shotcut-qml-keyframesmodel-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-keyframesmodel.html#keyframeAdded-signal" translate="no">keyframeAdded</a></b>(string <i>parameter</i>, int <i>position</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-keyframesmodel.html#loaded-signal" translate="no">loaded</a></b>()</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-keyframesmodel.html#addKeyframe-method" translate="no">addKeyframe</a></b>(int <i>parameterIndex</i>, int <i>position</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-keyframesmodel.html#addKeyframe-method-1" translate="no">addKeyframe</a></b>(int <i>parameterIndex</i>, double <i>value</i>, int <i>position</i>, int <i>type</i>)</li>
+<li class="fn" translate="no">bool <b><a href="qml-org-shotcut-qml-keyframesmodel.html#advancedKeyframesInUse-method" translate="no">advancedKeyframesInUse</a></b>()</li>
+<li class="fn" translate="no">bool <b><a href="qml-org-shotcut-qml-keyframesmodel.html#isKeyframe-method" translate="no">isKeyframe</a></b>(int <i>parameterIndex</i>, int <i>position</i>)</li>
+<li class="fn" translate="no">int <b><a href="qml-org-shotcut-qml-keyframesmodel.html#keyframeIndex-method" translate="no">keyframeIndex</a></b>(int <i>parameterIndex</i>, int <i>currentPosition</i>)</li>
+<li class="fn" translate="no">int <b><a href="qml-org-shotcut-qml-keyframesmodel.html#parameterIndex-method" translate="no">parameterIndex</a></b>(string <i>propertyName</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-keyframesmodel.html#reload-method" translate="no">reload</a></b>()</li>
+<li class="fn" translate="no">bool <b><a href="qml-org-shotcut-qml-keyframesmodel.html#remove-method" translate="no">remove</a></b>(int <i>parameterIndex</i>, int <i>keyframeIndex</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-keyframesmodel.html#removeAdvancedKeyframes-method" translate="no">removeAdvancedKeyframes</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-keyframesmodel.html#removeSimpleKeyframes-method" translate="no">removeSimpleKeyframes</a></b>()</li>
+<li class="fn" translate="no">bool <b><a href="qml-org-shotcut-qml-keyframesmodel.html#setInterpolation-method" translate="no">setInterpolation</a></b>(int <i>parameterIndex</i>, int <i>keyframeIndex</i>, int <i>type</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-keyframesmodel.html#setKeyframePosition-method" translate="no">setKeyframePosition</a></b>(int <i>parameterIndex</i>, int <i>keyframeIndex</i>, int <i>position</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-keyframesmodel.html#setKeyframeValue-method" translate="no">setKeyframeValue</a></b>(int <i>parameterIndex</i>, int <i>keyframeIndex</i>, double <i>value</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-keyframesmodel.html#setKeyframeValuePosition-method" translate="no">setKeyframeValuePosition</a></b>(int <i>parameterIndex</i>, int <i>keyframeIndex</i>, double <i>value</i>, int <i>position</i>)</li>
+<li class="fn" translate="no">bool <b><a href="qml-org-shotcut-qml-keyframesmodel.html#simpleKeyframesInUse-method" translate="no">simpleKeyframesInUse</a></b>()</li>
+</ul>
+<!-- $$$KeyframesModel-description -->
+<h2 id="details">Detailed Description</h2>
+<p><code translate="no">KeyframesModel</code> is available as the <code translate="no">parameters</code> context property in the Keyframes panel. The top level contains one row per keyframeable parameter; each parameter row contains one child row per keyframe.</p>
+<h3 id="interpolationtype-enum">InterpolationType enum</h3>
+<p>Passed to <a href="qml-org-shotcut-qml-keyframesmodel.html#setInterpolation-method" translate="no">setInterpolation</a>() and <a href="qml-org-shotcut-qml-keyframesmodel.html#addKeyframe-method" translate="no">addKeyframe</a>():</p>
+<div class="table"><table class="generic">
+ <thead><tr class="qt-style"><th >Value</th><th >Name</th></tr></thead>
+<tr valign="top" class="odd"><td >0</td><td >DiscreteInterpolation</td></tr>
+<tr valign="top" class="even"><td >1</td><td >LinearInterpolation</td></tr>
+<tr valign="top" class="odd"><td >2</td><td >SmoothLooseInterpolation</td></tr>
+<tr valign="top" class="even"><td >3</td><td >SmoothNaturalInterpolation</td></tr>
+<tr valign="top" class="odd"><td >4</td><td >SmoothTightInterpolation</td></tr>
+<tr valign="top" class="even"><td >5&ndash;7</td><td >EaseInSinusoidal / EaseOutSinusoidal / EaseInOutSinusoidal</td></tr>
+<tr valign="top" class="odd"><td >8&ndash;10</td><td >EaseIn/Out/InOutQuadratic</td></tr>
+<tr valign="top" class="even"><td >11&ndash;13</td><td >EaseIn/Out/InOutCubic</td></tr>
+<tr valign="top" class="odd"><td >14&ndash;16</td><td >EaseIn/Out/InOutQuartic</td></tr>
+<tr valign="top" class="even"><td >17&ndash;19</td><td >EaseIn/Out/InOutQuintic</td></tr>
+<tr valign="top" class="odd"><td >20&ndash;22</td><td >EaseIn/Out/InOutExponential</td></tr>
+<tr valign="top" class="even"><td >23&ndash;25</td><td >EaseIn/Out/InOutCircular</td></tr>
+<tr valign="top" class="odd"><td >26&ndash;28</td><td >EaseIn/Out/InOutBack</td></tr>
+<tr valign="top" class="even"><td >29&ndash;31</td><td >EaseIn/Out/InOutElastic</td></tr>
+<tr valign="top" class="odd"><td >32&ndash;34</td><td >EaseIn/Out/InOutBounce</td></tr>
+</table></div>
+<!-- @@@KeyframesModel -->
+<h2>Signal Documentation</h2>
+<!-- $$$keyframeAdded[overload1]$$$keyframeAddedstringint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="keyframeAdded-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">keyframeAdded</span>(<span class="type">string</span> <i>parameter</i>, <span class="type">int</span> <i>position</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when a keyframe is added. <i translate="no">parameter</i> is the MLT property name; <i translate="no">position</i> is the frame number.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onKeyframeAdded</code>.</p>
+</div></div></div><!-- @@@keyframeAdded -->
+<br/>
+<!-- $$$loaded[overload1]$$$loaded -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="loaded-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">loaded</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted after the model has been populated for a new filter.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onLoaded</code>.</p>
+</div></div></div><!-- @@@loaded -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$addKeyframe[overload1]$$$addKeyframeintint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="addKeyframe-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">addKeyframe</span>(<span class="type">int</span> <i>parameterIndex</i>, <span class="type">int</span> <i>position</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Adds a keyframe at time <i translate="no">position</i> for <i translate="no">parameterIndex</i> using the current filter value.</p>
+</div></div><!-- @@@addKeyframe -->
+<br/>
+<!-- $$$addKeyframe$$$addKeyframeintdoubleintint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="addKeyframe-method-1">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">addKeyframe</span>(<span class="type">int</span> <i>parameterIndex</i>, <span class="type">double</span> <i>value</i>, <span class="type">int</span> <i>position</i>, <span class="type">int</span> <i>type</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Adds a keyframe at time <i translate="no">position</i> for <i translate="no">parameterIndex</i> with numeric <i translate="no">value</i> and interpolation <i translate="no">type</i>.</p>
+</div></div><!-- @@@addKeyframe -->
+<br/>
+<!-- $$$advancedKeyframesInUse[overload1]$$$advancedKeyframesInUse -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="advancedKeyframesInUse-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">bool</span> <span class="name">advancedKeyframesInUse</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns <code translate="no">true</code> if the filter is currently using advanced (per-keyframe) interpolation.</p>
+</div></div><!-- @@@advancedKeyframesInUse -->
+<br/>
+<!-- $$$isKeyframe[overload1]$$$isKeyframeintint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="isKeyframe-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">bool</span> <span class="name">isKeyframe</span>(<span class="type">int</span> <i>parameterIndex</i>, <span class="type">int</span> <i>position</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns <code translate="no">true</code> if a keyframe exists at time <i translate="no">position</i> for <i translate="no">parameterIndex</i>.</p>
+</div></div><!-- @@@isKeyframe -->
+<br/>
+<!-- $$$keyframeIndex[overload1]$$$keyframeIndexintint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="keyframeIndex-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">int</span> <span class="name">keyframeIndex</span>(<span class="type">int</span> <i>parameterIndex</i>, <span class="type">int</span> <i>currentPosition</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns the keyframe index at time <i translate="no">currentPosition</i> for the given <i translate="no">parameterIndex</i>, or <code translate="no">-1</code> if no keyframe exists at that position.</p>
+</div></div><!-- @@@keyframeIndex -->
+<br/>
+<!-- $$$parameterIndex[overload1]$$$parameterIndexstring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="parameterIndex-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">int</span> <span class="name">parameterIndex</span>(<span class="type">string</span> <i>propertyName</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns the row index of the parameter identified by <i translate="no">propertyName</i>, or <code translate="no">-1</code>.</p>
+</div></div><!-- @@@parameterIndex -->
+<br/>
+<!-- $$$reload[overload1]$$$reload -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="reload-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">reload</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Reloads the model from the current filter, refreshing all parameter and keyframe rows.</p>
+</div></div><!-- @@@reload -->
+<br/>
+<!-- $$$remove[overload1]$$$removeintint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="remove-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">bool</span> <span class="name">remove</span>(<span class="type">int</span> <i>parameterIndex</i>, <span class="type">int</span> <i>keyframeIndex</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Removes the keyframe at <i translate="no">keyframeIndex</i> on parameter <i translate="no">parameterIndex</i>. Returns <code translate="no">true</code> on success.</p>
+</div></div><!-- @@@remove -->
+<br/>
+<!-- $$$removeAdvancedKeyframes[overload1]$$$removeAdvancedKeyframes -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="removeAdvancedKeyframes-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">removeAdvancedKeyframes</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Converts all advanced keyframes to simple (linear) keyframes.</p>
+</div></div><!-- @@@removeAdvancedKeyframes -->
+<br/>
+<!-- $$$removeSimpleKeyframes[overload1]$$$removeSimpleKeyframes -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="removeSimpleKeyframes-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">removeSimpleKeyframes</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Removes the simple keyframe animation, returning the filter to a static state.</p>
+</div></div><!-- @@@removeSimpleKeyframes -->
+<br/>
+<!-- $$$setInterpolation[overload1]$$$setInterpolationintintint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="setInterpolation-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">bool</span> <span class="name">setInterpolation</span>(<span class="type">int</span> <i>parameterIndex</i>, <span class="type">int</span> <i>keyframeIndex</i>, <span class="type">int</span> <i>type</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Sets the interpolation <i translate="no">type</i> for the keyframe at <i translate="no">keyframeIndex</i> on <i translate="no">parameterIndex</i>. <i translate="no">type</i> is a value from the <code translate="no">InterpolationType</code> enum. Returns <code translate="no">true</code> on success.</p>
+</div></div><!-- @@@setInterpolation -->
+<br/>
+<!-- $$$setKeyframePosition[overload1]$$$setKeyframePositionintintint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="setKeyframePosition-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">setKeyframePosition</span>(<span class="type">int</span> <i>parameterIndex</i>, <span class="type">int</span> <i>keyframeIndex</i>, <span class="type">int</span> <i>position</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Moves the keyframe at <i translate="no">keyframeIndex</i> on <i translate="no">parameterIndex</i> to <i translate="no">position</i> (in frames).</p>
+</div></div><!-- @@@setKeyframePosition -->
+<br/>
+<!-- $$$setKeyframeValue[overload1]$$$setKeyframeValueintintdouble -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="setKeyframeValue-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">setKeyframeValue</span>(<span class="type">int</span> <i>parameterIndex</i>, <span class="type">int</span> <i>keyframeIndex</i>, <span class="type">double</span> <i>value</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Sets the numeric <i translate="no">value</i> of an existing keyframe on parameter <i translate="no">parameterIndex</i> at <i translate="no">keyframeIndex</i>.</p>
+</div></div><!-- @@@setKeyframeValue -->
+<br/>
+<!-- $$$setKeyframeValuePosition[overload1]$$$setKeyframeValuePositionintintdoubleint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="setKeyframeValuePosition-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">setKeyframeValuePosition</span>(<span class="type">int</span> <i>parameterIndex</i>, <span class="type">int</span> <i>keyframeIndex</i>, <span class="type">double</span> <i>value</i>, <span class="type">int</span> <i>position</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Sets both the <i translate="no">value</i> and time <i translate="no">position</i> of keyframe <i translate="no">keyframeIndex</i> on parameter <i translate="no">parameterIndex</i> in one operation.</p>
+</div></div><!-- @@@setKeyframeValuePosition -->
+<br/>
+<!-- $$$simpleKeyframesInUse[overload1]$$$simpleKeyframesInUse -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="simpleKeyframesInUse-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">bool</span> <span class="name">simpleKeyframesInUse</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns <code translate="no">true</code> if the filter is currently using simple (two-keyframe) animation.</p>
+</div></div><!-- @@@simpleKeyframesInUse -->
+<br/>
+</body>
+</html>

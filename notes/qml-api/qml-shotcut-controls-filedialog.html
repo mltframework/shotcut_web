@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- shotcut-controls-types.qdoc -->
+  <meta name="description" content="A native file open/save dialog.">
+  <title>FileDialog QML Type | Shotcut QML Scripting API 26</title>
+    <link rel="stylesheet" type="text/css" href="style/shotcut.css">
+</head>
+<body>
+<li><a href="index.html">Shotcut QML Scripting API</a></li>
+<li><a href="shotcut-controls-qmlmodule.html" translate="no">Shotcut.Controls</a></li>
+<li>FileDialog</li>
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+<li class="level2"><a href="#filemode-enum">FileMode enum</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">FileDialog QML Type</h1>
+<!-- $$$FileDialog-brief -->
+<p>A native file open/save dialog. <a href="#details">More...</a></p>
+<!-- @@@FileDialog -->
+<div class="table"><table class="alignedsummary requisites" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> <code translate="no">import Shotcut.Controls</code></td></tr>
+</table></div>
+<ul>
+<li><a href="qml-shotcut-controls-filedialog-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-shotcut-controls-filedialog.html#fileMode-prop" translate="no">fileMode</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-shotcut-controls-filedialog.html#nameFilters-prop" translate="no">nameFilters</a></b> : list&lt;string&gt;</li>
+<li class="fn" translate="no"><b><a href="qml-shotcut-controls-filedialog.html#selectedFile-prop" translate="no">selectedFile</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-shotcut-controls-filedialog.html#title-prop" translate="no">title</a></b> : string</li>
+</ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-shotcut-controls-filedialog.html#accepted-signal" translate="no">accepted</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-shotcut-controls-filedialog.html#fileSelected-signal" translate="no">fileSelected</a></b>(string <i>file</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-shotcut-controls-filedialog.html#rejected-signal" translate="no">rejected</a></b>()</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-shotcut-controls-filedialog.html#open-method" translate="no">open</a></b>()</li>
+</ul>
+<!-- $$$FileDialog-description -->
+<h2 id="details">Detailed Description</h2>
+<h3 id="filemode-enum">FileMode enum</h3>
+<div class="table"><table class="generic">
+ <thead><tr class="qt-style"><th >Value</th><th >Description</th></tr></thead>
+<tr valign="top" class="odd"><td ><code translate="no">FileDialog.OpenFile</code></td><td >Select an existing file to open (default)</td></tr>
+<tr valign="top" class="even"><td ><code translate="no">FileDialog.SaveFile</code></td><td >Choose a filename to save</td></tr>
+</table></div>
+<pre class="cpp" translate="no">import Shotcut.Controls as Shotcut
+
+<span class="type">Shotcut</span>.FileDialog {
+    <span class="name">id</span>: <span class="name">fileDialog</span>
+    <span class="name">title</span>: <span class="name">qsTr</span>(<span class="string">&quot;Open File&quot;</span>)
+    <span class="name">fileMode</span>: <span class="name">Shotcut</span>.<span class="name">FileDialog</span>.<span class="name">OpenFile</span>
+    <span class="name">nameFilters</span>: [<span class="string">&quot;GPS files (*.gpx *.kml)&quot;</span>, <span class="string">&quot;All files (*)&quot;</span>]
+    <span class="name">onFileSelected</span>: <span class="name">myFile</span>.<span class="name">url</span> <span class="operator">=</span> <span class="name">file</span>
+}</pre>
+<!-- @@@FileDialog -->
+<h2>Property Documentation</h2>
+<!-- $$$fileMode -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="fileMode-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">fileMode</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether the dialog is for opening or saving. One of <code translate="no">FileDialog.OpenFile</code> or <code translate="no">FileDialog.SaveFile</code>.</p>
+</div></div><!-- @@@fileMode -->
+<br/>
+<!-- $$$nameFilters -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="nameFilters-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">nameFilters</span> : <span class="type">list</span>&lt;<span class="type">string</span>&gt;</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The list of file type filters shown in the dialog (e.g. <code translate="no">[&quot;Images (*.png *.jpg)&quot;, &quot;All files (*)&quot;]</code> ).</p>
+</div></div><!-- @@@nameFilters -->
+<br/>
+<!-- $$$selectedFile -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="selectedFile-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">selectedFile</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The full file path of the last selected file (read-only). Available after <a href="qml-shotcut-controls-filedialog.html#fileSelected-signal" translate="no">fileSelected</a> is emitted.</p>
+</div></div><!-- @@@selectedFile -->
+<br/>
+<!-- $$$title -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="title-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">title</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The dialog window title.</p>
+</div></div><!-- @@@title -->
+<br/>
+<h2>Signal Documentation</h2>
+<!-- $$$accepted[overload1]$$$accepted -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="accepted-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">accepted</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when the user confirms the dialog.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onAccepted</code>.</p>
+</div></div></div><!-- @@@accepted -->
+<br/>
+<!-- $$$fileSelected[overload1]$$$fileSelectedstring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="fileSelected-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">fileSelected</span>(<span class="type">string</span> <i>file</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when the user confirms a selection. <i translate="no">file</i> is the full path.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onFileSelected</code>.</p>
+</div></div></div><!-- @@@fileSelected -->
+<br/>
+<!-- $$$rejected[overload1]$$$rejected -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="rejected-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">rejected</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when the user cancels or closes the dialog.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onRejected</code>.</p>
+</div></div></div><!-- @@@rejected -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$open[overload1]$$$open -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="open-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">open</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Opens the native file dialog modally.</p>
+</div></div><!-- @@@open -->
+<br/>
+</body>
+</html>

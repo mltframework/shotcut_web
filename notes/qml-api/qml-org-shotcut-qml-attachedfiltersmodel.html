@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- attachedfiltersmodel.cpp -->
+  <meta name="description" content="A list model of filters attached to the currently selected clip or track.">
+  <title>AttachedFiltersModel QML Type | Shotcut QML Scripting API 26</title>
+    <link rel="stylesheet" type="text/css" href="style/shotcut.css">
+</head>
+<body>
+<li><a href="index.html">Shotcut QML Scripting API</a></li>
+<li><a href="org-shotcut-qml-qmlmodule.html" translate="no">org.shotcut.qml</a></li>
+<li>AttachedFiltersModel</li>
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">AttachedFiltersModel QML Type</h1>
+<!-- $$$AttachedFiltersModel-brief -->
+<p>A list model of filters attached to the currently selected clip or track. <a href="#details">More...</a></p>
+<!-- @@@AttachedFiltersModel -->
+<div class="table"><table class="alignedsummary requisites" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> <code translate="no">import org.shotcut.qml</code></td></tr>
+</table></div>
+<ul>
+<li><a href="qml-org-shotcut-qml-attachedfiltersmodel-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-attachedfiltersmodel.html#isProducerSelected-prop" translate="no">isProducerSelected</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-attachedfiltersmodel.html#producerTitle-prop" translate="no">producerTitle</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-attachedfiltersmodel.html#supportsLinks-prop" translate="no">supportsLinks</a></b> : bool</li>
+</ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-attachedfiltersmodel.html#changed-signal" translate="no">changed</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-attachedfiltersmodel.html#duplicateAddFailed-signal" translate="no">duplicateAddFailed</a></b>(int <i>index</i>)</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no">int <b><a href="qml-org-shotcut-qml-attachedfiltersmodel.html#add-method" translate="no">add</a></b>(Metadata <i>meta</i>)</li>
+<li class="fn" translate="no">bool <b><a href="qml-org-shotcut-qml-attachedfiltersmodel.html#move-method" translate="no">move</a></b>(int <i>fromRow</i>, int <i>toRow</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-attachedfiltersmodel.html#pasteFilters-method" translate="no">pasteFilters</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-attachedfiltersmodel.html#remove-method" translate="no">remove</a></b>(int <i>row</i>)</li>
+</ul>
+<!-- $$$AttachedFiltersModel-description -->
+<h2 id="details">Detailed Description</h2>
+<p><code translate="no">AttachedFiltersModel</code> is available as the <code translate="no">attachedfiltersmodel</code> context property in the Filters dock. Each row represents one attached filter service.</p>
+<!-- @@@AttachedFiltersModel -->
+<h2>Property Documentation</h2>
+<!-- $$$isProducerSelected -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="isProducerSelected-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">isProducerSelected</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p><code translate="no">true</code> when a producer is currently selected and filters can be inspected.</p>
+</div></div><!-- @@@isProducerSelected -->
+<br/>
+<!-- $$$producerTitle -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="producerTitle-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">producerTitle</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The display name of the producer (clip or track) the filters are attached to.</p>
+</div></div><!-- @@@producerTitle -->
+<br/>
+<!-- $$$supportsLinks -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="supportsLinks-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">supportsLinks</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p><code translate="no">true</code> when the current producer supports <b>Time</b> filters (i.e. MLT link chains).</p>
+</div></div><!-- @@@supportsLinks -->
+<br/>
+<h2>Signal Documentation</h2>
+<!-- $$$changed[overload1]$$$changed -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="changed-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">changed</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when any filter in the list is added, removed, reordered, or toggled.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onChanged</code>.</p>
+</div></div></div><!-- @@@changed -->
+<br/>
+<!-- $$$duplicateAddFailed[overload1]$$$duplicateAddFailedint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="duplicateAddFailed-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">duplicateAddFailed</span>(<span class="type">int</span> <i>index</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when adding a filter would create a duplicate that is not allowed. <i translate="no">index</i> is the row of the conflicting filter.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onDuplicateAddFailed</code>.</p>
+</div></div></div><!-- @@@duplicateAddFailed -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$add[overload1]$$$addMetadata -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="add-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">int</span> <span class="name">add</span>(<span class="type"><a href="qml-org-shotcut-qml-metadata.html" translate="no">Metadata</a></span> <i>meta</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Adds the filter described by <i translate="no">meta</i> to the attached filters list. Returns the row index of the newly added filter.</p>
+</div></div><!-- @@@add -->
+<br/>
+<!-- $$$move[overload1]$$$moveintint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="move-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">bool</span> <span class="name">move</span>(<span class="type">int</span> <i>fromRow</i>, <span class="type">int</span> <i>toRow</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Moves the filter from <i translate="no">fromRow</i> to <i translate="no">toRow</i>. Returns <code translate="no">true</code> on success.</p>
+</div></div><!-- @@@move -->
+<br/>
+<!-- $$$pasteFilters[overload1]$$$pasteFilters -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="pasteFilters-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">pasteFilters</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Pastes any filters stored on the clipboard onto the current producer.</p>
+</div></div><!-- @@@pasteFilters -->
+<br/>
+<!-- $$$remove[overload1]$$$removeint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="remove-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">remove</span>(<span class="type">int</span> <i>row</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Removes the filter at <i translate="no">row</i> from the attached filters list.</p>
+</div></div><!-- @@@remove -->
+<br/>
+</body>
+</html>

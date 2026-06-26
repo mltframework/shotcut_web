@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- qmlfile.cpp -->
+  <meta name="description" content="A file URL wrapper with optional filesystem change watching.">
+  <title>File QML Type | Shotcut QML Scripting API 26</title>
+    <link rel="stylesheet" type="text/css" href="style/shotcut.css">
+</head>
+<body>
+<li><a href="index.html">Shotcut QML Scripting API</a></li>
+<li><a href="org-shotcut-qml-qmlmodule.html" translate="no">org.shotcut.qml</a></li>
+<li>File</li>
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">File QML Type</h1>
+<!-- $$$File-brief -->
+<p>A file URL wrapper with optional filesystem change watching. <a href="#details">More...</a></p>
+<!-- @@@File -->
+<div class="table"><table class="alignedsummary requisites" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> <code translate="no">import org.shotcut.qml</code></td></tr>
+</table></div>
+<ul>
+<li><a href="qml-org-shotcut-qml-file-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-file.html#fileName-prop" translate="no">fileName</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-file.html#filePath-prop" translate="no">filePath</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-file.html#path-prop" translate="no">path</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-file.html#url-prop" translate="no">url</a></b> : string</li>
+</ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-file.html#fileChanged-signal" translate="no">fileChanged</a></b>(string <i>path</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-file.html#urlChanged-signal" translate="no">urlChanged</a></b>(url <i>url</i>)</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-file.html#copyFromFile-method" translate="no">copyFromFile</a></b>(string <i>source</i>)</li>
+<li class="fn" translate="no">bool <b><a href="qml-org-shotcut-qml-file.html#exists-method" translate="no">exists</a></b>()</li>
+<li class="fn" translate="no">string <b><a href="qml-org-shotcut-qml-file.html#suffix-method" translate="no">suffix</a></b>()</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-file.html#watch-method" translate="no">watch</a></b>()</li>
+</ul>
+<!-- $$$File-description -->
+<h2 id="details">Detailed Description</h2>
+<p>Use <code translate="no">File</code> in filter panels to manage paths to auxiliary files (e.g. LUT files, preset data files). Set <a href="qml-org-shotcut-qml-file.html#url-prop" translate="no">url</a> and call <a href="qml-org-shotcut-qml-file.html#watch-method" translate="no">watch</a>() to receive <a href="qml-org-shotcut-qml-file.html#fileChanged-signal" translate="no">fileChanged</a> notifications when the file is modified externally.</p>
+<pre class="cpp" translate="no"><span class="type"><a href="qml-org-shotcut-qml-file.html" translate="no">File</a></span> {
+    <span class="name">id</span>: <span class="name">lutFile</span>
+    <span class="name">url</span>: <span class="name">filter</span>.<span class="name">get</span>(<span class="string">&quot;av.file&quot;</span>)
+    <span class="name">onFileChanged</span>: <span class="name">filter</span>.<span class="name">set</span>(<span class="string">&quot;av.file&quot;</span>, <span class="name">path</span>)
+}</pre>
+<!-- @@@File -->
+<h2>Property Documentation</h2>
+<!-- $$$fileName -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="fileName-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">fileName</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The base file name without the directory path (e.g. <code translate="no">&quot;lut.cube&quot;</code>).</p>
+</div></div><!-- @@@fileName -->
+<br/>
+<!-- $$$filePath -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="filePath-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">filePath</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The full local filesystem path (e.g. <code translate="no">&quot;/home/user/lut.cube&quot;</code>).</p>
+</div></div><!-- @@@filePath -->
+<br/>
+<!-- $$$path -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="path-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">path</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The directory path portion of the URL (without the file name).</p>
+</div></div><!-- @@@path -->
+<br/>
+<!-- $$$url -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="url-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">url</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The file URL as a string (e.g. <code translate="no">&quot;file:///home/user/lut.cube&quot;</code>). Setting this property stops watching any previously watched file.</p>
+</div></div><!-- @@@url -->
+<br/>
+<h2>Signal Documentation</h2>
+<!-- $$$fileChanged[overload1]$$$fileChangedstring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="fileChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">fileChanged</span>(<span class="type">string</span> <i>path</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when the watched file is modified or deleted externally. <i translate="no">path</i> is the full file system path. Connect a file watcher by calling <a href="qml-org-shotcut-qml-file.html#watch-method" translate="no">watch</a>() first.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onFileChanged</code>.</p>
+</div></div></div><!-- @@@fileChanged -->
+<br/>
+<!-- $$$urlChanged[overload1]$$$urlChangedurl -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="urlChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">urlChanged</span>(<span class="type">url</span> <i>url</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Emitted when <a href="qml-org-shotcut-qml-file.html#url-prop" translate="no">url</a> changes. <i translate="no">url</i> is the new URL value.</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onUrlChanged</code>.</p>
+</div></div></div><!-- @@@urlChanged -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$copyFromFile[overload1]$$$copyFromFilestring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="copyFromFile-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">copyFromFile</span>(<span class="type">string</span> <i>source</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Copies the file at <i translate="no">source</i> to the path described by <a href="qml-org-shotcut-qml-file.html#url-prop" translate="no">url</a>.</p>
+</div></div><!-- @@@copyFromFile -->
+<br/>
+<!-- $$$exists[overload1]$$$exists -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="exists-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">bool</span> <span class="name">exists</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns <code translate="no">true</code> if the file at <a href="qml-org-shotcut-qml-file.html#url-prop" translate="no">url</a> exists on the filesystem.</p>
+</div></div><!-- @@@exists -->
+<br/>
+<!-- $$$suffix[overload1]$$$suffix -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="suffix-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">string</span> <span class="name">suffix</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns the file extension without the leading dot (e.g. <code translate="no">&quot;cube&quot;</code>).</p>
+</div></div><!-- @@@suffix -->
+<br/>
+<!-- $$$watch[overload1]$$$watch -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="watch-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">watch</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Begins watching the file at <a href="qml-org-shotcut-qml-file.html#url-prop" translate="no">url</a> for external changes. When the file is modified or deleted, <a href="qml-org-shotcut-qml-file.html#fileChanged-signal" translate="no">fileChanged</a> is emitted.</p>
+</div></div><!-- @@@watch -->
+<br/>
+</body>
+</html>
