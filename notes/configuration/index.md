@@ -77,9 +77,11 @@ Windows registry, a bool is stored as a string: true or false.
 | projectsFolder   | string      | the file system path in which project folders are created
 | recent           | string list | list of recent media and XML files with full path: comma-separated in Linux or Windows INI, multi-string in Windows registry, and array of strings in macOS plist (View > Recent)
 |                  |             | This is no longer saved here as of version 23.05.07 and moved to a separate `recent.ini` text file.
+| safeMode         | bool        | whether the application is in safe mode (Settings > Leave Safe Mode to exit)
 | savePath         | string      | the file system path for the file-save dialog
 | screenRecorderPath|string      | the file system path to a user-definable screen recorder on Linux with Wayland but not GNOME or KDE (default "obs")
 | showConvertClipDialog | bool   | whether to continue to show the Convert to Edit-friendly dialog for variable frame rate or non-seekable files
+| showHdrPlayerWarning | bool    | whether to show a warning dialog about HDR content in the player (default true)
 | theme            | string      | UI theme, one of: dark, light, or system (Settings > Theme)
 | timeFormat       | integer     | Settings > Time Format, one of: 0 (Frames), 1 (Clock), 2 (Timecode Drop-Frame, default), 3 (Timecode Non-Drop Frame)
 | titleBars        | bool        | whether to show the title bar for UI panels (View > Show Title Bars)
@@ -110,6 +112,7 @@ Windows registry, a bool is stored as a string: true or false.
 | audioInDuration  | real number | the default Fade Audio In duration in seconds
 | audioOutCurve    | integer     | the default Fade Audio Out > Type, one of: 1 (Natural, default), 16 (S-Curve), 15 (Fast-Slow), 14 (Slow-Fast)
 | audioOutDuration | real number | the default Fade Audio Out duration in seconds
+| addOnServices    | string list | list of enabled experimental add-on filter services
 | favorite/&lt;filterId&gt; | string | whether a filter is chosen as favorite, one of: yes or no. See all the meta.qml files in share/shotcut/qml/filters for the filter IDs.
 | videoInDuration  | real number | the default Fade Video In duration in seconds
 | videoOutDuration | real number | the default Fade Video Out duration in seconds
@@ -138,8 +141,20 @@ Windows registry, a bool is stored as a string: true or false.
 | gpu2             | bool        | as of v23.05.07, whether Settings > GPU Effects is on (default false)
 | interpolation    | string      | for Settings > Interpolation, one of: nearest, bilinear, bicubic, or hyper (Lanczos)
 | jack             | bool        | whether Settings > Use JACK Audio is on
+| decklinkHdrContentPeakNits | integer | for Settings > External Monitor > Preview Window (HDR) > Content Peak Nits (default 0)
+| decklinkHdrDisplayPeakNits | integer | for Settings > External Monitor > Preview Window (HDR) > Display Peak Nits (default 0)
+| decklinkHdrMaxCll  | integer   | for Settings > External Monitor > Preview Window (HDR) > Max CLL in nits (default 1000)
+| decklinkHdrMaxFall | integer   | for Settings > External Monitor > Preview Window (HDR) > Max FALL in nits (default 400)
+| decklinkHdrMaxLuminance | integer | for Settings > External Monitor > Preview Window (HDR) > mastering display max luminance in nits (default 1000)
+| decklinkHdrMasterPreset | integer | for Settings > External Monitor > Preview Window (HDR) > mastering display preset (default 0)
+| decklinkHdrMinLuminance | real number | for Settings > External Monitor > Preview Window (HDR) > mastering display min luminance in nits (default 0.01)
+| decklinkHdrToneMapping | bool  | for Settings > External Monitor > Preview Window (HDR) > Tone Mapping (default true)
+| hdrPreview       | bool        | whether the External Monitor > Preview Window (HDR) is shown (default false)
+| hdrPreviewFullScreen | bool    | whether the External Monitor > Preview Window (HDR) is full screen (default false)
+| hdrPreviewGeometry | binary    | the size and position of the External Monitor > Preview Window (HDR)
 | keyer            | integer     | for Settings > External Monitor > Decklink Keyer, one of: 0 (Off), 1 (Internal), 2 (External)
 | muted            | bool        | whether the player volume is muted
+| oldVideoOutput   | bool        | Settings > Player > Use Old Video Output (default false)
 | pauseAfterSeek   | bool        | Settings > Player > Pause After Seek (default true)
 | previewHardwareDecoder | bool  | Settings > Preview Scaling > Use Hardware Decoder (default true except NVIDIA onj Linux) |
 | profile          | string      | for Settings > View Mode, see file names in share/mlt/profiles for a list of values or blank for Automatic
@@ -199,6 +214,7 @@ Windows registry, a bool is stored as a string: true or false.
 | ***timeline***
 | audioReferenceSpeedRange|real number|Timeline > menu > Align To Reference Track > Speed adjustment range (default 0)
 | audioReferenceTrack | integer  | Timeline > menu > Align To Reference Track > Reference audio track (last used)
+| allowTransitions | bool        | Settings > Timeline > Create Transitions on Overlap (default true)
 | autoAddTracks    | bool        | Settings > Timeline > Automatically Add Tracks (default false)
 | dragScrub        | bool        | Timeline > Scrub while dragging (default false)
 | previewTransition| bool        | transition Properties > Preview (default true)
