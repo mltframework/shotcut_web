@@ -10,7 +10,7 @@ helpful.
 ## English
 
 - Our main [User Guide](https://forum.shotcut.org/t/user-guide-table-of-contents/43285)
-- [Introduction to Video Editing With Shotcut on FLOSS Manuals](https://flossmanuals.net/pub/shotcut.pdf)
+- [Introduction to Video Editing With Shotcut on FLOSS Manuals](https://flossmanuals.org.uk/pub/shotcut.pdf)
 
 ## French, German, and Spanish
 
