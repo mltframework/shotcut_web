@@ -383,40 +383,6 @@ That led him to fork BuildOnMe and start Shotcut.
 
 * * *
 
-## How do I make subtitles?
-
-If you are strictly asking about subtitles or closed captions, Shotcut
-does not read, make, edit, or pass-through subtitles. There is planned
-the ability to read, show, pass-through, and burn-in subtitles, but
-there is no estimated time of arrival. We recommend that you try the
-free, open source, cross-platform subtitle editor
-[Aegisub](http://www.aegisub.org/).
-
-However, if you are just asking about the ability to put/overlay text in
-your video, use the **Text: Simple** or **Text: Rich** filter.
-Since it is a filter, that means you need something to which to apply
-it. If you just want a solid color, choose **File > Open Other >
-Color**. You can also use a picture/photograph just like a video clip by
-opening it and adding it to your playlist or timeline. If you just want a
-text clip (transparent background) choose **Open Other > Text** and add it
-to your playlist or timeline.
-
-* * *
-
-## How do I change the speed of the video?
-
-This is implemented as of version 16.01. With a clip open in the source
-player or selected in the timeline, choose **Properties** and look for
-the **Speed** field. Shotcut only provides simple frame dropping or
-duplicating. However, if the frame rate of your source footage is higher
-than the Video Mode (under Settings menu), then you can achieve a fairly
-smooth slow motion. If you are looking for more sophisticated results
-using more advanced optical flow techniques, we recommend you try the
-free, open source, cross-platform tool
-[slowMoVideo](http://slowmovideo.granjow.net/).
-
-* * *
-
 ## How can I edit the audio at the wave/sample level?
 
 Shotcut does not offer that, but we recommend to try the free, open
