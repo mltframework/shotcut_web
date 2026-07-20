@@ -2,6 +2,19 @@
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- The Root: High Priority -->
+  <url>
+    <loc>https://shotcut.org/</loc>
+    <priority>1.0</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <!-- The Forum Guide: Cross-Domain Inclusion -->
+  <url>
+    <loc>https://forum.shotcut.org/t/user-guide/46840</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
     {% for post in site.posts %}
     <url>
         <loc>{{ post.url | remove: 'index.html' | prepend: site.baseurl | prepend: site.url }}</loc>
@@ -13,6 +26,8 @@
     {% if page.layout != 'feed' %}
     <url>
         <loc>{{ page.url | remove: 'index.html' | prepend: site.baseurl | prepend: site.url }}</loc>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
     </url>
     {% endif %}
     {% endif %}

@@ -1,0 +1,7 @@
+# Allow all reputable bots
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /temp/
+
+# Point to your dedicated documentation sitemap
+Sitemap: https://shotcut.org/sitemap.xml

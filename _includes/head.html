@@ -5,8 +5,11 @@
     <meta name="description" content="{{ site.description }}">
     <meta name="author" content="">
     <link rel="shortcut icon" href="{{ "/assets/img/favicon.ico" | prepend: site.baseurl }}">
+  {% if page.rss_feed %}
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{ page.rss_feed }}" />
+  {% endif %}
 
-    <title>{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
+  <title>{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
 
     <script>
       function loadScript(url, async) {

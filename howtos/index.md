@@ -1,6 +1,7 @@
 ---
 layout: howto
 title: How To Articles
+rss_feed: https://forum.shotcut.org/c/docs/docs-english/12.rss
 ---
 {% assign sorted_pages = site.pages | sort:"title" %}
 
