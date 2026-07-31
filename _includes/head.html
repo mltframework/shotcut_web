@@ -11,7 +11,6 @@
 
   <title>{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
 
-    <!-- PubMax Ads -->
     <script>
       function loadScript(url, async) {
         let script = document.createElement("script");
@@ -28,19 +27,6 @@
         loadScript("//cdn.adapex.io/hb/aaw.shotcutapp3.js", true);
       }
     </script>
-
-    <!-- PubMax vignette -->
-    <script>
-      window.googletag = window.googletag || { cmd: [] };
-      googletag.cmd.push(function() {
-        var slot = googletag.defineOutOfPageSlot("/22247219933,21825069717/shotcutorg_Vignette", googletag.enums.OutOfPageFormat.INTERSTITIAL);
-        if (slot) slot.addService(googletag.pubads());
-        googletag.enableServices();
-        googletag.display(slot);
-      });
-    </script>
-
-    <!-- AdSense Ads -->
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1305424236533187" crossorigin="anonymous"></script>
     <script>
       (adsbygoogle = window.adsbygoogle || []).push({
