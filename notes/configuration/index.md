@@ -139,8 +139,6 @@ Windows registry, a bool is stored as a string: true or false.
 | external         | string      | for Settings > External Monitor, one of: sdi (Linsys card), decklink:&lt;N&gt; (Blackmagic Design peripheral), or &lt;N&gt; (screen)
 | gpu              | bool        | before version 23.05.07, whether Settings > GPU Effects is on (default false)
 | gpu2             | bool        | as of v23.05.07, whether Settings > GPU Effects is on (default false)
-| gpuAdapterDeviceId | integer | PCI device ID of the selected GPU; pairs with the vendor id to identify it
-| gpuAdapterVendorId | integer | PCI vendor ID of the selected GPU (0x10DE NVIDIA, 0x1002 AMD, 0x8086 Intel); 0 = automatic
 | interpolation    | string      | for Settings > Interpolation, one of: nearest, bilinear, bicubic, or hyper (Lanczos)
 | jack             | bool        | whether Settings > Use JACK Audio is on
 | decklinkHdrContentPeakNits | integer | for Settings > External Monitor > Preview Window (HDR) > Content Peak Nits (default 0)
