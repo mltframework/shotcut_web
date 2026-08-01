@@ -23,6 +23,33 @@ These are brief notes about known problems and feature additions. See
 log](https://github.com/mltframework/shotcut/commits/master) for more
 information.
 
+##### Release 26.8.1
+
+- Fixed corrupt color in dissolve transitions with **Settings > Processing Mode > Linear 10-bit CPU**.
+- Fixed the new **Reduce Noise: Audio (RNNoise)** when the export audio sample rate is not 48000 Hz.
+- Fixed off-by-one frame errors in subtitle bar in **Timeline** and **Subtitle Burn In** video filter.
+- Fixed all builds missing support for VST2 and LV2 audio plugins.
+  Now install and try **Valhalla Supermassive**.
+- Added **Shake** video filter.
+  First generated UI to be shared and officially adopted.
+- Improved appearance of tabs and **Subtitles** in **Fusion Dark** and **Fusion Light** themes.
+- Fixed a libGLESv2.dll warning on startup on some Windows systems.
+- Fixed **Motion Tracker** keyframes not applying after save/reload.
+- Fixed manual override `QSG_RHI_BACKEND` environment variable on Windows.
+- Added **Settings > Graphics Adapter** for Windows and Linux (only if multiple GPUs).
+- Fixed **Properties > Convert** & **View > Resources > Convert** to keep 10-bit video as 10-bit when using 10-bit processing modes.
+- Fixed the **Crop: Source** filter with **Preview Scaling** and hardware decoder.
+- Fixed proxy video generated for rotated video (Properties > Rotation) not preserving rotation.
+- The `--experimental` UI generator now also generates a `meta.qml`.
+  (See **View > Application Log** to get the temp file names to copy these files).
+- Fixed opening a `.mlt` project file from a file manager on macOS (broke in v26.6).
+- Added **Elements** panel to the **File > New** and **View** menus and the **Generate** buttons.
+  This is a very slim (22MB) stock asset library: emoji stickers, sounds, overlay transitions, animated text, graphics.
+  The content licenses are royalty free, including commercial, and do not require attribution:
+  - Emojis: Open Font License 1.1
+  - Sounds: The Sonniss #GameAudioGDC Bundle Licensing Agreement
+  - Text, Transitions, Graphics: Lottie Simple License
+
 
 ##### Release 26.6.25
 
