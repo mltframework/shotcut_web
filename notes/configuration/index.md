@@ -77,7 +77,7 @@ Windows registry, a bool is stored as a string: true or false.
 | projectsFolder   | string      | the file system path in which project folders are created
 | recent           | string list | list of recent media and XML files with full path: comma-separated in Linux or Windows INI, multi-string in Windows registry, and array of strings in macOS plist (View > Recent)
 |                  |             | This is no longer saved here as of version 23.05.07 and moved to a separate `recent.ini` text file.
-| safeMode         | bool        | whether the application is in safe mode (Settings > Leave Safe Mode to exit)
+| safeMode         | bool        | whether the application is in safe mode (true (default) when Settings > Allow External Plugins is off)
 | savePath         | string      | the file system path for the file-save dialog
 | screenRecorderPath|string      | the file system path to a user-definable screen recorder on Linux with Wayland but not GNOME or KDE (default "obs")
 | showConvertClipDialog | bool   | whether to continue to show the Convert to Edit-friendly dialog for variable frame rate or non-seekable files
@@ -214,6 +214,7 @@ Windows registry, a bool is stored as a string: true or false.
 | **notes**
 | zoom             | real number | Notes > context menu > Decrease/Increase Text Size
 | ***timeline***
+| adjustGain       | bool        | Settings > Timeline > Adjust Clip Gain/Volume (default true)
 | audioReferenceSpeedRange|real number|Timeline > menu > Align To Reference Track > Speed adjustment range (default 0)
 | audioReferenceTrack | integer  | Timeline > menu > Align To Reference Track > Reference audio track (last used)
 | allowTransitions | bool        | Settings > Timeline > Create Transitions on Overlap (default true)

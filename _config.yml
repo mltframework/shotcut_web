@@ -23,9 +23,9 @@ colors:  #in hex code if not noted else
   secondary: "#000" # body text and footer background
   background: "#fff"
   alternatebg: "#ddd"
-  accent: "#c80000"
+  accent: "#e24a51"
   link: "#115c77"
-  link_hover: "#c80000"
+  link_hover: "#e24a51"
   footer_heading: "#fff"
   footer_content: "#ddd"
   

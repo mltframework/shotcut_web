@@ -13,7 +13,7 @@ category: notes
     - `mingw-w64-x86_64-qt6-multimedia`
     - `mingw-w64-x86_64-qt6-multimedia-wmf`
     - `mingw-w64-x86_64-qt6-websockets`
-  - [Shotcut SDK (1.7 GB current version 26.8.1)](https://s3.amazonaws.com/builds.us.meltytech/shotcut/shotcut-win64-sdk-26.8.1.txz)  
+  - [Shotcut SDK (1.7 GB current version 26.9.27)](https://s3.amazonaws.com/builds.us.meltytech/shotcut/shotcut-win64-sdk-26.9.27.txz)  
     Extract it to `C:\Projects`
 
 2. Extract the Shotcut SDK .zip file to a new folder in `C:\` named "Projects" (`C:\Projects`).

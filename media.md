@@ -19,9 +19,17 @@ Here is the app logo with the text of Shotcut as a 640x640 PNG:
 download><img src="{{ "/assets/img/media/shotcut-logo-640x640.png" | prepend: site.baseurl | prepend: site.url }}"
 alt="Shotcut logo with text" width="320" height="320"></a>
 
-Here these are in <a href="{{ "/assets/img/media/shotcut%20logo%203.svg" | prepend: site.baseurl | prepend: site.url }}"
-download>scalable Inkscape SVG</a> format.
+Note that Shotcut should only appear in ALL CAPS when used **with the logo**. Otherwise, when referring to it in text, simply capitalize the first letter as a proper noun: Shotcut.
 
-The Shotcut text uses the [Google Noto Sans](https://www.google.com/get/noto/) typeface.
+Here these are in SVG format:
+- <a href="{{ "/assets/img/media/shotcut-logo-shaded.svg" | prepend: site.baseurl | prepend: site.url }}"
+download>Shaded</a>
+- <a href="{{ "/assets/img/media/shotcut-logo-flat.svg" | prepend: site.baseurl | prepend: site.url }}"
+download>Flat</a>
+- <a href="{{ "/assets/img/media/shotcut-logo-simple.svg" | prepend: site.baseurl | prepend: site.url }}"
+download>Simple</a> (suitable to make monochrome)
 
-The Shotcut blue CSS color code is `#115c77`.
+
+The Shotcut logo text uses the [Afacad](https://fonts.google.com/specimen/Afacad) typeface.
+
+The Shotcut blue CSS color code is `#115c77` and the orange-red color is `#e24a51`.
