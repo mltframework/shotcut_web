@@ -78,7 +78,7 @@ To avoid ads and get automatic updates:<br>
 
 {:.mac}
 |-----------------------
-| [macOS universal](https://sourceforge.net/projects/shotcut/files/v26.9.27/shotcut-macos-26.9.27.dmg/download)
+| [macOS universal](https://sourceforge.net/projects/shotcut/files/v26.9.27/shotcut-macos-26.9.28.dmg/download)
 {:.withborders}
 
 {:.mac}
@@ -132,7 +132,7 @@ src='https://raw.githubusercontent.com/snapcore/snap-store-badges/master/EN/%5BE
 
 {:.linux}
 |-----------------------|-------------------
-| [Linux portable tar](https://sourceforge.net/projects/shotcut/files/v26.9.27/shotcut-linux-x86_64-26.9.27.txz/download) | [Linux AppImage](https://sourceforge.net/projects/shotcut/files/v26.9.27/shotcut-linux-x86_64-26.9.27.AppImage/download)
+| [Linux portable tar](https://sourceforge.net/projects/shotcut/files/v26.9.27/shotcut-linux-x86_64-26.9.27.txz/download) | [Linux AppImage](https://sourceforge.net/projects/shotcut/files/v26.9.27/shotcut-linux-x86_64-26.10.3.AppImage/download)
 {:.withborders}
 
 {:.linux}
