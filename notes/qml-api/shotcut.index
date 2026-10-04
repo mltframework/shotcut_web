@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE QDOCINDEX>
+<INDEX url="" title="Shotcut QML Scripting API" version="26.x" project="Shotcut" indexTitle="Shotcut QML Scripting API">
+    <namespace name="" status="active" access="public" module="shotcut">
+        <page name="index.html" href="index.html" status="active" location="index.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/index.qdoc" lineno="1" documented="true" subtype="page" title="Shotcut QML Scripting API" fulltitle="Shotcut QML Scripting API" subtitle="" brief="Reference for all QML types and context properties available when writing filter panels, VUIs, and timeline extensions for Shotcut">
+            <contents name="overview" title="Overview" level="1"/>
+            <contents name="modules" title="Modules" level="1"/>
+            <contents name="context-properties-singletons" title="Context Properties (Singletons)" level="1"/>
+            <contents name="per-view-context-properties" title="Per-View Context Properties" level="1"/>
+        </page>
+        <qmlclass name="Application" qml-module-name="org.shotcut.qml" fullname="org.shotcut.qml.Application" href="qml-org-shotcut-qml-application.html" status="active" access="public" documented="true" title="Application" fulltitle="Application" subtitle="" brief="Application-wide utilities, accessed via the application context property">
+            <function name="actionFirstShortcut" fullname="org.shotcut.qml.Application.actionFirstShortcut" href="qml-org-shotcut-qml-application.html#actionFirstShortcut-method" status="active" access="public" documented="true" meta="qmlmethod" type="string">
+                <parameter type="string" name="actionName" default=""/>
+            </function>
+            <function name="addWipe" fullname="org.shotcut.qml.Application.addWipe" href="qml-org-shotcut-qml-application.html#addWipe-method" status="active" access="public" documented="true" meta="qmlmethod" type="bool">
+                <parameter type="string" name="filePath" default=""/>
+            </function>
+            <function name="audioChannels" fullname="org.shotcut.qml.Application.audioChannels" href="qml-org-shotcut-qml-application.html#audioChannels-method" status="active" access="public" documented="true" meta="qmlmethod" type="int"/>
+            <function name="clockFromFrames" fullname="org.shotcut.qml.Application.clockFromFrames" href="qml-org-shotcut-qml-application.html#clockFromFrames-method" status="active" access="public" documented="true" meta="qmlmethod" type="string">
+                <parameter type="int" name="frames" default=""/>
+            </function>
+            <function name="confirmOutputFilter" fullname="org.shotcut.qml.Application.confirmOutputFilter" href="qml-org-shotcut-qml-application.html#confirmOutputFilter-method" status="active" access="public" documented="true" meta="qmlmethod" type="bool"/>
+            <function name="contrastingColor" fullname="org.shotcut.qml.Application.contrastingColor" href="qml-org-shotcut-qml-application.html#contrastingColor-method" status="active" access="public" documented="true" meta="qmlmethod" type="color">
+                <parameter type="string" name="color" default=""/>
+            </function>
+            <function name="copyAllFilters" fullname="org.shotcut.qml.Application.copyAllFilters" href="qml-org-shotcut-qml-application.html#copyAllFilters-method" status="active" access="public" documented="true" meta="qmlmethod"/>
+            <function name="copyCurrentFilter" fullname="org.shotcut.qml.Application.copyCurrentFilter" href="qml-org-shotcut-qml-application.html#copyCurrentFilter-method" status="active" access="public" documented="true" meta="qmlmethod"/>
+            <function name="copyEnabledFilters" fullname="org.shotcut.qml.Application.copyEnabledFilters" href="qml-org-shotcut-qml-application.html#copyEnabledFilters-method" status="active" access="public" documented="true" meta="qmlmethod"/>
+            <function name="filtersCopied" fullname="org.shotcut.qml.Application.filtersCopied" href="qml-org-shotcut-qml-application.html#filtersCopied-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="filtersPasted" fullname="org.shotcut.qml.Application.filtersPasted" href="qml-org-shotcut-qml-application.html#filtersPasted-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="getNextProjectFile" fullname="org.shotcut.qml.Application.getNextProjectFile" href="qml-org-shotcut-qml-application.html#getNextProjectFile-method" status="active" access="public" documented="true" meta="qmlmethod" type="string">
+                <parameter type="string" name="filename" default=""/>
+            </function>
+            <function name="intersects" fullname="org.shotcut.qml.Application.intersects" href="qml-org-shotcut-qml-application.html#intersects-method" status="active" access="public" documented="true" meta="qmlmethod" type="bool">
+                <parameter type="rect" name="a" default=""/>
+                <parameter type="rect" name="b" default=""/>
+            </function>
+            <function name="isProjectFolder" fullname="org.shotcut.qml.Application.isProjectFolder" href="qml-org-shotcut-qml-application.html#isProjectFolder-method" status="active" access="public" documented="true" meta="qmlmethod" type="bool"/>
+            <function name="paletteChanged" fullname="org.shotcut.qml.Application.paletteChanged" href="qml-org-shotcut-qml-application.html#paletteChanged-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="showAddOnFiltersDialog" fullname="org.shotcut.qml.Application.showAddOnFiltersDialog" href="qml-org-shotcut-qml-application.html#showAddOnFiltersDialog-method" status="active" access="public" documented="true" meta="qmlmethod"/>
+            <function name="showStatusMessage" fullname="org.shotcut.qml.Application.showStatusMessage" href="qml-org-shotcut-qml-application.html#showStatusMessage-method" status="active" access="public" documented="true" meta="qmlmethod">
+                <parameter type="string" name="message" default=""/>
+                <parameter type="int" name="timeoutSeconds" default="15"/>
+            </function>
+            <function name="timeFromFrames" fullname="org.shotcut.qml.Application.timeFromFrames" href="qml-org-shotcut-qml-application.html#timeFromFrames-method" status="active" access="public" documented="true" meta="qmlmethod" type="string">
+                <parameter type="int" name="frames" default=""/>
+            </function>
+            <function name="triggerAction" fullname="org.shotcut.qml.Application.triggerAction" href="qml-org-shotcut-qml-application.html#triggerAction-method" status="active" access="public" documented="true" meta="qmlmethod" type="string">
+                <parameter type="string" name="actionName" default=""/>
+            </function>
+            <qmlproperty name="OS" fullname="org.shotcut.qml.Application.OS" href="qml-org-shotcut-qml-application.html#OS-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="Operating system name: &quot;Windows&quot;, &quot;Linux&quot;, or &quot;macOS&quot;"/>
+            <qmlproperty name="devicePixelRatio" fullname="org.shotcut.qml.Application.devicePixelRatio" href="qml-org-shotcut-qml-application.html#devicePixelRatio-prop" status="active" access="public" documented="true" type="real" attached="false" writable="true" brief="Display device pixel ratio (e.g. 2.0 on HiDPI screens)"/>
+            <qmlproperty name="dialogModality" fullname="org.shotcut.qml.Application.dialogModality" href="qml-org-shotcut-qml-application.html#dialogModality-prop" status="active" access="public" documented="true" type="Qt::WindowModality" attached="false" writable="true" brief="Modality to use for dialogs launched from QML"/>
+            <qmlproperty name="hasFiltersOnClipboard" fullname="org.shotcut.qml.Application.hasFiltersOnClipboard" href="qml-org-shotcut-qml-application.html#hasFiltersOnClipboard-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether the clipboard currently contains copied filters. Notifies filtersCopied"/>
+            <qmlproperty name="mainWinRect" fullname="org.shotcut.qml.Application.mainWinRect" href="qml-org-shotcut-qml-application.html#mainWinRect-prop" status="active" access="public" documented="true" type="rect" attached="false" writable="true" brief="Geometry of the main application window"/>
+            <qmlproperty name="maxTextureSize" fullname="org.shotcut.qml.Application.maxTextureSize" href="qml-org-shotcut-qml-application.html#maxTextureSize-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="Maximum supported GPU texture dimension in pixels"/>
+            <qmlproperty name="mousePos" fullname="org.shotcut.qml.Application.mousePos" href="qml-org-shotcut-qml-application.html#mousePos-prop" status="active" access="public" documented="true" type="point" attached="false" writable="true" brief="Current global cursor screen coordinates"/>
+            <qmlproperty name="toolTipBaseColor" fullname="org.shotcut.qml.Application.toolTipBaseColor" href="qml-org-shotcut-qml-application.html#toolTipBaseColor-prop" status="active" access="public" documented="true" type="color" attached="false" writable="true" brief="Background color of tooltips, derived from the current palette. Notifies paletteChanged"/>
+            <qmlproperty name="toolTipTextColor" fullname="org.shotcut.qml.Application.toolTipTextColor" href="qml-org-shotcut-qml-application.html#toolTipTextColor-prop" status="active" access="public" documented="true" type="color" attached="false" writable="true" brief="Text color of tooltips, derived from the current palette. Notifies paletteChanged"/>
+            <qmlproperty name="wipes" fullname="org.shotcut.qml.Application.wipes" href="qml-org-shotcut-qml-application.html#wipes-prop" status="active" access="public" documented="true" type="list&lt;string&gt;" attached="false" writable="true" brief="List of available wipe transition file names"/>
+        </qmlclass>
+        <qmlclass name="AttachedFiltersModel" qml-module-name="org.shotcut.qml" fullname="org.shotcut.qml.AttachedFiltersModel" href="qml-org-shotcut-qml-attachedfiltersmodel.html" status="active" access="public" documented="true" title="AttachedFiltersModel" fulltitle="AttachedFiltersModel" subtitle="" brief="A list model of filters attached to the currently selected clip or track">
+            <function name="add" fullname="org.shotcut.qml.AttachedFiltersModel.add" href="qml-org-shotcut-qml-attachedfiltersmodel.html#add-method" status="active" access="public" documented="true" meta="qmlmethod" type="int">
+                <parameter type="Metadata" name="meta" default=""/>
+            </function>
+            <function name="changed" fullname="org.shotcut.qml.AttachedFiltersModel.changed" href="qml-org-shotcut-qml-attachedfiltersmodel.html#changed-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="duplicateAddFailed" fullname="org.shotcut.qml.AttachedFiltersModel.duplicateAddFailed" href="qml-org-shotcut-qml-attachedfiltersmodel.html#duplicateAddFailed-signal" status="active" access="public" documented="true" meta="qmlsignal">
+                <parameter type="int" name="index" default=""/>
+            </function>
+            <function name="move" fullname="org.shotcut.qml.AttachedFiltersModel.move" href="qml-org-shotcut-qml-attachedfiltersmodel.html#move-method" status="active" access="public" documented="true" meta="qmlmethod" type="bool">
+                <parameter type="int" name="fromRow" default=""/>
+                <parameter type="int" name="toRow" default=""/>
+            </function>
+            <function name="pasteFilters" fullname="org.shotcut.qml.AttachedFiltersModel.pasteFilters" href="qml-org-shotcut-qml-attachedfiltersmodel.html#pasteFilters-method" status="active" access="public" documented="true" meta="qmlmethod" type="void"/>
+            <function name="remove" fullname="org.shotcut.qml.AttachedFiltersModel.remove" href="qml-org-shotcut-qml-attachedfiltersmodel.html#remove-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="row" default=""/>
+            </function>
+            <qmlproperty name="isProducerSelected" fullname="org.shotcut.qml.AttachedFiltersModel.isProducerSelected" href="qml-org-shotcut-qml-attachedfiltersmodel.html#isProducerSelected-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="True when a producer is currently selected and filters can be inspected"/>
+            <qmlproperty name="producerTitle" fullname="org.shotcut.qml.AttachedFiltersModel.producerTitle" href="qml-org-shotcut-qml-attachedfiltersmodel.html#producerTitle-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="Display name of the producer (clip or track) the filters are attached to"/>
+            <qmlproperty name="supportsLinks" fullname="org.shotcut.qml.AttachedFiltersModel.supportsLinks" href="qml-org-shotcut-qml-attachedfiltersmodel.html#supportsLinks-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="True when the current producer supports Time filters (i.e. MLT link chains)"/>
+        </qmlclass>
+        <qmlclass name="ColorDialog" qml-module-name="Shotcut.Controls" fullname="Shotcut.Controls.ColorDialog" href="qml-shotcut-controls-colordialog.html" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="1" documented="true" title="ColorDialog" fulltitle="ColorDialog" subtitle="" brief="A native color-chooser dialog">
+            <function name="accepted" fullname="Shotcut.Controls.ColorDialog.accepted" href="qml-shotcut-controls-colordialog.html#accepted-signal" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="44" documented="true" meta="qmlsignal"/>
+            <function name="open" fullname="Shotcut.Controls.ColorDialog.open" href="qml-shotcut-controls-colordialog.html#open-method" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="38" documented="true" meta="qmlmethod"/>
+            <function name="selectedColorChanged" fullname="Shotcut.Controls.ColorDialog.selectedColorChanged" href="qml-shotcut-controls-colordialog.html#selectedColorChanged-signal" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="49" documented="true" meta="qmlsignal">
+                <parameter type="color" name="color" default=""/>
+            </function>
+            <qmlproperty name="selectedColor" fullname="Shotcut.Controls.ColorDialog.selectedColor" href="qml-shotcut-controls-colordialog.html#selectedColor-prop" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="21" documented="true" type="color" attached="false" writable="true" brief="Color currently selected in the dialog. Set this before calling open() to pre-populate the dialog. Read it in the accepted signal handler to retrieve the chosen color"/>
+            <qmlproperty name="showAlpha" fullname="Shotcut.Controls.ColorDialog.showAlpha" href="qml-shotcut-controls-colordialog.html#showAlpha-prop" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="33" documented="true" type="bool" attached="false" writable="true" brief="Whether the alpha (opacity) slider is shown. Defaults to true"/>
+            <qmlproperty name="title" fullname="Shotcut.Controls.ColorDialog.title" href="qml-shotcut-controls-colordialog.html#title-prop" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="28" documented="true" type="string" attached="false" writable="true" brief="Window title shown in the dialog's title bar"/>
+        </qmlclass>
+        <qmlclass name="ColorPickerItem" qml-module-name="Shotcut.Controls" fullname="Shotcut.Controls.ColorPickerItem" href="qml-shotcut-controls-colorpickeritem.html" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="227" documented="true" title="ColorPickerItem" fulltitle="ColorPickerItem" subtitle="" brief="An eyedropper tool that picks a color by sampling any pixel on screen">
+            <function name="cancelled" fullname="Shotcut.Controls.ColorPickerItem.cancelled" href="qml-shotcut-controls-colorpickeritem.html#cancelled-signal" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="264" documented="true" meta="qmlsignal"/>
+            <function name="colorPicked" fullname="Shotcut.Controls.ColorPickerItem.colorPicked" href="qml-shotcut-controls-colorpickeritem.html#colorPicked-signal" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="258" documented="true" meta="qmlsignal">
+                <parameter type="color" name="color" default=""/>
+            </function>
+            <function name="pickColor" fullname="Shotcut.Controls.ColorPickerItem.pickColor" href="qml-shotcut-controls-colorpickeritem.html#pickColor-signal" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="251" documented="true" meta="qmlsignal">
+                <parameter type="point" name="initialPos" default=""/>
+            </function>
+        </qmlclass>
+        <qmlclass name="ColorWheelItem" qml-module-name="Shotcut.Controls" fullname="Shotcut.Controls.ColorWheelItem" href="qml-shotcut-controls-colorwheelitem.html" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="272" documented="true" title="ColorWheelItem" fulltitle="ColorWheelItem" subtitle="" brief="An interactive hue/saturation color wheel with a brightness slider">
+            <function name="colorChanged" fullname="Shotcut.Controls.ColorWheelItem.colorChanged" href="qml-shotcut-controls-colorwheelitem.html#colorChanged-signal" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="334" documented="true" meta="qmlsignal">
+                <parameter type="color" name="color" default=""/>
+            </function>
+            <qmlproperty name="blue" fullname="Shotcut.Controls.ColorWheelItem.blue" href="qml-shotcut-controls-colorwheelitem.html#blue-prop" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="308" documented="true" type="int" attached="false" writable="true" brief="Channel (0–255) of the selected color"/>
+            <qmlproperty name="blueF" fullname="Shotcut.Controls.ColorWheelItem.blueF" href="qml-shotcut-controls-colorwheelitem.html#blueF-prop" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="323" documented="true" type="real" attached="false" writable="true" brief="Blue channel as a normalized floating-point value (0.0–1.0)"/>
+            <qmlproperty name="color" fullname="Shotcut.Controls.ColorWheelItem.color" href="qml-shotcut-controls-colorwheelitem.html#color-prop" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="292" documented="true" type="color" attached="false" writable="true" brief="Currently selected color. Settable to programmatically position the wheel marker and slider"/>
+            <qmlproperty name="green" fullname="Shotcut.Controls.ColorWheelItem.green" href="qml-shotcut-controls-colorwheelitem.html#green-prop" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="303" documented="true" type="int" attached="false" writable="true" brief="Channel (0–255) of the selected color"/>
+            <qmlproperty name="greenF" fullname="Shotcut.Controls.ColorWheelItem.greenF" href="qml-shotcut-controls-colorwheelitem.html#greenF-prop" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="318" documented="true" type="real" attached="false" writable="true" brief="Green channel as a normalized floating-point value (0.0–1.0)"/>
+            <qmlproperty name="red" fullname="Shotcut.Controls.ColorWheelItem.red" href="qml-shotcut-controls-colorwheelitem.html#red-prop" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="298" documented="true" type="int" attached="false" writable="true" brief="Channel (0–255) of the selected color"/>
+            <qmlproperty name="redF" fullname="Shotcut.Controls.ColorWheelItem.redF" href="qml-shotcut-controls-colorwheelitem.html#redF-prop" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="313" documented="true" type="real" attached="false" writable="true" brief="Red channel as a normalized floating-point value (0.0–1.0)"/>
+            <qmlproperty name="step" fullname="Shotcut.Controls.ColorWheelItem.step" href="qml-shotcut-controls-colorwheelitem.html#step-prop" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="328" documented="true" type="real" attached="false" writable="true" brief="Increment applied per mouse-wheel tick or arrow-key press when adjusting the brightness slider. Defaults to a small fractional value"/>
+        </qmlclass>
+        <qmlclass name="File" qml-module-name="org.shotcut.qml" fullname="org.shotcut.qml.File" href="qml-org-shotcut-qml-file.html" status="active" access="public" documented="true" title="File" fulltitle="File" subtitle="" brief="A file URL wrapper with optional filesystem change watching">
+            <function name="copyFromFile" fullname="org.shotcut.qml.File.copyFromFile" href="qml-org-shotcut-qml-file.html#copyFromFile-method" status="active" access="public" documented="true" meta="qmlmethod">
+                <parameter type="string" name="source" default=""/>
+            </function>
+            <function name="exists" fullname="org.shotcut.qml.File.exists" href="qml-org-shotcut-qml-file.html#exists-method" status="active" access="public" documented="true" meta="qmlmethod" type="bool"/>
+            <function name="fileChanged" fullname="org.shotcut.qml.File.fileChanged" href="qml-org-shotcut-qml-file.html#fileChanged-signal" status="active" access="public" documented="true" meta="qmlsignal">
+                <parameter type="string" name="path" default=""/>
+            </function>
+            <function name="suffix" fullname="org.shotcut.qml.File.suffix" href="qml-org-shotcut-qml-file.html#suffix-method" status="active" access="public" documented="true" meta="qmlmethod" type="string"/>
+            <function name="urlChanged" fullname="org.shotcut.qml.File.urlChanged" href="qml-org-shotcut-qml-file.html#urlChanged-signal" status="active" access="public" documented="true" meta="qmlsignal">
+                <parameter type="url" name="url" default=""/>
+            </function>
+            <function name="watch" fullname="org.shotcut.qml.File.watch" href="qml-org-shotcut-qml-file.html#watch-method" status="active" access="public" documented="true" meta="qmlmethod"/>
+            <qmlproperty name="fileName" fullname="org.shotcut.qml.File.fileName" href="qml-org-shotcut-qml-file.html#fileName-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="Base file name without the directory path (e.g. &quot;lut.cube&quot;)"/>
+            <qmlproperty name="filePath" fullname="org.shotcut.qml.File.filePath" href="qml-org-shotcut-qml-file.html#filePath-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="Full local filesystem path (e.g. &quot;/home/user/lut.cube&quot;)"/>
+            <qmlproperty name="path" fullname="org.shotcut.qml.File.path" href="qml-org-shotcut-qml-file.html#path-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="Directory path portion of the URL (without the file name)"/>
+            <qmlproperty name="url" fullname="org.shotcut.qml.File.url" href="qml-org-shotcut-qml-file.html#url-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="File URL as a string (e.g. &quot;file:///home/user/lut.cube&quot;). Setting this property stops watching any previously watched file"/>
+        </qmlclass>
+        <qmlclass name="FileDialog" qml-module-name="Shotcut.Controls" fullname="Shotcut.Controls.FileDialog" href="qml-shotcut-controls-filedialog.html" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="156" documented="true" title="FileDialog" fulltitle="FileDialog" subtitle="" brief="A native file open/save dialog">
+            <contents name="filemode-enum" title="FileMode enum" level="2"/>
+            <function name="accepted" fullname="Shotcut.Controls.FileDialog.accepted" href="qml-shotcut-controls-filedialog.html#accepted-signal" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="215" documented="true" meta="qmlsignal"/>
+            <function name="fileSelected" fullname="Shotcut.Controls.FileDialog.fileSelected" href="qml-shotcut-controls-filedialog.html#fileSelected-signal" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="210" documented="true" meta="qmlsignal">
+                <parameter type="string" name="file" default=""/>
+            </function>
+            <function name="open" fullname="Shotcut.Controls.FileDialog.open" href="qml-shotcut-controls-filedialog.html#open-method" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="205" documented="true" meta="qmlmethod"/>
+            <function name="rejected" fullname="Shotcut.Controls.FileDialog.rejected" href="qml-shotcut-controls-filedialog.html#rejected-signal" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="220" documented="true" meta="qmlsignal"/>
+            <qmlproperty name="fileMode" fullname="Shotcut.Controls.FileDialog.fileMode" href="qml-shotcut-controls-filedialog.html#fileMode-prop" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="182" documented="true" type="int" attached="false" writable="true" brief="Whether the dialog is for opening or saving. One of FileDialog.OpenFile or FileDialog.SaveFile"/>
+            <qmlproperty name="nameFilters" fullname="Shotcut.Controls.FileDialog.nameFilters" href="qml-shotcut-controls-filedialog.html#nameFilters-prop" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="193" documented="true" type="list&lt;string&gt;" attached="false" writable="true" brief="List of file type filters shown in the dialog (e.g. [&quot;Images (*.png *.jpg)&quot;, &quot;All files (*)&quot;] )"/>
+            <qmlproperty name="selectedFile" fullname="Shotcut.Controls.FileDialog.selectedFile" href="qml-shotcut-controls-filedialog.html#selectedFile-prop" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="199" documented="true" type="string" attached="false" writable="true" brief="Full file path of the last selected file (read-only). Available after fileSelected is emitted"/>
+            <qmlproperty name="title" fullname="Shotcut.Controls.FileDialog.title" href="qml-shotcut-controls-filedialog.html#title-prop" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="188" documented="true" type="string" attached="false" writable="true" brief="Dialog window title"/>
+        </qmlclass>
+        <qmlclass name="Filter" qml-module-name="org.shotcut.qml" fullname="org.shotcut.qml.Filter" href="qml-org-shotcut-qml-filter.html" status="active" access="public" documented="true" title="Filter" fulltitle="Filter" subtitle="" brief="Provides access to the current filter's properties, keyframes, and presets">
+            <function name="analyze" fullname="org.shotcut.qml.Filter.analyze" href="qml-org-shotcut-qml-filter.html#analyze-method" status="active" access="public" documented="true" meta="qmlmethod">
+                <parameter type="bool" name="isAudio" default="false"/>
+                <parameter type="bool" name="deferJob" default="true"/>
+            </function>
+            <function name="analyzeFinished" fullname="org.shotcut.qml.Filter.analyzeFinished" href="qml-org-shotcut-qml-filter.html#analyzeFinished-signal" status="active" access="public" documented="true" meta="qmlsignal">
+                <parameter type="bool" name="isSuccess" default=""/>
+            </function>
+            <function name="animateInChanged" fullname="org.shotcut.qml.Filter.animateInChanged" href="qml-org-shotcut-qml-filter.html#animateInChanged-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="animateInOutChanged" fullname="org.shotcut.qml.Filter.animateInOutChanged" href="qml-org-shotcut-qml-filter.html#animateInOutChanged-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="animateOutChanged" fullname="org.shotcut.qml.Filter.animateOutChanged" href="qml-org-shotcut-qml-filter.html#animateOutChanged-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="changed" fullname="org.shotcut.qml.Filter.changed" href="qml-org-shotcut-qml-filter.html#changed-signal" status="active" access="public" documented="true" meta="qmlsignal">
+                <parameter type="string" name="name" default=""/>
+            </function>
+            <function name="clearSimpleAnimation" fullname="org.shotcut.qml.Filter.clearSimpleAnimation" href="qml-org-shotcut-qml-filter.html#clearSimpleAnimation-method" status="active" access="public" documented="true" meta="qmlmethod">
+                <parameter type="string" name="name" default=""/>
+            </function>
+            <function name="copyParameters" fullname="org.shotcut.qml.Filter.copyParameters" href="qml-org-shotcut-qml-filter.html#copyParameters-method" status="active" access="public" documented="true" meta="qmlmethod"/>
+            <function name="crop" fullname="org.shotcut.qml.Filter.crop" href="qml-org-shotcut-qml-filter.html#crop-method" status="active" access="public" documented="true" meta="qmlmethod">
+                <parameter type="rect" name="r" default=""/>
+            </function>
+            <function name="deletePreset" fullname="org.shotcut.qml.Filter.deletePreset" href="qml-org-shotcut-qml-filter.html#deletePreset-method" status="active" access="public" documented="true" meta="qmlmethod">
+                <parameter type="string" name="name" default=""/>
+            </function>
+            <function name="deselect" fullname="org.shotcut.qml.Filter.deselect" href="qml-org-shotcut-qml-filter.html#deselect-method" status="active" access="public" documented="true" meta="qmlmethod"/>
+            <function name="durationChanged" fullname="org.shotcut.qml.Filter.durationChanged" href="qml-org-shotcut-qml-filter.html#durationChanged-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="endUndoCommand" fullname="org.shotcut.qml.Filter.endUndoCommand" href="qml-org-shotcut-qml-filter.html#endUndoCommand-method" status="active" access="public" documented="true" meta="qmlmethod"/>
+            <function name="framesFromTime" fullname="org.shotcut.qml.Filter.framesFromTime" href="qml-org-shotcut-qml-filter.html#framesFromTime-method" status="active" access="public" documented="true" meta="qmlmethod" type="int">
+                <parameter type="string" name="time" default=""/>
+            </function>
+            <function name="get" fullname="org.shotcut.qml.Filter.get" href="qml-org-shotcut-qml-filter.html#get-method" status="active" access="public" documented="true" meta="qmlmethod" type="string">
+                <parameter type="string" name="name" default=""/>
+                <parameter type="int" name="position" default="-1"/>
+            </function>
+            <function name="getColor" fullname="org.shotcut.qml.Filter.getColor" href="qml-org-shotcut-qml-filter.html#getColor-method" status="active" access="public" documented="true" meta="qmlmethod" type="color">
+                <parameter type="string" name="name" default=""/>
+                <parameter type="int" name="position" default="-1"/>
+            </function>
+            <function name="getDouble" fullname="org.shotcut.qml.Filter.getDouble" href="qml-org-shotcut-qml-filter.html#getDouble-method" status="active" access="public" documented="true" meta="qmlmethod" type="real">
+                <parameter type="string" name="name" default=""/>
+                <parameter type="int" name="position" default="-1"/>
+            </function>
+            <function name="getGradient" fullname="org.shotcut.qml.Filter.getGradient" href="qml-org-shotcut-qml-filter.html#getGradient-method" status="active" access="public" documented="true" meta="qmlmethod" type="list&lt;string&gt;">
+                <parameter type="string" name="name" default=""/>
+            </function>
+            <function name="getHash" fullname="org.shotcut.qml.Filter.getHash" href="qml-org-shotcut-qml-filter.html#getHash-method" status="active" access="public" documented="true" meta="qmlmethod"/>
+            <function name="getKeyFrameType" fullname="org.shotcut.qml.Filter.getKeyFrameType" href="qml-org-shotcut-qml-filter.html#getKeyFrameType-method" status="active" access="public" documented="true" meta="qmlmethod" type="int">
+                <parameter type="string" name="name" default=""/>
+                <parameter type="int" name="keyIndex" default=""/>
+            </function>
+            <function name="getNextKeyframePosition" fullname="org.shotcut.qml.Filter.getNextKeyframePosition" href="qml-org-shotcut-qml-filter.html#getNextKeyframePosition-method" status="active" access="public" documented="true" meta="qmlmethod" type="int">
+                <parameter type="string" name="name" default=""/>
+                <parameter type="int" name="position" default=""/>
+            </function>
+            <function name="getPrevKeyframePosition" fullname="org.shotcut.qml.Filter.getPrevKeyframePosition" href="qml-org-shotcut-qml-filter.html#getPrevKeyframePosition-method" status="active" access="public" documented="true" meta="qmlmethod" type="int">
+                <parameter type="string" name="name" default=""/>
+                <parameter type="int" name="position" default=""/>
+            </function>
+            <function name="getRect" fullname="org.shotcut.qml.Filter.getRect" href="qml-org-shotcut-qml-filter.html#getRect-method" status="active" access="public" documented="true" meta="qmlmethod" type="rect">
+                <parameter type="string" name="name" default=""/>
+                <parameter type="int" name="position" default="-1"/>
+            </function>
+            <function name="inChanged" fullname="org.shotcut.qml.Filter.inChanged" href="qml-org-shotcut-qml-filter.html#inChanged-signal" status="active" access="public" documented="true" meta="qmlsignal">
+                <parameter type="int" name="delta" default=""/>
+            </function>
+            <function name="isAtLeastVersion" fullname="org.shotcut.qml.Filter.isAtLeastVersion" href="qml-org-shotcut-qml-filter.html#isAtLeastVersion-method" status="active" access="public" documented="true" meta="qmlmethod" type="bool">
+                <parameter type="string" name="version" default=""/>
+            </function>
+            <function name="keyframeCount" fullname="org.shotcut.qml.Filter.keyframeCount" href="qml-org-shotcut-qml-filter.html#keyframeCount-method" status="active" access="public" documented="true" meta="qmlmethod" type="int">
+                <parameter type="string" name="name" default=""/>
+            </function>
+            <function name="loadPresets" fullname="org.shotcut.qml.Filter.loadPresets" href="qml-org-shotcut-qml-filter.html#loadPresets-method" status="active" access="public" documented="true" meta="qmlmethod"/>
+            <function name="outChanged" fullname="org.shotcut.qml.Filter.outChanged" href="qml-org-shotcut-qml-filter.html#outChanged-signal" status="active" access="public" documented="true" meta="qmlsignal">
+                <parameter type="int" name="delta" default=""/>
+            </function>
+            <function name="pasteParameters" fullname="org.shotcut.qml.Filter.pasteParameters" href="qml-org-shotcut-qml-filter.html#pasteParameters-method" status="active" access="public" documented="true" meta="qmlmethod">
+                <parameter type="list&lt;string&gt;" name="propertyNames" default=""/>
+            </function>
+            <function name="presetsChanged" fullname="org.shotcut.qml.Filter.presetsChanged" href="qml-org-shotcut-qml-filter.html#presetsChanged-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="propertyChanged" fullname="org.shotcut.qml.Filter.propertyChanged" href="qml-org-shotcut-qml-filter.html#propertyChanged-signal" status="active" access="public" documented="true" meta="qmlsignal">
+                <parameter type="string" name="name" default=""/>
+            </function>
+            <function name="removeRectPercents" fullname="org.shotcut.qml.Filter.removeRectPercents" href="qml-org-shotcut-qml-filter.html#removeRectPercents-method" status="active" access="public" documented="true" meta="qmlmethod">
+                <parameter type="string" name="name" default=""/>
+            </function>
+            <function name="resetProperty" fullname="org.shotcut.qml.Filter.resetProperty" href="qml-org-shotcut-qml-filter.html#resetProperty-method" status="active" access="public" documented="true" meta="qmlmethod">
+                <parameter type="string" name="name" default=""/>
+            </function>
+            <function name="savePreset" fullname="org.shotcut.qml.Filter.savePreset" href="qml-org-shotcut-qml-filter.html#savePreset-method" status="active" access="public" documented="true" meta="qmlmethod" type="int">
+                <parameter type="list&lt;string&gt;" name="propertyNames" default=""/>
+                <parameter type="string" name="name" default="&quot;&quot;"/>
+            </function>
+            <function name="set" fullname="org.shotcut.qml.Filter.set" href="qml-org-shotcut-qml-filter.html#set-method" status="active" access="public" documented="true" meta="qmlmethod">
+                <parameter type="string" name="name" default=""/>
+                <parameter type="string" name="value" default=""/>
+                <parameter type="int" name="position" default="-1"/>
+            </function>
+            <function name="set" fullname="org.shotcut.qml.Filter.set" href="qml-org-shotcut-qml-filter.html#set-method" status="active" access="public" documented="true" meta="qmlmethod">
+                <parameter type="string" name="name" default=""/>
+                <parameter type="bool" name="value" default=""/>
+                <parameter type="int" name="position" default="-1"/>
+                <parameter type="int" name="keyframeType" default="-1"/>
+            </function>
+            <function name="set" fullname="org.shotcut.qml.Filter.set" href="qml-org-shotcut-qml-filter.html#set-method" status="active" access="public" documented="true" meta="qmlmethod">
+                <parameter type="string" name="name" default=""/>
+                <parameter type="color" name="value" default=""/>
+                <parameter type="int" name="position" default="-1"/>
+                <parameter type="int" name="keyframeType" default="-1"/>
+            </function>
+            <function name="set" fullname="org.shotcut.qml.Filter.set" href="qml-org-shotcut-qml-filter.html#set-method" status="active" access="public" documented="true" meta="qmlmethod">
+                <parameter type="string" name="name" default=""/>
+                <parameter type="int" name="value" default=""/>
+                <parameter type="int" name="position" default="-1"/>
+                <parameter type="int" name="keyframeType" default="-1"/>
+            </function>
+            <function name="set" fullname="org.shotcut.qml.Filter.set" href="qml-org-shotcut-qml-filter.html#set-method" status="active" access="public" documented="true" meta="qmlmethod">
+                <parameter type="string" name="name" default=""/>
+                <parameter type="real" name="value" default=""/>
+                <parameter type="int" name="position" default="-1"/>
+                <parameter type="int" name="keyframeType" default="-1"/>
+            </function>
+            <function name="set" fullname="org.shotcut.qml.Filter.set" href="qml-org-shotcut-qml-filter.html#set-method" status="active" access="public" documented="true" meta="qmlmethod">
+                <parameter type="string" name="name" default=""/>
+                <parameter type="rect" name="value" default=""/>
+                <parameter type="int" name="position" default="-1"/>
+                <parameter type="int" name="keyframeType" default="-1"/>
+            </function>
+            <function name="set" fullname="org.shotcut.qml.Filter.set" href="qml-org-shotcut-qml-filter.html#set-method" status="active" access="public" documented="true" meta="qmlmethod">
+                <parameter type="string" name="name" default=""/>
+                <parameter type="real" name="x" default=""/>
+                <parameter type="real" name="y" default=""/>
+                <parameter type="real" name="width" default=""/>
+                <parameter type="real" name="height" default=""/>
+                <parameter type="real" name="opacity" default="1.0"/>
+                <parameter type="int" name="position" default="-1"/>
+                <parameter type="int" name="keyframeType" default="-1"/>
+            </function>
+            <function name="setGradient" fullname="org.shotcut.qml.Filter.setGradient" href="qml-org-shotcut-qml-filter.html#setGradient-method" status="active" access="public" documented="true" meta="qmlmethod">
+                <parameter type="string" name="name" default=""/>
+                <parameter type="list&lt;string&gt;" name="colors" default=""/>
+            </function>
+            <function name="setKeyFrameType" fullname="org.shotcut.qml.Filter.setKeyFrameType" href="qml-org-shotcut-qml-filter.html#setKeyFrameType-method" status="active" access="public" documented="true" meta="qmlmethod">
+                <parameter type="string" name="name" default=""/>
+                <parameter type="int" name="keyIndex" default=""/>
+                <parameter type="int" name="type" default=""/>
+            </function>
+            <function name="startUndoParameterCommand" fullname="org.shotcut.qml.Filter.startUndoParameterCommand" href="qml-org-shotcut-qml-filter.html#startUndoParameterCommand-method" status="active" access="public" documented="true" meta="qmlmethod">
+                <parameter type="string" name="description" default="&quot;&quot;"/>
+            </function>
+            <qmlproperty name="animateIn" fullname="org.shotcut.qml.Filter.animateIn" href="qml-org-shotcut-qml-filter.html#animateIn-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="Number of frames over which the &quot;animate in&quot; simple keyframe ramp runs. Set to 0 to disable. Writing this triggers the animateInChanged signal"/>
+            <qmlproperty name="animateOut" fullname="org.shotcut.qml.Filter.animateOut" href="qml-org-shotcut-qml-filter.html#animateOut-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="Number of frames over which the &quot;animate out&quot; simple keyframe ramp runs. Set to 0 to disable. Writing this triggers the animateOutChanged signal"/>
+            <qmlproperty name="blockSignals" fullname="org.shotcut.qml.Filter.blockSignals" href="qml-org-shotcut-qml-filter.html#blockSignals-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="When true, suppresses all QML signals from this object. Set while performing bulk property updates to avoid redundant UI refreshes"/>
+            <qmlproperty name="duration" fullname="org.shotcut.qml.Filter.duration" href="qml-org-shotcut-qml-filter.html#duration-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="Total duration of the filter in frames (out - in + 1)"/>
+            <qmlproperty name="in" fullname="org.shotcut.qml.Filter.in" href="qml-org-shotcut-qml-filter.html#in-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="Filter's in-point in frames, relative to the clip start"/>
+            <qmlproperty name="isNew" fullname="org.shotcut.qml.Filter.isNew" href="qml-org-shotcut-qml-filter.html#isNew-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether this filter was just added or its UI is simply being reloaded. Use this to set sensible initial property values on first load"/>
+            <qmlproperty name="out" fullname="org.shotcut.qml.Filter.out" href="qml-org-shotcut-qml-filter.html#out-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="Filter's out-point in frames, relative to the clip start"/>
+            <qmlproperty name="path" fullname="org.shotcut.qml.Filter.path" href="qml-org-shotcut-qml-filter.html#path-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="Absolute path to the directory containing this filter's QML files. Use to load auxiliary QML files relative to the filter"/>
+            <qmlproperty name="presets" fullname="org.shotcut.qml.Filter.presets" href="qml-org-shotcut-qml-filter.html#presets-prop" status="active" access="public" documented="true" type="list&lt;string&gt;" attached="false" writable="true" brief="List of saved preset names for this filter. Notifies presetsChanged when the list changes"/>
+        </qmlclass>
+        <qmlclass name="FontDialog" qml-module-name="Shotcut.Controls" fullname="Shotcut.Controls.FontDialog" href="qml-shotcut-controls-fontdialog.html" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="56" documented="true" title="FontDialog" fulltitle="FontDialog" subtitle="" brief="A native font-chooser dialog">
+            <function name="accepted" fullname="Shotcut.Controls.FontDialog.accepted" href="qml-shotcut-controls-fontdialog.html#accepted-signal" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="82" documented="true" meta="qmlsignal"/>
+            <function name="open" fullname="Shotcut.Controls.FontDialog.open" href="qml-shotcut-controls-fontdialog.html#open-method" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="77" documented="true" meta="qmlmethod"/>
+            <function name="rejected" fullname="Shotcut.Controls.FontDialog.rejected" href="qml-shotcut-controls-fontdialog.html#rejected-signal" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="87" documented="true" meta="qmlsignal"/>
+            <qmlproperty name="selectedFont" fullname="Shotcut.Controls.FontDialog.selectedFont" href="qml-shotcut-controls-fontdialog.html#selectedFont-prop" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="71" documented="true" type="font" attached="false" writable="true" brief="Font currently selected in the dialog. Set before open() to pre-populate; read in accepted to retrieve the choice"/>
+        </qmlclass>
+        <qmlclass name="KeyframesDock" qml-module-name="org.shotcut.qml" fullname="org.shotcut.qml.KeyframesDock" href="qml-org-shotcut-qml-keyframesdock.html" status="active" access="public" documented="true" title="KeyframesDock" fulltitle="KeyframesDock" subtitle="" brief="Keyframes panel controller, available as the keyframes context property">
+            <function name="changed" fullname="org.shotcut.qml.KeyframesDock.changed" href="qml-org-shotcut-qml-keyframesdock.html#changed-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="dockClicked" fullname="org.shotcut.qml.KeyframesDock.dockClicked" href="qml-org-shotcut-qml-keyframesdock.html#dockClicked-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="load" fullname="org.shotcut.qml.KeyframesDock.load" href="qml-org-shotcut-qml-keyframesdock.html#load-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="bool" name="force" default=""/>
+            </function>
+            <function name="newFilter" fullname="org.shotcut.qml.KeyframesDock.newFilter" href="qml-org-shotcut-qml-keyframesdock.html#newFilter-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="reload" fullname="org.shotcut.qml.KeyframesDock.reload" href="qml-org-shotcut-qml-keyframesdock.html#reload-method" status="active" access="public" documented="true" meta="qmlmethod" type="void"/>
+            <function name="seekNext" fullname="org.shotcut.qml.KeyframesDock.seekNext" href="qml-org-shotcut-qml-keyframesdock.html#seekNext-method" status="active" access="public" documented="true" meta="qmlmethod" type="int"/>
+            <function name="seekNextSimple" fullname="org.shotcut.qml.KeyframesDock.seekNextSimple" href="qml-org-shotcut-qml-keyframesdock.html#seekNextSimple-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="seekPrevious" fullname="org.shotcut.qml.KeyframesDock.seekPrevious" href="qml-org-shotcut-qml-keyframesdock.html#seekPrevious-method" status="active" access="public" documented="true" meta="qmlmethod" type="int"/>
+            <function name="seekPreviousSimple" fullname="org.shotcut.qml.KeyframesDock.seekPreviousSimple" href="qml-org-shotcut-qml-keyframesdock.html#seekPreviousSimple-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="timeScaleChanged" fullname="org.shotcut.qml.KeyframesDock.timeScaleChanged" href="qml-org-shotcut-qml-keyframesdock.html#timeScaleChanged-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="zoomIn" fullname="org.shotcut.qml.KeyframesDock.zoomIn" href="qml-org-shotcut-qml-keyframesdock.html#zoomIn-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="zoomOut" fullname="org.shotcut.qml.KeyframesDock.zoomOut" href="qml-org-shotcut-qml-keyframesdock.html#zoomOut-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="zoomToFit" fullname="org.shotcut.qml.KeyframesDock.zoomToFit" href="qml-org-shotcut-qml-keyframesdock.html#zoomToFit-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <qmlproperty name="timeScale" fullname="org.shotcut.qml.KeyframesDock.timeScale" href="qml-org-shotcut-qml-keyframesdock.html#timeScale-prop" status="active" access="public" documented="true" type="real" attached="false" writable="true" brief="Horizontal zoom factor of the Keyframes ruler. Settable"/>
+        </qmlclass>
+        <qmlclass name="KeyframesMetadata" qml-module-name="org.shotcut.qml" fullname="org.shotcut.qml.KeyframesMetadata" href="qml-org-shotcut-qml-keyframesmetadata.html" status="active" access="public" documented="true" title="KeyframesMetadata" fulltitle="KeyframesMetadata" subtitle="" brief="Describes the keyframe capabilities of a filter">
+            <qmlproperty name="allowAnimateIn" fullname="org.shotcut.qml.KeyframesMetadata.allowAnimateIn" href="qml-org-shotcut-qml-keyframesmetadata.html#allowAnimateIn-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether the filter supports an &quot;animate in&quot; simple keyframe ramp"/>
+            <qmlproperty name="allowAnimateOut" fullname="org.shotcut.qml.KeyframesMetadata.allowAnimateOut" href="qml-org-shotcut-qml-keyframesmetadata.html#allowAnimateOut-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether the filter supports an &quot;animate out&quot; simple keyframe ramp"/>
+            <qmlproperty name="allowOvershoot" fullname="org.shotcut.qml.KeyframesMetadata.allowOvershoot" href="qml-org-shotcut-qml-keyframesmetadata.html#allowOvershoot-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether keyframe interpolation is allowed to overshoot the min/max parameter range"/>
+            <qmlproperty name="allowTrim" fullname="org.shotcut.qml.KeyframesMetadata.allowTrim" href="qml-org-shotcut-qml-keyframesmetadata.html#allowTrim-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether the filter's in/out points can be trimmed to control when it is active"/>
+            <qmlproperty name="enabled" fullname="org.shotcut.qml.KeyframesMetadata.enabled" href="qml-org-shotcut-qml-keyframesmetadata.html#enabled-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether keyframe support is enabled for this filter at all"/>
+            <qmlproperty name="minimumVersion" fullname="org.shotcut.qml.KeyframesMetadata.minimumVersion" href="qml-org-shotcut-qml-keyframesmetadata.html#minimumVersion-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="Minimum MLT metadata version required for full keyframe support of this filter"/>
+            <qmlproperty name="parameters" fullname="org.shotcut.qml.KeyframesMetadata.parameters" href="qml-org-shotcut-qml-keyframesmetadata.html#parameters-prop" status="active" access="public" documented="true" type="list&lt;Parameter&gt;" attached="false" writable="true" brief="List of keyframeable parameters for this filter"/>
+            <qmlproperty name="simpleProperties" fullname="org.shotcut.qml.KeyframesMetadata.simpleProperties" href="qml-org-shotcut-qml-keyframesmetadata.html#simpleProperties-prop" status="active" access="public" documented="true" type="list&lt;string&gt;" attached="false" writable="true" brief="List of MLT property names that use the simple (two-keyframe) animation mode"/>
+        </qmlclass>
+        <qmlclass name="KeyframesModel" qml-module-name="org.shotcut.qml" fullname="org.shotcut.qml.KeyframesModel" href="qml-org-shotcut-qml-keyframesmodel.html" status="active" access="public" documented="true" title="KeyframesModel" fulltitle="KeyframesModel" subtitle="" brief="A two-level item model describing a filter's keyframeable parameters and their keyframes">
+            <contents name="interpolationtype-enum" title="InterpolationType enum" level="2"/>
+            <function name="addKeyframe" fullname="org.shotcut.qml.KeyframesModel.addKeyframe" href="qml-org-shotcut-qml-keyframesmodel.html#addKeyframe-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="parameterIndex" default=""/>
+                <parameter type="int" name="position" default=""/>
+            </function>
+            <function name="addKeyframe" fullname="org.shotcut.qml.KeyframesModel.addKeyframe" href="qml-org-shotcut-qml-keyframesmodel.html#addKeyframe-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="parameterIndex" default=""/>
+                <parameter type="double" name="value" default=""/>
+                <parameter type="int" name="position" default=""/>
+                <parameter type="int" name="type" default=""/>
+            </function>
+            <function name="advancedKeyframesInUse" fullname="org.shotcut.qml.KeyframesModel.advancedKeyframesInUse" href="qml-org-shotcut-qml-keyframesmodel.html#advancedKeyframesInUse-method" status="active" access="public" documented="true" meta="qmlmethod" type="bool"/>
+            <function name="isKeyframe" fullname="org.shotcut.qml.KeyframesModel.isKeyframe" href="qml-org-shotcut-qml-keyframesmodel.html#isKeyframe-method" status="active" access="public" documented="true" meta="qmlmethod" type="bool">
+                <parameter type="int" name="parameterIndex" default=""/>
+                <parameter type="int" name="position" default=""/>
+            </function>
+            <function name="keyframeAdded" fullname="org.shotcut.qml.KeyframesModel.keyframeAdded" href="qml-org-shotcut-qml-keyframesmodel.html#keyframeAdded-signal" status="active" access="public" documented="true" meta="qmlsignal">
+                <parameter type="string" name="parameter" default=""/>
+                <parameter type="int" name="position" default=""/>
+            </function>
+            <function name="keyframeIndex" fullname="org.shotcut.qml.KeyframesModel.keyframeIndex" href="qml-org-shotcut-qml-keyframesmodel.html#keyframeIndex-method" status="active" access="public" documented="true" meta="qmlmethod" type="int">
+                <parameter type="int" name="parameterIndex" default=""/>
+                <parameter type="int" name="currentPosition" default=""/>
+            </function>
+            <function name="loaded" fullname="org.shotcut.qml.KeyframesModel.loaded" href="qml-org-shotcut-qml-keyframesmodel.html#loaded-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="parameterIndex" fullname="org.shotcut.qml.KeyframesModel.parameterIndex" href="qml-org-shotcut-qml-keyframesmodel.html#parameterIndex-method" status="active" access="public" documented="true" meta="qmlmethod" type="int">
+                <parameter type="string" name="propertyName" default=""/>
+            </function>
+            <function name="reload" fullname="org.shotcut.qml.KeyframesModel.reload" href="qml-org-shotcut-qml-keyframesmodel.html#reload-method" status="active" access="public" documented="true" meta="qmlmethod" type="void"/>
+            <function name="remove" fullname="org.shotcut.qml.KeyframesModel.remove" href="qml-org-shotcut-qml-keyframesmodel.html#remove-method" status="active" access="public" documented="true" meta="qmlmethod" type="bool">
+                <parameter type="int" name="parameterIndex" default=""/>
+                <parameter type="int" name="keyframeIndex" default=""/>
+            </function>
+            <function name="removeAdvancedKeyframes" fullname="org.shotcut.qml.KeyframesModel.removeAdvancedKeyframes" href="qml-org-shotcut-qml-keyframesmodel.html#removeAdvancedKeyframes-method" status="active" access="public" documented="true" meta="qmlmethod" type="void"/>
+            <function name="removeSimpleKeyframes" fullname="org.shotcut.qml.KeyframesModel.removeSimpleKeyframes" href="qml-org-shotcut-qml-keyframesmodel.html#removeSimpleKeyframes-method" status="active" access="public" documented="true" meta="qmlmethod" type="void"/>
+            <function name="setInterpolation" fullname="org.shotcut.qml.KeyframesModel.setInterpolation" href="qml-org-shotcut-qml-keyframesmodel.html#setInterpolation-method" status="active" access="public" documented="true" meta="qmlmethod" type="bool">
+                <parameter type="int" name="parameterIndex" default=""/>
+                <parameter type="int" name="keyframeIndex" default=""/>
+                <parameter type="int" name="type" default=""/>
+            </function>
+            <function name="setKeyframePosition" fullname="org.shotcut.qml.KeyframesModel.setKeyframePosition" href="qml-org-shotcut-qml-keyframesmodel.html#setKeyframePosition-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="parameterIndex" default=""/>
+                <parameter type="int" name="keyframeIndex" default=""/>
+                <parameter type="int" name="position" default=""/>
+            </function>
+            <function name="setKeyframeValue" fullname="org.shotcut.qml.KeyframesModel.setKeyframeValue" href="qml-org-shotcut-qml-keyframesmodel.html#setKeyframeValue-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="parameterIndex" default=""/>
+                <parameter type="int" name="keyframeIndex" default=""/>
+                <parameter type="double" name="value" default=""/>
+            </function>
+            <function name="setKeyframeValuePosition" fullname="org.shotcut.qml.KeyframesModel.setKeyframeValuePosition" href="qml-org-shotcut-qml-keyframesmodel.html#setKeyframeValuePosition-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="parameterIndex" default=""/>
+                <parameter type="int" name="keyframeIndex" default=""/>
+                <parameter type="double" name="value" default=""/>
+                <parameter type="int" name="position" default=""/>
+            </function>
+            <function name="simpleKeyframesInUse" fullname="org.shotcut.qml.KeyframesModel.simpleKeyframesInUse" href="qml-org-shotcut-qml-keyframesmodel.html#simpleKeyframesInUse-method" status="active" access="public" documented="true" meta="qmlmethod" type="bool"/>
+        </qmlclass>
+        <qmlclass name="MarkersModel" qml-module-name="org.shotcut.qml" fullname="org.shotcut.qml.MarkersModel" href="qml-org-shotcut-qml-markersmodel.html" status="active" access="public" documented="true" title="MarkersModel" fulltitle="MarkersModel" subtitle="" brief="A model of timeline markers (cue points with optional range spans and colors)">
+            <contents name="roles" title="Roles" level="2"/>
+            <function name="clear" fullname="org.shotcut.qml.MarkersModel.clear" href="qml-org-shotcut-qml-markersmodel.html#clear-method" status="active" access="public" documented="true" meta="qmlmethod" type="void"/>
+            <function name="modified" fullname="org.shotcut.qml.MarkersModel.modified" href="qml-org-shotcut-qml-markersmodel.html#modified-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="move" fullname="org.shotcut.qml.MarkersModel.move" href="qml-org-shotcut-qml-markersmodel.html#move-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="markerIndex" default=""/>
+                <parameter type="int" name="start" default=""/>
+                <parameter type="int" name="end" default=""/>
+            </function>
+            <function name="nextMarkerPosition" fullname="org.shotcut.qml.MarkersModel.nextMarkerPosition" href="qml-org-shotcut-qml-markersmodel.html#nextMarkerPosition-method" status="active" access="public" documented="true" meta="qmlmethod" type="int">
+                <parameter type="int" name="position" default=""/>
+            </function>
+            <function name="prevMarkerPosition" fullname="org.shotcut.qml.MarkersModel.prevMarkerPosition" href="qml-org-shotcut-qml-markersmodel.html#prevMarkerPosition-method" status="active" access="public" documented="true" meta="qmlmethod" type="int">
+                <parameter type="int" name="position" default=""/>
+            </function>
+            <function name="rangesChanged" fullname="org.shotcut.qml.MarkersModel.rangesChanged" href="qml-org-shotcut-qml-markersmodel.html#rangesChanged-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="recentColorsChanged" fullname="org.shotcut.qml.MarkersModel.recentColorsChanged" href="qml-org-shotcut-qml-markersmodel.html#recentColorsChanged-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="remove" fullname="org.shotcut.qml.MarkersModel.remove" href="qml-org-shotcut-qml-markersmodel.html#remove-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="markerIndex" default=""/>
+            </function>
+            <function name="setColor" fullname="org.shotcut.qml.MarkersModel.setColor" href="qml-org-shotcut-qml-markersmodel.html#setColor-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="markerIndex" default=""/>
+                <parameter type="color" name="color" default=""/>
+            </function>
+            <qmlproperty name="recentColors" fullname="org.shotcut.qml.MarkersModel.recentColors" href="qml-org-shotcut-qml-markersmodel.html#recentColors-prop" status="active" access="public" documented="true" type="list&lt;string&gt;" attached="false" writable="true" brief="List of recently used marker color strings, most-recent first"/>
+        </qmlclass>
+        <qmlclass name="MessageDialog" qml-module-name="Shotcut.Controls" fullname="Shotcut.Controls.MessageDialog" href="qml-shotcut-controls-messagedialog.html" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="94" documented="true" title="MessageDialog" fulltitle="MessageDialog" subtitle="" brief="A native message/confirmation dialog with configurable buttons">
+            <contents name="standardbuttons-enum" title="StandardButtons enum" level="2"/>
+            <function name="accepted" fullname="Shotcut.Controls.MessageDialog.accepted" href="qml-shotcut-controls-messagedialog.html#accepted-signal" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="144" documented="true" meta="qmlsignal"/>
+            <function name="open" fullname="Shotcut.Controls.MessageDialog.open" href="qml-shotcut-controls-messagedialog.html#open-method" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="138" documented="true" meta="qmlmethod"/>
+            <function name="rejected" fullname="Shotcut.Controls.MessageDialog.rejected" href="qml-shotcut-controls-messagedialog.html#rejected-signal" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="149" documented="true" meta="qmlsignal"/>
+            <qmlproperty name="buttons" fullname="Shotcut.Controls.MessageDialog.buttons" href="qml-shotcut-controls-messagedialog.html#buttons-prop" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="133" documented="true" type="int" attached="false" writable="true" brief="A bitwise OR of StandardButtons values controlling which buttons appear"/>
+            <qmlproperty name="text" fullname="Shotcut.Controls.MessageDialog.text" href="qml-shotcut-controls-messagedialog.html#text-prop" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="128" documented="true" type="string" attached="false" writable="true" brief="Message text displayed inside the dialog"/>
+            <qmlproperty name="title" fullname="Shotcut.Controls.MessageDialog.title" href="qml-shotcut-controls-messagedialog.html#title-prop" status="active" access="public" location="shotcut-controls-types.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls-types.qdoc" lineno="123" documented="true" type="string" attached="false" writable="true" brief="Dialog window title"/>
+        </qmlclass>
+        <qmlclass name="Metadata" qml-module-name="org.shotcut.qml" fullname="org.shotcut.qml.Metadata" href="qml-org-shotcut-qml-metadata.html" status="active" access="public" documented="true" title="Metadata" fulltitle="Metadata" subtitle="" brief="Describes a filter's identity, capabilities, and keyframe configuration">
+            <qmlproperty name="allowMultiple" fullname="org.shotcut.qml.Metadata.allowMultiple" href="qml-org-shotcut-qml-metadata.html#allowMultiple-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether multiple instances of this filter can be applied to the same clip"/>
+            <qmlproperty name="help" fullname="org.shotcut.qml.Metadata.help" href="qml-org-shotcut-qml-metadata.html#help-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="A link to the documentation page for this filter"/>
+            <qmlproperty name="isAudio" fullname="org.shotcut.qml.Metadata.isAudio" href="qml-org-shotcut-qml-metadata.html#isAudio-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether this filter operates on audio rather than video"/>
+            <qmlproperty name="isClipOnly" fullname="org.shotcut.qml.Metadata.isClipOnly" href="qml-org-shotcut-qml-metadata.html#isClipOnly-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether this filter can only be applied to clips (not tracks, timeline output, or adjustment clips)"/>
+            <qmlproperty name="isDeprecated" fullname="org.shotcut.qml.Metadata.isDeprecated" href="qml-org-shotcut-qml-metadata.html#isDeprecated-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether this filter has been deprecated and should not be used in new projects"/>
+            <qmlproperty name="isFavorite" fullname="org.shotcut.qml.Metadata.isFavorite" href="qml-org-shotcut-qml-metadata.html#isFavorite-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether the user has marked this filter as a favorite"/>
+            <qmlproperty name="isHidden" fullname="org.shotcut.qml.Metadata.isHidden" href="qml-org-shotcut-qml-metadata.html#isHidden-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether this filter is hidden from the filter list UI"/>
+            <qmlproperty name="isOutputOnly" fullname="org.shotcut.qml.Metadata.isOutputOnly" href="qml-org-shotcut-qml-metadata.html#isOutputOnly-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether this filter can only be applied to the timeline output"/>
+            <qmlproperty name="isTrackOnly" fullname="org.shotcut.qml.Metadata.isTrackOnly" href="qml-org-shotcut-qml-metadata.html#isTrackOnly-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether this filter can only be applied to tracks"/>
+            <qmlproperty name="keyframes" fullname="org.shotcut.qml.Metadata.keyframes" href="qml-org-shotcut-qml-metadata.html#keyframes-prop" status="active" access="public" documented="true" type="KeyframesMetadata" attached="false" writable="true" brief="Configuration object for this filter"/>
+            <qmlproperty name="keywords" fullname="org.shotcut.qml.Metadata.keywords" href="qml-org-shotcut-qml-metadata.html#keywords-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="Space-separated keywords for searching this filter in the filter list"/>
+            <qmlproperty name="minimumVersion" fullname="org.shotcut.qml.Metadata.minimumVersion" href="qml-org-shotcut-qml-metadata.html#minimumVersion-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="Minimum MLT metadata version required for this filter"/>
+            <qmlproperty name="mlt_service" fullname="org.shotcut.qml.Metadata.mlt_service" href="qml-org-shotcut-qml-metadata.html#mlt_service-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="MLT service identifier (e.g. &quot;avfilter.boxblur&quot;)"/>
+            <qmlproperty name="name" fullname="org.shotcut.qml.Metadata.name" href="qml-org-shotcut-qml-metadata.html#name-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="Human-readable display name of the filter (e.g. &quot;Blur&quot;)"/>
+            <qmlproperty name="needsGPU" fullname="org.shotcut.qml.Metadata.needsGPU" href="qml-org-shotcut-qml-metadata.html#needsGPU-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether this filter requires GPU (GLSL) processing"/>
+            <qmlproperty name="qml" fullname="org.shotcut.qml.Metadata.qml" href="qml-org-shotcut-qml-metadata.html#qml-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="File name of the filter's User Interface (UI) parameter panel (relative to the filter directory)"/>
+            <qmlproperty name="qmlFilePath" fullname="org.shotcut.qml.Metadata.qmlFilePath" href="qml-org-shotcut-qml-metadata.html#qmlFilePath-prop" status="active" access="public" documented="true" type="url" attached="false" writable="true" brief="Full URL to the filter's QML parameter panel file"/>
+            <qmlproperty name="seekReverse" fullname="org.shotcut.qml.Metadata.seekReverse" href="qml-org-shotcut-qml-metadata.html#seekReverse-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether this filter may need to repeatedly perform reverse seeking for certain Time filters"/>
+            <qmlproperty name="type" fullname="org.shotcut.qml.Metadata.type" href="qml-org-shotcut-qml-metadata.html#type-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="Plugin type. One of Filter (0), Producer (1), Transition (2), Link (3), or FilterSet (4)"/>
+            <qmlproperty name="vui" fullname="org.shotcut.qml.Metadata.vui" href="qml-org-shotcut-qml-metadata.html#vui-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="File name of the filter's VUI overlay QML file (relative to the filter directory)"/>
+            <qmlproperty name="vuiFilePath" fullname="org.shotcut.qml.Metadata.vuiFilePath" href="qml-org-shotcut-qml-metadata.html#vuiFilePath-prop" status="active" access="public" documented="true" type="url" attached="false" writable="true" brief="Full URL to the filter's VUI overlay file"/>
+        </qmlclass>
+        <qmlclass name="MotionTrackerModel" qml-module-name="org.shotcut.qml" fullname="org.shotcut.qml.MotionTrackerModel" href="qml-org-shotcut-qml-motiontrackermodel.html" status="active" access="public" documented="true" title="MotionTrackerModel" fulltitle="MotionTrackerModel" subtitle="" brief="A list model of motion tracker entries attached to the current producer">
+            <function name="keyframeIntervalFrames" fullname="org.shotcut.qml.MotionTrackerModel.keyframeIntervalFrames" href="qml-org-shotcut-qml-motiontrackermodel.html#keyframeIntervalFrames-method" status="active" access="public" documented="true" meta="qmlmethod" type="int">
+                <parameter type="int" name="row" default=""/>
+            </function>
+            <function name="nextName" fullname="org.shotcut.qml.MotionTrackerModel.nextName" href="qml-org-shotcut-qml-motiontrackermodel.html#nextName-method" status="active" access="public" documented="true" meta="qmlmethod" type="string"/>
+            <function name="reset" fullname="org.shotcut.qml.MotionTrackerModel.reset" href="qml-org-shotcut-qml-motiontrackermodel.html#reset-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="Filter" name="filter" default=""/>
+                <parameter type="string" name="property" default=""/>
+                <parameter type="int" name="row" default=""/>
+            </function>
+            <function name="setName" fullname="org.shotcut.qml.MotionTrackerModel.setName" href="qml-org-shotcut-qml-motiontrackermodel.html#setName-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="Filter" name="filter" default=""/>
+                <parameter type="string" name="name" default=""/>
+            </function>
+            <function name="trackingData" fullname="org.shotcut.qml.MotionTrackerModel.trackingData" href="qml-org-shotcut-qml-motiontrackermodel.html#trackingData-method" status="active" access="public" documented="true" meta="qmlmethod" type="list&lt;rect&gt;">
+                <parameter type="int" name="row" default=""/>
+            </function>
+            <function name="undo" fullname="org.shotcut.qml.MotionTrackerModel.undo" href="qml-org-shotcut-qml-motiontrackermodel.html#undo-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="Filter" name="filter" default=""/>
+                <parameter type="string" name="propertyName" default=""/>
+            </function>
+            <qmlproperty name="nameProperty" fullname="org.shotcut.qml.MotionTrackerModel.nameProperty" href="qml-org-shotcut-qml-motiontrackermodel.html#nameProperty-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="MLT property name used to store the tracker's display name on a filter (value: &quot;shotcut:motionTracker.name&quot;). CONSTANT"/>
+            <qmlproperty name="operationProperty" fullname="org.shotcut.qml.MotionTrackerModel.operationProperty" href="qml-org-shotcut-qml-motiontrackermodel.html#operationProperty-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="MLT property name used to store the tracker's link operation on a filter (value: &quot;shotcut:motionTracker.operation&quot;). CONSTANT"/>
+        </qmlclass>
+        <qmlclass name="MultitrackModel" qml-module-name="org.shotcut.qml" fullname="org.shotcut.qml.MultitrackModel" href="qml-org-shotcut-qml-multitrackmodel.html" status="active" access="public" documented="true" title="MultitrackModel" fulltitle="MultitrackModel" subtitle="" brief="A two-level item model representing the timeline: tracks at the top level, clips within each track">
+            <contents name="track-clip-roles-partial" title="Track/Clip Roles (partial)" level="2"/>
+            <function name="aboutToClose" fullname="org.shotcut.qml.MultitrackModel.aboutToClose" href="qml-org-shotcut-qml-multitrackmodel.html#aboutToClose-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="addTransition" fullname="org.shotcut.qml.MultitrackModel.addTransition" href="qml-org-shotcut-qml-multitrackmodel.html#addTransition-method" status="active" access="public" documented="true" meta="qmlmethod" type="int">
+                <parameter type="int" name="trackIndex" default=""/>
+                <parameter type="int" name="clipIndex" default=""/>
+                <parameter type="int" name="position" default=""/>
+                <parameter type="bool" name="ripple" default=""/>
+                <parameter type="bool" name="rippleAllTracks" default=""/>
+            </function>
+            <function name="addTransitionValid" fullname="org.shotcut.qml.MultitrackModel.addTransitionValid" href="qml-org-shotcut-qml-multitrackmodel.html#addTransitionValid-method" status="active" access="public" documented="true" meta="qmlmethod" type="bool">
+                <parameter type="int" name="fromTrack" default=""/>
+                <parameter type="int" name="toTrack" default=""/>
+                <parameter type="int" name="clipIndex" default=""/>
+                <parameter type="int" name="position" default=""/>
+                <parameter type="bool" name="ripple" default=""/>
+            </function>
+            <function name="audioLevelsReady" fullname="org.shotcut.qml.MultitrackModel.audioLevelsReady" href="qml-org-shotcut-qml-multitrackmodel.html#audioLevelsReady-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="var" name="index" default=""/>
+            </function>
+            <function name="changeGain" fullname="org.shotcut.qml.MultitrackModel.changeGain" href="qml-org-shotcut-qml-multitrackmodel.html#changeGain-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="trackIndex" default=""/>
+                <parameter type="int" name="clipIndex" default=""/>
+                <parameter type="double" name="gain" default=""/>
+            </function>
+            <function name="clipStart" fullname="org.shotcut.qml.MultitrackModel.clipStart" href="qml-org-shotcut-qml-multitrackmodel.html#clipStart-method" status="active" access="public" documented="true" meta="qmlmethod" type="int">
+                <parameter type="int" name="trackIndex" default=""/>
+                <parameter type="int" name="clipIndex" default=""/>
+            </function>
+            <function name="closed" fullname="org.shotcut.qml.MultitrackModel.closed" href="qml-org-shotcut-qml-multitrackmodel.html#closed-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="created" fullname="org.shotcut.qml.MultitrackModel.created" href="qml-org-shotcut-qml-multitrackmodel.html#created-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="durationChanged" fullname="org.shotcut.qml.MultitrackModel.durationChanged" href="qml-org-shotcut-qml-multitrackmodel.html#durationChanged-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="fadeIn" fullname="org.shotcut.qml.MultitrackModel.fadeIn" href="qml-org-shotcut-qml-multitrackmodel.html#fadeIn-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="trackIndex" default=""/>
+                <parameter type="int" name="clipIndex" default=""/>
+                <parameter type="int" name="duration" default=""/>
+            </function>
+            <function name="fadeOut" fullname="org.shotcut.qml.MultitrackModel.fadeOut" href="qml-org-shotcut-qml-multitrackmodel.html#fadeOut-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="trackIndex" default=""/>
+                <parameter type="int" name="clipIndex" default=""/>
+                <parameter type="int" name="duration" default=""/>
+            </function>
+            <function name="filteredChanged" fullname="org.shotcut.qml.MultitrackModel.filteredChanged" href="qml-org-shotcut-qml-multitrackmodel.html#filteredChanged-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="joinClips" fullname="org.shotcut.qml.MultitrackModel.joinClips" href="qml-org-shotcut-qml-multitrackmodel.html#joinClips-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="trackIndex" default=""/>
+                <parameter type="int" name="clipIndex" default=""/>
+            </function>
+            <function name="liftClip" fullname="org.shotcut.qml.MultitrackModel.liftClip" href="qml-org-shotcut-qml-multitrackmodel.html#liftClip-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="trackIndex" default=""/>
+                <parameter type="int" name="clipIndex" default=""/>
+            </function>
+            <function name="modified" fullname="org.shotcut.qml.MultitrackModel.modified" href="qml-org-shotcut-qml-multitrackmodel.html#modified-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="moveClip" fullname="org.shotcut.qml.MultitrackModel.moveClip" href="qml-org-shotcut-qml-multitrackmodel.html#moveClip-method" status="active" access="public" documented="true" meta="qmlmethod" type="bool">
+                <parameter type="int" name="fromTrack" default=""/>
+                <parameter type="int" name="toTrack" default=""/>
+                <parameter type="int" name="clipIndex" default=""/>
+                <parameter type="int" name="position" default=""/>
+                <parameter type="bool" name="ripple" default=""/>
+                <parameter type="bool" name="rippleAllTracks" default=""/>
+            </function>
+            <function name="reload" fullname="org.shotcut.qml.MultitrackModel.reload" href="qml-org-shotcut-qml-multitrackmodel.html#reload-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="bool" name="asynchronous" default=""/>
+            </function>
+            <function name="removeClip" fullname="org.shotcut.qml.MultitrackModel.removeClip" href="qml-org-shotcut-qml-multitrackmodel.html#removeClip-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="trackIndex" default=""/>
+                <parameter type="int" name="clipIndex" default=""/>
+                <parameter type="bool" name="rippleAllTracks" default=""/>
+            </function>
+            <function name="removeTransition" fullname="org.shotcut.qml.MultitrackModel.removeTransition" href="qml-org-shotcut-qml-multitrackmodel.html#removeTransition-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="trackIndex" default=""/>
+                <parameter type="int" name="clipIndex" default=""/>
+            </function>
+            <function name="scaleFactorChanged" fullname="org.shotcut.qml.MultitrackModel.scaleFactorChanged" href="qml-org-shotcut-qml-multitrackmodel.html#scaleFactorChanged-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="seeked" fullname="org.shotcut.qml.MultitrackModel.seeked" href="qml-org-shotcut-qml-multitrackmodel.html#seeked-signal" status="active" access="public" documented="true" meta="qmlsignal">
+                <parameter type="int" name="position" default=""/>
+            </function>
+            <function name="setTrackComposite" fullname="org.shotcut.qml.MultitrackModel.setTrackComposite" href="qml-org-shotcut-qml-multitrackmodel.html#setTrackComposite-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="row" default=""/>
+                <parameter type="bool" name="composite" default=""/>
+            </function>
+            <function name="setTrackHidden" fullname="org.shotcut.qml.MultitrackModel.setTrackHidden" href="qml-org-shotcut-qml-multitrackmodel.html#setTrackHidden-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="row" default=""/>
+                <parameter type="bool" name="hidden" default=""/>
+            </function>
+            <function name="setTrackLock" fullname="org.shotcut.qml.MultitrackModel.setTrackLock" href="qml-org-shotcut-qml-multitrackmodel.html#setTrackLock-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="row" default=""/>
+                <parameter type="bool" name="lock" default=""/>
+            </function>
+            <function name="setTrackMute" fullname="org.shotcut.qml.MultitrackModel.setTrackMute" href="qml-org-shotcut-qml-multitrackmodel.html#setTrackMute-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="row" default=""/>
+                <parameter type="bool" name="mute" default=""/>
+            </function>
+            <function name="setTrackName" fullname="org.shotcut.qml.MultitrackModel.setTrackName" href="qml-org-shotcut-qml-multitrackmodel.html#setTrackName-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="row" default=""/>
+                <parameter type="string" name="value" default=""/>
+            </function>
+            <function name="showStatusMessage" fullname="org.shotcut.qml.MultitrackModel.showStatusMessage" href="qml-org-shotcut-qml-multitrackmodel.html#showStatusMessage-signal" status="active" access="public" documented="true" meta="qmlsignal">
+                <parameter type="string" name="message" default=""/>
+            </function>
+            <function name="splitClip" fullname="org.shotcut.qml.MultitrackModel.splitClip" href="qml-org-shotcut-qml-multitrackmodel.html#splitClip-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="trackIndex" default=""/>
+                <parameter type="int" name="clipIndex" default=""/>
+                <parameter type="int" name="position" default=""/>
+            </function>
+            <function name="trackHeightChanged" fullname="org.shotcut.qml.MultitrackModel.trackHeightChanged" href="qml-org-shotcut-qml-multitrackmodel.html#trackHeightChanged-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="trimClipIn" fullname="org.shotcut.qml.MultitrackModel.trimClipIn" href="qml-org-shotcut-qml-multitrackmodel.html#trimClipIn-method" status="active" access="public" documented="true" meta="qmlmethod" type="int">
+                <parameter type="int" name="trackIndex" default=""/>
+                <parameter type="int" name="clipIndex" default=""/>
+                <parameter type="int" name="delta" default=""/>
+                <parameter type="bool" name="ripple" default=""/>
+                <parameter type="bool" name="rippleAllTracks" default=""/>
+            </function>
+            <function name="trimClipOut" fullname="org.shotcut.qml.MultitrackModel.trimClipOut" href="qml-org-shotcut-qml-multitrackmodel.html#trimClipOut-method" status="active" access="public" documented="true" meta="qmlmethod" type="int">
+                <parameter type="int" name="trackIndex" default=""/>
+                <parameter type="int" name="clipIndex" default=""/>
+                <parameter type="int" name="delta" default=""/>
+                <parameter type="bool" name="ripple" default=""/>
+                <parameter type="bool" name="rippleAllTracks" default=""/>
+            </function>
+            <qmlproperty name="filtered" fullname="org.shotcut.qml.MultitrackModel.filtered" href="qml-org-shotcut-qml-multitrackmodel.html#filtered-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="True when timeline clips are being filtered/searched. Read-only"/>
+            <qmlproperty name="scaleFactor" fullname="org.shotcut.qml.MultitrackModel.scaleFactor" href="qml-org-shotcut-qml-multitrackmodel.html#scaleFactor-prop" status="active" access="public" documented="true" type="real" attached="false" writable="true" brief="Horizontal zoom/scale factor of the timeline. Settable"/>
+            <qmlproperty name="trackHeaderWidth" fullname="org.shotcut.qml.MultitrackModel.trackHeaderWidth" href="qml-org-shotcut-qml-multitrackmodel.html#trackHeaderWidth-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="Width of the track header column in pixels. Settable"/>
+            <qmlproperty name="trackHeight" fullname="org.shotcut.qml.MultitrackModel.trackHeight" href="qml-org-shotcut-qml-multitrackmodel.html#trackHeight-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="Display height of each track row in pixels. Settable"/>
+        </qmlclass>
+        <qmlclass name="Parameter" qml-module-name="org.shotcut.qml" fullname="org.shotcut.qml.Parameter" href="qml-org-shotcut-qml-parameter.html" status="active" access="public" documented="true" title="Parameter" fulltitle="Parameter" subtitle="" brief="Describes a single keyframeable parameter within a filter's keyframes metadata">
+            <qmlproperty name="gangedProperties" fullname="org.shotcut.qml.Parameter.gangedProperties" href="qml-org-shotcut-qml-parameter.html#gangedProperties-prop" status="active" access="public" documented="true" type="list&lt;string&gt;" attached="false" writable="true" brief="Additional MLT property names that must be adjusted together with property (e.g. linked x/y coordinates)"/>
+            <qmlproperty name="gangedRectProperties" fullname="org.shotcut.qml.Parameter.gangedRectProperties" href="qml-org-shotcut-qml-parameter.html#gangedRectProperties-prop" status="active" access="public" documented="true" type="list&lt;string&gt;" attached="false" writable="true" brief="Additional rect-type MLT property names that must be adjusted together with property"/>
+            <qmlproperty name="isColor" fullname="org.shotcut.qml.Parameter.isColor" href="qml-org-shotcut-qml-parameter.html#isColor-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether this parameter represents a color (uses Filter::getColor() / Filter::set())"/>
+            <qmlproperty name="isCurve" fullname="org.shotcut.qml.Parameter.isCurve" href="qml-org-shotcut-qml-parameter.html#isCurve-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether this parameter can display a curve editor in the Keyframes panel"/>
+            <qmlproperty name="isRectangle" fullname="org.shotcut.qml.Parameter.isRectangle" href="qml-org-shotcut-qml-parameter.html#isRectangle-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether this parameter represents a rectangle (uses Filter::getRect() / Filter::set())"/>
+            <qmlproperty name="maximum" fullname="org.shotcut.qml.Parameter.maximum" href="qml-org-shotcut-qml-parameter.html#maximum-prop" status="active" access="public" documented="true" type="real" attached="false" writable="true" brief="Allowed value when rangeType is MinMax"/>
+            <qmlproperty name="minimum" fullname="org.shotcut.qml.Parameter.minimum" href="qml-org-shotcut-qml-parameter.html#minimum-prop" status="active" access="public" documented="true" type="real" attached="false" writable="true" brief="Allowed value when rangeType is MinMax"/>
+            <qmlproperty name="name" fullname="org.shotcut.qml.Parameter.name" href="qml-org-shotcut-qml-parameter.html#name-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="Human-readable display name of the parameter"/>
+            <qmlproperty name="property" fullname="org.shotcut.qml.Parameter.property" href="qml-org-shotcut-qml-parameter.html#property-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="MLT property name this parameter maps to (used with Filter::get() and Filter::set())"/>
+            <qmlproperty name="rangeType" fullname="org.shotcut.qml.Parameter.rangeType" href="qml-org-shotcut-qml-parameter.html#rangeType-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="Range constraint type. 0 = MinMax (clamped to minimum / maximum), 1 = ClipLength (range is 0 to clip duration in frames)"/>
+            <qmlproperty name="units" fullname="org.shotcut.qml.Parameter.units" href="qml-org-shotcut-qml-parameter.html#units-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="Display units string shown next to the parameter value (e.g. &quot;px&quot;, &quot;%&quot;)"/>
+        </qmlclass>
+        <qmlclass name="Producer" qml-module-name="org.shotcut.qml" fullname="org.shotcut.qml.Producer" href="qml-org-shotcut-qml-producer.html" status="active" access="public" documented="true" title="Producer" fulltitle="Producer" subtitle="" brief="Represents the clip currently loaded in the Filters panel, accessed via the producer context property">
+            <function name="durationChanged" fullname="org.shotcut.qml.Producer.durationChanged" href="qml-org-shotcut-qml-producer.html#durationChanged-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="get" fullname="org.shotcut.qml.Producer.get" href="qml-org-shotcut-qml-producer.html#get-method" status="active" access="public" documented="true" meta="qmlmethod" type="string">
+                <parameter type="string" name="name" default=""/>
+                <parameter type="int" name="position" default="-1"/>
+            </function>
+            <function name="getDouble" fullname="org.shotcut.qml.Producer.getDouble" href="qml-org-shotcut-qml-producer.html#getDouble-method" status="active" access="public" documented="true" meta="qmlmethod" type="real">
+                <parameter type="string" name="name" default=""/>
+                <parameter type="int" name="position" default="-1"/>
+            </function>
+            <function name="getRect" fullname="org.shotcut.qml.Producer.getRect" href="qml-org-shotcut-qml-producer.html#getRect-method" status="active" access="public" documented="true" meta="qmlmethod" type="rect">
+                <parameter type="string" name="name" default=""/>
+                <parameter type="int" name="position" default="-1"/>
+            </function>
+            <function name="inChanged" fullname="org.shotcut.qml.Producer.inChanged" href="qml-org-shotcut-qml-producer.html#inChanged-signal" status="active" access="public" documented="true" meta="qmlsignal">
+                <parameter type="int" name="delta" default=""/>
+            </function>
+            <function name="lengthChanged" fullname="org.shotcut.qml.Producer.lengthChanged" href="qml-org-shotcut-qml-producer.html#lengthChanged-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="outChanged" fullname="org.shotcut.qml.Producer.outChanged" href="qml-org-shotcut-qml-producer.html#outChanged-signal" status="active" access="public" documented="true" meta="qmlsignal">
+                <parameter type="int" name="delta" default=""/>
+            </function>
+            <function name="outOfBounds" fullname="org.shotcut.qml.Producer.outOfBounds" href="qml-org-shotcut-qml-producer.html#outOfBounds-method" status="active" access="public" documented="true" meta="qmlmethod" type="bool"/>
+            <function name="positionChanged" fullname="org.shotcut.qml.Producer.positionChanged" href="qml-org-shotcut-qml-producer.html#positionChanged-signal" status="active" access="public" documented="true" meta="qmlsignal">
+                <parameter type="int" name="position" default=""/>
+            </function>
+            <function name="producerChanged" fullname="org.shotcut.qml.Producer.producerChanged" href="qml-org-shotcut-qml-producer.html#producerChanged-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="seeked" fullname="org.shotcut.qml.Producer.seeked" href="qml-org-shotcut-qml-producer.html#seeked-signal" status="active" access="public" documented="true" meta="qmlsignal">
+                <parameter type="int" name="position" default=""/>
+            </function>
+            <qmlproperty name="aspectRatio" fullname="org.shotcut.qml.Producer.aspectRatio" href="qml-org-shotcut-qml-producer.html#aspectRatio-prop" status="active" access="public" documented="true" type="real" attached="false" writable="true" brief="Pixel aspect ratio of the producer's media"/>
+            <qmlproperty name="audioIndex" fullname="org.shotcut.qml.Producer.audioIndex" href="qml-org-shotcut-qml-producer.html#audioIndex-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="Producer's audio_index property"/>
+            <qmlproperty name="displayAspectRatio" fullname="org.shotcut.qml.Producer.displayAspectRatio" href="qml-org-shotcut-qml-producer.html#displayAspectRatio-prop" status="active" access="public" documented="true" type="real" attached="false" writable="true" brief="Display aspect ratio (DAR) of the producer's media"/>
+            <qmlproperty name="duration" fullname="org.shotcut.qml.Producer.duration" href="qml-org-shotcut-qml-producer.html#duration-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="Of the clip in frames (out - in + 1)"/>
+            <qmlproperty name="fadeIn" fullname="org.shotcut.qml.Producer.fadeIn" href="qml-org-shotcut-qml-producer.html#fadeIn-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="Duration in frames of the clip's fade-in, or 0 if none"/>
+            <qmlproperty name="fadeOut" fullname="org.shotcut.qml.Producer.fadeOut" href="qml-org-shotcut-qml-producer.html#fadeOut-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="Duration in frames of the clip's fade-out, or 0 if none"/>
+            <qmlproperty name="hash" fullname="org.shotcut.qml.Producer.hash" href="qml-org-shotcut-qml-producer.html#hash-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="A content-based hash of the producer's media, used for caching"/>
+            <qmlproperty name="in" fullname="org.shotcut.qml.Producer.in" href="qml-org-shotcut-qml-producer.html#in-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="In-point of the clip in frames (absolute timeline position)"/>
+            <qmlproperty name="isAdjustment" fullname="org.shotcut.qml.Producer.isAdjustment" href="qml-org-shotcut-qml-producer.html#isAdjustment-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether this clip is an adjustment clip (meta.fx_cut)"/>
+            <qmlproperty name="isAudio" fullname="org.shotcut.qml.Producer.isAudio" href="qml-org-shotcut-qml-producer.html#isAudio-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether this clip should be treated as audio"/>
+            <qmlproperty name="length" fullname="org.shotcut.qml.Producer.length" href="qml-org-shotcut-qml-producer.html#length-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="Total length of the underlying source media in frames"/>
+            <qmlproperty name="mlt_service" fullname="org.shotcut.qml.Producer.mlt_service" href="qml-org-shotcut-qml-producer.html#mlt_service-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="MLT service name of the producer (e.g. &quot;avformat&quot;, &quot;color&quot;)"/>
+            <qmlproperty name="name" fullname="org.shotcut.qml.Producer.name" href="qml-org-shotcut-qml-producer.html#name-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="Display name of the clip as shown in the timeline"/>
+            <qmlproperty name="out" fullname="org.shotcut.qml.Producer.out" href="qml-org-shotcut-qml-producer.html#out-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="Out-point of the clip in frames (absolute timeline position)"/>
+            <qmlproperty name="position" fullname="org.shotcut.qml.Producer.position" href="qml-org-shotcut-qml-producer.html#position-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="Current playhead position within the clip, in frames relative to in. Setting this seeks the preview to that position"/>
+            <qmlproperty name="resource" fullname="org.shotcut.qml.Producer.resource" href="qml-org-shotcut-qml-producer.html#resource-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="File path or resource string of the underlying media"/>
+            <qmlproperty name="speed" fullname="org.shotcut.qml.Producer.speed" href="qml-org-shotcut-qml-producer.html#speed-prop" status="active" access="public" documented="true" type="real" attached="false" writable="true" brief="Playback speed multiplier of the clip (1.0 = normal speed)"/>
+        </qmlclass>
+        <qmlclass name="Profile" qml-module-name="org.shotcut.qml" fullname="org.shotcut.qml.Profile" href="qml-org-shotcut-qml-profile.html" status="active" access="public" documented="true" title="Profile" fulltitle="Profile" subtitle="" brief="Describes the current project's Video Mode, accessed via the profile context property">
+            <function name="profileChanged" fullname="org.shotcut.qml.Profile.profileChanged" href="qml-org-shotcut-qml-profile.html#profileChanged-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <qmlproperty name="aspectRatio" fullname="org.shotcut.qml.Profile.aspectRatio" href="qml-org-shotcut-qml-profile.html#aspectRatio-prop" status="active" access="public" documented="true" type="real" attached="false" writable="true" brief="Display aspect ratio (DAR = width / height × SAR) of the current video profile"/>
+            <qmlproperty name="fps" fullname="org.shotcut.qml.Profile.fps" href="qml-org-shotcut-qml-profile.html#fps-prop" status="active" access="public" documented="true" type="real" attached="false" writable="true" brief="Frames per second of the current video profile"/>
+            <qmlproperty name="height" fullname="org.shotcut.qml.Profile.height" href="qml-org-shotcut-qml-profile.html#height-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="Frame height of the current video profile in pixels"/>
+            <qmlproperty name="sar" fullname="org.shotcut.qml.Profile.sar" href="qml-org-shotcut-qml-profile.html#sar-prop" status="active" access="public" documented="true" type="real" attached="false" writable="true" brief="Sample (pixel) aspect ratio of the current video profile. A value of 1.0 means square pixels"/>
+            <qmlproperty name="width" fullname="org.shotcut.qml.Profile.width" href="qml-org-shotcut-qml-profile.html#width-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="Frame width of the current video profile in pixels"/>
+        </qmlclass>
+        <qmlclass name="QmlExtension" qml-module-name="org.shotcut.qml" fullname="org.shotcut.qml.QmlExtension" href="qml-org-shotcut-qml-qmlextension.html" status="active" access="public" documented="true" title="QmlExtension" fulltitle="QmlExtension" subtitle="" brief="Represents a loadable Shotcut extension (e.g. the Whisper speech-to-text package)">
+            <qmlproperty name="files" fullname="org.shotcut.qml.QmlExtension.files" href="qml-org-shotcut-qml-qmlextension.html#files-prop" status="active" access="public" documented="true" type="list&lt;QmlExtensionFile&gt;" attached="false" writable="true" brief="List of files that make up this extension"/>
+            <qmlproperty name="id" fullname="org.shotcut.qml.QmlExtension.id" href="qml-org-shotcut-qml-qmlextension.html#id-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="Unique identifier for the extension (e.g. &quot;whisper&quot;)"/>
+            <qmlproperty name="name" fullname="org.shotcut.qml.QmlExtension.name" href="qml-org-shotcut-qml-qmlextension.html#name-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="Human-readable display name of the extension"/>
+            <qmlproperty name="version" fullname="org.shotcut.qml.QmlExtension.version" href="qml-org-shotcut-qml-qmlextension.html#version-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="Installed version string of the extension"/>
+        </qmlclass>
+        <qmlclass name="QmlExtensionFile" qml-module-name="org.shotcut.qml" fullname="org.shotcut.qml.QmlExtensionFile" href="qml-org-shotcut-qml-qmlextensionfile.html" status="active" access="public" documented="true" title="QmlExtensionFile" fulltitle="QmlExtensionFile" subtitle="" brief="Describes a single downloadable file within an extension package">
+            <qmlproperty name="description" fullname="org.shotcut.qml.QmlExtensionFile.description" href="qml-org-shotcut-qml-qmlextensionfile.html#description-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="A brief description of the file's purpose"/>
+            <qmlproperty name="file" fullname="org.shotcut.qml.QmlExtensionFile.file" href="qml-org-shotcut-qml-qmlextensionfile.html#file-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="Local filename to store the downloaded file as"/>
+            <qmlproperty name="name" fullname="org.shotcut.qml.QmlExtensionFile.name" href="qml-org-shotcut-qml-qmlextensionfile.html#name-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="Display name of the file"/>
+            <qmlproperty name="sha256" fullname="org.shotcut.qml.QmlExtensionFile.sha256" href="qml-org-shotcut-qml-qmlextensionfile.html#sha256-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="Expected SHA-256 hex digest of the downloaded file"/>
+            <qmlproperty name="size" fullname="org.shotcut.qml.QmlExtensionFile.size" href="qml-org-shotcut-qml-qmlextensionfile.html#size-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="Of the download in bytes, as a decimal string"/>
+            <qmlproperty name="standard" fullname="org.shotcut.qml.QmlExtensionFile.standard" href="qml-org-shotcut-qml-qmlextensionfile.html#standard-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether this file is a standard (default) file vs. an optional add-on"/>
+            <qmlproperty name="url" fullname="org.shotcut.qml.QmlExtensionFile.url" href="qml-org-shotcut-qml-qmlextensionfile.html#url-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="Remote URL from which the file can be downloaded"/>
+        </qmlclass>
+        <qmlclass name="QmlView" qml-module-name="org.shotcut.qml" fullname="org.shotcut.qml.QmlView" href="qml-org-shotcut-qml-qmlview.html" status="active" access="public" documented="true" title="QmlView" fulltitle="QmlView" subtitle="" brief="Provides access to the host widget geometry, available via the view context property">
+            <function name="pos" fullname="org.shotcut.qml.QmlView.pos" href="qml-org-shotcut-qml-qmlview.html#pos-method" status="active" access="public" documented="true" meta="qmlmethod" type="point"/>
+        </qmlclass>
+        <qmlclass name="RichText" qml-module-name="org.shotcut.qml" fullname="org.shotcut.qml.RichText" href="qml-org-shotcut-qml-richtext.html" status="active" access="public" documented="true" title="RichText" fulltitle="RichText" subtitle="" brief="Provides rich-text editing helpers for the Text: Rich filter panel">
+            <function name="error" fullname="org.shotcut.qml.RichText.error" href="qml-org-shotcut-qml-richtext.html#error-signal" status="active" access="public" documented="true" meta="qmlsignal">
+                <parameter type="string" name="message" default=""/>
+            </function>
+            <function name="indentLess" fullname="org.shotcut.qml.RichText.indentLess" href="qml-org-shotcut-qml-richtext.html#indentLess-method" status="active" access="public" documented="true" meta="qmlmethod"/>
+            <function name="indentMore" fullname="org.shotcut.qml.RichText.indentMore" href="qml-org-shotcut-qml-richtext.html#indentMore-method" status="active" access="public" documented="true" meta="qmlmethod"/>
+            <function name="insertTable" fullname="org.shotcut.qml.RichText.insertTable" href="qml-org-shotcut-qml-richtext.html#insertTable-method" status="active" access="public" documented="true" meta="qmlmethod">
+                <parameter type="int" name="rows" default=""/>
+                <parameter type="int" name="columns" default=""/>
+                <parameter type="int" name="border" default=""/>
+            </function>
+            <function name="pastePlain" fullname="org.shotcut.qml.RichText.pastePlain" href="qml-org-shotcut-qml-richtext.html#pastePlain-method" status="active" access="public" documented="true" meta="qmlmethod"/>
+            <function name="reset" fullname="org.shotcut.qml.RichText.reset" href="qml-org-shotcut-qml-richtext.html#reset-method" status="active" access="public" documented="true" meta="qmlmethod"/>
+            <function name="saveAs" fullname="org.shotcut.qml.RichText.saveAs" href="qml-org-shotcut-qml-richtext.html#saveAs-method" status="active" access="public" documented="true" meta="qmlmethod">
+                <parameter type="url" name="fileUrl" default=""/>
+                <parameter type="string" name="fileType" default=""/>
+            </function>
+            <qmlproperty name="alignment" fullname="org.shotcut.qml.RichText.alignment" href="qml-org-shotcut-qml-richtext.html#alignment-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="Paragraph alignment (Qt.AlignLeft, Qt.AlignCenter, etc.) at the cursor"/>
+            <qmlproperty name="bold" fullname="org.shotcut.qml.RichText.bold" href="qml-org-shotcut-qml-richtext.html#bold-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether the text at the cursor/selection is bold"/>
+            <qmlproperty name="cursorPosition" fullname="org.shotcut.qml.RichText.cursorPosition" href="qml-org-shotcut-qml-richtext.html#cursorPosition-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="Cursor position within the document"/>
+            <qmlproperty name="fileUrl" fullname="org.shotcut.qml.RichText.fileUrl" href="qml-org-shotcut-qml-richtext.html#fileUrl-prop" status="active" access="public" documented="true" type="url" attached="false" writable="true" brief="URL of the HTML file backing the document. Setting this loads the file"/>
+            <qmlproperty name="fontFamily" fullname="org.shotcut.qml.RichText.fontFamily" href="qml-org-shotcut-qml-richtext.html#fontFamily-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="Font family of the text at the cursor or selection"/>
+            <qmlproperty name="fontSize" fullname="org.shotcut.qml.RichText.fontSize" href="qml-org-shotcut-qml-richtext.html#fontSize-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="Font size in points at the cursor or selection"/>
+            <qmlproperty name="fontStyleName" fullname="org.shotcut.qml.RichText.fontStyleName" href="qml-org-shotcut-qml-richtext.html#fontStyleName-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="Font style name (e.g. &quot;Bold Italic&quot;) at the cursor or selection"/>
+            <qmlproperty name="italic" fullname="org.shotcut.qml.RichText.italic" href="qml-org-shotcut-qml-richtext.html#italic-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether the text at the cursor/selection is italic"/>
+            <qmlproperty name="selectionEnd" fullname="org.shotcut.qml.RichText.selectionEnd" href="qml-org-shotcut-qml-richtext.html#selectionEnd-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="End of the current text selection"/>
+            <qmlproperty name="selectionStart" fullname="org.shotcut.qml.RichText.selectionStart" href="qml-org-shotcut-qml-richtext.html#selectionStart-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="Start of the current text selection"/>
+            <qmlproperty name="size" fullname="org.shotcut.qml.RichText.size" href="qml-org-shotcut-qml-richtext.html#size-prop" status="active" access="public" documented="true" type="size" attached="false" writable="true" brief="Natural rendered size of the document (read-only)"/>
+            <qmlproperty name="strikeout" fullname="org.shotcut.qml.RichText.strikeout" href="qml-org-shotcut-qml-richtext.html#strikeout-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether the text at the cursor/selection has strikethrough"/>
+            <qmlproperty name="target" fullname="org.shotcut.qml.RichText.target" href="qml-org-shotcut-qml-richtext.html#target-prop" status="active" access="public" documented="true" type="Item" attached="false" writable="true" brief="QML TextEdit item whose document this object manages"/>
+            <qmlproperty name="text" fullname="org.shotcut.qml.RichText.text" href="qml-org-shotcut-qml-richtext.html#text-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="Full HTML content of the document"/>
+            <qmlproperty name="textColor" fullname="org.shotcut.qml.RichText.textColor" href="qml-org-shotcut-qml-richtext.html#textColor-prop" status="active" access="public" documented="true" type="color" attached="false" writable="true" brief="Foreground color of the text at (or to be applied to) the selection"/>
+            <qmlproperty name="underline" fullname="org.shotcut.qml.RichText.underline" href="qml-org-shotcut-qml-richtext.html#underline-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether the text at the cursor/selection is underlined"/>
+        </qmlclass>
+        <qmlclass name="Settings" qml-module-name="org.shotcut.qml" fullname="org.shotcut.qml.Settings" href="qml-org-shotcut-qml-settings.html" status="active" access="public" documented="true" title="Settings" fulltitle="Settings" subtitle="" brief="Persistent application settings, accessed via the settings context property">
+            <qmlproperty name="appDataLocation" fullname="org.shotcut.qml.Settings.appDataLocation" href="qml-org-shotcut-qml-settings.html#appDataLocation-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="Path to the application data directory (read-only)"/>
+            <qmlproperty name="askOutputFilter" fullname="org.shotcut.qml.Settings.askOutputFilter" href="qml-org-shotcut-qml-settings.html#askOutputFilter-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether Shotcut should prompt before applying a filter to the output node"/>
+            <qmlproperty name="audioInCurve" fullname="org.shotcut.qml.Settings.audioInCurve" href="qml-org-shotcut-qml-settings.html#audioInCurve-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="Curve type for audio fade-in (0 = linear, higher = more exponential)"/>
+            <qmlproperty name="audioInDuration" fullname="org.shotcut.qml.Settings.audioInDuration" href="qml-org-shotcut-qml-settings.html#audioInDuration-prop" status="active" access="public" documented="true" type="real" attached="false" writable="true" brief="Default duration in seconds for audio fade-in transitions"/>
+            <qmlproperty name="audioOutCurve" fullname="org.shotcut.qml.Settings.audioOutCurve" href="qml-org-shotcut-qml-settings.html#audioOutCurve-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="Curve type for audio fade-out (0 = linear, higher = more exponential)"/>
+            <qmlproperty name="audioOutDuration" fullname="org.shotcut.qml.Settings.audioOutDuration" href="qml-org-shotcut-qml-settings.html#audioOutDuration-prop" status="active" access="public" documented="true" type="real" attached="false" writable="true" brief="Default duration in seconds for audio fade-out transitions"/>
+            <qmlproperty name="keyframesDragScrub" fullname="org.shotcut.qml.Settings.keyframesDragScrub" href="qml-org-shotcut-qml-settings.html#keyframesDragScrub-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether scrubbing occurs while dragging keyframes"/>
+            <qmlproperty name="openPath" fullname="org.shotcut.qml.Settings.openPath" href="qml-org-shotcut-qml-settings.html#openPath-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="Last directory used for opening files"/>
+            <qmlproperty name="playerAudioChannels" fullname="org.shotcut.qml.Settings.playerAudioChannels" href="qml-org-shotcut-qml-settings.html#playerAudioChannels-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="Number of audio channels used by the player (e.g. 2 or 6)"/>
+            <qmlproperty name="playerGPU" fullname="org.shotcut.qml.Settings.playerGPU" href="qml-org-shotcut-qml-settings.html#playerGPU-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether GPU processing (GLSL) is enabled for the video player"/>
+            <qmlproperty name="playlistThumbnails" fullname="org.shotcut.qml.Settings.playlistThumbnails" href="qml-org-shotcut-qml-settings.html#playlistThumbnails-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="Thumbnail display mode for the Playlist panel"/>
+            <qmlproperty name="savePath" fullname="org.shotcut.qml.Settings.savePath" href="qml-org-shotcut-qml-settings.html#savePath-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="Last directory used for saving files"/>
+            <qmlproperty name="smallIcons" fullname="org.shotcut.qml.Settings.smallIcons" href="qml-org-shotcut-qml-settings.html#smallIcons-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether the toolbar uses small icons"/>
+            <qmlproperty name="timelineAdjustGain" fullname="org.shotcut.qml.Settings.timelineAdjustGain" href="qml-org-shotcut-qml-settings.html#timelineAdjustGain-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether dragging the gain handle on audio clips adjusts volume inline"/>
+            <qmlproperty name="timelineAllowTransitions" fullname="org.shotcut.qml.Settings.timelineAllowTransitions" href="qml-org-shotcut-qml-settings.html#timelineAllowTransitions-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether overlapping clips on the timeline automatically create transitions"/>
+            <qmlproperty name="timelineDragScrub" fullname="org.shotcut.qml.Settings.timelineDragScrub" href="qml-org-shotcut-qml-settings.html#timelineDragScrub-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether scrubbing occurs while dragging clips on the timeline"/>
+            <qmlproperty name="timelineFramebufferWaveform" fullname="org.shotcut.qml.Settings.timelineFramebufferWaveform" href="qml-org-shotcut-qml-settings.html#timelineFramebufferWaveform-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether waveforms are rendered using a framebuffer (GPU) path"/>
+            <qmlproperty name="timelineRectangleSelect" fullname="org.shotcut.qml.Settings.timelineRectangleSelect" href="qml-org-shotcut-qml-settings.html#timelineRectangleSelect-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether rectangle (rubber-band) selection is enabled on the timeline"/>
+            <qmlproperty name="timelineRipple" fullname="org.shotcut.qml.Settings.timelineRipple" href="qml-org-shotcut-qml-settings.html#timelineRipple-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether ripple editing is enabled on the timeline"/>
+            <qmlproperty name="timelineRippleAllTracks" fullname="org.shotcut.qml.Settings.timelineRippleAllTracks" href="qml-org-shotcut-qml-settings.html#timelineRippleAllTracks-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether ripple editing affects all tracks simultaneously"/>
+            <qmlproperty name="timelineRippleMarkers" fullname="org.shotcut.qml.Settings.timelineRippleMarkers" href="qml-org-shotcut-qml-settings.html#timelineRippleMarkers-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether markers are moved along with ripple edits"/>
+            <qmlproperty name="timelineScrollZoom" fullname="org.shotcut.qml.Settings.timelineScrollZoom" href="qml-org-shotcut-qml-settings.html#timelineScrollZoom-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether the scroll wheel zooms the timeline (instead of scrolling)"/>
+            <qmlproperty name="timelineScrolling" fullname="org.shotcut.qml.Settings.timelineScrolling" href="qml-org-shotcut-qml-settings.html#timelineScrolling-prop" status="active" access="public" documented="true" type="Settings::TimelineScrolling" attached="false" writable="true" brief="Timeline auto-scroll mode. One of NoScrolling, CenterPlayhead, PageScrolling, or SmoothScrolling"/>
+            <qmlproperty name="timelineShowThumbnails" fullname="org.shotcut.qml.Settings.timelineShowThumbnails" href="qml-org-shotcut-qml-settings.html#timelineShowThumbnails-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether video thumbnails are shown on timeline clips"/>
+            <qmlproperty name="timelineShowWaveforms" fullname="org.shotcut.qml.Settings.timelineShowWaveforms" href="qml-org-shotcut-qml-settings.html#timelineShowWaveforms-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether audio waveforms are shown on timeline clips"/>
+            <qmlproperty name="timelineSnap" fullname="org.shotcut.qml.Settings.timelineSnap" href="qml-org-shotcut-qml-settings.html#timelineSnap-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="Whether clip snapping is enabled on the timeline"/>
+            <qmlproperty name="videoInDuration" fullname="org.shotcut.qml.Settings.videoInDuration" href="qml-org-shotcut-qml-settings.html#videoInDuration-prop" status="active" access="public" documented="true" type="real" attached="false" writable="true" brief="Default duration in seconds for video fade-in transitions"/>
+            <qmlproperty name="videoOutDuration" fullname="org.shotcut.qml.Settings.videoOutDuration" href="qml-org-shotcut-qml-settings.html#videoOutDuration-prop" status="active" access="public" documented="true" type="real" attached="false" writable="true" brief="Default duration in seconds for video fade-out transitions"/>
+            <qmlproperty name="viewMode" fullname="org.shotcut.qml.Settings.viewMode" href="qml-org-shotcut-qml-settings.html#viewMode-prop" status="active" access="public" documented="true" type="string" attached="false" writable="true" brief="Current view mode of the Playlist panel (e.g. &quot;details&quot;, &quot;icons&quot;)"/>
+        </qmlclass>
+        <qmlclass name="SubtitlesModel" qml-module-name="org.shotcut.qml" fullname="org.shotcut.qml.SubtitlesModel" href="qml-org-shotcut-qml-subtitlesmodel.html" status="active" access="public" documented="true" title="SubtitlesModel" fulltitle="SubtitlesModel" subtitle="" brief="A two-level item model for subtitle tracks and subtitle items on the timeline">
+            <contents name="roles" title="Roles" level="2"/>
+            <function name="itemCount" fullname="org.shotcut.qml.SubtitlesModel.itemCount" href="qml-org-shotcut-qml-subtitlesmodel.html#itemCount-method" status="active" access="public" documented="true" meta="qmlmethod" type="int">
+                <parameter type="int" name="trackIndex" default=""/>
+            </function>
+            <function name="modified" fullname="org.shotcut.qml.SubtitlesModel.modified" href="qml-org-shotcut-qml-subtitlesmodel.html#modified-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="moveItems" fullname="org.shotcut.qml.SubtitlesModel.moveItems" href="qml-org-shotcut-qml-subtitlesmodel.html#moveItems-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="trackIndex" default=""/>
+                <parameter type="int" name="firstItemIndex" default=""/>
+                <parameter type="int" name="lastItemIndex" default=""/>
+                <parameter type="int" name="msTime" default=""/>
+            </function>
+            <function name="trackModelIndex" fullname="org.shotcut.qml.SubtitlesModel.trackModelIndex" href="qml-org-shotcut-qml-subtitlesmodel.html#trackModelIndex-method" status="active" access="public" documented="true" meta="qmlmethod" type="QModelIndex">
+                <parameter type="int" name="trackIndex" default=""/>
+            </function>
+            <function name="tracksChanged" fullname="org.shotcut.qml.SubtitlesModel.tracksChanged" href="qml-org-shotcut-qml-subtitlesmodel.html#tracksChanged-signal" status="active" access="public" documented="true" meta="qmlsignal">
+                <parameter type="int" name="count" default=""/>
+            </function>
+            <function name="validateMove" fullname="org.shotcut.qml.SubtitlesModel.validateMove" href="qml-org-shotcut-qml-subtitlesmodel.html#validateMove-method" status="active" access="public" documented="true" meta="qmlmethod" type="bool">
+                <parameter type="list" name="items" default=""/>
+                <parameter type="int" name="msTime" default=""/>
+            </function>
+            <qmlproperty name="trackCount" fullname="org.shotcut.qml.SubtitlesModel.trackCount" href="qml-org-shotcut-qml-subtitlesmodel.html#trackCount-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="Number of subtitle tracks. Read-only"/>
+        </qmlclass>
+        <qmlclass name="SubtitlesSelectionModel" qml-module-name="org.shotcut.qml" fullname="org.shotcut.qml.SubtitlesSelectionModel" href="qml-org-shotcut-qml-subtitlesselectionmodel.html" status="active" access="public" documented="true" title="SubtitlesSelectionModel" fulltitle="SubtitlesSelectionModel" subtitle="" brief="Tracks the selected track and selected subtitle items in the Subtitles dock">
+            <function name="isItemSelected" fullname="org.shotcut.qml.SubtitlesSelectionModel.isItemSelected" href="qml-org-shotcut-qml-subtitlesselectionmodel.html#isItemSelected-method" status="active" access="public" documented="true" meta="qmlmethod" type="bool">
+                <parameter type="int" name="itemIndex" default=""/>
+            </function>
+            <function name="selectItem" fullname="org.shotcut.qml.SubtitlesSelectionModel.selectItem" href="qml-org-shotcut-qml-subtitlesselectionmodel.html#selectItem-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="itemIndex" default=""/>
+            </function>
+            <function name="selectRange" fullname="org.shotcut.qml.SubtitlesSelectionModel.selectRange" href="qml-org-shotcut-qml-subtitlesselectionmodel.html#selectRange-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="itemIndex" default=""/>
+            </function>
+            <function name="selectedItemsChanged" fullname="org.shotcut.qml.SubtitlesSelectionModel.selectedItemsChanged" href="qml-org-shotcut-qml-subtitlesselectionmodel.html#selectedItemsChanged-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="selectedTrack" fullname="org.shotcut.qml.SubtitlesSelectionModel.selectedTrack" href="qml-org-shotcut-qml-subtitlesselectionmodel.html#selectedTrack-method" status="active" access="public" documented="true" meta="qmlmethod" type="int"/>
+            <function name="selectedTrackModelIndexChanged" fullname="org.shotcut.qml.SubtitlesSelectionModel.selectedTrackModelIndexChanged" href="qml-org-shotcut-qml-subtitlesselectionmodel.html#selectedTrackModelIndexChanged-signal" status="active" access="public" documented="true" meta="qmlsignal">
+                <parameter type="QModelIndex" name="trackModelIndex" default=""/>
+            </function>
+            <qmlproperty name="selectedItems" fullname="org.shotcut.qml.SubtitlesSelectionModel.selectedItems" href="qml-org-shotcut-qml-subtitlesselectionmodel.html#selectedItems-prop" status="active" access="public" documented="true" type="list&lt;var&gt;" attached="false" writable="true" brief="List of currently selected subtitle item indices (read-only)"/>
+            <qmlproperty name="selectedTrackModelIndex" fullname="org.shotcut.qml.SubtitlesSelectionModel.selectedTrackModelIndex" href="qml-org-shotcut-qml-subtitlesselectionmodel.html#selectedTrackModelIndex-prop" status="active" access="public" documented="true" type="QModelIndex" attached="false" writable="true" brief="Model index of the currently selected track (read-only)"/>
+        </qmlclass>
+        <qmlclass name="TimelineDock" qml-module-name="org.shotcut.qml" fullname="org.shotcut.qml.TimelineDock" href="qml-org-shotcut-qml-timelinedock.html" status="active" access="public" documented="true" title="TimelineDock" fulltitle="TimelineDock" subtitle="" brief="Timeline dock controller, available as the timeline context property">
+            <function name="addAudioTrack" fullname="org.shotcut.qml.TimelineDock.addAudioTrack" href="qml-org-shotcut-qml-timelinedock.html#addAudioTrack-method" status="active" access="public" documented="true" meta="qmlmethod" type="int"/>
+            <function name="addVideoTrack" fullname="org.shotcut.qml.TimelineDock.addVideoTrack" href="qml-org-shotcut-qml-timelinedock.html#addVideoTrack-method" status="active" access="public" documented="true" meta="qmlmethod" type="int"/>
+            <function name="alignSelectedClips" fullname="org.shotcut.qml.TimelineDock.alignSelectedClips" href="qml-org-shotcut-qml-timelinedock.html#alignSelectedClips-method" status="active" access="public" documented="true" meta="qmlmethod" type="void"/>
+            <function name="append" fullname="org.shotcut.qml.TimelineDock.append" href="qml-org-shotcut-qml-timelinedock.html#append-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="trackIndex" default=""/>
+            </function>
+            <function name="changeGain" fullname="org.shotcut.qml.TimelineDock.changeGain" href="qml-org-shotcut-qml-timelinedock.html#changeGain-method" status="active" access="public" documented="true" meta="qmlmethod" type="bool">
+                <parameter type="int" name="trackIndex" default=""/>
+                <parameter type="int" name="clipIndex" default=""/>
+                <parameter type="double" name="gain" default=""/>
+            </function>
+            <function name="clipOpened" fullname="org.shotcut.qml.TimelineDock.clipOpened" href="qml-org-shotcut-qml-timelinedock.html#clipOpened-signal" status="active" access="public" documented="true" meta="qmlsignal">
+                <parameter type="var" name="producer" default=""/>
+            </function>
+            <function name="copy" fullname="org.shotcut.qml.TimelineDock.copy" href="qml-org-shotcut-qml-timelinedock.html#copy-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="trackIndex" default=""/>
+                <parameter type="int" name="clipIndex" default=""/>
+            </function>
+            <function name="createMarker" fullname="org.shotcut.qml.TimelineDock.createMarker" href="qml-org-shotcut-qml-timelinedock.html#createMarker-method" status="active" access="public" documented="true" meta="qmlmethod" type="void"/>
+            <function name="createOrEditMarker" fullname="org.shotcut.qml.TimelineDock.createOrEditMarker" href="qml-org-shotcut-qml-timelinedock.html#createOrEditMarker-method" status="active" access="public" documented="true" meta="qmlmethod" type="void"/>
+            <function name="createOrEditSelectionMarker" fullname="org.shotcut.qml.TimelineDock.createOrEditSelectionMarker" href="qml-org-shotcut-qml-timelinedock.html#createOrEditSelectionMarker-method" status="active" access="public" documented="true" meta="qmlmethod" type="void"/>
+            <function name="currentTrackChanged" fullname="org.shotcut.qml.TimelineDock.currentTrackChanged" href="qml-org-shotcut-qml-timelinedock.html#currentTrackChanged-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="deleteMarker" fullname="org.shotcut.qml.TimelineDock.deleteMarker" href="qml-org-shotcut-qml-timelinedock.html#deleteMarker-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="markerIndex" default=""/>
+            </function>
+            <function name="detachAudio" fullname="org.shotcut.qml.TimelineDock.detachAudio" href="qml-org-shotcut-qml-timelinedock.html#detachAudio-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="trackIndex" default=""/>
+                <parameter type="int" name="clipIndex" default=""/>
+            </function>
+            <function name="durationChanged" fullname="org.shotcut.qml.TimelineDock.durationChanged" href="qml-org-shotcut-qml-timelinedock.html#durationChanged-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="editMarker" fullname="org.shotcut.qml.TimelineDock.editMarker" href="qml-org-shotcut-qml-timelinedock.html#editMarker-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="markerIndex" default=""/>
+            </function>
+            <function name="fadeIn" fullname="org.shotcut.qml.TimelineDock.fadeIn" href="qml-org-shotcut-qml-timelinedock.html#fadeIn-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="trackIndex" default=""/>
+                <parameter type="int" name="clipIndex" default=""/>
+                <parameter type="int" name="duration" default=""/>
+            </function>
+            <function name="fadeOut" fullname="org.shotcut.qml.TimelineDock.fadeOut" href="qml-org-shotcut-qml-timelinedock.html#fadeOut-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="trackIndex" default=""/>
+                <parameter type="int" name="clipIndex" default=""/>
+                <parameter type="int" name="duration" default=""/>
+            </function>
+            <function name="getGroupForClip" fullname="org.shotcut.qml.TimelineDock.getGroupForClip" href="qml-org-shotcut-qml-timelinedock.html#getGroupForClip-method" status="active" access="public" documented="true" meta="qmlmethod" type="list&lt;var&gt;">
+                <parameter type="int" name="trackIndex" default=""/>
+                <parameter type="int" name="clipIndex" default=""/>
+            </function>
+            <function name="incrementCurrentTrack" fullname="org.shotcut.qml.TimelineDock.incrementCurrentTrack" href="qml-org-shotcut-qml-timelinedock.html#incrementCurrentTrack-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="by" default=""/>
+            </function>
+            <function name="insert" fullname="org.shotcut.qml.TimelineDock.insert" href="qml-org-shotcut-qml-timelinedock.html#insert-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="trackIndex" default=""/>
+                <parameter type="int" name="position" default=""/>
+                <parameter type="string" name="xml" default=""/>
+                <parameter type="bool" name="seek" default=""/>
+            </function>
+            <function name="insertAudioTrack" fullname="org.shotcut.qml.TimelineDock.insertAudioTrack" href="qml-org-shotcut-qml-timelinedock.html#insertAudioTrack-method" status="active" access="public" documented="true" meta="qmlmethod" type="void"/>
+            <function name="insertTrack" fullname="org.shotcut.qml.TimelineDock.insertTrack" href="qml-org-shotcut-qml-timelinedock.html#insertTrack-method" status="active" access="public" documented="true" meta="qmlmethod" type="void"/>
+            <function name="insertVideoTrack" fullname="org.shotcut.qml.TimelineDock.insertVideoTrack" href="qml-org-shotcut-qml-timelinedock.html#insertVideoTrack-method" status="active" access="public" documented="true" meta="qmlmethod" type="void"/>
+            <function name="isFloating" fullname="org.shotcut.qml.TimelineDock.isFloating" href="qml-org-shotcut-qml-timelinedock.html#isFloating-method" status="active" access="public" documented="true" meta="qmlmethod" type="bool"/>
+            <function name="isMultitrackSelected" fullname="org.shotcut.qml.TimelineDock.isMultitrackSelected" href="qml-org-shotcut-qml-timelinedock.html#isMultitrackSelected-method" status="active" access="public" documented="true" meta="qmlmethod" type="bool"/>
+            <function name="isRecordingChanged" fullname="org.shotcut.qml.TimelineDock.isRecordingChanged" href="qml-org-shotcut-qml-timelinedock.html#isRecordingChanged-signal" status="active" access="public" documented="true" meta="qmlsignal">
+                <parameter type="bool" name="recording" default=""/>
+            </function>
+            <function name="lift" fullname="org.shotcut.qml.TimelineDock.lift" href="qml-org-shotcut-qml-timelinedock.html#lift-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="trackIndex" default=""/>
+                <parameter type="int" name="clipIndex" default=""/>
+                <parameter type="bool" name="ignoreTransition" default=""/>
+            </function>
+            <function name="liftSelection" fullname="org.shotcut.qml.TimelineDock.liftSelection" href="qml-org-shotcut-qml-timelinedock.html#liftSelection-method" status="active" access="public" documented="true" meta="qmlmethod" type="void"/>
+            <function name="loopChanged" fullname="org.shotcut.qml.TimelineDock.loopChanged" href="qml-org-shotcut-qml-timelinedock.html#loopChanged-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="mergeClipWithNext" fullname="org.shotcut.qml.TimelineDock.mergeClipWithNext" href="qml-org-shotcut-qml-timelinedock.html#mergeClipWithNext-method" status="active" access="public" documented="true" meta="qmlmethod" type="bool">
+                <parameter type="int" name="trackIndex" default=""/>
+                <parameter type="int" name="clipIndex" default=""/>
+                <parameter type="bool" name="dryrun" default=""/>
+            </function>
+            <function name="moveClip" fullname="org.shotcut.qml.TimelineDock.moveClip" href="qml-org-shotcut-qml-timelinedock.html#moveClip-method" status="active" access="public" documented="true" meta="qmlmethod" type="bool">
+                <parameter type="int" name="fromTrack" default=""/>
+                <parameter type="int" name="toTrack" default=""/>
+                <parameter type="int" name="clipIndex" default=""/>
+                <parameter type="int" name="position" default=""/>
+                <parameter type="bool" name="ripple" default=""/>
+            </function>
+            <function name="moveTrack" fullname="org.shotcut.qml.TimelineDock.moveTrack" href="qml-org-shotcut-qml-timelinedock.html#moveTrack-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="fromTrackIndex" default=""/>
+                <parameter type="int" name="toTrackIndex" default=""/>
+            </function>
+            <function name="moveTrackDown" fullname="org.shotcut.qml.TimelineDock.moveTrackDown" href="qml-org-shotcut-qml-timelinedock.html#moveTrackDown-method" status="active" access="public" documented="true" meta="qmlmethod" type="void"/>
+            <function name="moveTrackUp" fullname="org.shotcut.qml.TimelineDock.moveTrackUp" href="qml-org-shotcut-qml-timelinedock.html#moveTrackUp-method" status="active" access="public" documented="true" meta="qmlmethod" type="void"/>
+            <function name="openProperties" fullname="org.shotcut.qml.TimelineDock.openProperties" href="qml-org-shotcut-qml-timelinedock.html#openProperties-method" status="active" access="public" documented="true" meta="qmlmethod" type="void"/>
+            <function name="overwrite" fullname="org.shotcut.qml.TimelineDock.overwrite" href="qml-org-shotcut-qml-timelinedock.html#overwrite-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="trackIndex" default=""/>
+                <parameter type="int" name="position" default=""/>
+                <parameter type="string" name="xml" default=""/>
+                <parameter type="bool" name="seek" default=""/>
+            </function>
+            <function name="positionChanged" fullname="org.shotcut.qml.TimelineDock.positionChanged" href="qml-org-shotcut-qml-timelinedock.html#positionChanged-signal" status="active" access="public" documented="true" meta="qmlsignal">
+                <parameter type="int" name="position" default=""/>
+            </function>
+            <function name="recordAudio" fullname="org.shotcut.qml.TimelineDock.recordAudio" href="qml-org-shotcut-qml-timelinedock.html#recordAudio-method" status="active" access="public" documented="true" meta="qmlmethod" type="void"/>
+            <function name="remove" fullname="org.shotcut.qml.TimelineDock.remove" href="qml-org-shotcut-qml-timelinedock.html#remove-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="trackIndex" default=""/>
+                <parameter type="int" name="clipIndex" default=""/>
+                <parameter type="bool" name="ignoreTransition" default=""/>
+            </function>
+            <function name="removeSelection" fullname="org.shotcut.qml.TimelineDock.removeSelection" href="qml-org-shotcut-qml-timelinedock.html#removeSelection-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="bool" name="withCopy" default=""/>
+            </function>
+            <function name="removeTrack" fullname="org.shotcut.qml.TimelineDock.removeTrack" href="qml-org-shotcut-qml-timelinedock.html#removeTrack-method" status="active" access="public" documented="true" meta="qmlmethod" type="void"/>
+            <function name="replace" fullname="org.shotcut.qml.TimelineDock.replace" href="qml-org-shotcut-qml-timelinedock.html#replace-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="trackIndex" default=""/>
+                <parameter type="int" name="clipIndex" default=""/>
+                <parameter type="string" name="xml" default=""/>
+            </function>
+            <function name="restoreSelection" fullname="org.shotcut.qml.TimelineDock.restoreSelection" href="qml-org-shotcut-qml-timelinedock.html#restoreSelection-method" status="active" access="public" documented="true" meta="qmlmethod" type="void"/>
+            <function name="seekInPoint" fullname="org.shotcut.qml.TimelineDock.seekInPoint" href="qml-org-shotcut-qml-timelinedock.html#seekInPoint-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="clipIndex" default=""/>
+            </function>
+            <function name="seekNextEdit" fullname="org.shotcut.qml.TimelineDock.seekNextEdit" href="qml-org-shotcut-qml-timelinedock.html#seekNextEdit-method" status="active" access="public" documented="true" meta="qmlmethod" type="void"/>
+            <function name="seekNextMarker" fullname="org.shotcut.qml.TimelineDock.seekNextMarker" href="qml-org-shotcut-qml-timelinedock.html#seekNextMarker-method" status="active" access="public" documented="true" meta="qmlmethod" type="void"/>
+            <function name="seekPrevMarker" fullname="org.shotcut.qml.TimelineDock.seekPrevMarker" href="qml-org-shotcut-qml-timelinedock.html#seekPrevMarker-method" status="active" access="public" documented="true" meta="qmlmethod" type="void"/>
+            <function name="seekPreviousEdit" fullname="org.shotcut.qml.TimelineDock.seekPreviousEdit" href="qml-org-shotcut-qml-timelinedock.html#seekPreviousEdit-method" status="active" access="public" documented="true" meta="qmlmethod" type="void"/>
+            <function name="selectAll" fullname="org.shotcut.qml.TimelineDock.selectAll" href="qml-org-shotcut-qml-timelinedock.html#selectAll-method" status="active" access="public" documented="true" meta="qmlmethod" type="void"/>
+            <function name="selectAllOnCurrentTrack" fullname="org.shotcut.qml.TimelineDock.selectAllOnCurrentTrack" href="qml-org-shotcut-qml-timelinedock.html#selectAllOnCurrentTrack-method" status="active" access="public" documented="true" meta="qmlmethod" type="void"/>
+            <function name="selectMultitrack" fullname="org.shotcut.qml.TimelineDock.selectMultitrack" href="qml-org-shotcut-qml-timelinedock.html#selectMultitrack-method" status="active" access="public" documented="true" meta="qmlmethod" type="void"/>
+            <function name="selectTrackHead" fullname="org.shotcut.qml.TimelineDock.selectTrackHead" href="qml-org-shotcut-qml-timelinedock.html#selectTrackHead-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="trackIndex" default=""/>
+            </function>
+            <function name="selectedTrack" fullname="org.shotcut.qml.TimelineDock.selectedTrack" href="qml-org-shotcut-qml-timelinedock.html#selectedTrack-method" status="active" access="public" documented="true" meta="qmlmethod" type="int"/>
+            <function name="selectionChanged" fullname="org.shotcut.qml.TimelineDock.selectionChanged" href="qml-org-shotcut-qml-timelinedock.html#selectionChanged-signal" status="active" access="public" documented="true" meta="qmlsignal"/>
+            <function name="setTrackComposite" fullname="org.shotcut.qml.TimelineDock.setTrackComposite" href="qml-org-shotcut-qml-timelinedock.html#setTrackComposite-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="trackIndex" default=""/>
+                <parameter type="bool" name="composite" default=""/>
+            </function>
+            <function name="setTrackLock" fullname="org.shotcut.qml.TimelineDock.setTrackLock" href="qml-org-shotcut-qml-timelinedock.html#setTrackLock-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="trackIndex" default=""/>
+                <parameter type="bool" name="lock" default=""/>
+            </function>
+            <function name="setTrackName" fullname="org.shotcut.qml.TimelineDock.setTrackName" href="qml-org-shotcut-qml-timelinedock.html#setTrackName-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="trackIndex" default=""/>
+                <parameter type="string" name="value" default=""/>
+            </function>
+            <function name="showStatusMessage" fullname="org.shotcut.qml.TimelineDock.showStatusMessage" href="qml-org-shotcut-qml-timelinedock.html#showStatusMessage-signal" status="active" access="public" documented="true" meta="qmlsignal">
+                <parameter type="string" name="message" default=""/>
+            </function>
+            <function name="split" fullname="org.shotcut.qml.TimelineDock.split" href="qml-org-shotcut-qml-timelinedock.html#split-method" status="active" access="public" documented="true" meta="qmlmethod" type="bool">
+                <parameter type="int" name="trackIndex" default=""/>
+                <parameter type="int" name="clipIndex" default=""/>
+                <parameter type="int" name="position" default=""/>
+            </function>
+            <function name="stopRecording" fullname="org.shotcut.qml.TimelineDock.stopRecording" href="qml-org-shotcut-qml-timelinedock.html#stopRecording-method" status="active" access="public" documented="true" meta="qmlmethod" type="void"/>
+            <function name="toggleOtherTracksHidden" fullname="org.shotcut.qml.TimelineDock.toggleOtherTracksHidden" href="qml-org-shotcut-qml-timelinedock.html#toggleOtherTracksHidden-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="trackIndex" default=""/>
+            </function>
+            <function name="toggleOtherTracksMute" fullname="org.shotcut.qml.TimelineDock.toggleOtherTracksMute" href="qml-org-shotcut-qml-timelinedock.html#toggleOtherTracksMute-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="trackIndex" default=""/>
+            </function>
+            <function name="toggleTrackHidden" fullname="org.shotcut.qml.TimelineDock.toggleTrackHidden" href="qml-org-shotcut-qml-timelinedock.html#toggleTrackHidden-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="trackIndex" default=""/>
+            </function>
+            <function name="toggleTrackMute" fullname="org.shotcut.qml.TimelineDock.toggleTrackMute" href="qml-org-shotcut-qml-timelinedock.html#toggleTrackMute-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="int" name="trackIndex" default=""/>
+            </function>
+            <function name="trimClipIn" fullname="org.shotcut.qml.TimelineDock.trimClipIn" href="qml-org-shotcut-qml-timelinedock.html#trimClipIn-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="bool" name="ripple" default=""/>
+            </function>
+            <function name="trimClipOut" fullname="org.shotcut.qml.TimelineDock.trimClipOut" href="qml-org-shotcut-qml-timelinedock.html#trimClipOut-method" status="active" access="public" documented="true" meta="qmlmethod" type="void">
+                <parameter type="bool" name="ripple" default=""/>
+            </function>
+            <qmlproperty name="currentTrack" fullname="org.shotcut.qml.TimelineDock.currentTrack" href="qml-org-shotcut-qml-timelinedock.html#currentTrack-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="Zero-based index of the currently focused timeline track. Settable"/>
+            <qmlproperty name="isRecording" fullname="org.shotcut.qml.TimelineDock.isRecording" href="qml-org-shotcut-qml-timelinedock.html#isRecording-prop" status="active" access="public" documented="true" type="bool" attached="false" writable="true" brief="True when audio recording is in progress. Read-only"/>
+            <qmlproperty name="loopEnd" fullname="org.shotcut.qml.TimelineDock.loopEnd" href="qml-org-shotcut-qml-timelinedock.html#loopEnd-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="End frame of the current loop region, or -1 if no loop is set. Read-only"/>
+            <qmlproperty name="loopStart" fullname="org.shotcut.qml.TimelineDock.loopStart" href="qml-org-shotcut-qml-timelinedock.html#loopStart-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="Start frame of the current loop region, or -1 if no loop is set. Read-only"/>
+            <qmlproperty name="position" fullname="org.shotcut.qml.TimelineDock.position" href="qml-org-shotcut-qml-timelinedock.html#position-prop" status="active" access="public" documented="true" type="int" attached="false" writable="true" brief="Current playhead position in frames. Settable — setting this seeks the player"/>
+            <qmlproperty name="selection" fullname="org.shotcut.qml.TimelineDock.selection" href="qml-org-shotcut-qml-timelinedock.html#selection-prop" status="active" access="public" documented="true" type="list&lt;var&gt;" attached="false" writable="true" brief="Current clip selection as a list of point values where x is the track index and y is the clip index. Settable"/>
+        </qmlclass>
+        <group name="qmlmodules" href="qmlmodules.html" status="internal" seen="false" title=""/>
+        <qmlmodule name="Shotcut.Controls" qml-module-name="Shotcut.Controls" href="shotcut-controls-qmlmodule.html" status="active" location="shotcut-controls.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/shotcut-controls.qdoc" lineno="1" documented="true" groups="qmlmodules" seen="true" title="Shotcut.Controls QML Module" brief="C++-backed UI controls and dialogs for Shotcut QML views"/>
+        <qmlmodule name="org.shotcut.qml" qml-module-name="org.shotcut.qml" href="org-shotcut-qml-qmlmodule.html" status="active" location="org-shotcut-qml.qdoc" filepath="/home/ddennedy/src/shotcut/docs/src/org-shotcut-qml.qdoc" lineno="1" documented="true" groups="qmlmodules" seen="true" title="org.shotcut.qml QML Module" brief="Types for filter scripting, metadata, and file access in Shotcut">
+            <contents name="types" title="Types" level="1"/>
+        </qmlmodule>
+    </namespace>
+</INDEX>

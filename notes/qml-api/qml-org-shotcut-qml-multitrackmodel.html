@@ -59,6 +59,7 @@
 <li class="fn" translate="no">bool <b><a href="qml-org-shotcut-qml-multitrackmodel.html#addTransitionValid-method" translate="no">addTransitionValid</a></b>(int <i>fromTrack</i>, int <i>toTrack</i>, int <i>clipIndex</i>, int <i>position</i>, bool <i>ripple</i>)</li>
 <li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-multitrackmodel.html#audioLevelsReady-method" translate="no">audioLevelsReady</a></b>(var <i>index</i>)</li>
 <li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-multitrackmodel.html#changeGain-method" translate="no">changeGain</a></b>(int <i>trackIndex</i>, int <i>clipIndex</i>, double <i>gain</i>)</li>
+<li class="fn" translate="no">int <b><a href="qml-org-shotcut-qml-multitrackmodel.html#clipStart-method" translate="no">clipStart</a></b>(int <i>trackIndex</i>, int <i>clipIndex</i>)</li>
 <li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-multitrackmodel.html#fadeIn-method" translate="no">fadeIn</a></b>(int <i>trackIndex</i>, int <i>clipIndex</i>, int <i>duration</i>)</li>
 <li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-multitrackmodel.html#fadeOut-method" translate="no">fadeOut</a></b>(int <i>trackIndex</i>, int <i>clipIndex</i>, int <i>duration</i>)</li>
 <li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-multitrackmodel.html#joinClips-method" translate="no">joinClips</a></b>(int <i>trackIndex</i>, int <i>clipIndex</i>)</li>
@@ -97,9 +98,10 @@
 <tr valign="top" class="odd"><td ><code translate="no">fadeIn</code></td><td >clip</td><td >Fade-in duration in frames</td></tr>
 <tr valign="top" class="even"><td ><code translate="no">fadeOut</code></td><td >clip</td><td >Fade-out duration in frames</td></tr>
 <tr valign="top" class="odd"><td ><code translate="no">isTransition</code></td><td >clip</td><td >Whether this clip is a transition</td></tr>
-<tr valign="top" class="even"><td ><code translate="no">isFiltered</code></td><td >track, clip</td><td >Whether filters are attached</td></tr>
-<tr valign="top" class="odd"><td ><code translate="no">speed</code></td><td >clip</td><td >Playback speed multiplier</td></tr>
-<tr valign="top" class="even"><td ><code translate="no">group</code></td><td >clip</td><td >Clip group identifier</td></tr>
+<tr valign="top" class="even"><td ><code translate="no">isAdjustment</code></td><td >clip</td><td >Whether this clip is an adjustment clip</td></tr>
+<tr valign="top" class="odd"><td ><code translate="no">isFiltered</code></td><td >track, clip</td><td >Whether filters are attached</td></tr>
+<tr valign="top" class="even"><td ><code translate="no">speed</code></td><td >clip</td><td >Playback speed multiplier</td></tr>
+<tr valign="top" class="odd"><td ><code translate="no">group</code></td><td >clip</td><td >Clip group identifier</td></tr>
 </table></div>
 <!-- @@@MultitrackModel -->
 <h2>Property Documentation</h2>
@@ -294,6 +296,16 @@
 </table></div></div>
 <div class="qmldoc"><p>Sets the audio <i translate="no">gain</i> of the clip at (<i translate="no">trackIndex</i>, <i translate="no">clipIndex</i>).</p>
 </div></div><!-- @@@changeGain -->
+<br/>
+<!-- $$$clipStart[overload1]$$$clipStartintint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="clipStart-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">int</span> <span class="name">clipStart</span>(<span class="type">int</span> <i>trackIndex</i>, <span class="type">int</span> <i>clipIndex</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Returns the absolute timeline start position (in frames) of the clip at (<i translate="no">trackIndex</i>, <i translate="no">clipIndex</i>), or -1 if it does not exist.</p>
+</div></div><!-- @@@clipStart -->
 <br/>
 <!-- $$$fadeIn[overload1]$$$fadeInintintint -->
 <div class="qmlitem"><div class="qmlproto" translate="no">

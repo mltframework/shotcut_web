@@ -68,6 +68,7 @@
 <li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-application.html#showAddOnFiltersDialog-method" translate="no">showAddOnFiltersDialog</a></b>()</li>
 <li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-application.html#showStatusMessage-method" translate="no">showStatusMessage</a></b>(string <i>message</i>, int <i>timeoutSeconds</i>)</li>
 <li class="fn" translate="no">string <b><a href="qml-org-shotcut-qml-application.html#timeFromFrames-method" translate="no">timeFromFrames</a></b>(int <i>frames</i>)</li>
+<li class="fn" translate="no">string <b><a href="qml-org-shotcut-qml-application.html#triggerAction-method" translate="no">triggerAction</a></b>(string <i>actionName</i>)</li>
 </ul>
 <!-- $$$Application-description -->
 <h2 id="details">Detailed Description</h2>
@@ -361,6 +362,16 @@ var c <span class="operator">=</span> application<span class="operator">.</span>
 </table></div></div>
 <div class="qmldoc"><p>Converts a frame number <i translate="no">frames</i> to an MLT timecode string.</p>
 </div></div><!-- @@@timeFromFrames -->
+<br/>
+<!-- $$$triggerAction[overload1]$$$triggerActionstring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="triggerAction-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">string</span> <span class="name">triggerAction</span>(<span class="type">string</span> <i>actionName</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Executes the action identified by <i translate="no">actionName</i>. Use <code translate="no">Actions.keys()</code> to get a list of all available action names.</p>
+</div></div><!-- @@@triggerAction -->
 <br/>
 </body>
 </html>

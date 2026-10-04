@@ -104,6 +104,7 @@
 <li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#setTrackComposite-method" translate="no">setTrackComposite</a></b>(int <i>trackIndex</i>, bool <i>composite</i>)</li>
 <li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#setTrackLock-method" translate="no">setTrackLock</a></b>(int <i>trackIndex</i>, bool <i>lock</i>)</li>
 <li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#setTrackName-method" translate="no">setTrackName</a></b>(int <i>trackIndex</i>, string <i>value</i>)</li>
+<li class="fn" translate="no">bool <b><a href="qml-org-shotcut-qml-timelinedock.html#split-method" translate="no">split</a></b>(int <i>trackIndex</i>, int <i>clipIndex</i>, int <i>position</i>)</li>
 <li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#stopRecording-method" translate="no">stopRecording</a></b>()</li>
 <li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#toggleOtherTracksHidden-method" translate="no">toggleOtherTracksHidden</a></b>(int <i>trackIndex</i>)</li>
 <li class="fn" translate="no">void <b><a href="qml-org-shotcut-qml-timelinedock.html#toggleOtherTracksMute-method" translate="no">toggleOtherTracksMute</a></b>(int <i>trackIndex</i>)</li>
@@ -594,7 +595,7 @@
 <td class="tblQmlFuncNode"><p>
 <span class="type">void</span> <span class="name">remove</span>(<span class="type">int</span> <i>trackIndex</i>, <span class="type">int</span> <i>clipIndex</i>, <span class="type">bool</span> <i>ignoreTransition</i>)</p></td></tr>
 </table></div></div>
-<div class="qmldoc"><p>Removes the clip at (<i translate="no">trackIndex</i>, <i translate="no">clipIndex</i>), replacing it with a blank. If <i translate="no">ignoreTransition</i> is <code translate="no">true</code>, adjacent transitions are not affected.</p>
+<div class="qmldoc"><p>Removes the clip at (<i translate="no">trackIndex</i>, <i translate="no">clipIndex</i>) causing downstream clips to shift earlier by the clip duration (ripple). If <i translate="no">ignoreTransition</i> is <code translate="no">true</code>, adjacent transitions are not affected.</p>
 </div></div><!-- @@@remove -->
 <br/>
 <!-- $$$removeSelection[overload1]$$$removeSelectionbool -->
@@ -766,6 +767,16 @@
 </table></div></div>
 <div class="qmldoc"><p>Renames the track at <i translate="no">trackIndex</i> to <i translate="no">value</i>.</p>
 </div></div><!-- @@@setTrackName -->
+<br/>
+<!-- $$$split[overload1]$$$splitintintint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="split-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">bool</span> <span class="name">split</span>(<span class="type">int</span> <i>trackIndex</i>, <span class="type">int</span> <i>clipIndex</i>, <span class="type">int</span> <i>position</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Splits the clip at (<i translate="no">trackIndex</i>, <i translate="no">clipIndex</i>) at the absolute timeline frame <i translate="no">position</i>. Returns <code translate="no">true</code> if the split was performed.</p>
+</div></div><!-- @@@split -->
 <br/>
 <!-- $$$stopRecording[overload1]$$$stopRecording -->
 <div class="qmlitem"><div class="qmlproto" translate="no">

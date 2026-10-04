@@ -39,7 +39,7 @@
 </ul>
 <!-- $$$QmlExtension-description -->
 <h2 id="details">Detailed Description</h2>
-<p>Extensions are installed or downloaded as a bundle of files described by <a href="qml-org-shotcut-qml-qmlextensionfile.html" translate="no">QmlExtensionFile</a> entries. Access the current extension object through the <code translate="no">extension</code> context property in extension-related QML views.</p>
+<p>The descriptor is loaded from the installation directory. Files described by <a href="qml-org-shotcut-qml-qmlextensionfile.html" translate="no">QmlExtensionFile</a> entries are downloaded into the application data directory. Access the current extension object through the <code translate="no">extension</code> context property in extension-related QML views.</p>
 <pre class="cpp" translate="no"><span class="type">Text</span> { <span class="name">text</span>: <span class="name">extension</span>.<span class="name">name</span> <span class="operator">+</span> <span class="string">&quot; v&quot;</span> <span class="operator">+</span> <span class="name">extension</span>.<span class="name">version</span> }</pre>
 <!-- @@@QmlExtension -->
 <h2>Property Documentation</h2>

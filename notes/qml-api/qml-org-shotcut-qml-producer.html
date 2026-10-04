@@ -35,12 +35,15 @@
 <h2 id="properties">Properties</h2>
 <ul>
 <li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#aspectRatio-prop" translate="no">aspectRatio</a></b> : real</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#audioIndex-prop" translate="no">audioIndex</a></b> : string</li>
 <li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#displayAspectRatio-prop" translate="no">displayAspectRatio</a></b> : real</li>
 <li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#duration-prop" translate="no">duration</a></b> : int</li>
 <li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#fadeIn-prop" translate="no">fadeIn</a></b> : int</li>
 <li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#fadeOut-prop" translate="no">fadeOut</a></b> : int</li>
 <li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#hash-prop" translate="no">hash</a></b> : string</li>
 <li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#in-prop" translate="no">in</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#isAdjustment-prop" translate="no">isAdjustment</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#isAudio-prop" translate="no">isAudio</a></b> : bool</li>
 <li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#length-prop" translate="no">length</a></b> : int</li>
 <li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#mlt_service-prop" translate="no">mlt_service</a></b> : string</li>
 <li class="fn" translate="no"><b><a href="qml-org-shotcut-qml-producer.html#name-prop" translate="no">name</a></b> : string</li>
@@ -83,6 +86,17 @@ var fps        <span class="operator">=</span> profile<span class="operator">.</
 </table></div></div>
 <div class="qmldoc"><p>The pixel aspect ratio of the producer's media.</p>
 </div></div><!-- @@@aspectRatio -->
+<br/>
+<!-- $$$audioIndex -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="audioIndex-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">audioIndex</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>The producer's <code translate="no">audio_index</code> property.</p>
+<p>Empty when the producer has no <code translate="no">audio_index</code> (for example image or color). <code translate="no">-1</code> when audio is disabled. A stream index or <code translate="no">all</code> when the clip has audio.</p>
+</div></div><!-- @@@audioIndex -->
 <br/>
 <!-- $$$displayAspectRatio -->
 <div class="qmlitem"><div class="qmlproto" translate="no">
@@ -143,6 +157,27 @@ var fps        <span class="operator">=</span> profile<span class="operator">.</
 </table></div></div>
 <div class="qmldoc"><p>The in-point of the clip in frames (absolute timeline position).</p>
 </div></div><!-- @@@in -->
+<br/>
+<!-- $$$isAdjustment -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="isAdjustment-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">isAdjustment</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether this clip is an adjustment clip (<code translate="no">meta.fx_cut</code>).</p>
+</div></div><!-- @@@isAdjustment -->
+<br/>
+<!-- $$$isAudio -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="isAudio-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">isAudio</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Whether this clip should be treated as audio.</p>
+<p>True when <code translate="no">video_index</code> is <code translate="no">-1</code> (for example a detached audio clip), when the producer is an audio track, or when the clip is on an audio track.</p>
+</div></div><!-- @@@isAudio -->
 <br/>
 <!-- $$$length -->
 <div class="qmlitem"><div class="qmlproto" translate="no">
