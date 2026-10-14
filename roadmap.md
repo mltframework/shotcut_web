@@ -20,7 +20,6 @@ category: other
 
 In no particular order or estimated delivery time:
 
-- duck audio
 - make it easy to add 0.5 or 1 second transition on timeline
 - open HEIC images (already works on macOS, work-in-progress in FFmpeg)
 - read Kyno XML for name, comments, tags
