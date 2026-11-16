@@ -9,7 +9,7 @@ We pledge that our downloads are always free of
 malware, spyware, and adware. However, we can only provide that guarantee if you come to this website
 to download.
 
-#### Current Version: 26.9.27
+#### Current Version: 26.11.15
 
 <div class="OSTEST">
   <p>
@@ -41,7 +41,7 @@ To avoid ads and get automatic updates:<br>
 
 {:.win}
 |-----------------------|-------------------
-| [Windows installer](https://sourceforge.net/projects/shotcut/files/v26.9.27/shotcut-win64-26.9.27.exe/download) | [Windows portable zip](https://sourceforge.net/projects/shotcut/files/v26.9.27/shotcut-win64-26.9.27.zip/download)
+| [Windows installer](https://github.com/mltframework/shotcut/releases/download/v26.11.15/shotcut-win64-26.11.15.exe) | [Windows portable zip](https://github.com/mltframework/shotcut/releases/download/v26.11.15/shotcut-win64-26.11.15.zip)
 {:.withborders}
 
 {:.win}
@@ -52,7 +52,7 @@ To avoid ads and get automatic updates:<br>
 
 {:.win}
 |-----------------------|-------------------
-| [Windows installer](https://sourceforge.net/projects/shotcut/files/v26.9.27/shotcut-win_ARM-26.9.27.exe/download) | [Windows portable zip](https://sourceforge.net/projects/shotcut/files/v26.9.27/shotcut-win_ARM-26.9.27.zip/download)
+| [Windows installer](https://github.com/mltframework/shotcut/releases/download/v26.11.15/shotcut-win_ARM-26.11.15.exe) | [Windows portable zip](https://github.com/mltframework/shotcut/releases/download/v26.11.15/shotcut-win_ARM-26.11.15.zip)
 {:.withborders}
 
 {:.win}
@@ -78,7 +78,7 @@ To avoid ads and get automatic updates:<br>
 
 {:.mac}
 |-----------------------
-| [macOS universal](https://sourceforge.net/projects/shotcut/files/v26.9.27/shotcut-macos-26.9.28.dmg/download)
+| [macOS universal](https://github.com/mltframework/shotcut/releases/download/v26.11.15/shotcut-macos-26.11.15.dmg)
 {:.withborders}
 
 {:.mac}
@@ -108,7 +108,7 @@ To avoid ads and get automatic updates:<br>
 **Important**: If you have a Mac that is from 2013 or earlier you might experience a video preview color problem due to our migration to [Apple Metal](https://developer.apple.com/metal/). In that case, use [version 22.12.21](https://sourceforge.net/projects/shotcut/files/v22.12.21/shotcut-macos-221221.dmg/download).
 
 {:.mac}
-An [unsigned app bundle is available](https://github.com/mltframework/shotcut/releases/download/v26.9.27/shotcut-macos-unsigned-26.9.27.dmg) so that you
+An [unsigned app bundle is available](https://github.com/mltframework/shotcut/releases/download/v26.11.15/shotcut-macos-unsigned-26.11.15.dmg) so that you
 can modify the build per the Free Software license agreement.
 
 ---
@@ -132,7 +132,7 @@ src='https://raw.githubusercontent.com/snapcore/snap-store-badges/master/EN/%5BE
 
 {:.linux}
 |-----------------------|-------------------
-| [Linux portable tar](https://sourceforge.net/projects/shotcut/files/v26.9.27/shotcut-linux-x86_64-26.9.27.txz/download) | [Linux AppImage](https://sourceforge.net/projects/shotcut/files/v26.9.27/shotcut-linux-x86_64-26.10.3.AppImage/download)
+| [Linux portable tar](https://github.com/mltframework/shotcut/releases/download/v26.11.15/shotcut-linux-x86_64-26.11.15.txz) | [Linux AppImage](https://github.com/mltframework/shotcut/releases/download/v26.11.15/shotcut-linux-x86_64-26.11.15.AppImage)
 {:.withborders}
 
 {:.linux}
@@ -158,11 +158,11 @@ the portable tar.
 ##### Other
 
 File checksums for downloads are available in
-[md5sum](https://github.com/mltframework/shotcut/releases/download/v26.9.27/md5sums.txt)
-or [sha256sum](https://github.com/mltframework/shotcut/releases/download/v26.9.27/sha256sums.txt) format.
+[md5sum](https://github.com/mltframework/shotcut/releases/download/v26.11.15/md5sums.txt)
+or [sha256sum](https://github.com/mltframework/shotcut/releases/download/v26.11.15/sha256sums.txt) format.
 
 [Source code
-archive](https://github.com/mltframework/shotcut/releases/download/v26.9.27/shotcut-src-26.9.27.txz)
+archive](https://github.com/mltframework/shotcut/releases/download/v26.11.15/shotcut-src-26.11.15.txz)
 / [GitHub repository](https://github.com/mltframework/shotcut)
 
 [Older versions](https://github.com/mltframework/shotcut/releases/) are

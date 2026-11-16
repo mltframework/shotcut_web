@@ -225,9 +225,11 @@ Windows registry, a bool is stored as a string: true or false.
 | ripple           | bool        | Timeline > Ripple trim and drop
 | rippleAllTracks  | bool        | Timeline > menu > Ripple All Tracks
 | rippleMarkers    | bool        | Timeline > toolbar > Ripple timeline markers with edits (default false)
+| roundedCorners   | bool        | Settings > Timeline > Rounded Corners (default true)
 | scrollZoom       | bool        | Timeline > menu > Scroll to Playhead on Zoom
 | scrolling        | integer     | Settings > Timeline > Scrolling, one of: 0 (No), 1 (Center), 2 (Page, default), 3 (Smooth)
 | snap             | bool        | Timeline > Toggle snapping
+| syncZoomKeyframes| bool        | Settings > Timeline > Sync Zoom With Keyframes (default false)
 | thumbnails       | bool        | Timeline > menu > Show Video Thumbnails
 | trackHeight      | integer     | Timeline > menu > Make Tracks Shorter/Taller
 {:.withborders}
